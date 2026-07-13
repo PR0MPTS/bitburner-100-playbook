@@ -34,18 +34,18 @@
 | Current BitNode | BitNode-1 |
 | Current Run | Run 2 |
 | Current City | Sector-12 |
-| Money | $1.262k |
+| Money | $42.585m |
 | Home RAM | *(To be recorded)* |
 | Home Cores | *(To be recorded)* |
-| Hacking Level | 1 |
+| Hacking Level | 155 |
 | Karma | 0.000 |
-| Hacknet Nodes | 0 |
+| Hacknet Nodes | 1 |
 | Cloud Servers | 0 / 25 |
 | Current Factions | Sector-12, CyberSec |
 | Augmentations Installed | 3 |
-| Time Since Last Augmentation | 3m 42s |
-| Total Play Time | 6h 44m 19s |
-| Current Focus | Rebuilding after first augmentation installation |
+| Time Since Last Augmentation | 15h 14m 31s |
+| Total Play Time | 21h 55m 08s |
+| Current Focus | Expanding automation and preparing for the next augmentation cycle |
 
 ---
 
@@ -53,18 +53,21 @@
 
 ## Immediate
 
-- [ ] Rebuild hacking automation.
-- [ ] Repurchase Hacknet Nodes.
-- [ ] Regain early hacking levels.
-- [ ] Reacquire early money flow.
-- [ ] Continue progressing toward the next augmentation cycle.
+- [x] Rebuild hacking automation.
+- [x] Repurchase a Hacknet Node.
+- [x] Regain early hacking levels.
+- [x] Rebuild early money flow.
+- [ ] Finish creating ServerProfiler.exe.
+- [ ] Reach Hacking Level 250.
+- [ ] Create or acquire relaySMTP.exe.
 
 ## Short Term
 
+- [ ] Continue expanding the rooted server network.
 - [ ] Upgrade Home RAM.
-- [ ] Expand rooted servers.
-- [ ] Increase faction reputation.
-- [ ] Purchase additional Dark Web programs.
+- [ ] Increase Sector-12 faction reputation.
+- [ ] Purchase or create additional port-opening programs.
+- [ ] Prepare a second augmentation purchase cycle.
 
 ## Long Term
 
@@ -100,24 +103,29 @@
 
 ### Completed
 
-- Built first distributed automation network.
-- Purchased TOR Router.
-- Purchased BruteSSH.exe.
-- Purchased FTPcrack.exe.
+- Built the first distributed automation network.
+- Purchased the TOR Router.
+- Acquired BruteSSH.exe.
+- Acquired FTPcrack.exe.
+- Acquired DeepscanV1.exe.
+- Acquired AutoLink.exe.
+- Joined Sector-12.
 - Joined CyberSec.
-- Installed first augmentations.
+- Installed the first three augmentations.
+- Rebuilt the hacking network after the first augmentation installation.
 
 ### Current Strategy
 
-The current objective is to rebuild after the first augmentation installation. Progress will be considerably faster due to permanent augmentation bonuses and improved player knowledge.
+Run 2 has surpassed the original run. Distributed hacking is active across 12 hosts, income has recovered, and hacking level has reached 155. The immediate focus is completing ServerProfiler.exe, continuing faction reputation work, and preparing for stronger port-opening tools and the next augmentation cycle.
 
-### Rebuild Priorities
+### Current Priorities
 
-1. Restore automation.
-2. Purchase Hacknet Nodes.
-3. Rebuild income.
-4. Increase faction reputation.
-5. Prepare for the next augmentation cycle.
+1. Finish ServerProfiler.exe.
+2. Continue running distributed hacking automation.
+3. Reach Hacking Level 250 to unlock relaySMTP.exe creation.
+4. Increase Sector-12 reputation and evaluate available augmentations.
+5. Expand access to servers that require additional open ports.
+6. Prepare for the second augmentation installation.
 
 ---
 
@@ -137,21 +145,67 @@ _TBD_
 
 ## Scripts in Use
 
-No scripts currently active.
+| Script | Purpose | Status |
+|---------|---------|--------|
+| worker.js | Distributed hack / grow / weaken automation | ✅ Active |
+| deploy.js | Deploys worker.js across rooted servers | ✅ Available |
+| scan.js | Network discovery | ✅ Available |
+| n00dles.js | Early-game hacking helper | ✅ Available |
+| hack.js | Dedicated hacking action | ✅ Available |
+| grow.js | Dedicated growth action | ✅ Available |
+| weaken.js | Dedicated security reduction action | ✅ Available |
 
-### Reason
+## Current Deployment
 
-Installing augmentations resets the world state. Automation will be redeployed during the rebuild.
+Automation is active on 12 hosts:
 
-## Supporting Scripts
+- home
+- n00dles
+- foodnstuff
+- sigma-cosmetics
+- joesguns
+- hong-fang-tea
+- harakiri-sushi
+- iron-gym
+- CSEC
+- zer0
+- nectar-net
+- max-hardware
 
-| Script | Purpose |
-|---------|---------|
-| worker.js | Automated hack / grow / weaken |
-| hack.js | Worker component |
-| grow.js | Worker component |
-| weaken.js | Worker component |
-| deploy.js | Deployment automation |
+### Current Production
+
+- Total production since last augmentation installation: $43.056m
+- Current production rate: approximately $784,488 per second
+
+---
+
+# Programs
+
+## Acquired
+
+| Program | Status | Purpose |
+|---------|--------|---------|
+| NUKE.exe | ✅ Acquired | Gains root access when enough ports are open |
+| BruteSSH.exe | ✅ Acquired | Opens SSH ports |
+| FTPcrack.exe | ✅ Acquired | Opens FTP ports |
+| DeepscanV1.exe | ✅ Acquired | Extends scan-analyze depth to 5 |
+| AutoLink.exe | ✅ Acquired | Enables direct connection through scan-analyze |
+
+## In Progress
+
+| Program | Progress | Notes |
+|---------|----------|-------|
+| ServerProfiler.exe | 69.15% | Creation resumed through Focus |
+
+## Locked
+
+| Program | Hacking Level Required |
+|---------|------------------------|
+| relaySMTP.exe | 250 |
+| DeepscanV2.exe | 400 |
+| HTTPWorm.exe | 500 |
+| SQLInject.exe | 750 |
+| Formulas.exe | 1000 |
 
 ---
 
@@ -159,20 +213,29 @@ Installing augmentations resets the world state. Automation will be redeployed d
 
 ## Purchased Servers
 
-None
+None.
 
-## Rooted Servers
+## Rooted and Active Hosts
 
-Reset after augmentation installation.
-
----
+- home
+- n00dles
+- foodnstuff
+- sigma-cosmetics
+- joesguns
+- hong-fang-tea
+- harakiri-sushi
+- iron-gym
+- CSEC
+- zer0
+- nectar-net
+- max-hardware
 
 ## Home Upgrades
 
 | Upgrade | Status |
 |----------|--------|
-| RAM | Default |
-| CPU Cores | Default |
+| RAM | *(To be recorded)* |
+| CPU Cores | *(To be recorded)* |
 
 ---
 
@@ -183,11 +246,18 @@ Reset after augmentation installation.
 - Sector-12
 - CyberSec
 
+## Current Faction Progress
+
+| Faction | Reputation | Favor | Augmentations Remaining | Notes |
+|---------|------------|-------|-------------------------|-------|
+| Sector-12 | 151.542 | 0.773 | 7 | Current faction screen captured during Session 3 |
+| CyberSec | *(To be recorded)* | *(To be recorded)* | *(To be recorded)* | Membership retained from Session 2 |
+
 ## Faction History
 
 | Faction | Status | Notes |
 |---------|--------|-------|
-| Sector-12 | Joined | Early-game faction |
+| Sector-12 | Joined | First city faction |
 | CyberSec | Joined | First hacking faction |
 
 ---
@@ -200,28 +270,32 @@ Reset after augmentation installation.
 | Synaptic Enhancement Implant | ✅ |
 | Neurotrainer I | ✅ |
 
+## Active Multipliers from Installed Augmentations
+
+| Multiplier | Current Value |
+|------------|---------------|
+| Hacking Level | 105% |
+| Hacking Speed | 103% |
+| Hacking Experience | 110% |
+| Strength Experience | 110% |
+| Defense Experience | 110% |
+| Dexterity Experience | 110% |
+| Agility Experience | 110% |
+| Charisma Experience | 110% |
+
 ---
 
 # Verified Facts
 
 Verified during this playthrough:
 
-- Distributed automation with `worker.js` scales well during the early game.
-- Purchasing TOR Router early accelerates progression.
-- Installing augmentations resets:
-  - Money
-  - Scripts
-  - Hacknet Nodes
-  - Hacking level
-  - Rooted servers
-  - Most early-game progression
-
-Permanent progress retained:
-
-- Installed augmentations
-- Achievements
-- Faction memberships
-- Player knowledge
+- Distributed automation with `worker.js` scales effectively during the early game.
+- Purchasing the TOR Router early accelerates access to Dark Web tools.
+- Installing augmentations resets short-term progression such as money, hacking level, active scripts, Hacknet Nodes, and rooted-server access.
+- Script files stored on `home` remain available after an augmentation installation and can be redeployed.
+- Installed augmentations, achievements, and faction memberships persist through augmentation installation.
+- The first post-augmentation rebuild progressed much faster than the original run.
+- Faction reputation resets after installing augmentations, while faction membership persists.
 
 ---
 
@@ -230,9 +304,33 @@ Permanent progress retained:
 | Date | Decision | Reason |
 |------|----------|--------|
 | 2026-07-12 | Use a single `worker.js` script on all rooted servers. | Simplifies deployment while learning the game. |
-| 2026-07-12 | Target only `n00dles` initially. | Reliable early-game income and hacking experience. |
-| 2026-07-12 | Purchase TOR Router and Dark Web programs early. | Accelerates server progression. |
-| 2026-07-12 | Install first augmentations as soon as three affordable upgrades were available. | Permanent bonuses outweigh the temporary reset. |
+| 2026-07-12 | Target only `n00dles` initially. | Provides reliable early-game income and hacking experience. |
+| 2026-07-12 | Purchase the TOR Router and Dark Web programs early. | Accelerates access to more servers. |
+| 2026-07-12 | Install the first three affordable augmentations together. | Permanent bonuses outweighed the temporary reset. |
+| 2026-07-13 | Restore the distributed network immediately after the first reset. | Reusable scripts allowed Run 2 to overtake Run 1 quickly. |
+| 2026-07-13 | Begin creating ServerProfiler.exe before relaySMTP.exe unlocks. | Makes productive use of time while progressing toward Hacking Level 250. |
+
+---
+
+# Run Timeline
+
+## Run 1
+
+- Started BitNode-1.
+- Built the first distributed hacking system.
+- Purchased the TOR Router.
+- Acquired BruteSSH.exe and FTPcrack.exe.
+- Joined Sector-12 and CyberSec.
+- Installed BitWire, Synaptic Enhancement Implant, and Neurotrainer I.
+
+## Run 2 — Current
+
+- Rebuilt distributed automation.
+- Reached Hacking Level 155.
+- Recovered to $42.585m.
+- Expanded active automation to 12 hosts.
+- Began creating ServerProfiler.exe.
+- Continued Sector-12 faction progression.
 
 ---
 
@@ -242,8 +340,8 @@ Permanent progress retained:
 
 ### Milestones
 
-- Created GitHub repository.
-- Created living playbook.
+- Created the GitHub repository.
+- Created the living playbook.
 - Established research sources.
 
 ---
@@ -253,18 +351,18 @@ Permanent progress retained:
 ### Major Milestones
 
 - Reached Hacking Level 93.
-- Purchased TOR Router.
-- Purchased first Hacknet Node.
-- Purchased BruteSSH.exe.
-- Built first distributed deployment system.
-- Successfully deployed `worker.js` to all rooted servers.
+- Purchased the TOR Router.
+- Purchased the first Hacknet Node.
+- Acquired BruteSSH.exe.
+- Built the first distributed deployment system.
+- Successfully deployed `worker.js` to rooted servers.
 
 ### Current State
 
 - Money: $3.712m
 - Passive production since last augmentation: $4.610m
-- Production rate: approximately $607/sec
-- Automation stable.
+- Production rate: approximately $607 per second
+- Automation stable
 
 ### Lessons Learned
 
@@ -277,7 +375,7 @@ Permanent progress retained:
 
 ### Major Milestones
 
-- Purchased FTPcrack.exe.
+- Acquired FTPcrack.exe.
 - Joined Sector-12.
 - Joined CyberSec.
 - Purchased three augmentations.
@@ -293,12 +391,43 @@ Permanent progress retained:
 - Hacking Level: 1
 - Money: $1.262k
 - Hacknet Nodes: 0
-- Automation reset.
-- Rebuilding underway.
+- Automation reset
+- Rebuilding underway
 
 ### Lessons Learned
 
-The first augmentation installation marks the transition from learning the game to accelerating progression. Although nearly all short-term progress resets, permanent augmentations make subsequent runs significantly faster.
+The first augmentation installation marked the transition from learning the game to accelerating progression. Although short-term progress reset, the permanent augmentations and reusable scripts made the next run much faster.
+
+---
+
+## Session 3 – Rebuild Complete
+
+### Major Milestones
+
+- Fully rebuilt the distributed hacking network after augmentation installation.
+- Expanded active automation to 12 hosts.
+- Reached Hacking Level 155.
+- Recovered to $42.585m.
+- Restored one Hacknet Node.
+- Acquired DeepscanV1.exe and AutoLink.exe.
+- Began creating ServerProfiler.exe and reached 69.15% completion.
+- Continued working with Sector-12, reaching 151.542 reputation and 0.773 favor.
+
+### Current State
+
+- Money: $42.585m
+- Hacking Level: 155
+- Hacknet Nodes: 1
+- Augmentations Installed: 3
+- Automation running across 12 hosts
+- Total production since last augmentation: $43.056m
+- Current production rate: approximately $784,488 per second
+- Time since last augmentation: 15h 14m 31s
+- Total play time: 21h 55m 08s
+
+### Lessons Learned
+
+The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hacking level and income, showing the combined value of permanent augmentation bonuses, retained scripts, and a repeatable deployment process.
 
 ---
 
@@ -316,16 +445,23 @@ Pending.
 
 Pending.
 
+## Session 3 Discoveries
+
+- Automation can be restored rapidly after an augmentation installation because script files remain on `home`.
+- The first augmentation set produced noticeable improvements to hacking speed, hacking level gain, and experience gain.
+- Program creation can be paused and resumed without losing progress.
+
 ---
 
 # Questions To Investigate
 
-- Optimal timing for purchased servers.
-- Best Hacknet investment strategy.
+- Optimal timing for the first purchased server.
+- Best Hacknet investment strategy from this point.
 - Efficient faction reputation farming.
-- Transition away from early-game targets.
+- Best transition away from early-game targets.
 - Batch hacking design.
-- Best augmentation purchase order.
+- Best augmentation purchase order for the second cycle.
+- Whether ServerProfiler.exe should be completed before focusing fully on Hacking Level 250.
 
 ---
 
@@ -345,4 +481,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 2 (2026-07-12)_
+_Last Updated: Session 3 (2026-07-13)_
