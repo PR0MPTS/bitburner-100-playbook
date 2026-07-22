@@ -80,7 +80,58 @@
 
 ---
 
+
+# Achievement Roadmap
+
+The ultimate objective of this playthrough is to earn **all 98 Steam achievements** while following a natural first playthrough before moving into heavy optimisation. Rather than chasing achievements individually from the beginning, progression is divided into phases that naturally build toward 100% completion.
+
+## Phase 1 — Foundation *(Current)*
+
+- [x] Build a reusable distributed hacking framework.
+- [x] Create automated deployment with `deploy.js`.
+- [x] Develop a universal `worker.js` automation loop.
+- [x] Complete the first augmentation cycle.
+- [x] Complete the second augmentation cycle.
+- [ ] Reacquire all Dark Web programs after the Run 3 reset.
+- [ ] Rejoin CyberSec and NiteSec.
+- [ ] Continue building faction reputation.
+- [ ] Prepare the next augmentation batch.
+
+## Phase 2 — Network Expansion
+
+- [ ] Root every accessible server.
+- [ ] Backdoor key faction servers.
+- [ ] Upgrade Home RAM for larger automation.
+- [ ] Purchase the first server.
+- [ ] Expand automation to higher-value targets.
+
+## Phase 3 — Optimisation
+
+- [ ] Implement advanced HWGW batch hacking.
+- [ ] Optimise faction reputation farming.
+- [ ] Optimise augmentation purchase order.
+- [ ] Unlock advanced game mechanics.
+
+## Phase 4 — Achievement Hunt
+
+- [ ] Complete hidden achievements.
+- [ ] Complete corporation achievements.
+- [ ] Complete gang achievements.
+- [ ] Complete sleeve achievements.
+- [ ] Complete Bladeburner achievements.
+- [ ] Complete BitNode-specific achievements.
+- [ ] Reach **98 / 98 Steam achievements**.
+
+### Current Focus
+
+**Phase 1 — Foundation**
+
+Run 3 is focused on rebuilding after the second augmentation installation while taking advantage of significantly stronger hacking multipliers. The priority is to establish a robust, repeatable automation framework that will make future progression—and ultimately achievement hunting—much faster and more efficient.
+
+---
+
 # Achievement Tracker
+
 
 ## Completed (13 / 98)
 
