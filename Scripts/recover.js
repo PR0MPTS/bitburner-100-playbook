@@ -1,24 +1,42 @@
 /** @param {NS} ns */
 export async function main(ns) {
-    // target n00dles server
-    const target = ns.args[0] ?? "n00dles";
-    // get the minimum security level and maximum money for the target server
+    const target = String(ns.args[0] ?? "n00dles");
+
+    const SECURITY_BUFFER = 5;
+
+    if (!ns.serverExists(target)) {
+        ns.tprint(`ERROR: Server "${target}" does not exist.`);
+        return;
+    }
+
+    if (!ns.hasRootAccess(target)) {
+        ns.tprint(`ERROR: No root access on "${target}".`);
+        return;
+    }
+
     const minSecurity = ns.getServerMinSecurityLevel(target);
     const maxMoney = ns.getServerMaxMoney(target);
 
+    if (maxMoney <= 0) {
+        ns.tprint(`ERROR: Server "${target}" has no money to recover.`);
+        return;
+    }
+
     ns.tprint(`Recovering ${target}...`);
-    // while the target server's security level is above the minimum, weaken it
-    while (ns.getServerSecurityLevel(target) > minSecurity) {
+
+    // Restore minimum security.
+    while (ns.getServerSecurityLevel(target) > minSecurity + SECURITY_BUFFER) {
         await ns.weaken(target);
     }
-    // while the target server's money is below the maximum, grow it
+
+    // Restore maximum money while keeping security under control.
     while (ns.getServerMoneyAvailable(target) < maxMoney) {
         await ns.grow(target);
-        // if the target server's security level is above the minimum, weaken it
-        if (ns.getServerSecurityLevel(target) > minSecurity) {
+
+        while (ns.getServerSecurityLevel(target) > minSecurity + SECURITY_BUFFER) {
             await ns.weaken(target);
         }
     }
 
-    ns.tprint(`${target} recovered: minimum security and maximum money.`);
+    ns.tprint(`${target} fully recovered.`);
 }

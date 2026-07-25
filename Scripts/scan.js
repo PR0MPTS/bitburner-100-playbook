@@ -1,20 +1,17 @@
-/** @param {NS} ns **/
+/** @param {NS} ns */
 export async function main(ns) {
     const server = ns.getHostname();
-    const neighbours = ns.scan(server);
+    const neighbours = ns.scan(server).sort();
 
     const hackingLevel = ns.getHackingLevel();
+    const availableOpeners = countPortOpeners(ns);
 
-    let availableOpeners = 0;
-
-    if (ns.fileExists("BruteSSH.exe", "home")) availableOpeners++;
-    if (ns.fileExists("FTPCrack.exe", "home")) availableOpeners++;
-    if (ns.fileExists("relaySMTP.exe", "home")) availableOpeners++;
-    if (ns.fileExists("HTTPWorm.exe", "home")) availableOpeners++;
-    if (ns.fileExists("SQLInject.exe", "home")) availableOpeners++;
-
-    ns.tprint(`Connected to ${server}:`);
+    ns.tprint("----- Local Network Scan -----");
+    ns.tprint(`Connected to: ${server}`);
+    ns.tprint(`Hacking level: ${hackingLevel}`);
     ns.tprint(`Port openers available: ${availableOpeners}`);
+    ns.tprint(`Connected servers: ${neighbours.length}`);
+    ns.tprint("------------------------------");
 
     for (const neighbour of neighbours) {
         const requiredLevel =
@@ -26,11 +23,17 @@ export async function main(ns) {
         const hasRoot =
             ns.hasRootAccess(neighbour);
 
+        const hasBackdoor =
+            ns.getServer(neighbour).backdoorInstalled;
+
         const currentMoney =
             ns.getServerMoneyAvailable(neighbour);
 
         const maxMoney =
             ns.getServerMaxMoney(neighbour);
+
+        const maxRam =
+            ns.getServerMaxRam(neighbour);
 
         const canHack =
             hackingLevel >= requiredLevel;
@@ -38,23 +41,49 @@ export async function main(ns) {
         const canRoot =
             availableOpeners >= requiredPorts;
 
-        let status;
+        let rootStatus;
 
         if (hasRoot) {
-            status = "ROOTED";
+            rootStatus = "ROOTED";
         } else if (canRoot) {
-            status = "ROOTABLE NOW";
+            rootStatus = "ROOTABLE NOW";
         } else {
-            status = "LOCKED";
+            rootStatus = "LOCKED";
         }
+
+        const moneyStatus =
+            maxMoney > 0
+                ? `$${ns.format.number(currentMoney)} / $${ns.format.number(maxMoney)}`
+                : "No money";
 
         ns.tprint(
             `${neighbour} | ` +
             `Hack: ${requiredLevel} ${canHack ? "(OK)" : "(LOW)"} | ` +
             `Ports: ${requiredPorts}/${availableOpeners} | ` +
-            `Status: ${status} | ` +
-            `Money: $${ns.format.number(currentMoney)} / ` +
-            `$${ns.format.number(maxMoney)}`
+            `Status: ${rootStatus} | ` +
+            `Backdoor: ${hasBackdoor ? "YES" : "NO"} | ` +
+            `RAM: ${ns.format.ram(maxRam)} | ` +
+            `Money: ${moneyStatus}`
         );
     }
+}
+
+/**
+ * Counts the port-opening programs currently available on home.
+ *
+ * @param {NS} ns
+ * @returns {number}
+ */
+function countPortOpeners(ns) {
+    const programs = [
+        "BruteSSH.exe",
+        "FTPCrack.exe",
+        "relaySMTP.exe",
+        "HTTPWorm.exe",
+        "SQLInject.exe",
+    ];
+
+    return programs.filter((program) =>
+        ns.fileExists(program, "home")
+    ).length;
 }

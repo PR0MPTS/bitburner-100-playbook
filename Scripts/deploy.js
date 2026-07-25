@@ -15,15 +15,18 @@ export async function main(ns) {
         if (server === HOME) continue;
 
         if (!ns.hasRootAccess(server)) {
-            openPorts(ns, server);
-
+            const openedPorts = openPorts(ns, server);
             const requiredPorts = ns.getServerNumPortsRequired(server);
 
-            try {
-                ns.nuke(server);
-            } catch {
+            if (openedPorts >= requiredPorts) {
+                try {
+                    ns.nuke(server);
+                } catch {
+                    ns.tprint(`Failed to gain root access on ${server}.`);
+                }
+            } else {
                 ns.tprint(
-                    `Skipped ${server}: requires ${requiredPorts} open ports.`
+                    `Skipped ${server}: opened ${openedPorts}/${requiredPorts} required ports.`
                 );
             }
         }
@@ -160,6 +163,7 @@ function scanNetwork(ns, start) {
  *
  * @param {NS} ns
  * @param {string} server
+ * @returns {number}
  */
 function openPorts(ns, server) {
     const tools = [
@@ -185,11 +189,16 @@ function openPorts(ns, server) {
         },
     ];
 
+    let openedPorts = 0;
+
     for (const tool of tools) {
-        if (ns.fileExists(tool.file, "home")) {
-            tool.run();
-        }
+        if (!ns.fileExists(tool.file, "home")) continue;
+
+        tool.run();
+        openedPorts++;
     }
+
+    return openedPorts;
 }
 
 /**

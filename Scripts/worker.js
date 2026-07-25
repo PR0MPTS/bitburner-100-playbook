@@ -1,23 +1,34 @@
 /** @param {NS} ns */
 export async function main(ns) {
-    const target = ns.args[0] ?? "n00dles";
+    const target = String(ns.args[0] ?? "n00dles");
 
-    // Weaken if security rises more than 5 above the server minimum.
-    const securityBuffer = 5;
+    // Weaken when security rises more than 5 above its minimum.
+    const SECURITY_BUFFER = 5;
 
-    // Grow whenever money falls below 25% of the server maximum.
-    const moneyThreshold = 0.25;
+    // Grow when the server falls below 75% of its maximum money.
+    const MONEY_THRESHOLD = 0.75;
+
+    if (!ns.serverExists(target)) {
+        ns.tprint(`ERROR: Server "${target}" does not exist.`);
+        return;
+    }
+
+    const maximumMoney = ns.getServerMaxMoney(target);
+
+    if (maximumMoney <= 0) {
+        ns.tprint(`ERROR: Server "${target}" has no money to hack.`);
+        return;
+    }
 
     while (true) {
         const currentSecurity = ns.getServerSecurityLevel(target);
         const minimumSecurity = ns.getServerMinSecurityLevel(target);
 
         const currentMoney = ns.getServerMoneyAvailable(target);
-        const maximumMoney = ns.getServerMaxMoney(target);
 
-        if (currentSecurity > minimumSecurity + securityBuffer) {
+        if (currentSecurity > minimumSecurity + SECURITY_BUFFER) {
             await ns.weaken(target);
-        } else if (currentMoney < maximumMoney * moneyThreshold) {
+        } else if (currentMoney < maximumMoney * MONEY_THRESHOLD) {
             await ns.grow(target);
         } else {
             await ns.hack(target);
