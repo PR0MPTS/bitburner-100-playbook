@@ -34,18 +34,25 @@
 | Current BitNode | BitNode-1 |
 | Current Run | Run 3 |
 | Current City | Sector-12 |
-| Money | $259.633m |
-| Home RAM | 8.00 GB free |
+| Money | $1.976b |
+| Home RAM | 32 GB |
 | Home Cores | *(To be recorded)* |
-| Hacking Level | 243 |
+| Hacking Level | 428 |
+| Strength | 1 |
+| Defense | 1 |
+| Dexterity | 1 |
+| Agility | 15 |
+| Charisma | 1 |
 | Karma | 0.000 |
 | Hacknet Nodes | 0 |
-| Cloud Servers | 0 / 25 |
-| Current Factions | NiteSec, Sector-12, CyberSec |
+| Purchased Servers | 4 / 25 |
+| Current Factions | The Black Hand, NiteSec, Aevum, Sector-12, CyberSec |
 | Augmentations Installed | 10 |
-| Time Since Last Augmentation | 17h 57m 48s |
-| Total Play Time | 9d 22h 34m 01s |
-| Current Focus | Expanding Run 3 automation with deploy.js V3 and rebuilding faction progress |
+| Augmentations Purchased, Not Installed | 3 |
+| Worker Threads | 1,615 |
+| Time Since Last Augmentation | 3d 19h 53m 14s |
+| Total Play Time | 13d 0h 29m 28s |
+| Current Focus | Achievement sprint, faction progression, and preparing the third augmentation installation |
 
 ---
 
@@ -53,26 +60,28 @@
 
 ## Immediate
 
-- [x] Install the second augmentation batch.
-- [x] Begin Run 3.
-- [x] Create deploy.js V2.
-- [x] Upgrade deployment automation to deploy.js V3.
-- [x] Restore distributed hacking automation.
-- [x] Rejoin CyberSec.
-- [x] Rejoin NiteSec.
-- [ ] Continue rebuilding hacking levels and income.
-- [x] Finish recreating ServerProfiler.exe.
+- [x] Join The Black Hand.
+- [x] Purchase the first four servers.
+- [x] Upgrade Home RAM to 32 GB.
+- [x] Reacquire every Dark Web program except Formulas.exe.
+- [x] Create `drain.js`.
+- [x] Create `recover.js`.
+- [x] Scale the network to 1,615 worker threads.
+- [x] Purchase Augmented Targeting I.
+- [x] Purchase CashRoot Starter Kit.
+- [x] Purchase Speech Processor Implant.
+- [ ] Continue The Black Hand reputation work.
+- [ ] Review the remaining augmentations across active factions.
+- [ ] Decide when the third augmentation batch is large enough to install.
 
 ## Short Term
 
-- [ ] Reacquire relaySMTP.exe.
-- [ ] Reacquire HTTPWorm.exe.
-- [ ] Reacquire SQLInject.exe.
-- [ ] Rejoin The Black Hand when eligible.
-- [x] Expand automation beyond the initial 12 active hosts.
-- [ ] Continue expanding beyond the current 17 active hosts.
-- [ ] Upgrade Home RAM.
-- [ ] Begin the next faction-reputation cycle.
+- [ ] Complete the current achievement sprint.
+- [ ] Use `drain.js` and `recover.js` for the server-draining achievement workflow.
+- [ ] Continue expanding purchased-server capacity.
+- [ ] Upgrade Home RAM beyond 32 GB when cost-effective.
+- [ ] Reach Hacking Level 1000 and acquire Formulas.exe.
+- [ ] Prepare Run 4 recovery steps before installing augmentations.
 
 ## Long Term
 
@@ -82,30 +91,32 @@
 
 ---
 
-
 # Achievement Roadmap
 
-The ultimate objective of this playthrough is to earn **all 98 Steam achievements** while following a natural first playthrough before moving into heavy optimisation. Rather than chasing achievements individually from the beginning, progression is divided into phases that naturally build toward 100% completion.
+The ultimate objective of this playthrough is to earn **all 98 Steam achievements** while following a natural first playthrough before moving into heavy optimisation. Progression is divided into phases that naturally build toward 100% completion.
 
-## Phase 1 — Foundation *(Current)*
+## Phase 1 — Foundation
 
 - [x] Build a reusable distributed hacking framework.
 - [x] Create automated deployment with `deploy.js`.
 - [x] Develop a universal `worker.js` automation loop.
 - [x] Complete the first augmentation cycle.
 - [x] Complete the second augmentation cycle.
-- [ ] Reacquire all Dark Web programs after the Run 3 reset.
-- [ ] Rejoin CyberSec and NiteSec.
-- [ ] Continue building faction reputation.
-- [ ] Prepare the next augmentation batch.
+- [x] Reacquire the full Dark Web program set except Formulas.exe.
+- [x] Rejoin CyberSec and NiteSec.
+- [x] Join The Black Hand.
+- [x] Begin purchased-server infrastructure.
+- [ ] Prepare the third augmentation batch.
 
-## Phase 2 — Network Expansion
+## Phase 2 — Network Expansion *(Current)*
 
 - [ ] Root every accessible server.
-- [ ] Backdoor key faction servers.
-- [ ] Upgrade Home RAM for larger automation.
-- [ ] Purchase the first server.
-- [ ] Expand automation to higher-value targets.
+- [x] Backdoor key early hacking-faction servers.
+- [x] Upgrade Home RAM to 32 GB.
+- [x] Purchase the first server.
+- [x] Expand to four purchased servers.
+- [x] Reach 1,615 worker threads.
+- [ ] Continue expanding automation to stronger targets.
 
 ## Phase 3 — Optimisation
 
@@ -126,14 +137,13 @@ The ultimate objective of this playthrough is to earn **all 98 Steam achievement
 
 ### Current Focus
 
-**Phase 1 — Foundation**
+**Phase 2 — Network Expansion and Achievement Sprint**
 
-Run 3 is focused on rebuilding after the second augmentation installation while taking advantage of significantly stronger hacking multipliers. The priority is to establish a robust, repeatable automation framework that will make future progression—and ultimately achievement hunting—much faster and more efficient.
+Run 3 has moved beyond recovery. The network now includes purchased servers, 32 GB of Home RAM, 1,615 worker threads, and access to The Black Hand. The immediate focus is using purpose-built scripts to knock out early achievements while continuing to accumulate augmentations for Run 4.
 
 ---
 
 # Achievement Tracker
-
 
 ## Completed (13 / 98)
 
@@ -157,6 +167,8 @@ Run 3 is focused on rebuilding after the second augmentation installation while 
 
 **85 Steam achievements remaining**
 
+> Session 8 introduced an active achievement-sprint workflow, but no additional completed achievement was confirmed in the supplied screenshots.
+
 ---
 
 # Strategy
@@ -167,25 +179,25 @@ Run 3 is focused on rebuilding after the second augmentation installation while 
 
 - Built the first distributed automation network.
 - Purchased the TOR Router.
-- Acquired the first five port-opening programs during Run 2.
-- Joined Sector-12, CyberSec, and NiteSec.
-- Installed the first augmentation batch.
-- Rebuilt and expanded the hacking network after the first installation.
-- Completed a second, much larger augmentation cycle.
-- Began Run 3 with substantially stronger hacking multipliers.
+- Acquired the full port-opening program set.
+- Joined Sector-12, CyberSec, NiteSec, Aevum, and The Black Hand.
+- Completed two augmentation cycles.
+- Rebuilt and expanded the hacking network after each installation.
+- Began purchased-server infrastructure.
+- Built dedicated achievement scripts.
 
 ### Current Strategy
 
-Run 3 is a rapid rebuild cycle. The second augmentation batch increased hacking money, hacking level, hacking experience, and hacking speed enough that hacking skill is climbing far faster than in earlier runs. The immediate goal is to use `deploy.js V3` to restore the network quickly, rejoin the hacking factions, and return to the strongest available progression path without spending long on low-value early-game work.
+Run 3 is now an expansion and achievement cycle rather than a basic rebuild. The combination of high hacking multipliers, `deploy.js V3`, four purchased servers, and 1,615 worker threads provides enough capacity to pursue achievements without stopping normal income and faction progression.
 
 ### Current Priorities
 
-1. Keep distributed hacking active while rebuilding.
-2. Rejoin CyberSec and NiteSec as soon as their servers are available.
-3. Finish rebuilding the essential program set.
-4. Use the improved augmentation multipliers to accelerate faction access.
-5. Avoid unnecessary Hacknet spending unless it supports an achievement or clear income goal.
-6. Prepare the next augmentation batch only after meaningful faction progress.
+1. Continue running distributed hacking automation.
+2. Use `drain.js` to reduce a selected server to zero money.
+3. Use `recover.js` to restore drained targets after achievement attempts.
+4. Build The Black Hand reputation and review its eight remaining augmentations.
+5. Accumulate a worthwhile third augmentation batch.
+6. Keep Formulas.exe as the final program milestone for Hacking Level 1000.
 
 ---
 
@@ -208,7 +220,11 @@ _TBD_
 | Script | Purpose | Status |
 |---------|---------|--------|
 | worker.js | Distributed hack / grow / weaken automation | ✅ Active |
-| deploy.js V3 | Scans, roots, deploys, selects targets, and starts workers more efficiently | ✅ Active |
+| deploy.js V3 | Scans, roots, deploys, selects targets, and starts workers | ✅ Active |
+| drain.js | Aggressively drains a target server's money for achievement attempts | ✅ Available |
+| recover.js | Restores a drained server's money and security state | ✅ Available |
+| analyzeServers.js | Reviews server suitability and network information | ✅ Available |
+| weaken-only.js | Runs dedicated weaken operations | ✅ Available |
 | scan.js | Network discovery | ✅ Available |
 | n00dles.js | Early-game hacking helper | ✅ Available |
 | hack.js | Dedicated hacking action | ✅ Available |
@@ -217,34 +233,23 @@ _TBD_
 
 ## deploy.js V3
 
-The third deployment version improves the post-augmentation recovery workflow by discovering eligible servers, gaining root access where possible, copying the worker script, using available RAM automatically, and selecting a suitable target when one is not provided.
+The third deployment version discovers eligible servers, opens all ports supported by the available programs, gains root access where possible, copies the worker script, calculates usable threads, and automatically chooses a suitable target when none is supplied.
 
-## Current Deployment
+## Achievement Scripts
 
-Automation is currently active on 17 hosts:
+### drain.js
 
-- n00dles
-- foodnstuff
-- sigma-cosmetics
-- joesguns
-- hong-fang-tea
-- harakiri-sushi
-- iron-gym
-- CSEC
-- max-hardware
-- nectar-net
-- zer0
-- neo-net
-- phantasy
-- omega-net
-- silver-helix
-- the-hub
-- avmnite-02h
+Created to deliberately drive a target server's available money to zero without changing the normal `worker.js` logic. This isolates the achievement attempt from the main production network.
 
-### Current Production
+### recover.js
 
-- Total production since the latest augmentation installation: $101.627m
-- Current production rate: approximately $1.571k per second
+Created as the companion recovery tool for `drain.js`. It weakens and grows a depleted target so the server can return to normal use after the achievement attempt.
+
+## Current Capacity
+
+- Total worker threads reached: **1,615**
+- Purchased servers: **4**
+- Home RAM: **32 GB**
 
 ---
 
@@ -259,27 +264,20 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | NUKE.exe | ✅ Acquired | Gains root access when enough ports are open |
 | BruteSSH.exe | ✅ Acquired | Opens SSH ports |
 | FTPcrack.exe | ✅ Acquired | Opens FTP ports |
+| relaySMTP.exe | ✅ Acquired | Opens SMTP ports |
+| HTTPWorm.exe | ✅ Acquired | Opens HTTP ports |
+| SQLInject.exe | ✅ Acquired | Opens SQL ports |
 | DeepscanV1.exe | ✅ Acquired | Extends scan-analyze depth to 5 |
+| DeepscanV2.exe | ✅ Acquired | Extends scan-analyze depth to 10 |
 | ServerProfiler.exe | ✅ Acquired | Displays hacking and Netscript information about servers |
 | AutoLink.exe | ✅ Acquired | Enables direct connection through scan-analyze |
+| DarkscapeNavigator.exe | ✅ Acquired | Dark Web navigation utility |
 
-
-## Not Yet Reacquired This Run
+## Not Yet Acquired
 
 | Program | Hacking Level Required |
 |---------|------------------------|
-| relaySMTP.exe | 250 |
-| DeepscanV2.exe | 400 |
-| HTTPWorm.exe | 500 |
-| SQLInject.exe | 750 |
 | Formulas.exe | 1000 |
-
-## Previously Acquired
-
-- relaySMTP.exe
-- HTTPWorm.exe
-- SQLInject.exe
-- ServerProfiler.exe
 
 ---
 
@@ -287,35 +285,22 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 ## Purchased Servers
 
-None.
-
-## Rooted and Active Hosts
-
-- n00dles
-- foodnstuff
-- sigma-cosmetics
-- joesguns
-- hong-fang-tea
-- harakiri-sushi
-- iron-gym
-- CSEC
-- max-hardware
-- nectar-net
-- zer0
-- neo-net
-- phantasy
-- omega-net
-- silver-helix
-- the-hub
-- avmnite-02h
+| Count | Status | Notes |
+|------:|--------|-------|
+| 4 / 25 | ✅ Active | First purchased-server expansion completed during Session 8 |
 
 ## Home Upgrades
 
 | Upgrade | Status |
 |----------|--------|
-| Free RAM | 8.00 GB |
-| Total RAM | *(To be recorded)* |
+| RAM | 32 GB |
 | CPU Cores | *(To be recorded)* |
+
+## Network Capacity
+
+- 1,615 worker threads available across the distributed network.
+- Purchased servers now supplement rooted public servers.
+- `deploy.js V3` remains the central deployment tool.
 
 ---
 
@@ -323,7 +308,9 @@ None.
 
 ## Current Membership
 
+- The Black Hand
 - NiteSec
+- Aevum
 - Sector-12
 - CyberSec
 
@@ -331,23 +318,21 @@ None.
 
 | Faction | Reputation | Favor | Augmentations Remaining | Notes |
 |---------|------------|-------|-------------------------|-------|
-| NiteSec | 45.926 | 193.759 | 4 | Rejoined during Run 3 |
-| Sector-12 | 87.369k | 54.322 | 5 | Current city faction progress |
-| CyberSec | 38.273 | 53.465 | 0 | Rejoined; no augmentations remaining |
-
-## Rumours and Rejoin Targets
-
-| Faction | Status | Notes |
-|---------|--------|-------|
-| The Black Hand | Rumour available | `I.I.I.I` clue displayed |
+| The Black Hand | 24.774k | 0.000 | 8 | Joined during Session 8; newest hacking faction |
+| NiteSec | 925.528k | 193.759 | 4 | Major reputation bank retained during Run 3 |
+| Aevum | 906.217 | 0.000 | 2 | Joined during Run 3 |
+| Sector-12 | 156.064k | 54.322 | 2 | Two augmentations remaining |
+| CyberSec | 67.756k | 53.465 | 0 | Fully cleared of augmentations |
 
 ## Faction History
 
 | Faction | Status | Notes |
 |---------|--------|-------|
-| Sector-12 | Rejoined / Current | First city faction |
-| CyberSec | Rejoined / Current | No augmentations remaining |
-| NiteSec | Rejoined / Current | Four augmentations remaining |
+| Sector-12 | Current | First city faction |
+| CyberSec | Current | No augmentations remaining |
+| NiteSec | Current | Four augmentations remaining |
+| Aevum | Current | Two augmentations remaining |
+| The Black Hand | Current | Joined after backdooring `I.I.I.I` |
 
 ---
 
@@ -367,6 +352,14 @@ None.
 | Neurotrainer II | Run 2 → Run 3 |
 | Wired Reflexes | Run 2 → Run 3 |
 | NeuroFlux Governor - Level 4 | Run 2 → Run 3 |
+
+## Purchased, Not Installed
+
+| Augmentation | Status |
+|--------------|--------|
+| Augmented Targeting I | 🟡 Purchased |
+| CashRoot Starter Kit | 🟡 Purchased |
+| Speech Processor Implant | 🟡 Purchased |
 
 ## Current Multipliers
 
@@ -410,7 +403,9 @@ Verified during this playthrough:
 - Purchased augmentations can be held without installing them immediately.
 - Waiting to install several augmentations together avoids unnecessary repeated resets.
 - Stronger augmentation batches dramatically accelerate later-run hacking growth.
-- A reusable deployment script is one of the most valuable tools for recovering after a reset.
+- Purchased servers remain a major source of controllable RAM and thread capacity.
+- Dedicated achievement scripts prevent one-off objectives from disrupting the main worker loop.
+- The Black Hand becomes available after gaining access to and backdooring `I.I.I.I`.
 
 ---
 
@@ -423,13 +418,15 @@ Verified during this playthrough:
 | 2026-07-12 | Purchase the TOR Router and Dark Web programs early. | Accelerates access to more servers. |
 | 2026-07-12 | Install the first three affordable augmentations together. | Permanent bonuses outweighed the temporary reset. |
 | 2026-07-13 | Restore the distributed network immediately after the first reset. | Reusable scripts allowed Run 2 to overtake Run 1 quickly. |
-| 2026-07-13 | Begin creating ServerProfiler.exe before relaySMTP.exe unlocks. | Made productive use of time while progressing toward Hacking Level 250. |
 | 2026-07-13 | Join NiteSec and begin hacking contracts. | Opened access to stronger hacking-focused augmentations. |
-| 2026-07-13 | Purchase Cranial Signal Processors - Gen I without installing it immediately. | Allowed more augmentations to be accumulated before the next reset. |
 | 2026-07-20 | Continue the second augmentation cycle until a substantial batch was ready. | Maximized the value of the next reset. |
 | 2026-07-21 | Install the second augmentation batch and begin Run 3. | The combined hacking bonuses were large enough to justify resetting. |
 | 2026-07-21 | Replace the original deployment workflow with deploy.js V2. | Speeds up recovery and reduces repetitive manual deployment work. |
 | 2026-07-22 | Upgrade deployment automation to deploy.js V3. | Adds automatic target selection and improves hands-off recovery after resets. |
+| 2026-07-25 | Create `drain.js` and `recover.js`. | Supports achievement attempts without permanently disrupting production targets. |
+| 2026-07-25 | Begin purchased-server expansion and reach four servers. | Adds reliable RAM and increases total worker-thread capacity. |
+| 2026-07-25 | Upgrade Home RAM to 32 GB. | Improves local scripting capacity and supports larger automation tools. |
+| 2026-07-25 | Purchase three additional augmentations without installing them. | Continues building a worthwhile Run 4 package before resetting. |
 
 ---
 
@@ -458,12 +455,15 @@ Verified during this playthrough:
 
 - Installed seven additional augmentations, bringing the total to 10.
 - Began with substantially improved hacking multipliers.
-- Created deploy.js V2.
-- Upgraded deployment automation to deploy.js V3.
-- Restored distributed automation across 17 hosts.
-- Reached Hacking Level 243 during the first day of Run 3.
+- Created deploy.js V2 and upgraded it to deploy.js V3.
 - Rejoined Sector-12, CyberSec, and NiteSec.
-- Recreated ServerProfiler.exe and continued rebuilding the program set.
+- Joined Aevum and The Black Hand.
+- Reacquired all Dark Web programs except Formulas.exe.
+- Upgraded Home RAM to 32 GB.
+- Purchased four servers.
+- Reached 1,615 worker threads.
+- Created `drain.js` and `recover.js` for the achievement sprint.
+- Purchased three augmentations for the eventual Run 4 reset.
 
 ---
 
@@ -557,24 +557,15 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 
 - Continued NiteSec and faction progression.
 - Acquired HTTPWorm.exe and SQLInject.exe.
-- Earned the `The original hacker` achievement by making $10m from Hacknet Nodes.
-- Unlocked faction donations and earned the `Donate!` achievement.
-- Purchased the remaining planned augmentation batch:
-  - Cranial Signal Processors - Gen I
-  - Cranial Signal Processors - Gen II
-  - Cranial Signal Processors - Gen III
-  - DataJack
-  - Neurotrainer II
-  - Wired Reflexes
-  - NeuroFlux Governor - Level 4
-- Installed the full batch.
+- Earned `The original hacker`.
+- Unlocked faction donations and earned `Donate!`.
+- Purchased and installed the full second augmentation batch.
 - Ended Run 2.
 
 ### Lessons Learned
 
 - Waiting for a substantial augmentation batch produced a much stronger next-run starting point.
 - Money that would be lost during installation is best spent on useful augmentations before resetting.
-- NeuroFlux Governor provided a final permanent gain when other faction purchases were exhausted.
 
 ---
 
@@ -584,36 +575,15 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 
 - Began Run 3 with 10 installed augmentations.
 - Created deploy.js V2.
-- Upgraded deployment automation to deploy.js V3.
-- Restored distributed automation across 17 hosts.
-- Reached Hacking Level 199 in under three hours.
-- Rejoined Sector-12, CyberSec, and NiteSec.
-- Reacquired BruteSSH.exe, FTPcrack.exe, DeepscanV1.exe, and AutoLink.exe.
+- Restored distributed automation.
+- Rejoined Sector-12.
+- Reacquired early programs.
 - Began recreating ServerProfiler.exe.
-- Confirmed rumours for CyberSec, NiteSec, and The Black Hand.
-- Increased the Steam achievement total to 13 / 98.
-
-### Current State
-
-- Money: $47.470m
-- Hacking Level: 199
-- Hacknet Nodes: 0
-- Augmentations Installed: 10
-- Active rooted hosts: 12
-- Current faction: Sector-12
-- Sector-12 reputation: 308.688
-- Sector-12 favor: 54.322
-- ServerProfiler.exe progress: 25.32%
-- Time since last augmentation: 2h 58m 51s
-- Total play time: 9d 7h 35m 05s
 
 ### Lessons Learned
 
 - The larger augmentation package transformed the pace of the early rebuild.
-- Hacking skill now rises far faster than in Runs 1 and 2.
-- deploy.js V2 makes the post-installation recovery process significantly easier.
-- Faction memberships must be regained after installation, even though favor and achievements persist.
-- The project is moving from basic survival automation toward repeatable run-reset automation.
+- Hacking skill rose far faster than in Runs 1 and 2.
 
 ---
 
@@ -622,37 +592,67 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 ### Major Milestones
 
 - Upgraded deployment automation from deploy.js V2 to deploy.js V3.
-- Expanded distributed automation from 12 to 17 active hosts.
-- Rejoined CyberSec and NiteSec alongside Sector-12.
+- Expanded distributed automation to 17 active hosts.
+- Rejoined CyberSec and NiteSec.
 - Recreated ServerProfiler.exe.
 - Reached Hacking Level 243.
 - Increased available money to $259.633m.
-- Generated $101.627m from scripts since the latest augmentation installation.
-- Continued rebuilding quickly under the stronger Run 3 augmentation multipliers.
-
-### Current State
-
-- Money: $259.633m
-- Hacking Level: 243
-- Hacknet Nodes: 0
-- Augmentations Installed: 10
-- Active rooted hosts: 17
-- Current factions: NiteSec, Sector-12, CyberSec
-- NiteSec reputation: 45.926
-- NiteSec favor: 193.759
-- Sector-12 reputation: 87.369k
-- Sector-12 favor: 54.322
-- CyberSec reputation: 38.273
-- CyberSec favor: 53.465
-- Time since last augmentation: 17h 57m 48s
-- Total play time: 9d 22h 34m 01s
 
 ### Lessons Learned
 
-- deploy.js V3 further reduces manual work by selecting a target automatically when none is supplied.
-- Run 3 faction recovery is much faster because high retained favor accelerates reputation gain.
-- The current augmentation package continues to compress early-run rebuilding time.
-- CyberSec has no remaining augmentations, so future faction effort should prioritise NiteSec, Sector-12, and the next hacking faction.
+- deploy.js V3 further reduced manual work through automatic target selection.
+- Retained faction favor made Run 3 faction recovery much faster.
+- CyberSec was fully cleared of augmentations.
+
+---
+
+## Session 8 – Achievement Sprint and Infrastructure Expansion
+
+### Major Milestones
+
+- Reached Hacking Level 428.
+- Increased available money to $1.976b.
+- Joined The Black Hand after backdooring `I.I.I.I`.
+- Joined Aevum.
+- Purchased four servers.
+- Upgraded Home RAM to 32 GB.
+- Expanded the distributed network to 1,615 worker threads.
+- Reacquired every Dark Web program except Formulas.exe.
+- Created `drain.js` for the server-draining achievement attempt.
+- Created `recover.js` to restore drained targets.
+- Purchased three augmentations without installing them:
+  - Augmented Targeting I
+  - CashRoot Starter Kit
+  - Speech Processor Implant
+- Continued building reputation across The Black Hand, NiteSec, Aevum, and Sector-12.
+
+### Current State
+
+- Money: $1.976b
+- Hacking Level: 428
+- Agility: 15
+- Purchased Servers: 4 / 25
+- Home RAM: 32 GB
+- Hacknet Nodes: 0
+- Augmentations Installed: 10
+- Augmentations Purchased, Not Installed: 3
+- Worker Threads: 1,615
+- Current factions: The Black Hand, NiteSec, Aevum, Sector-12, CyberSec
+- The Black Hand reputation: 24.774k
+- NiteSec reputation: 925.528k
+- Aevum reputation: 906.217
+- Sector-12 reputation: 156.064k
+- CyberSec reputation: 67.756k
+- Time since last augmentation: 3d 19h 53m 14s
+- Total play time: 13d 0h 29m 28s
+
+### Lessons Learned
+
+- Purpose-built scripts are useful for achievements that conflict with normal production logic.
+- Purchased servers quickly multiply total worker capacity once the economy can support them.
+- The achievement sprint can run alongside normal faction and augmentation progression.
+- Run 3 is now strong enough to treat early achievements as side objectives rather than major detours.
+- The third augmentation cycle should still be delayed until the purchased batch is large enough to justify another reset.
 
 ---
 
@@ -690,30 +690,37 @@ Pending.
 
 - Faction memberships reset after augmentation installation, while faction favor persists.
 - Program files must be reacquired or recreated after installation.
-- deploy.js V2 reduces the amount of manual work required after a reset.
 - A strong hacking augmentation batch can compress many hours of early progression into a few hours.
 
 ## Session 7 Discoveries
 
 - deploy.js V3 can choose a target automatically when one is not supplied.
-- High retained faction favor makes rejoining factions and rebuilding reputation substantially faster.
-- CyberSec has been fully cleared of available augmentations.
-- Run 3 automation scaled from 12 to 17 active hosts without requiring purchased servers.
+- High retained faction favor makes rebuilding reputation substantially faster.
+- Run 3 automation scaled beyond the initial recovery network.
+
+## Session 8 Discoveries
+
+- A separate drain/recovery script pair is safer than modifying the general worker loop for a one-off achievement.
+- Four purchased servers plus rooted public hosts produced 1,615 worker threads.
+- All Dark Web programs except Formulas.exe were obtainable before Hacking Level 1000.
+- The Black Hand provides the next major hacking-faction augmentation pool.
+- Home RAM upgrades become increasingly valuable as automation and utility scripts grow.
 
 ---
 
 # Questions To Investigate
 
-- Optimal timing for the first purchased server.
-- Whether Hacknet investment remains worthwhile outside achievement goals.
-- Best order for rejoining CyberSec, NiteSec, and The Black Hand.
-- Best transition away from early-game targets.
-- Batch hacking design.
+- Which server is the safest and fastest target for the drain-to-zero achievement?
+- Whether `drain.js` should stop automatically once the target reaches zero money.
+- Whether `recover.js` should restore both maximum money and minimum security before exiting.
 - Best augmentation purchase order for the third cycle.
-- When to begin purchased-server infrastructure.
-- Continue tuning deploy.js V3 target selection as stronger servers become viable.
-- When to begin using faction RAM sharing.
-- Which remaining Sector-12 augmentations are worth buying during Run 3.
+- How many additional augmentations should be purchased before Run 4?
+- When to expand beyond four purchased servers.
+- When purchased servers should be replaced with larger RAM tiers.
+- Best next target for deploy.js V3 as hacking skill continues to rise.
+- When to begin advanced HWGW batch hacking.
+- Whether faction RAM sharing is worthwhile with 32 GB Home RAM.
+- Which Black Hand augmentations provide the best immediate value.
 
 ---
 
@@ -733,4 +740,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 7 — Run 3 Expansion (2026-07-22)_
+_Last Updated: Session 8 — Achievement Sprint and Infrastructure Expansion (2026-07-25)_
