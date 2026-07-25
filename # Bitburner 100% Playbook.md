@@ -76,8 +76,8 @@
 
 ## Short Term
 
-- [ ] Complete the current achievement sprint.
-- [ ] Use `drain.js` and `recover.js` for the server-draining achievement workflow.
+- [x] Complete the first Session 8 achievement sprint.
+- [x] Use `drain.js` and `recover.js` to earn the server-draining achievement.
 - [ ] Continue expanding purchased-server capacity.
 - [ ] Upgrade Home RAM beyond 32 GB when cost-effective.
 - [ ] Reach Hacking Level 1000 and acquire Formulas.exe.
@@ -145,7 +145,7 @@ Run 3 has moved beyond recovery. The network now includes purchased servers, 32 
 
 # Achievement Tracker
 
-## Completed (13 / 98)
+## Completed (17 / 98)
 
 | Achievement | Date |
 |------------|------|
@@ -162,12 +162,16 @@ Run 3 has moved beyond recovery. The network now includes purchased servers, 32 
 | ✅ SQLInject.exe (Acquire SQLInject.exe) | 2026-07-14 |
 | ✅ The original hacker (Make $10m from Hacknet Nodes) | 2026-07-20 |
 | ✅ Donate! (Unlock faction donations) | 2026-07-21 |
+| ✅ I.I.I.I (Join The Black Hand) | 2026-07-25 |
+| ✅ World explorer (Travel anywhere) | 2026-07-25 |
+| ✅ Gains! (Work out at a gym) | 2026-07-25 |
+| ✅ Big trouble (Drain a server of all its money) | 2026-07-25 |
 
 ## Remaining
 
-**85 Steam achievements remaining**
+**81 Steam achievements remaining**
 
-> Session 8 introduced an active achievement-sprint workflow, but no additional completed achievement was confirmed in the supplied screenshots.
+> Session 8 added four Steam achievements: joining The Black Hand, travelling to another city, working out at a gym, and draining a server to $0.
 
 ---
 
@@ -618,7 +622,7 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 - Upgraded Home RAM to 32 GB.
 - Expanded the distributed network to 1,615 worker threads.
 - Reacquired every Dark Web program except Formulas.exe.
-- Created `drain.js` for the server-draining achievement attempt.
+- Created `drain.js` and earned `Big trouble` by draining a server to $0.
 - Created `recover.js` to restore drained targets.
 - Purchased three augmentations without installing them:
   - Augmented Targeting I
@@ -710,7 +714,7 @@ Pending.
 
 # Questions To Investigate
 
-- Which server is the safest and fastest target for the drain-to-zero achievement?
+- Which additional low-risk achievements should be targeted next?
 - Whether `drain.js` should stop automatically once the target reaches zero money.
 - Whether `recover.js` should restore both maximum money and minimum security before exiting.
 - Best augmentation purchase order for the third cycle.
