@@ -132,13 +132,161 @@ Potentially useful, but must be verified before influencing the Playbook.
 
 ## Achievement Routing
 
-**Status:** Pending
+**Status:** Active
 
 **Sources:**
-- TBD
+- In-game achievement tracker
+- Official source code when exact trigger conditions require verification
+- Playthrough observations from Sessions 8 and 9
 
 **Summary:**  
-TBD
+
+Achievement hunting is now being integrated into normal progression instead of being treated as a separate endgame task.
+
+**Verified Examples**
+
+- `Big trouble` unlocks when a server is drained to $0.
+- `Thank you folders!` unlocks when at least 30 scripts exist on `home`.
+- `Formulas.exe` unlocks when Formulas.exe is acquired.
+- `World explorer` unlocks after travelling.
+- `Gains!` unlocks after working out at a gym.
+- `I.I.I.I` unlocks after joining The Black Hand.
+
+**Routing Principle**
+
+Prefer achievements that can be completed alongside normal progression, faction work, automation, or pre-reset spending. Delay expensive or disruptive achievements until the network and economy can absorb the detour.
+
+---
+
+
+# Verified Playthrough Findings
+
+## Augmentation Cycle Strategy
+
+**Reliability:** ★★★★☆
+
+**Source:** Repeated playthrough observation across Runs 1–3
+
+**Findings:**
+
+- Installing several augmentations together is more efficient than resetting for every individual upgrade.
+- Purchased augmentations can be held without immediately installing them.
+- A short delay before installation can be worthwhile when one or two nearby achievements can be completed first.
+- Money that will be lost on reset should be converted into permanent value before installation.
+- Useful end-of-run purchases include augmentations, NeuroFlux Governor levels, Home RAM, and other permanent upgrades.
+- Run 3 was the most efficient reset cycle because it combined story progression, faction work, infrastructure upgrades, and achievement hunting.
+
+---
+
+## Reset Persistence
+
+**Reliability:** ★★★★☆
+
+**Source:** Direct playthrough observation
+
+**Persists after augmentation installation:**
+
+- Installed augmentations
+- Achievements
+- Faction favor
+- Scripts stored on `home`
+- Player knowledge and documented routes
+
+**Must be rebuilt or reacquired:**
+
+- Money
+- Hacking level
+- Root access
+- Active scripts
+- Hacknet Nodes
+- Programs
+- Faction membership
+- Faction reputation
+
+**Operational implication:**  
+The most valuable reset-preparation asset is a reusable automation and recovery toolkit stored on `home`.
+
+---
+
+## Home Infrastructure
+
+**Reliability:** ★★★★☆
+
+**Source:** Direct playthrough observation
+
+**Findings:**
+
+- Home RAM upgrades are permanent and become increasingly valuable as utility scripts and automation grow.
+- Home RAM was upgraded from 32 GB to 1 TB before the end of Run 3.
+- Home RAM works well as an end-of-run money sink when the next augmentation installation is imminent.
+- Extra Home RAM supports deployment control, achievement scripts, faction RAM sharing, and future orchestration tools.
+
+---
+
+## Dark Web Program Progression
+
+**Reliability:** ★★★★☆
+
+**Source:** In-game program list and achievement tracker
+
+**Findings:**
+
+- The complete program set includes:
+  - BruteSSH.exe
+  - FTPcrack.exe
+  - relaySMTP.exe
+  - HTTPWorm.exe
+  - SQLInject.exe
+  - DeepscanV1.exe
+  - DeepscanV2.exe
+  - AutoLink.exe
+  - ServerProfiler.exe
+  - DarkscapeNavigator.exe
+  - Formulas.exe
+- Formulas.exe is the final major Dark Web program milestone.
+- Acquiring Formulas.exe awards its own Steam achievement.
+- Owning every port-opening program significantly simplifies network rooting and faction progression.
+
+---
+
+## Automation Reliability
+
+**Reliability:** ★★★★☆
+
+**Source:** Direct playthrough observation
+
+**Current stable toolset:**
+
+- `deploy.js`
+- `worker.js`
+- `drain.js`
+- `recover.js`
+
+**Findings:**
+
+- `deploy.js` evolved from manual deployment support into an automated network recovery tool.
+- `worker.js` provides stable unattended hack/grow/weaken behavior.
+- `drain.js` isolates the server-draining achievement from normal production logic.
+- `recover.js` restores depleted servers after one-off achievement work.
+- The automation network remained stable through a long Run 3 economy and faction grind.
+- Purpose-built scripts are safer than temporarily changing general production scripts for achievement objectives.
+
+---
+
+## Achievement-Efficient Progression
+
+**Reliability:** ★★★★☆
+
+**Source:** Sessions 8 and 9
+
+**Findings:**
+
+- Story progression and achievement hunting can run in parallel.
+- Low-risk achievements should be completed when their setup cost is small.
+- Achievement work should not interrupt stable income or faction progression unless the reward justifies the delay.
+- The `Thank you folders!` achievement can be planned around useful script growth rather than filler alone.
+- The `Big trouble` achievement is safest when paired with a recovery script.
+- The most efficient reset so far deliberately waited for two nearby achievements before installation.
 
 ---
 
@@ -154,15 +302,15 @@ Our current strategy favours reliable, unattended automation over short-term opt
 
 **Key Decisions**
 
-- Use a central `deploy.js` script to automatically deploy workers to every rooted server.
+- Use a central `deploy.js` script to scan, root, deploy, choose targets, and restore the network after resets.
 - Use a generic `worker.js` that continuously decides whether to weaken, grow, or hack based on the server's current state.
 - Allow deployment to any target by passing the desired server to `deploy.js`, avoiding hard-coded targets.
 - Optimise for continuous progression while offline or AFK rather than maximum income per second.
-- Delay advanced HWGW batch hacking until later in the playthrough when RAM, hacking speed, and available tools make batching worthwhile.
+- Delay advanced HWGW batch hacking until later in the playthrough when RAM, hacking speed, formulas access, and available tools make batching worthwhile.
 
 **Outcome**
 
-This approach provides stable income, consistent hacking experience, and a strong platform for progressing through factions, augmentations, and eventually the remaining achievements.
+This approach has provided stable income, consistent hacking experience, fast post-reset recovery, and enough spare capacity to pursue achievements without abandoning faction or story progression.
 
 ---
 
@@ -185,3 +333,20 @@ This approach provides stable income, consistent hacking experience, and a stron
 - Confirmed the transition from individual hack scripts to a self-balancing worker model.
 - Recorded the decision to prioritise reliability and unattended progression before advanced batch hacking.
 - Identified achievement-focused research as the next major area of investigation following faction progression and BruteSSH acquisition.
+
+## 2026-07-25
+
+- Added achievement-routing observations from the first dedicated achievement sprint.
+- Documented `drain.js` and `recover.js` as a safe achievement workflow.
+- Recorded that purchased servers and Home RAM upgrades can support achievement hunting without stopping normal automation.
+- Confirmed that The Black Hand becomes available through progression involving `I.I.I.I`.
+
+## 2026-07-30
+
+- Documented Formulas.exe as the final Dark Web program milestone and a Steam achievement trigger.
+- Recorded `Thank you folders!` as requiring at least 30 scripts on `home`.
+- Added reset-persistence findings for augmentations, achievements, favor, scripts, programs, factions, and reputation.
+- Added the end-of-run spending strategy: convert reset-lost cash into permanent upgrades before installation.
+- Recorded the Home RAM upgrade from 32 GB to 1 TB.
+- Documented Run 3 as the first successful balance of story progression, faction progression, infrastructure growth, and achievement hunting.
+- Confirmed that the stable automation stack remained `deploy.js`, `worker.js`, `drain.js`, and `recover.js`.

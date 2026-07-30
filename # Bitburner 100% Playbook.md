@@ -34,8 +34,8 @@
 | Current BitNode | BitNode-1 |
 | Current Run | Run 3 |
 | Current City | Sector-12 |
-| Money | $1.976b |
-| Home RAM | 32 GB |
+| Money | Approximately $290.369m remaining after major purchases |
+| Home RAM | 1 TB |
 | Home Cores | *(To be recorded)* |
 | Hacking Level | 428 |
 | Strength | 1 |
@@ -48,11 +48,11 @@
 | Purchased Servers | 4 / 25 |
 | Current Factions | The Black Hand, NiteSec, Aevum, Sector-12, CyberSec |
 | Augmentations Installed | 10 |
-| Augmentations Purchased, Not Installed | 3 |
+| Augmentations Purchased, Not Installed | 8 |
 | Worker Threads | 1,615 |
 | Time Since Last Augmentation | 3d 19h 53m 14s |
 | Total Play Time | 13d 0h 29m 28s |
-| Current Focus | Achievement sprint, faction progression, and preparing the third augmentation installation |
+| Current Focus | Finalising Run 3 and preparing the third augmentation installation |
 
 ---
 
@@ -62,7 +62,7 @@
 
 - [x] Join The Black Hand.
 - [x] Purchase the first four servers.
-- [x] Upgrade Home RAM to 32 GB.
+- [x] Upgrade Home RAM to 1 TB.
 - [x] Reacquire every Dark Web program except Formulas.exe.
 - [x] Create `drain.js`.
 - [x] Create `recover.js`.
@@ -70,18 +70,18 @@
 - [x] Purchase Augmented Targeting I.
 - [x] Purchase CashRoot Starter Kit.
 - [x] Purchase Speech Processor Implant.
-- [ ] Continue The Black Hand reputation work.
-- [ ] Review the remaining augmentations across active factions.
-- [ ] Decide when the third augmentation batch is large enough to install.
+- [x] Earn enough The Black Hand reputation to purchase its signature augmentation.
+- [x] Purchase the planned Run 3 augmentation batch.
+- [x] Finalise the third augmentation batch for installation.
 
 ## Short Term
 
 - [x] Complete the first Session 8 achievement sprint.
 - [x] Use `drain.js` and `recover.js` to earn the server-draining achievement.
 - [ ] Continue expanding purchased-server capacity.
-- [ ] Upgrade Home RAM beyond 32 GB when cost-effective.
-- [ ] Reach Hacking Level 1000 and acquire Formulas.exe.
-- [ ] Prepare Run 4 recovery steps before installing augmentations.
+- [x] Upgrade Home RAM from 32 GB to 1 TB.
+- [x] Reach Hacking Level 1000 and acquire Formulas.exe.
+- [x] Prepare Run 4 recovery steps before installing augmentations.
 
 ## Long Term
 
@@ -106,13 +106,13 @@ The ultimate objective of this playthrough is to earn **all 98 Steam achievement
 - [x] Rejoin CyberSec and NiteSec.
 - [x] Join The Black Hand.
 - [x] Begin purchased-server infrastructure.
-- [ ] Prepare the third augmentation batch.
+- [x] Prepare the third augmentation batch.
 
 ## Phase 2 — Network Expansion *(Current)*
 
 - [ ] Root every accessible server.
 - [x] Backdoor key early hacking-faction servers.
-- [x] Upgrade Home RAM to 32 GB.
+- [x] Upgrade Home RAM to 1 TB.
 - [x] Purchase the first server.
 - [x] Expand to four purchased servers.
 - [x] Reach 1,615 worker threads.
@@ -139,13 +139,13 @@ The ultimate objective of this playthrough is to earn **all 98 Steam achievement
 
 **Phase 2 — Network Expansion and Achievement Sprint**
 
-Run 3 has moved beyond recovery. The network now includes purchased servers, 32 GB of Home RAM, 1,615 worker threads, and access to The Black Hand. The immediate focus is using purpose-built scripts to knock out early achievements while continuing to accumulate augmentations for Run 4.
+Run 3 has reached its end-state. Home RAM has been upgraded to 1 TB, every Dark Web program has been acquired, and a large augmentation package—including The Black Hand—has been purchased. The run deliberately remained active long enough to earn two additional achievements before the next installation.
 
 ---
 
 # Achievement Tracker
 
-## Completed (17 / 98)
+## Completed (19 / 98)
 
 | Achievement | Date |
 |------------|------|
@@ -166,12 +166,14 @@ Run 3 has moved beyond recovery. The network now includes purchased servers, 32 
 | ✅ World explorer (Travel anywhere) | 2026-07-25 |
 | ✅ Gains! (Work out at a gym) | 2026-07-25 |
 | ✅ Big trouble (Drain a server of all its money) | 2026-07-25 |
+| ✅ Thank you folders! (Have 30 scripts on Home) | 2026-07-26 |
+| ✅ Formulas.exe (Acquire Formulas.exe) | 2026-07-30 |
 
 ## Remaining
 
-**81 Steam achievements remaining**
+**79 Steam achievements remaining**
 
-> Session 8 added four Steam achievements: joining The Black Hand, travelling to another city, working out at a gym, and draining a server to $0.
+> Session 9 added two Steam achievements: storing at least 30 scripts on Home and acquiring Formulas.exe.
 
 ---
 
@@ -192,16 +194,16 @@ Run 3 has moved beyond recovery. The network now includes purchased servers, 32 
 
 ### Current Strategy
 
-Run 3 is now an expansion and achievement cycle rather than a basic rebuild. The combination of high hacking multipliers, `deploy.js V3`, four purchased servers, and 1,615 worker threads provides enough capacity to pursue achievements without stopping normal income and faction progression.
+Run 3 became the most efficient cycle so far by balancing normal progression with achievement hunting. The automated hacking network remained stable while Home RAM grew to 1 TB, every Dark Web program was acquired, The Black Hand augmentation was unlocked, and a large permanent-upgrade package was assembled for the next reset.
 
 ### Current Priorities
 
-1. Continue running distributed hacking automation.
-2. Use `drain.js` to reduce a selected server to zero money.
-3. Use `recover.js` to restore drained targets after achievement attempts.
-4. Build The Black Hand reputation and review its eight remaining augmentations.
-5. Accumulate a worthwhile third augmentation batch.
-6. Keep Formulas.exe as the final program milestone for Hacking Level 1000.
+1. Install the completed Run 3 augmentation package.
+2. Begin Run 4 with the expanded permanent multipliers.
+3. Restore automation using `deploy.js`, `worker.js`, `recover.js`, and `drain.js`.
+4. Rebuild faction access and income more quickly than in previous runs.
+5. Continue balancing story progression with targeted achievement work.
+6. Preserve the achievement-sprint approach without delaying major progression unnecessarily.
 
 ---
 
@@ -253,7 +255,7 @@ Created as the companion recovery tool for `drain.js`. It weakens and grows a de
 
 - Total worker threads reached: **1,615**
 - Purchased servers: **4**
-- Home RAM: **32 GB**
+- Home RAM: **1 TB**
 
 ---
 
@@ -277,11 +279,13 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | AutoLink.exe | ✅ Acquired | Enables direct connection through scan-analyze |
 | DarkscapeNavigator.exe | ✅ Acquired | Dark Web navigation utility |
 
-## Not Yet Acquired
+## Dark Web Collection Complete
 
-| Program | Hacking Level Required |
-|---------|------------------------|
-| Formulas.exe | 1000 |
+| Program | Status | Notes |
+|---------|--------|-------|
+| Formulas.exe | ✅ Acquired | Final Dark Web program; achievement earned on 2026-07-30 |
+
+Every Dark Web program has now been acquired.
 
 ---
 
@@ -297,7 +301,7 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 | Upgrade | Status |
 |----------|--------|
-| RAM | 32 GB |
+| RAM | 1 TB |
 | CPU Cores | *(To be recorded)* |
 
 ## Network Capacity
@@ -322,11 +326,11 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 | Faction | Reputation | Favor | Augmentations Remaining | Notes |
 |---------|------------|-------|-------------------------|-------|
-| The Black Hand | 24.774k | 0.000 | 8 | Joined during Session 8; newest hacking faction |
-| NiteSec | 925.528k | 193.759 | 4 | Major reputation bank retained during Run 3 |
-| Aevum | 906.217 | 0.000 | 2 | Joined during Run 3 |
-| Sector-12 | 156.064k | 54.322 | 2 | Two augmentations remaining |
-| CyberSec | 67.756k | 53.465 | 0 | Fully cleared of augmentations |
+| The Black Hand | 1.110m | 0.000 | 4 | Earned enough reputation to unlock and purchase The Black Hand augmentation |
+| NiteSec | 1.308m | 193.759 | 2 | Continued reputation growth during the final Run 3 push |
+| Aevum | 19.794k | 0.000 | 2 | Joined during Run 3 |
+| Sector-12 | 285.404k | 54.322 | 2 | Two augmentations remaining |
+| CyberSec | 194.666k | 53.465 | 0 | Fully cleared of augmentations |
 
 ## Faction History
 
@@ -364,6 +368,11 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | Augmented Targeting I | 🟡 Purchased |
 | CashRoot Starter Kit | 🟡 Purchased |
 | Speech Processor Implant | 🟡 Purchased |
+| Artificial Synaptic Potentiation | 🟡 Purchased |
+| Embedded Netburner Module | 🟡 Purchased |
+| Magnetism Amplifier | 🟡 Purchased |
+| The Black Hand | 🟡 Purchased |
+| NeuroFlux Governor - Level 6 | 🟡 Purchased |
 
 ## Current Multipliers
 
@@ -410,6 +419,9 @@ Verified during this playthrough:
 - Purchased servers remain a major source of controllable RAM and thread capacity.
 - Dedicated achievement scripts prevent one-off objectives from disrupting the main worker loop.
 - The Black Hand becomes available after gaining access to and backdooring `I.I.I.I`.
+- Formulas.exe completed the Dark Web program collection and awarded the corresponding achievement.
+- Home RAM can be upgraded far beyond early-game needs; Run 3 ended with 1 TB.
+- Delaying installation briefly to complete nearby achievements can improve reset efficiency without materially harming progression.
 
 ---
 
@@ -431,6 +443,11 @@ Verified during this playthrough:
 | 2026-07-25 | Begin purchased-server expansion and reach four servers. | Adds reliable RAM and increases total worker-thread capacity. |
 | 2026-07-25 | Upgrade Home RAM to 32 GB. | Improves local scripting capacity and supports larger automation tools. |
 | 2026-07-25 | Purchase three additional augmentations without installing them. | Continues building a worthwhile Run 4 package before resetting. |
+| 2026-07-26 | Create enough scripts to earn `Thank you folders!`. | Added a low-risk achievement while the run remained active. |
+| 2026-07-30 | Upgrade Home RAM from 32 GB to 1 TB. | Provides substantial long-term scripting capacity before the reset. |
+| 2026-07-30 | Purchase Formulas.exe. | Completes the Dark Web program collection and earns another achievement. |
+| 2026-07-30 | Purchase The Black Hand and additional NeuroFlux Governor levels. | Converts end-of-run money and reputation into permanent progression. |
+| 2026-07-30 | Delay installation until two nearby achievements were completed. | Makes the reset more efficient by combining progression and achievement hunting. |
 
 ---
 
@@ -467,7 +484,14 @@ Verified during this playthrough:
 - Purchased four servers.
 - Reached 1,615 worker threads.
 - Created `drain.js` and `recover.js` for the achievement sprint.
-- Purchased three augmentations for the eventual Run 4 reset.
+- Purchased eight augmentations for the eventual Run 4 reset.
+- Upgraded Home RAM from 32 GB to 1 TB.
+- Acquired Formulas.exe and completed the full Dark Web program collection.
+- Earned `Thank you folders!` and `Formulas.exe`, reaching 19 / 98 achievements.
+- Built The Black Hand reputation to 1.110m and purchased its signature augmentation.
+- Added Artificial Synaptic Potentiation, Embedded Netburner Module, Magnetism Amplifier, The Black Hand, and NeuroFlux Governor - Level 6 to the pending installation package.
+- Reached more than $26b cash before spending nearly everything on permanent upgrades.
+- Finished Run 3 ready for the third augmentation installation.
 
 ---
 
@@ -660,6 +684,61 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 
 ---
 
+---
+
+## Session 9 – Final Run 3 Push
+
+### Major Milestones
+
+- Continued the achievement sprint without interrupting the core hacking network.
+- Earned `Thank you folders!` by maintaining at least 30 scripts on Home.
+- Reached the Hacking Level 1000 milestone and purchased Formulas.exe.
+- Earned the `Formulas.exe` achievement, increasing progress to 19 / 98.
+- Completed the Dark Web program collection.
+- Upgraded Home RAM from 32 GB to 1 TB.
+- Built The Black Hand reputation to 1.110m.
+- Purchased The Black Hand augmentation.
+- Purchased additional Run 4 augmentations:
+  - Artificial Synaptic Potentiation
+  - Embedded Netburner Module
+  - Magnetism Amplifier
+  - NeuroFlux Governor - Level 6
+- Reached more than $26b cash during the run.
+- Spent nearly all remaining funds on permanent upgrades before installation.
+- Kept the automation network stable using:
+  - `deploy.js`
+  - `worker.js`
+  - `recover.js`
+  - `drain.js`
+
+### End-of-Run State
+
+- Steam achievements: 19 / 98
+- Home RAM: 1 TB
+- Purchased servers: 4 / 25
+- Dark Web programs: Complete
+- Pending augmentations: 8
+- The Black Hand reputation: 1.110m
+- NiteSec reputation: 1.308m
+- Sector-12 reputation: 285.404k
+- CyberSec reputation: 194.666k
+- Aevum reputation: 19.794k
+- Money earned since the last installation:
+  - Total: $290.369m
+  - Hacking: $43.758b
+  - Augmentations spent: $36.664b
+  - Servers spent: $1.472b
+  - Other spending: $5.331b
+
+### Lessons Learned
+
+- Run 3 was the first cycle to balance story progression and achievement hunting successfully.
+- The best reset timing is not always the moment an augmentation becomes affordable; nearby achievements can be completed first when the delay is small.
+- Stable automation allows faction reputation, money generation, infrastructure upgrades, and achievement work to progress in parallel.
+- End-of-run cash should be converted into permanent upgrades because most of it will be lost on installation.
+- The Black Hand augmentation became the capstone purchase for Run 3.
+
+
 # Research Notes
 
 ## Documentation
@@ -702,6 +781,15 @@ Pending.
 - High retained faction favor makes rebuilding reputation substantially faster.
 - Run 3 automation scaled beyond the initial recovery network.
 
+## Session 9 Discoveries
+
+- Formulas.exe is the final Dark Web program and has its own Steam achievement.
+- Maintaining 30 scripts on Home awards `Thank you folders!`.
+- Home RAM upgrades can be used as an end-of-run money sink that permanently improves future scripting capacity.
+- A major faction augmentation can serve as the capstone for an augmentation cycle.
+- The most efficient reset so far combined story progression, infrastructure upgrades, faction work, and two additional achievements.
+- The automation stack remained reliable throughout a very long run without needing a fundamental redesign.
+
 ## Session 8 Discoveries
 
 - A separate drain/recovery script pair is safer than modifying the general worker loop for a one-off achievement.
@@ -724,7 +812,7 @@ Pending.
 - Best next target for deploy.js V3 as hacking skill continues to rise.
 - When to begin advanced HWGW batch hacking.
 - Whether faction RAM sharing is worthwhile with 32 GB Home RAM.
-- Which Black Hand augmentations provide the best immediate value.
+- What should the first Run 4 priorities be after installing the completed batch?
 
 ---
 
@@ -744,4 +832,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 8 — Achievement Sprint and Infrastructure Expansion (2026-07-25)_
+_Last Updated: Session 9 — Final Run 3 Push (2026-07-30)_
