@@ -32,27 +32,27 @@
 | Item | Value |
 |------|-------|
 | Current BitNode | BitNode-1 |
-| Current Run | Run 3 |
-| Current City | Sector-12 |
-| Money | Approximately $290.369m remaining after major purchases |
+| Current Run | Run 4 – Into the Underworld |
+| Current City | Chongqing |
+| Money | $3.174b |
 | Home RAM | 1 TB |
 | Home Cores | *(To be recorded)* |
-| Hacking Level | 428 |
-| Strength | 1 |
-| Defense | 1 |
-| Dexterity | 1 |
-| Agility | 15 |
+| Hacking Level | 496 |
+| Strength | 103 |
+| Defense | 102 |
+| Dexterity | 106 |
+| Agility | 105 |
 | Charisma | 1 |
-| Karma | 0.000 |
+| Karma | -711.050 |
 | Hacknet Nodes | 0 |
-| Purchased Servers | 4 / 25 |
-| Current Factions | The Black Hand, NiteSec, Aevum, Sector-12, CyberSec |
-| Augmentations Installed | 10 |
-| Augmentations Purchased, Not Installed | 8 |
+| Purchased Servers | 0 / 25 |
+| Current Factions | The Black Hand, Aevum, Sector-12, Tetrads, Slum Snakes, Tian Di Hui, CyberSec |
+| Augmentations Installed | 17 |
+| Augmentations Purchased, Not Installed | 0 |
 | Worker Threads | 1,615 |
-| Time Since Last Augmentation | 3d 19h 53m 14s |
-| Total Play Time | 13d 0h 29m 28s |
-| Current Focus | Finalising Run 3 and preparing the third augmentation installation |
+| Time Since Last Augmentation | 1d 12h 57m 27s |
+| Total Play Time | 19d 19h 23m 43s |
+| Current Focus | Feature Hunt: crime, cities, finance, side systems, and underworld progression |
 
 ---
 
@@ -60,28 +60,32 @@
 
 ## Immediate
 
-- [x] Join The Black Hand.
-- [x] Purchase the first four servers.
-- [x] Upgrade Home RAM to 1 TB.
-- [x] Reacquire every Dark Web program except Formulas.exe.
-- [x] Create `drain.js`.
-- [x] Create `recover.js`.
-- [x] Scale the network to 1,615 worker threads.
-- [x] Purchase Augmented Targeting I.
-- [x] Purchase CashRoot Starter Kit.
-- [x] Purchase Speech Processor Implant.
-- [x] Earn enough The Black Hand reputation to purchase its signature augmentation.
-- [x] Purchase the planned Run 3 augmentation batch.
-- [x] Finalise the third augmentation batch for installation.
+- [x] Install the completed Run 3 augmentation package.
+- [x] Begin Run 4.
+- [x] Restore hacking income and reach Hacking Level 496.
+- [x] Train combat stats to approximately 100.
+- [x] Begin serious crime progression.
+- [x] Join Slum Snakes.
+- [x] Travel to and explore Chongqing.
+- [x] Join Tetrads and Tian Di Hui.
+- [x] Purchase the permanent WSE Account.
+- [x] Explore Aevum, Volhaven, New Tokyo, and Chongqing.
+- [x] Discover IPvGO at DefComm.
+- [ ] Continue lowering Karma through Homicide.
+- [ ] Reacquire SQLInject.exe.
+- [ ] Reacquire Formulas.exe.
+- [ ] Decide which newly discovered gameplay system deserves the next dedicated Feature Hunt.
 
 ## Short Term
 
-- [x] Complete the first Session 8 achievement sprint.
-- [x] Use `drain.js` and `recover.js` to earn the server-draining achievement.
-- [ ] Continue expanding purchased-server capacity.
-- [x] Upgrade Home RAM from 32 GB to 1 TB.
-- [x] Reach Hacking Level 1000 and acquire Formulas.exe.
-- [x] Prepare Run 4 recovery steps before installing augmentations.
+- [ ] Continue underworld progression through crime and criminal factions.
+- [ ] Explore Slum Snakes, Tetrads, and Tian Di Hui augmentation paths.
+- [ ] Run a dedicated IPvGO Feature Hunt.
+- [ ] Run a dedicated casino Feature Hunt.
+- [ ] Revisit the stock market once 4S becomes practical.
+- [ ] Investigate the Shadowed Walkway and Church of the Machine God later without spoilers.
+- [ ] Resume purchased-server expansion after Run 4 infrastructure is stable.
+- [ ] Continue balancing story progression with achievement hunting.
 
 ## Long Term
 
@@ -108,7 +112,7 @@ The ultimate objective of this playthrough is to earn **all 98 Steam achievement
 - [x] Begin purchased-server infrastructure.
 - [x] Prepare the third augmentation batch.
 
-## Phase 2 — Network Expansion *(Current)*
+## Phase 2 — Network Expansion
 
 - [ ] Root every accessible server.
 - [x] Backdoor key early hacking-faction servers.
@@ -118,7 +122,7 @@ The ultimate objective of this playthrough is to earn **all 98 Steam achievement
 - [x] Reach 1,615 worker threads.
 - [ ] Continue expanding automation to stronger targets.
 
-## Phase 3 — Optimisation
+## Phase 3 — Feature Discovery *(Current)*
 
 - [ ] Implement advanced HWGW batch hacking.
 - [ ] Optimise faction reputation farming.
@@ -137,9 +141,9 @@ The ultimate objective of this playthrough is to earn **all 98 Steam achievement
 
 ### Current Focus
 
-**Phase 2 — Network Expansion and Achievement Sprint**
+**Phase 3 — Feature Discovery**
 
-Run 3 has reached its end-state. Home RAM has been upgraded to 1 TB, every Dark Web program has been acquired, and a large augmentation package—including The Black Hand—has been purchased. The run deliberately remained active long enough to earn two additional achievements before the next installation.
+Run 4 marks a deliberate pivot away from pure hacking optimisation. The current strategy is to explore neglected systems—crime, cities, factions, stock trading, education, casinos, infiltrations, and IPvGO—while the automated hacking network continues generating money and experience in the background.
 
 ---
 
@@ -194,16 +198,16 @@ Run 3 has reached its end-state. Home RAM has been upgraded to 1 TB, every Dark 
 
 ### Current Strategy
 
-Run 3 became the most efficient cycle so far by balancing normal progression with achievement hunting. The automated hacking network remained stable while Home RAM grew to 1 TB, every Dark Web program was acquired, The Black Hand augmentation was unlocked, and a large permanent-upgrade package was assembled for the next reset.
+Run 4 is the first Feature Hunt cycle. Instead of spending the entire run rebuilding hacking efficiency, the playthrough is deliberately exploring overlooked systems while existing automation continues in the background. Crime has already unlocked Slum Snakes, city travel has unlocked Tetrads and Tian Di Hui, and visits to New Tokyo, Aevum, Volhaven, and Chongqing revealed new services, minigames, locations, and future progression paths.
 
 ### Current Priorities
 
-1. Install the completed Run 3 augmentation package.
-2. Begin Run 4 with the expanded permanent multipliers.
-3. Restore automation using `deploy.js`, `worker.js`, `recover.js`, and `drain.js`.
-4. Rebuild faction access and income more quickly than in previous runs.
-5. Continue balancing story progression with targeted achievement work.
-6. Preserve the achievement-sprint approach without delaying major progression unnecessarily.
+1. Continue Homicide at the current viable success rate to reduce Karma.
+2. Explore criminal and city-faction augmentation paths.
+3. Keep hacking automation running while pursuing non-hacking systems.
+4. Treat IPvGO, the casino, stock trading, infiltration, and hidden locations as separate future Feature Hunts.
+5. Avoid spoilers for late-game locations such as the Church of the Machine God.
+6. Continue documenting discoveries as reusable research rather than one-off observations.
 
 ---
 
@@ -272,20 +276,18 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | FTPcrack.exe | ✅ Acquired | Opens FTP ports |
 | relaySMTP.exe | ✅ Acquired | Opens SMTP ports |
 | HTTPWorm.exe | ✅ Acquired | Opens HTTP ports |
-| SQLInject.exe | ✅ Acquired | Opens SQL ports |
 | DeepscanV1.exe | ✅ Acquired | Extends scan-analyze depth to 5 |
 | DeepscanV2.exe | ✅ Acquired | Extends scan-analyze depth to 10 |
-| ServerProfiler.exe | ✅ Acquired | Displays hacking and Netscript information about servers |
-| AutoLink.exe | ✅ Acquired | Enables direct connection through scan-analyze |
-| DarkscapeNavigator.exe | ✅ Acquired | Dark Web navigation utility |
+| ServerProfiler.exe | ✅ Acquired | Displays server information |
+| AutoLink.exe | ✅ Acquired | Enables direct connections through scan-analyze |
+| DarkscapeNavigator.exe | ✅ Acquired | Purchased from the Shadowed Walkway in Chongqing |
 
-## Dark Web Collection Complete
+## Not Yet Reacquired This Run
 
-| Program | Status | Notes |
-|---------|--------|-------|
-| Formulas.exe | ✅ Acquired | Final Dark Web program; achievement earned on 2026-07-30 |
-
-Every Dark Web program has now been acquired.
+| Program | Requirement |
+|---------|-------------|
+| SQLInject.exe | Hacking Level 750 |
+| Formulas.exe | Hacking Level 1000 |
 
 ---
 
@@ -295,7 +297,7 @@ Every Dark Web program has now been acquired.
 
 | Count | Status | Notes |
 |------:|--------|-------|
-| 4 / 25 | ✅ Active | First purchased-server expansion completed during Session 8 |
+| 0 / 25 | Reset | Purchased servers were lost during the Run 4 augmentation installation |
 
 ## Home Upgrades
 
@@ -306,8 +308,8 @@ Every Dark Web program has now been acquired.
 
 ## Network Capacity
 
-- 1,615 worker threads available across the distributed network.
-- Purchased servers now supplement rooted public servers.
+- Run 3 reached 1,615 worker threads; Run 4 capacity is being rebuilt.
+- Purchased-server infrastructure must be rebuilt during Run 4.
 - `deploy.js V3` remains the central deployment tool.
 
 ---
@@ -317,20 +319,24 @@ Every Dark Web program has now been acquired.
 ## Current Membership
 
 - The Black Hand
-- NiteSec
 - Aevum
 - Sector-12
+- Tetrads
+- Slum Snakes
+- Tian Di Hui
 - CyberSec
 
 ## Current Faction Progress
 
 | Faction | Reputation | Favor | Augmentations Remaining | Notes |
 |---------|------------|-------|-------------------------|-------|
-| The Black Hand | 1.110m | 0.000 | 4 | Earned enough reputation to unlock and purchase The Black Hand augmentation |
-| NiteSec | 1.308m | 193.759 | 2 | Continued reputation growth during the final Run 3 push |
-| Aevum | 19.794k | 0.000 | 2 | Joined during Run 3 |
-| Sector-12 | 285.404k | 54.322 | 2 | Two augmentations remaining |
-| CyberSec | 194.666k | 53.465 | 0 | Fully cleared of augmentations |
+| The Black Hand | 673.731k | 192.699 | 4 | Major hacking faction retained as a current path |
+| Aevum | 649.023 | 29.456 | 2 | City faction |
+| Sector-12 | 72.637k | 134.514 | 2 | Original city faction |
+| Tetrads | 75.092 | 0.000 | 6 | Joined after travelling to Chongqing |
+| Slum Snakes | 166.008 | 0.000 | 5 | Unlocked through Homicide and falling Karma |
+| Tian Di Hui | 74.675 | 0.000 | 6 | Joined after travelling to Chongqing |
+| CyberSec | 66.129k | 119.556 | 0 | Fully cleared of augmentations |
 
 ## Faction History
 
@@ -338,9 +344,12 @@ Every Dark Web program has now been acquired.
 |---------|--------|-------|
 | Sector-12 | Current | First city faction |
 | CyberSec | Current | No augmentations remaining |
-| NiteSec | Current | Four augmentations remaining |
-| Aevum | Current | Two augmentations remaining |
-| The Black Hand | Current | Joined after backdooring `I.I.I.I` |
+| NiteSec | Previous | Important hacking faction during earlier runs |
+| Aevum | Current | City faction |
+| The Black Hand | Current | Major hacking faction |
+| Tetrads | Current | Chongqing faction |
+| Tian Di Hui | Current | Chongqing faction |
+| Slum Snakes | Current | First criminal faction |
 
 ---
 
@@ -361,45 +370,45 @@ Every Dark Web program has now been acquired.
 | Wired Reflexes | Run 2 → Run 3 |
 | NeuroFlux Governor - Level 4 | Run 2 → Run 3 |
 
-## Purchased, Not Installed
+## Installed During Run 3 → Run 4
 
 | Augmentation | Status |
 |--------------|--------|
-| Augmented Targeting I | 🟡 Purchased |
-| CashRoot Starter Kit | 🟡 Purchased |
-| Speech Processor Implant | 🟡 Purchased |
-| Artificial Synaptic Potentiation | 🟡 Purchased |
-| Embedded Netburner Module | 🟡 Purchased |
-| Magnetism Amplifier | 🟡 Purchased |
-| The Black Hand | 🟡 Purchased |
-| NeuroFlux Governor - Level 6 | 🟡 Purchased |
+| Augmented Targeting I | ✅ Installed |
+| CashRoot Starter Kit | ✅ Installed |
+| Speech Processor Implant | ✅ Installed |
+| Artificial Synaptic Potentiation | ✅ Installed |
+| Embedded Netburner Module | ✅ Installed |
+| Magnetism Amplifier | ✅ Installed |
+| The Black Hand | ✅ Installed |
+| NeuroFlux Governor - Level 6 | ✅ Installed |
 
 ## Current Multipliers
 
 | Multiplier | Current Value |
 |------------|---------------|
-| Hacking Chance | 109.26% |
-| Hacking Speed | 112.63% |
-| Hacking Money | 149.59% |
-| Hacking Growth | 104.06% |
-| Hacking Level | 133.81% |
-| Hacking Experience | 131.64% |
-| Hacknet Production | 104.06% |
-| Hacknet Purchase Cost | 96.10% |
-| Hacknet RAM Upgrade Cost | 96.10% |
-| Hacknet Core Purchase Cost | 96.10% |
-| Hacknet Level Upgrade Cost | 96.10% |
-| Company Reputation Gain | 104.06% |
-| Faction Reputation Gain | 104.06% |
-| Salary | 104.06% |
-| Crime Success Chance | 104.06% |
-| Crime Money | 104.06% |
-| Strength Level | 104.06% |
-| Defense Level | 104.06% |
-| Dexterity Level | 109.26% |
-| Agility Level | 109.26% |
-| Charisma Level | 104.06% |
-| Physical and Charisma Experience | 131.64% |
+| Hacking Chance | 117.03% |
+| Hacking Speed | 119.53% |
+| Hacking Money | 167.86% |
+| Hacking Growth | 106.15% |
+| Hacking Level | 162.16% |
+| Hacking Experience | 141.00% |
+| Hacknet Production | 106.15% |
+| Hacknet Purchase Cost | 94.20% |
+| Hacknet RAM Upgrade Cost | 94.20% |
+| Hacknet Core Purchase Cost | 94.20% |
+| Hacknet Level Upgrade Cost | 94.20% |
+| Company Reputation Gain | 116.77% |
+| Faction Reputation Gain | 106.15% |
+| Salary | 106.15% |
+| Crime Success Chance | 106.15% |
+| Crime Money | 106.15% |
+| Strength Level | 122.08% |
+| Defense Level | 106.15% |
+| Dexterity Level | 141.00% |
+| Agility Level | 111.46% |
+| Charisma Level | 133.75% |
+| Physical and Charisma Experience | 134.28% |
 
 ---
 
@@ -422,6 +431,15 @@ Verified during this playthrough:
 - Formulas.exe completed the Dark Web program collection and awarded the corresponding achievement.
 - Home RAM can be upgraded far beyond early-game needs; Run 3 ended with 1 TB.
 - Delaying installation briefly to complete nearby achievements can improve reset efficiency without materially harming progression.
+- At approximately 100 combat stats, Homicide had about a 55% success rate.
+- Repeated Homicide reduced Karma quickly enough to unlock Slum Snakes during a short session.
+- Training Strength, Defense, Dexterity, and Agility evenly created a workable crime baseline.
+- Crime can run while hacking automation continues in the background.
+- The WSE Account is permanent across augmentation installations, while stock holdings are lost.
+- TIX enables scripted trading; 4S upgrades improve trading accuracy.
+- Travel can unlock factions and unique city locations immediately.
+- Permanent hardware upgrades are available from multiple technology companies, not only Fulcrum Technologies.
+- IPvGO is a separate strategy system with permanent multiplier rewards and faction-favor interactions.
 
 ---
 
@@ -448,12 +466,17 @@ Verified during this playthrough:
 | 2026-07-30 | Purchase Formulas.exe. | Completes the Dark Web program collection and earns another achievement. |
 | 2026-07-30 | Purchase The Black Hand and additional NeuroFlux Governor levels. | Converts end-of-run money and reputation into permanent progression. |
 | 2026-07-30 | Delay installation until two nearby achievements were completed. | Makes the reset more efficient by combining progression and achievement hunting. |
+| 2026-07-30 | Begin Run 4 as a Feature Hunt cycle. | Prevents the project from becoming an endless hacking-only optimisation grind. |
+| 2026-07-30 | Train all four combat stats evenly to approximately 100. | Establishes a balanced base for crime and future combat systems. |
+| 2026-07-30 | Use Homicide as the current crime. | It offered the best observed combination of success chance and Karma reduction. |
+| 2026-07-30 | Purchase the permanent WSE Account but defer stock trading. | Unlocks the system without risking capital before 4S tools become practical. |
+| 2026-07-30 | Avoid spoilers at the Church of the Machine God. | Preserves natural discovery of a significant late-game location. |
 
 ---
 
 # Run Timeline
 
-## Run 1
+## Run 1 – The Script Kiddie
 
 - Started BitNode-1.
 - Built the first distributed hacking system.
@@ -462,7 +485,7 @@ Verified during this playthrough:
 - Joined Sector-12 and CyberSec.
 - Installed BitWire, Synaptic Enhancement Implant, and Neurotrainer I.
 
-## Run 2
+## Run 2 – Building the Botnet
 
 - Rebuilt and expanded distributed automation.
 - Reached the higher hacking levels needed for relaySMTP.exe, HTTPWorm.exe, and SQLInject.exe.
@@ -472,7 +495,7 @@ Verified during this playthrough:
 - Purchased a large hacking-focused augmentation batch.
 - Ended with the second augmentation installation.
 
-## Run 3 — Current
+## Run 3 – The Black Hand Rises
 
 - Installed seven additional augmentations, bringing the total to 10.
 - Began with substantially improved hacking multipliers.
@@ -492,6 +515,22 @@ Verified during this playthrough:
 - Added Artificial Synaptic Potentiation, Embedded Netburner Module, Magnetism Amplifier, The Black Hand, and NeuroFlux Governor - Level 6 to the pending installation package.
 - Reached more than $26b cash before spending nearly everything on permanent upgrades.
 - Finished Run 3 ready for the third augmentation installation.
+
+---
+
+## Run 4 – Into the Underworld — Current
+
+- Installed the Run 3 augmentation batch, bringing the total to 17 installed augmentations.
+- Rebuilt to Hacking Level 496.
+- Trained combat stats to approximately 100.
+- Began repeated Homicide and lowered Karma to -711.050.
+- Joined Slum Snakes.
+- Travelled through Chongqing, Aevum, Volhaven, and New Tokyo.
+- Joined Tetrads and Tian Di Hui.
+- Purchased the permanent WSE Account.
+- Discovered the World Stock Exchange, IPvGO, the Iker Molina Casino, multiple universities, and hidden city locations.
+- Purchased DarkscapeNavigator.exe from the Shadowed Walkway.
+- Pivoted the project from pure hacking optimisation to balanced story progression and Feature Hunts.
 
 ---
 
@@ -684,8 +723,6 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 
 ---
 
----
-
 ## Session 9 – Final Run 3 Push
 
 ### Major Milestones
@@ -738,6 +775,53 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 - End-of-run cash should be converted into permanent upgrades because most of it will be lost on installation.
 - The Black Hand augmentation became the capstone purchase for Run 3.
 
+
+---
+
+## Session 10 – Feature Hunt Pivot
+
+### Major Milestones
+
+- Began Run 4 with 17 installed augmentations.
+- Reached Hacking Level 496.
+- Trained combat stats to approximately 100.
+- Began repeated Homicide with approximately 55% success.
+- Lowered Karma to -711.050.
+- Joined Slum Snakes.
+- Purchased the permanent WSE Account.
+- Explored Chongqing, Aevum, Volhaven, and New Tokyo.
+- Joined Tetrads and Tian Di Hui.
+- Purchased DarkscapeNavigator.exe from the Shadowed Walkway.
+- Discovered the Church of the Machine God.
+- Discovered the Iker Molina Casino.
+- Discovered IPvGO at DefComm.
+- Confirmed universities offer multiple education paths.
+- Confirmed permanent hardware upgrades are available from multiple technology corporations.
+- Shifted the playthrough from pure hacking optimisation toward Feature Hunts and broader system discovery.
+
+### Current State
+
+- Current city: Chongqing
+- Money: $3.174b
+- Hacking Level: 496
+- Strength: 103
+- Defense: 102
+- Dexterity: 106
+- Agility: 105
+- Charisma: 1
+- Karma: -711.050
+- Installed augmentations: 17
+- Purchased servers: 0 / 25
+- Time since last augmentation: 1d 12h 57m 27s
+- Total play time: 19d 19h 23m 43s
+
+### Lessons Learned
+
+- Feature Hunts produce meaningful progression rather than merely distracting from hacking.
+- Exploring cities can unlock factions, permanent services, minigames, hidden locations, and future story systems.
+- Crime provides an alternative progression path through Karma, factions, and augmentations.
+- The automated hacking network makes it possible to explore other systems without giving up income or experience.
+- The project should continue balancing story progression, system discovery, and achievement hunting.
 
 # Research Notes
 
@@ -800,19 +884,35 @@ Pending.
 
 ---
 
+
+## Session 10 Discoveries
+
+- At approximately 100 combat stats, Homicide had about a 55% success rate.
+- Homicide reduced Karma quickly and immediately led to Slum Snakes.
+- Balanced combat training was a useful prerequisite for crime.
+- The WSE Account persists through augmentation installation.
+- Stock holdings do not persist through augmentation installation.
+- City travel can instantly unlock factions and unique locations.
+- Permanent hardware upgrades are available at more than one technology corporation.
+- The Iker Molina Casino is a distinct gameplay system worth a future Feature Hunt.
+- IPvGO is a separate strategy system with permanent rewards and faction-favor mechanics.
+- The Church of the Machine God and Shadowed Walkway are significant unique locations.
+- New Tokyo's arcade and noodle interaction indicate small side systems and mysteries exist outside core progression.
+
 # Questions To Investigate
 
-- Which additional low-risk achievements should be targeted next?
-- Whether `drain.js` should stop automatically once the target reaches zero money.
-- Whether `recover.js` should restore both maximum money and minimum security before exiting.
-- Best augmentation purchase order for the third cycle.
-- How many additional augmentations should be purchased before Run 4?
-- When to expand beyond four purchased servers.
-- When purchased servers should be replaced with larger RAM tiers.
-- Best next target for deploy.js V3 as hacking skill continues to rise.
-- When to begin advanced HWGW batch hacking.
-- Whether faction RAM sharing is worthwhile with 32 GB Home RAM.
-- What should the first Run 4 priorities be after installing the completed batch?
+- How quickly can Karma be reduced enough to unlock further criminal systems?
+- Which Slum Snakes augmentations are worth prioritising?
+- What are the next crime-related faction thresholds?
+- When should the stock market be revisited?
+- Is 4S required before serious stock trading becomes worthwhile?
+- Which casino achievements or rewards exist?
+- How does IPvGO scale its permanent multiplier rewards?
+- Can IPvGO be automated effectively through Netscript?
+- What is the safest first infiltration target after combat training?
+- When should purchased-server infrastructure be rebuilt in Run 4?
+- Which city or hidden location should receive the next dedicated Feature Hunt?
+- When should SQLInject.exe and Formulas.exe be reacquired?
 
 ---
 
@@ -832,4 +932,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 9 — Final Run 3 Push (2026-07-30)_
+_Last Updated: Session 10 — Feature Hunt Pivot (2026-07-30)_

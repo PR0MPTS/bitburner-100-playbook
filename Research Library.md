@@ -290,6 +290,61 @@ The most valuable reset-preparation asset is a reusable automation and recovery 
 
 ---
 
+
+## Infiltration Benchmarks
+
+**Reliability:** ★★★☆☆
+
+**Source:** Direct playthrough testing during Session 10
+
+**Benchmarks:**
+
+| Company | Approx. Combat Stats | Displayed Difficulty | Result |
+|---|---:|---:|---|
+| Joe's Guns | ~1 | 89 | Too hard |
+| Joe's Guns | ~30 | 81 | Too hard |
+| Joe's Guns | ~100 | 64 | Still too hard |
+| ECorp | ~100 | 461 | Not allowed to attempt |
+
+**Findings:**
+
+- Raising combat stats reduced the displayed infiltration difficulty at Joe's Guns.
+- Even with combat stats around 100, Joe's Guns remained too difficult to complete.
+- ECorp's displayed difficulty was dramatically higher and infiltration was not available at the tested state.
+- Combat stats alone are not enough to make infiltration practical at this stage.
+- Infiltration should be revisited after stronger combat progression, more relevant augmentations, or better understanding of the minigames.
+
+**Research status:**  
+Useful baseline only. These results are observational and should not be treated as universal thresholds.
+
+---
+
+## Crime Progression
+
+**Reliability:** ★★★★☆
+
+**Source:** Direct playthrough observation during Session 10
+
+**Findings:**
+
+- At approximately 100 combat stats, Homicide had about a 55% success rate.
+- Karma dropped quickly enough to show visible progress during a short session.
+- Repeated Homicide immediately led to unlocking Slum Snakes.
+- Training Strength, Defense, Dexterity, and Agility evenly created a solid base before beginning serious crime progression.
+- Joining Slum Snakes opened another source of combat- and crime-focused augmentations.
+- Crime provides a meaningful alternative to hacking-only progression through:
+  - Karma reduction
+  - New faction access
+  - Additional augmentation paths
+  - Broader character development
+- Crime can be left running while the automated hacking network continues generating money and hacking experience.
+- Crime progression gives the playthrough a useful change of pace without sacrificing long-term account progress.
+
+**Operational takeaway:**  
+For the current build, balanced combat training to roughly 100 in all four combat stats is a workable entry point for Homicide-based Karma progression.
+
+---
+
 # Current Research Focus
 
 ## Automation Strategy
@@ -350,3 +405,13 @@ This approach has provided stable income, consistent hacking experience, fast po
 - Recorded the Home RAM upgrade from 32 GB to 1 TB.
 - Documented Run 3 as the first successful balance of story progression, faction progression, infrastructure growth, and achievement hunting.
 - Confirmed that the stable automation stack remained `deploy.js`, `worker.js`, `drain.js`, and `recover.js`.
+
+## 2026-08-01
+
+- Added direct infiltration benchmarks for Joe's Guns and ECorp.
+- Recorded that Joe's Guns remained too difficult even at approximately 100 combat stats.
+- Documented Homicide at approximately 55% success with combat stats near 100.
+- Confirmed that repeated Homicide reduced Karma quickly and unlocked Slum Snakes.
+- Recorded balanced combat training as a practical foundation for crime progression.
+- Added the strategic finding that crime can run alongside the automated hacking network without interrupting hacking income or experience.
+- Identified Slum Snakes as a new source of combat- and crime-focused augmentations.
