@@ -37,7 +37,7 @@
 | Money | $3.174b |
 | Home RAM | 1 TB |
 | Home Cores | *(To be recorded)* |
-| Hacking Level | 496 |
+| Hacking Level | 600+ |
 | Strength | 103 |
 | Defense | 102 |
 | Dexterity | 106 |
@@ -48,11 +48,11 @@
 | Purchased Servers | 0 / 25 |
 | Current Factions | The Black Hand, Aevum, Sector-12, Tetrads, Slum Snakes, Tian Di Hui, CyberSec |
 | Augmentations Installed | 17 |
-| Augmentations Purchased, Not Installed | 0 |
+| Augmentations Purchased, Not Installed | 8 |
 | Worker Threads | 1,615 |
 | Time Since Last Augmentation | 1d 12h 57m 27s |
 | Total Play Time | 19d 19h 23m 43s |
-| Current Focus | Feature Hunt: crime, cities, finance, side systems, and underworld progression |
+| Current Focus | Finalising Run 4 and preparing the eight-augmentation installation for Run 5 |
 
 ---
 
@@ -71,21 +71,21 @@
 - [x] Purchase the permanent WSE Account.
 - [x] Explore Aevum, Volhaven, New Tokyo, and Chongqing.
 - [x] Discover IPvGO at DefComm.
-- [ ] Continue lowering Karma through Homicide.
+- [x] Establish crime progression through repeated Homicide.
 - [ ] Reacquire SQLInject.exe.
 - [ ] Reacquire Formulas.exe.
-- [ ] Decide which newly discovered gameplay system deserves the next dedicated Feature Hunt.
+- [x] Identify IPvGO, casino, stock market, and hidden locations as future Feature Hunts.
 
 ## Short Term
 
 - [ ] Continue underworld progression through crime and criminal factions.
-- [ ] Explore Slum Snakes, Tetrads, and Tian Di Hui augmentation paths.
+- [x] Explore Slum Snakes, Tetrads, and Tian Di Hui augmentation paths.
 - [ ] Run a dedicated IPvGO Feature Hunt.
 - [ ] Run a dedicated casino Feature Hunt.
 - [ ] Revisit the stock market once 4S becomes practical.
 - [ ] Investigate the Shadowed Walkway and Church of the Machine God later without spoilers.
 - [ ] Resume purchased-server expansion after Run 4 infrastructure is stable.
-- [ ] Continue balancing story progression with achievement hunting.
+- [x] Establish the Feature Hunt approach for balancing story progression with achievement hunting.
 
 ## Long Term
 
@@ -202,12 +202,12 @@ Run 4 is the first Feature Hunt cycle. Instead of spending the entire run rebuil
 
 ### Current Priorities
 
-1. Continue Homicide at the current viable success rate to reduce Karma.
-2. Explore criminal and city-faction augmentation paths.
-3. Keep hacking automation running while pursuing non-hacking systems.
-4. Treat IPvGO, the casino, stock trading, infiltration, and hidden locations as separate future Feature Hunts.
-5. Avoid spoilers for late-game locations such as the Church of the Machine God.
-6. Continue documenting discoveries as reusable research rather than one-off observations.
+1. Install the eight queued Run 4 augmentations and begin Run 5.
+2. Restore the hacking network quickly and use it as the economic engine.
+3. Continue active play through unexplored systems rather than repeating a pure hacking grind.
+4. Revisit IPvGO, the casino, stock trading, infiltration, and hidden locations as dedicated Feature Hunts.
+5. Continue criminal progression when it contributes to factions, augmentations, Karma, or achievements.
+6. Keep documenting discoveries as reusable research rather than one-off observations.
 
 ---
 
@@ -383,6 +383,19 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | The Black Hand | ✅ Installed |
 | NeuroFlux Governor - Level 6 | ✅ Installed |
 
+## Purchased, Not Installed — Run 4 → Run 5
+
+| Augmentation | Status |
+|--------------|--------|
+| Neuralstimulator | 🟡 Purchased |
+| Embedded Netburner Module Core Implant | 🟡 Purchased |
+| Enhanced Myelin Sheathing | 🟡 Purchased |
+| Cranial Signal Processors - Gen IV | 🟡 Purchased |
+| Combat Rib I | 🟡 Purchased |
+| LuminCloaking-V1 Skin Implant | 🟡 Purchased |
+| Neural Wit Amplifier | 🟡 Purchased |
+| SmartSonar Implant | 🟡 Purchased |
+
 ## Current Multipliers
 
 | Multiplier | Current Value |
@@ -471,6 +484,9 @@ Verified during this playthrough:
 | 2026-07-30 | Use Homicide as the current crime. | It offered the best observed combination of success chance and Karma reduction. |
 | 2026-07-30 | Purchase the permanent WSE Account but defer stock trading. | Unlocks the system without risking capital before 4S tools become practical. |
 | 2026-07-30 | Avoid spoilers at the Church of the Machine God. | Preserves natural discovery of a significant late-game location. |
+| 2026-08-11 | End Run 4 with an eight-augmentation package rather than extending the grind. | The package provides a useful mix of hacking and combat/crime progression and is large enough to justify the reset. |
+| 2026-08-11 | Check Tetrads and Tian Di Hui before resetting but skip their remaining options. | No additional augmentation was compelling enough to delay Run 5. |
+| 2026-08-11 | Carry the Feature Hunt philosophy into Run 5. | The hacking network can remain the economic engine while active play focuses on unexplored systems and achievements. |
 
 ---
 
@@ -518,21 +534,37 @@ Verified during this playthrough:
 
 ---
 
-## Run 4 – Into the Underworld — Current
+
+## Run 4 – Into the Underworld
 
 - Installed the Run 3 augmentation batch, bringing the total to 17 installed augmentations.
-- Rebuilt to Hacking Level 496.
-- Trained combat stats to approximately 100.
-- Began repeated Homicide and lowered Karma to -711.050.
+- Rebuilt hacking rapidly, reaching well beyond Hacking Level 600 by the end of the run.
+- Continued the automated `deploy.js` / `worker.js` network in the background.
+- After reacquiring relaySMTP.exe, a deployment scan discovered 70 servers, with 27 rooted and 24 active worker hosts using 341 worker threads at that checkpoint.
+- `foodnstuff` was automatically selected as the hacking target.
+- Trained Strength, Defense, Dexterity, and Agility from low values to approximately 100.
+- Established infiltration benchmarks at Joe's Guns and ECorp and deliberately deferred infiltration.
+- Began repeated Homicide at approximately 55% success and established meaningful Karma progression.
 - Joined Slum Snakes.
 - Travelled through Chongqing, Aevum, Volhaven, and New Tokyo.
-- Joined Tetrads and Tian Di Hui.
-- Purchased the permanent WSE Account.
+- Joined Tetrads and Tian Di Hui through city exploration.
+- Purchased the permanent WSE Account and documented the stock market for a future Feature Hunt.
 - Discovered the World Stock Exchange, IPvGO, the Iker Molina Casino, multiple universities, and hidden city locations.
 - Purchased DarkscapeNavigator.exe from the Shadowed Walkway.
-- Pivoted the project from pure hacking optimisation to balanced story progression and Feature Hunts.
-
----
+- Received `j3.msg` from jump3R pointing toward The Black Hand and `I.I.I.I`; `I.I.I.I` had already been backdoored.
+- Continued building substantial The Black Hand reputation.
+- Queued eight augmentations for Run 5:
+  - Neuralstimulator
+  - Embedded Netburner Module Core Implant
+  - Enhanced Myelin Sheathing
+  - Cranial Signal Processors - Gen IV
+  - Combat Rib I
+  - LuminCloaking-V1 Skin Implant
+  - Neural Wit Amplifier
+  - SmartSonar Implant
+- Checked Tetrads and Tian Di Hui for additional worthwhile augmentations before installation; none were selected.
+- Ended Run 4 ready to install the eight-augmentation package and begin Run 5.
+- Pivoted the project from pure hacking optimisation to balanced story progression, Feature Hunts, and achievement discovery.
 
 # Session Log
 
@@ -815,6 +847,32 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 - Time since last augmentation: 1d 12h 57m 27s
 - Total play time: 19d 19h 23m 43s
 
+
+### End-of-Run Addendum
+
+- Hacking rose from the low 300s to well over 600 during Run 4.
+- Once relaySMTP.exe was available, the deployment network could open three ports.
+- At one documented checkpoint:
+  - 70 servers discovered
+  - 27 servers rooted
+  - 24 active worker hosts
+  - 341 worker threads
+  - `foodnstuff` selected automatically as the target
+- `j3.msg` from jump3R pointed toward The Black Hand and `I.I.I.I`; the latter had already been backdoored.
+- The Black Hand reputation continued to grow substantially.
+- Tetrads and Tian Di Hui were checked for worthwhile additions to the reset package, but no further augmentations were selected.
+- Eight augmentations were purchased for the Run 5 reset:
+  - Neuralstimulator
+  - Embedded Netburner Module Core Implant
+  - Enhanced Myelin Sheathing
+  - Cranial Signal Processors - Gen IV
+  - Combat Rib I
+  - LuminCloaking-V1 Skin Implant
+  - Neural Wit Amplifier
+  - SmartSonar Implant
+- The package is deliberately broader than previous resets, combining hacking improvements with combat/crime progression.
+- Run 4 ended with the decision to install all eight together and begin Run 5.
+
 ### Lessons Learned
 
 - Feature Hunts produce meaningful progression rather than merely distracting from hacking.
@@ -901,18 +959,17 @@ Pending.
 
 # Questions To Investigate
 
-- How quickly can Karma be reduced enough to unlock further criminal systems?
-- Which Slum Snakes augmentations are worth prioritising?
-- What are the next crime-related faction thresholds?
-- When should the stock market be revisited?
-- Is 4S required before serious stock trading becomes worthwhile?
+- Which system should receive the first dedicated Run 5 Feature Hunt?
+- How quickly will the eight new augmentations accelerate the Run 5 rebuild?
+- How far should Karma progression continue before another criminal faction or mechanic becomes available?
+- Which Slum Snakes augmentations remain worthwhile after the new combat-focused reset package?
+- When should the stock market be revisited, and is 4S required before serious trading becomes worthwhile?
 - Which casino achievements or rewards exist?
 - How does IPvGO scale its permanent multiplier rewards?
 - Can IPvGO be automated effectively through Netscript?
-- What is the safest first infiltration target after combat training?
-- When should purchased-server infrastructure be rebuilt in Run 4?
+- At what combat level should Joe's Guns infiltration be retested?
+- When should purchased-server infrastructure be rebuilt in Run 5?
 - Which city or hidden location should receive the next dedicated Feature Hunt?
-- When should SQLInject.exe and Formulas.exe be reacquired?
 
 ---
 
@@ -932,4 +989,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 10 — Feature Hunt Pivot (2026-07-30)_
+_Last Updated: Session 10 — End of Run 4 / Feature Hunt Pivot (2026-08-11)_
