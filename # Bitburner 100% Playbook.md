@@ -32,27 +32,27 @@
 | Item | Value |
 |------|-------|
 | Current BitNode | BitNode-1 |
-| Current Run | Run 4 – Into the Underworld |
-| Current City | Chongqing |
-| Money | $3.174b |
+| Current Run | Run 5 – Run for the Hills |
+| Current City | Sector-12 |
+| Money | $52.911b |
 | Home RAM | 1 TB |
 | Home Cores | *(To be recorded)* |
-| Hacking Level | 600+ |
-| Strength | 103 |
-| Defense | 102 |
-| Dexterity | 106 |
-| Agility | 105 |
+| Hacking Level | 541 |
+| Strength | 122 |
+| Defense | 106 |
+| Dexterity | 157 |
+| Agility | 113 |
 | Charisma | 1 |
-| Karma | -711.050 |
+| Karma | -1.278k |
 | Hacknet Nodes | 0 |
 | Purchased Servers | 0 / 25 |
-| Current Factions | The Black Hand, Aevum, Sector-12, Tetrads, Slum Snakes, Tian Di Hui, CyberSec |
-| Augmentations Installed | 17 |
-| Augmentations Purchased, Not Installed | 8 |
-| Worker Threads | 1,615 |
-| Time Since Last Augmentation | 1d 12h 57m 27s |
-| Total Play Time | 19d 19h 23m 43s |
-| Current Focus | Finalising Run 4 and preparing the eight-augmentation installation for Run 5 |
+| Current Factions | CyberSec, NiteSec, BitRunners |
+| Augmentations Installed | 25 |
+| Augmentations Purchased, Not Installed | 0 |
+| Worker Threads | 420+ documented during rebuild |
+| Time Since Last Augmentation | 10h 24m 32s |
+| Total Play Time | 30d 3h 59m 17s |
+| Current Focus | Run 5 Feature Hunt: crime/combat progression, faction restoration, and deeper story unlocks |
 
 ---
 
@@ -60,32 +60,33 @@
 
 ## Immediate
 
-- [x] Install the completed Run 3 augmentation package.
-- [x] Begin Run 4.
-- [x] Restore hacking income and reach Hacking Level 496.
-- [x] Train combat stats to approximately 100.
-- [x] Begin serious crime progression.
-- [x] Join Slum Snakes.
-- [x] Travel to and explore Chongqing.
-- [x] Join Tetrads and Tian Di Hui.
-- [x] Purchase the permanent WSE Account.
-- [x] Explore Aevum, Volhaven, New Tokyo, and Chongqing.
-- [x] Discover IPvGO at DefComm.
-- [x] Establish crime progression through repeated Homicide.
+- [x] Install the eight Run 4 augmentations.
+- [x] Begin Run 5 with 25 installed augmentations.
+- [x] Rebuild the hacking network immediately with `deploy.js`.
+- [x] Reacquire FTPcrack.exe.
+- [x] Reacquire relaySMTP.exe.
+- [x] Reacquire HTTPWorm.exe.
+- [x] Rejoin CyberSec.
+- [x] Rejoin NiteSec.
+- [x] Create `route.js`.
+- [x] Backdoor `run4theh111z`.
+- [x] Join BitRunners.
+- [x] Reach 20 / 98 Steam achievements.
+- [ ] Continue crime progression and lower Karma further.
 - [ ] Reacquire SQLInject.exe.
 - [ ] Reacquire Formulas.exe.
-- [x] Identify IPvGO, casino, stock market, and hidden locations as future Feature Hunts.
+- [ ] Decide the next Run 5 Feature Hunt.
 
 ## Short Term
 
-- [ ] Continue underworld progression through crime and criminal factions.
-- [x] Explore Slum Snakes, Tetrads, and Tian Di Hui augmentation paths.
-- [ ] Run a dedicated IPvGO Feature Hunt.
-- [ ] Run a dedicated casino Feature Hunt.
-- [ ] Revisit the stock market once 4S becomes practical.
-- [ ] Investigate the Shadowed Walkway and Church of the Machine God later without spoilers.
-- [ ] Resume purchased-server expansion after Run 4 infrastructure is stable.
-- [x] Establish the Feature Hunt approach for balancing story progression with achievement hunting.
+- [ ] Explore BitRunners and its augmentation path.
+- [ ] Continue building combat stats through reliable crimes.
+- [ ] Revisit Homicide as success chance improves.
+- [ ] Restore The Black Hand and other useful faction memberships if needed.
+- [ ] Expand the hacking network again after the fourth port opener.
+- [ ] Rebuild purchased-server infrastructure when useful.
+- [ ] Use `route.js` instead of manual deep-network route hunting.
+- [ ] Continue balancing story progression with achievements and Feature Hunts.
 
 ## Long Term
 
@@ -149,7 +150,7 @@ Run 4 marks a deliberate pivot away from pure hacking optimisation. The current 
 
 # Achievement Tracker
 
-## Completed (19 / 98)
+## Completed (20 / 98)
 
 | Achievement | Date |
 |------------|------|
@@ -172,12 +173,13 @@ Run 4 marks a deliberate pivot away from pure hacking optimisation. The current 
 | ✅ Big trouble (Drain a server of all its money) | 2026-07-25 |
 | ✅ Thank you folders! (Have 30 scripts on Home) | 2026-07-26 |
 | ✅ Formulas.exe (Acquire Formulas.exe) | 2026-07-30 |
+| ✅ run4theh111z (Join the BitRunners) | 2026-08-11 |
 
 ## Remaining
 
-**79 Steam achievements remaining**
+**78 Steam achievements remaining**
 
-> Session 9 added two Steam achievements: storing at least 30 scripts on Home and acquiring Formulas.exe.
+> Session 11 added `run4theh111z` for joining BitRunners, bringing the Steam total to 20 / 98.
 
 ---
 
@@ -198,16 +200,18 @@ Run 4 marks a deliberate pivot away from pure hacking optimisation. The current 
 
 ### Current Strategy
 
-Run 4 is the first Feature Hunt cycle. Instead of spending the entire run rebuilding hacking efficiency, the playthrough is deliberately exploring overlooked systems while existing automation continues in the background. Crime has already unlocked Slum Snakes, city travel has unlocked Tetrads and Tian Di Hui, and visits to New Tokyo, Aevum, Volhaven, and Chongqing revealed new services, minigames, locations, and future progression paths.
+Run 5 continues the Feature Hunt philosophy rather than returning to a long augmentation/reputation grind. The eight new augmentations made the rebuild dramatically faster: hacking recovered rapidly, the automated network surpassed the comparable Run 4 checkpoint, and crime/combat progression resumed almost immediately.
+
+The hacking network remains the economic engine while active play focuses on story unlocks, criminal progression, new factions, utilities, achievements, and unexplored systems.
 
 ### Current Priorities
 
-1. Install the eight queued Run 4 augmentations and begin Run 5.
-2. Restore the hacking network quickly and use it as the economic engine.
-3. Continue active play through unexplored systems rather than repeating a pure hacking grind.
-4. Revisit IPvGO, the casino, stock trading, infiltration, and hidden locations as dedicated Feature Hunts.
-5. Continue criminal progression when it contributes to factions, augmentations, Karma, or achievements.
-6. Keep documenting discoveries as reusable research rather than one-off observations.
+1. Keep `deploy.js` running as the background progression engine.
+2. Use `route.js` for every deep-server route instead of manual `scan-analyze` hunting.
+3. Continue crime progression while success rates are strong.
+4. Explore BitRunners now that `run4theh111z` is backdoored.
+5. Reacquire remaining port-opening programs as hacking level rises.
+6. Continue choosing Feature Hunts and achievements over repetitive faction grinding when both paths remain viable.
 
 ---
 
@@ -233,6 +237,7 @@ _TBD_
 | deploy.js V3 | Scans, roots, deploys, selects targets, and starts workers | ✅ Active |
 | drain.js | Aggressively drains a target server's money for achievement attempts | ✅ Available |
 | recover.js | Restores a drained server's money and security state | ✅ Available |
+| route.js | Finds a server and prints the full connection route from `home` | ✅ New in Session 11 |
 | analyzeServers.js | Reviews server suitability and network information | ✅ Available |
 | weaken-only.js | Runs dedicated weaken operations | ✅ Available |
 | scan.js | Network discovery | ✅ Available |
@@ -244,6 +249,44 @@ _TBD_
 ## deploy.js V3
 
 The third deployment version discovers eligible servers, opens all ports supported by the available programs, gains root access where possible, copies the worker script, calculates usable threads, and automatically chooses a suitable target when none is supplied.
+
+## route.js
+
+Created in Session 11 after manually rediscovering deep faction-server routes became inefficient.
+
+`route.js`:
+
+- Searches the complete network from `home`.
+- Finds a specified destination server.
+- Reconstructs the full route.
+- Prints the route in order.
+- Prints the individual `connect` commands.
+- Reminds the player to `backdoor` the destination.
+
+First successful use:
+
+```text
+run route.js run4theh111z
+```
+
+Returned:
+
+```text
+home
+-> joesguns
+-> CSEC
+-> neo-net
+-> avmnite-02h
+-> syscore
+-> rho-construction
+-> galactic-cyber
+-> deltaone
+-> icarus
+-> taiyang-digital
+-> run4theh111z
+```
+
+This is now part of the permanent post-reset utility toolkit.
 
 ## Achievement Scripts
 
@@ -257,9 +300,26 @@ Created as the companion recovery tool for `drain.js`. It weakens and grows a de
 
 ## Current Capacity
 
-- Total worker threads reached: **1,615**
-- Purchased servers: **4**
-- Home RAM: **1 TB**
+Run 5 rebuild checkpoints:
+
+- Initial deployment:
+  - 70 servers discovered
+  - 12 servers rooted
+  - 12 active worker hosts
+  - 88 worker threads
+  - `foodnstuff` selected automatically
+- After FTPcrack.exe and relaySMTP.exe:
+  - 70 servers discovered
+  - 27 servers rooted
+  - 24 active worker hosts
+  - 420 worker threads
+  - `phantasy` selected automatically
+- After HTTPWorm.exe:
+  - Fourth port opener available
+  - `run4theh111z` successfully rooted
+  - Network expanded again beyond the documented 420-thread checkpoint
+- Home RAM: **1.02 TB**
+- Purchased servers: **0 / 25**
 
 ---
 
@@ -267,7 +327,7 @@ Created as the companion recovery tool for `drain.js`. It weakens and grows a de
 
 Programs reset after augmentation installation and must be recreated or reacquired.
 
-## Currently Acquired
+## Currently Acquired in Run 5
 
 | Program | Status | Purpose |
 |---------|--------|---------|
@@ -276,18 +336,18 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | FTPcrack.exe | ✅ Acquired | Opens FTP ports |
 | relaySMTP.exe | ✅ Acquired | Opens SMTP ports |
 | HTTPWorm.exe | ✅ Acquired | Opens HTTP ports |
-| DeepscanV1.exe | ✅ Acquired | Extends scan-analyze depth to 5 |
-| DeepscanV2.exe | ✅ Acquired | Extends scan-analyze depth to 10 |
-| ServerProfiler.exe | ✅ Acquired | Displays server information |
-| AutoLink.exe | ✅ Acquired | Enables direct connections through scan-analyze |
-| DarkscapeNavigator.exe | ✅ Acquired | Purchased from the Shadowed Walkway in Chongqing |
 
-## Not Yet Reacquired This Run
+## Not Yet Reconfirmed / Reacquired
 
-| Program | Requirement |
-|---------|-------------|
-| SQLInject.exe | Hacking Level 750 |
-| Formulas.exe | Hacking Level 1000 |
+| Program | Notes |
+|---------|-------|
+| SQLInject.exe | Fifth port opener; not yet reacquired in Session 11 |
+| DeepscanV1.exe | Reacquisition not recorded in the Session 11 summary |
+| DeepscanV2.exe | Reacquisition not recorded in the Session 11 summary |
+| ServerProfiler.exe | Reacquisition not recorded in the Session 11 summary |
+| AutoLink.exe | Reacquisition not recorded in the Session 11 summary |
+| DarkscapeNavigator.exe | Reacquisition not recorded in the Session 11 summary |
+| Formulas.exe | Requires rebuilding to the Hacking Level 1000 milestone |
 
 ---
 
@@ -303,14 +363,18 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 | Upgrade | Status |
 |----------|--------|
-| RAM | 1 TB |
+| RAM | 1.02 TB |
 | CPU Cores | *(To be recorded)* |
 
 ## Network Capacity
 
-- Run 3 reached 1,615 worker threads; Run 4 capacity is being rebuilt.
-- Purchased-server infrastructure must be rebuilt during Run 4.
+- Run 5 began with 88 worker threads immediately after the reset.
+- The network reached 420 worker threads after reacquiring three port openers.
+- HTTPWorm.exe enabled a fourth-port redeploy and access to `run4theh111z`.
+- Run 5 already exceeded the comparable 341-thread Run 4 checkpoint.
+- Purchased-server infrastructure remains at 0 / 25.
 - `deploy.js V3` remains the central deployment tool.
+- `route.js` now handles deep-server route discovery.
 
 ---
 
@@ -318,38 +382,31 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 ## Current Membership
 
-- The Black Hand
-- Aevum
-- Sector-12
-- Tetrads
-- Slum Snakes
-- Tian Di Hui
 - CyberSec
+- NiteSec
+- BitRunners
 
-## Current Faction Progress
+## Restored / Unlocked During Session 11
 
-| Faction | Reputation | Favor | Augmentations Remaining | Notes |
-|---------|------------|-------|-------------------------|-------|
-| The Black Hand | 673.731k | 192.699 | 4 | Major hacking faction retained as a current path |
-| Aevum | 649.023 | 29.456 | 2 | City faction |
-| Sector-12 | 72.637k | 134.514 | 2 | Original city faction |
-| Tetrads | 75.092 | 0.000 | 6 | Joined after travelling to Chongqing |
-| Slum Snakes | 166.008 | 0.000 | 5 | Unlocked through Homicide and falling Karma |
-| Tian Di Hui | 74.675 | 0.000 | 6 | Joined after travelling to Chongqing |
-| CyberSec | 66.129k | 119.556 | 0 | Fully cleared of augmentations |
+| Faction | How Access Was Restored | Notes |
+|---------|--------------------------|-------|
+| CyberSec | Backdoored `CSEC` | Route: `home -> joesguns -> CSEC` |
+| NiteSec | Backdoored `avmnite-02h` | Route: `home -> joesguns -> CSEC -> neo-net -> avmnite-02h` |
+| BitRunners | Backdoored `run4theh111z` | New Session 11 faction and achievement |
 
 ## Faction History
 
 | Faction | Status | Notes |
 |---------|--------|-------|
-| Sector-12 | Current | First city faction |
-| CyberSec | Current | No augmentations remaining |
-| NiteSec | Previous | Important hacking faction during earlier runs |
-| Aevum | Current | City faction |
-| The Black Hand | Current | Major hacking faction |
-| Tetrads | Current | Chongqing faction |
-| Tian Di Hui | Current | Chongqing faction |
-| Slum Snakes | Current | First criminal faction |
+| Sector-12 | Previous | First city faction |
+| CyberSec | Current | Restored during Run 5 |
+| NiteSec | Current | Restored during Run 5 |
+| Aevum | Previous | City faction |
+| The Black Hand | Previous | Major hacking faction |
+| Tetrads | Previous | Chongqing faction |
+| Tian Di Hui | Previous | Chongqing faction |
+| Slum Snakes | Previous | First criminal faction |
+| BitRunners | Current | Unlocked via `run4theh111z` in Session 11 |
 
 ---
 
@@ -383,45 +440,51 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | The Black Hand | ✅ Installed |
 | NeuroFlux Governor - Level 6 | ✅ Installed |
 
-## Purchased, Not Installed — Run 4 → Run 5
+## Installed During Run 4 → Run 5
 
 | Augmentation | Status |
 |--------------|--------|
-| Neuralstimulator | 🟡 Purchased |
-| Embedded Netburner Module Core Implant | 🟡 Purchased |
-| Enhanced Myelin Sheathing | 🟡 Purchased |
-| Cranial Signal Processors - Gen IV | 🟡 Purchased |
-| Combat Rib I | 🟡 Purchased |
-| LuminCloaking-V1 Skin Implant | 🟡 Purchased |
-| Neural Wit Amplifier | 🟡 Purchased |
-| SmartSonar Implant | 🟡 Purchased |
+| Neuralstimulator | ✅ Installed |
+| Embedded Netburner Module Core Implant | ✅ Installed |
+| Enhanced Myelin Sheathing | ✅ Installed |
+| Cranial Signal Processors - Gen IV | ✅ Installed |
+| Combat Rib I | ✅ Installed |
+| LuminCloaking-V1 Skin Implant | ✅ Installed |
+| Neural Wit Amplifier | ✅ Installed |
+| SmartSonar Implant | ✅ Installed |
 
 ## Current Multipliers
 
 | Multiplier | Current Value |
 |------------|---------------|
-| Hacking Chance | 117.03% |
-| Hacking Speed | 119.53% |
-| Hacking Money | 167.86% |
-| Hacking Growth | 106.15% |
-| Hacking Level | 162.16% |
-| Hacking Experience | 141.00% |
-| Hacknet Production | 106.15% |
+| Hacking Chance | 132.60% |
+| Hacking Speed | 131.94% |
+| Hacking Money | 221.57% |
+| Hacking Growth | 132.69% |
+| Hacking Level | 187.39% |
+| Hacking Experience | 185.87% |
+| Hacknet Production | 100.15% |
 | Hacknet Purchase Cost | 94.20% |
 | Hacknet RAM Upgrade Cost | 94.20% |
 | Hacknet Core Purchase Cost | 94.20% |
 | Hacknet Level Upgrade Cost | 94.20% |
-| Company Reputation Gain | 116.77% |
-| Faction Reputation Gain | 106.15% |
-| Salary | 106.15% |
-| Crime Success Chance | 106.15% |
-| Crime Money | 106.15% |
-| Strength Level | 122.08% |
-| Defense Level | 106.15% |
-| Dexterity Level | 141.00% |
-| Agility Level | 111.46% |
-| Charisma Level | 133.75% |
-| Physical and Charisma Experience | 134.28% |
+| Company Reputation Gain | 122.61% |
+| Faction Reputation Gain | 100.15% |
+| Salary | 100.15% |
+| Crime Success Chance | 100.15% |
+| Crime Money | 145.96% |
+| Strength Level | 134.28% |
+| Strength Experience | 134.28% |
+| Defense Level | 116.77% |
+| Defense Experience | 134.28% |
+| Dexterity Level | 155.10% |
+| Dexterity Experience | 154.43% |
+| Agility Level | 117.03% |
+| Agility Experience | 134.28% |
+| Charisma Level | 141.90% |
+| Charisma Experience | 141.00% |
+
+> The game reports **25 installed augmentations**. NeuroFlux Governor levels are tracked historically in this playbook, so the row count across installation tables should not be used as the authoritative total.
 
 ---
 
@@ -453,6 +516,11 @@ Verified during this playthrough:
 - Travel can unlock factions and unique city locations immediately.
 - Permanent hardware upgrades are available from multiple technology companies, not only Fulcrum Technologies.
 - IPvGO is a separate strategy system with permanent multiplier rewards and faction-favor interactions.
+- `route.js` can reconstruct a complete deep-server route from `home`, removing the need for repeated manual `scan-analyze` route hunting.
+- `run4theh111z` requires four open ports and Hacking Level 516 for backdoor access in the documented Run 5 state.
+- Reacquiring HTTPWorm.exe supplied the fourth port opener needed to root `run4theh111z`.
+- The Run 5 augmentation package produced a noticeably faster hacking-network rebuild than Run 4.
+- Crime progression can be staged: Rob Store was useful at very low combat stats, Mug became reliable later, and Homicide success rose steadily as Strength and Defense improved.
 
 ---
 
@@ -487,6 +555,10 @@ Verified during this playthrough:
 | 2026-08-11 | End Run 4 with an eight-augmentation package rather than extending the grind. | The package provides a useful mix of hacking and combat/crime progression and is large enough to justify the reset. |
 | 2026-08-11 | Check Tetrads and Tian Di Hui before resetting but skip their remaining options. | No additional augmentation was compelling enough to delay Run 5. |
 | 2026-08-11 | Carry the Feature Hunt philosophy into Run 5. | The hacking network can remain the economic engine while active play focuses on unexplored systems and achievements. |
+| 2026-08-11 | Create `route.js` after locating BitRunners manually. | Deep network routes are too tedious to rediscover by hand after every reset. |
+| 2026-08-11 | Follow the `run4theh111z` message immediately. | New story/faction content takes priority over another repetitive reputation grind. |
+| 2026-08-11 | Progress crime from Rob Store → Mug → Homicide as success chances improve. | Provides safe combat growth first, then increasingly efficient Karma progression. |
+| 2026-08-11 | End Session 11 with crime running rather than another faction contract. | Karma and combat progression now unlock additional systems while hacking continues in the background. |
 
 ---
 
@@ -565,6 +637,30 @@ Verified during this playthrough:
 - Checked Tetrads and Tian Di Hui for additional worthwhile augmentations before installation; none were selected.
 - Ended Run 4 ready to install the eight-augmentation package and begin Run 5.
 - Pivoted the project from pure hacking optimisation to balanced story progression, Feature Hunts, and achievement discovery.
+
+## Run 5 – Run for the Hills — Current
+
+- Installed the eight augmentations prepared at the end of Run 4.
+- Started with 25 installed augmentations, approximately $1m, 1.02 TB Home RAM, and reset base skills.
+- Rebuilt the hacking network immediately with `deploy.js`.
+- Initial network: 70 servers discovered, 12 rooted, 12 active worker hosts, 88 worker threads.
+- Reacquired FTPcrack.exe and relaySMTP.exe.
+- Three-port deployment reached 27 rooted servers, 24 active worker hosts, and 420 worker threads.
+- `phantasy` replaced `foodnstuff` as the automatically selected target.
+- Reacquired HTTPWorm.exe for the fourth port opener.
+- Rejoined CyberSec and NiteSec.
+- Began deliberate crime/combat progression:
+  - Rob Store at 100% success
+  - Mug once success reached 82.75%, later 100%
+  - Homicide improved from ~7.95% to ~63.09%
+- Received the `run4theh111z` message.
+- Created `route.js` and used it to find the full route to BitRunners.
+- Rooted and backdoored `run4theh111z`.
+- Joined BitRunners.
+- Earned the `run4theh111z` achievement, reaching 20 / 98 Steam achievements.
+- Ended Session 11 with the Feature Hunt philosophy intact: hacking in the background, active play focused on crime, story unlocks, utilities, factions, and achievements.
+
+---
 
 # Session Log
 
@@ -881,6 +977,140 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 - The automated hacking network makes it possible to explore other systems without giving up income or experience.
 - The project should continue balancing story progression, system discovery, and achievement hunting.
 
+---
+
+## Session 11 – Run for the Hills
+
+### Major Milestones
+
+- Began Run 5 with 25 installed augmentations.
+- Rebuilt hacking immediately after the reset.
+- Reacquired FTPcrack.exe, relaySMTP.exe, and HTTPWorm.exe.
+- Restored CyberSec and NiteSec access.
+- Reached Hacking Level 541 within the first 10h 24m of the run.
+- Recovered to $52.911b.
+- Established a 420-thread documented network checkpoint before the fourth-port redeploy.
+- Began deliberate crime/combat progression from base stats.
+- Created `route.js`.
+- Followed `run4theh111z` to BitRunners.
+- Backdoored `run4theh111z`.
+- Joined BitRunners.
+- Earned achievement #20: `run4theh111z`.
+
+### Hacking Network Rebuild
+
+Initial deployment:
+
+- 70 servers discovered
+- 12 servers rooted
+- 12 active worker hosts
+- 88 worker threads
+- `foodnstuff` selected automatically
+
+After FTPcrack.exe and relaySMTP.exe:
+
+- 70 servers discovered
+- 27 servers rooted
+- 24 active worker hosts
+- 420 worker threads
+- `phantasy` selected automatically
+
+After HTTPWorm.exe:
+
+- Four port openers available
+- `run4theh111z` successfully rooted
+- Network expanded beyond the documented 420-thread checkpoint
+
+### Crime / Combat Progression
+
+- Started Run 5 with combat stats reset to 1.
+- Used Rob Store first because it had 100% success.
+- Rob Store rapidly raised Dexterity and Agility.
+- Switched to Mug at 82.75% success.
+- Mug later reached 100% success.
+- Strength and Defense progressed through 50, 75, and approximately 100.
+- Homicide success improved:
+  - ~7.95% initially
+  - ~36.15% around STR/DEF 50
+  - ~46.82% around STR/DEF 75
+  - ~63.09% later
+- Karma became increasingly negative.
+
+### Faction Restoration
+
+CyberSec route:
+
+```text
+home -> joesguns -> CSEC
+```
+
+NiteSec route:
+
+```text
+home -> joesguns -> CSEC -> neo-net -> avmnite-02h
+```
+
+BitRunners route discovered by `route.js`:
+
+```text
+home
+-> joesguns
+-> CSEC
+-> neo-net
+-> avmnite-02h
+-> syscore
+-> rho-construction
+-> galactic-cyber
+-> deltaone
+-> icarus
+-> taiyang-digital
+-> run4theh111z
+```
+
+### `run4theh111z`
+
+Documented final analysis:
+
+```text
+Root Access: YES
+Backdoor: NO
+Required hacking skill: 516
+
+SSH:  Open
+FTP:  Open
+SMTP: Open
+HTTP: Open
+SQL:  Closed
+```
+
+Hacking Level had already reached approximately 540, so the backdoor requirement was satisfied.
+
+### Current State
+
+- Current city: Sector-12
+- Money: $52.911b
+- Hacking Level: 541
+- Strength: 122
+- Defense: 106
+- Dexterity: 157
+- Agility: 113
+- Charisma: 1
+- Karma: -1.278k
+- Hacknet Nodes: 0
+- Installed augmentations: 25
+- Current factions confirmed this session: CyberSec, NiteSec, BitRunners
+- Steam achievements: 20 / 98
+- Time since last augmentation: 10h 24m 32s
+- Total play time: 30d 3h 59m 17s
+
+### Lessons Learned
+
+- The Run 5 augmentation package dramatically accelerated the rebuild.
+- A reusable network-route utility is now as important as the deployment script after resets.
+- Crime progression works well as a staged ladder rather than jumping directly to Homicide.
+- Story messages should be followed when they reveal new systems or factions.
+- The automated hacking network remains strong enough to fund Feature Hunts without making them feel like lost progression time.
+
 # Research Notes
 
 ## Documentation
@@ -957,19 +1187,31 @@ Pending.
 - The Church of the Machine God and Shadowed Walkway are significant unique locations.
 - New Tokyo's arcade and noodle interaction indicate small side systems and mysteries exist outside core progression.
 
+## Session 11 Discoveries
+
+- `route.js` can eliminate most manual deep-network route hunting after resets.
+- The first Run 5 use found an 11-hop route from `home` to `run4theh111z`.
+- `run4theh111z` required four open ports and Hacking Level 516 in the documented state.
+- HTTPWorm.exe was the missing fourth port opener needed for the BitRunners path.
+- Rob Store is useful as an early safe crime when combat stats are near 1.
+- Mug becomes an effective all-round combat-training crime once its success rate rises.
+- Homicide success improved steadily as Strength and Defense increased.
+- The eight Run 4 augmentations made Run 5's hacking recovery substantially faster than the comparable Run 4 stage.
+- BitRunners became the next major hacking faction unlocked through natural story progression.
+
 # Questions To Investigate
 
-- Which system should receive the first dedicated Run 5 Feature Hunt?
-- How quickly will the eight new augmentations accelerate the Run 5 rebuild?
-- How far should Karma progression continue before another criminal faction or mechanic becomes available?
-- Which Slum Snakes augmentations remain worthwhile after the new combat-focused reset package?
-- When should the stock market be revisited, and is 4S required before serious trading becomes worthwhile?
-- Which casino achievements or rewards exist?
-- How does IPvGO scale its permanent multiplier rewards?
-- Can IPvGO be automated effectively through Netscript?
-- At what combat level should Joe's Guns infiltration be retested?
+- What should the first dedicated BitRunners objective be?
+- Which BitRunners augmentations are worth prioritising?
+- How far should Karma be pushed during Run 5?
+- What criminal faction or mechanic is likely to unlock next from continued crime progression?
+- At what combat stats should Homicide become the default crime?
+- Should `route.js` eventually support automatic `connect` execution?
+- Should `route.js` be integrated into `deploy.js` or remain a separate utility?
+- How large will the hacking network become after SQLInject.exe is reacquired?
 - When should purchased-server infrastructure be rebuilt in Run 5?
-- Which city or hidden location should receive the next dedicated Feature Hunt?
+- Which Feature Hunt should follow the BitRunners unlock?
+- When should Formulas.exe be reacquired this run?
 
 ---
 
@@ -989,4 +1231,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 10 — End of Run 4 / Feature Hunt Pivot (2026-08-11)_
+_Last Updated: Session 11 — Run 5 / Run for the Hills (2026-08-11)_
