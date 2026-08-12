@@ -34,25 +34,25 @@
 | Current BitNode | BitNode-1 |
 | Current Run | Run 5 – Run for the Hills |
 | Current City | Sector-12 |
-| Money | $52.911b |
+| Money | $121.985b |
 | Home RAM | 1 TB |
 | Home Cores | *(To be recorded)* |
-| Hacking Level | 541 |
-| Strength | 122 |
-| Defense | 106 |
-| Dexterity | 157 |
-| Agility | 113 |
-| Charisma | 1 |
-| Karma | -1.278k |
-| Hacknet Nodes | 0 |
+| Hacking Level | 560 |
+| Strength | 204 |
+| Defense | 177 |
+| Dexterity | 244 |
+| Agility | 179 |
+| Charisma | 71 |
+| Karma | -58.531k |
+| Hacknet Nodes | 9 |
 | Purchased Servers | 0 / 25 |
-| Current Factions | CyberSec, NiteSec, BitRunners |
+| Current Factions | BitRunners, NiteSec, Sector-12, Slum Snakes, Netburners, CyberSec |
 | Augmentations Installed | 25 |
 | Augmentations Purchased, Not Installed | 0 |
 | Worker Threads | 420+ documented during rebuild |
-| Time Since Last Augmentation | 10h 24m 32s |
-| Total Play Time | 30d 3h 59m 17s |
-| Current Focus | Run 5 Feature Hunt: crime/combat progression, faction restoration, and deeper story unlocks |
+| Time Since Last Augmentation | 1d 3h 54m 54s |
+| Total Play Time | 30d 21h 29m 39s |
+| Current Focus | Run 5 Feature Hunt: Dark Net exploration, crime progression, and deeper faction/story systems |
 
 ---
 
@@ -72,20 +72,30 @@
 - [x] Backdoor `run4theh111z`.
 - [x] Join BitRunners.
 - [x] Reach 20 / 98 Steam achievements.
-- [ ] Continue crime progression and lower Karma further.
+- [x] Purchase DarkscapeNavigator.exe.
+- [x] Unlock and enter the Dark Net.
+- [x] Build a working Dark Net reconnaissance script.
+- [x] Authenticate Dark Net servers through Netscript.
+- [x] Use `memoryReallocation()` successfully.
+- [x] Raise Charisma substantially through Dark Net activity.
+- [ ] Determine how to progress beyond Dark Net Depth 0.
+- [ ] Investigate how to retrieve Dark Net data and literature files.
+- [ ] Investigate reward caches.
+- [ ] Continue learning additional Dark Net vulnerability models.
+- [ ] Continue Homicide/Karma progression in parallel.
 - [ ] Reacquire SQLInject.exe.
 - [ ] Reacquire Formulas.exe.
-- [ ] Decide the next Run 5 Feature Hunt.
 
 ## Short Term
 
 - [ ] Explore BitRunners and its augmentation path.
-- [ ] Continue building combat stats through reliable crimes.
-- [ ] Revisit Homicide as success chance improves.
-- [ ] Restore The Black Hand and other useful faction memberships if needed.
-- [ ] Expand the hacking network again after the fourth port opener.
+- [ ] Continue building combat stats through Homicide.
+- [ ] Investigate Dark Net footholds and deeper traversal.
+- [ ] Investigate cache-opening mechanics.
+- [ ] Test Dark Net file retrieval from compromised hosts.
+- [ ] Revisit Stasis Links once sufficient RAM is available on a suitable Dark Net server.
+- [ ] Expand the hacking network after additional port openers are reacquired.
 - [ ] Rebuild purchased-server infrastructure when useful.
-- [ ] Use `route.js` instead of manual deep-network route hunting.
 - [ ] Continue balancing story progression with achievements and Feature Hunts.
 
 ## Long Term
@@ -144,7 +154,7 @@ The ultimate objective of this playthrough is to earn **all 98 Steam achievement
 
 **Phase 3 — Feature Discovery**
 
-Run 4 marks a deliberate pivot away from pure hacking optimisation. The current strategy is to explore neglected systems—crime, cities, factions, stock trading, education, casinos, infiltrations, and IPvGO—while the automated hacking network continues generating money and experience in the background.
+Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continues in parallel while the automated hacking network funds exploration. Session 12 unlocked a major new subsystem: a dynamic Dark Net with its own API, vulnerability models, authentication, blocked RAM, reward caches, data files, Stasis Links, and depth-based progression.
 
 ---
 
@@ -200,18 +210,20 @@ Run 4 marks a deliberate pivot away from pure hacking optimisation. The current 
 
 ### Current Strategy
 
-Run 5 continues the Feature Hunt philosophy rather than returning to a long augmentation/reputation grind. The eight new augmentations made the rebuild dramatically faster: hacking recovered rapidly, the automated network surpassed the comparable Run 4 checkpoint, and crime/combat progression resumed almost immediately.
+Run 5 continues the Feature Hunt philosophy rather than returning to a long augmentation/reputation grind. Session 12 opened the Dark Net, giving the playthrough a second cybercrime progression path alongside the Slums crime system.
 
-The hacking network remains the economic engine while active play focuses on story unlocks, criminal progression, new factions, utilities, achievements, and unexplored systems.
+The hacking network remains the economic engine while Homicide runs in parallel and active play focuses on Dark Net reconnaissance, authentication, exploitation, Charisma growth, deeper faction/story systems, and achievements.
 
 ### Current Priorities
 
 1. Keep `deploy.js` running as the background progression engine.
-2. Use `route.js` for every deep-server route instead of manual `scan-analyze` hunting.
-3. Continue crime progression while success rates are strong.
-4. Explore BitRunners now that `run4theh111z` is backdoored.
-5. Reacquire remaining port-opening programs as hacking level rises.
-6. Continue choosing Feature Hunts and achievements over repetitive faction grinding when both paths remain viable.
+2. Keep Homicide running while it remains at 100% success.
+3. Use `route.js` for normal-network faction and server routing.
+4. Use `dnet-worker.js` for Dark Net reconnaissance from `darkweb`.
+5. Focus Dark Net research on progressing beyond Depth 0 instead of reverse-engineering every API immediately.
+6. Investigate Dark Net files, caches, footholds, and deeper traversal.
+7. Reacquire remaining port-opening programs as hacking level rises.
+8. Continue choosing Feature Hunts and achievements over repetitive faction grinding when both paths remain viable.
 
 ---
 
@@ -238,6 +250,8 @@ _TBD_
 | drain.js | Aggressively drains a target server's money for achievement attempts | ✅ Available |
 | recover.js | Restores a drained server's money and security state | ✅ Available |
 | route.js | Finds a server and prints the full connection route from `home` | ✅ New in Session 11 |
+| dnet-worker.js | Dark Net reconnaissance and scripted authentication from `darkweb` | ✅ New in Session 12 |
+| dnet-stasis.js | Tests local Stasis Link activation on Dark Net servers | 🧪 Experimental |
 | analyzeServers.js | Reviews server suitability and network information | ✅ Available |
 | weaken-only.js | Runs dedicated weaken operations | ✅ Available |
 | scan.js | Network discovery | ✅ Available |
@@ -287,6 +301,51 @@ home
 ```
 
 This is now part of the permanent post-reset utility toolkit.
+
+## Dark Net Scripts
+
+### dnet-worker.js
+
+Created during Session 12 and copied to `darkweb` so Dark Net-local APIs can execute from the correct context.
+
+Current reconnaissance output includes:
+
+- Server name
+- Online state
+- Session state
+- Vulnerability model
+- Password hint
+- Password data
+- Password length
+- Password format
+- Required Charisma
+- Depth
+- Blocked RAM
+
+The script also successfully performed scripted authentication against a directly connected Dark Net server.
+
+First confirmed scripted authentication:
+
+- Target: `met4&4nonymous`
+- Model: `DeskMemo_3.1`
+- Password: `801`
+- Result: `200 Success`
+- Session established: yes
+
+### dnet-stasis.js
+
+Created to test `ns.dnet.setStasisLink()`.
+
+Findings:
+
+- `setStasisLink()` expects a boolean rather than a hostname.
+- The operation must be run locally on the Dark Net server being stabilised.
+- Script RAM requirement: **13.65 GB**
+  - 12.00 GB for `dnet.setStasisLink`
+  - 1.60 GB base script cost
+  - 0.05 GB for `getHostname`
+
+Stasis testing is deferred until a suitable higher-RAM Dark Net foothold is available.
 
 ## Achievement Scripts
 
@@ -373,6 +432,7 @@ Programs reset after augmentation installation and must be recreated or reacquir
 - HTTPWorm.exe enabled a fourth-port redeploy and access to `run4theh111z`.
 - Run 5 already exceeded the comparable 341-thread Run 4 checkpoint.
 - Purchased-server infrastructure remains at 0 / 25.
+- Hacknet Nodes rebuilt to **9** by Session 12.
 - `deploy.js V3` remains the central deployment tool.
 - `route.js` now handles deep-server route discovery.
 
@@ -382,31 +442,38 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 ## Current Membership
 
-- CyberSec
-- NiteSec
 - BitRunners
+- NiteSec
+- Sector-12
+- Slum Snakes
+- Netburners
+- CyberSec
 
-## Restored / Unlocked During Session 11
+## Current Faction Progress
 
-| Faction | How Access Was Restored | Notes |
-|---------|--------------------------|-------|
-| CyberSec | Backdoored `CSEC` | Route: `home -> joesguns -> CSEC` |
-| NiteSec | Backdoored `avmnite-02h` | Route: `home -> joesguns -> CSEC -> neo-net -> avmnite-02h` |
-| BitRunners | Backdoored `run4theh111z` | New Session 11 faction and achievement |
+| Faction | Reputation | Favor | Augmentations Remaining | Notes |
+|---------|------------|-------|-------------------------|-------|
+| BitRunners | 2.646k | 0.000 | 5 | Newly unlocked in Session 11 |
+| NiteSec | 92.367k | 231.903 | 2 | Restored in Run 5 |
+| Sector-12 | 80.375k | 190.485 | 1 | Rejoined during Run 5 |
+| Slum Snakes | 20.322k | 44.954 | 1 | Crime faction; Homicide progression continues |
+| Netburners | 2.580k | 0.000 | 5 | Newly joined during Run 5 |
+| CyberSec | 78.890k | 183.506 | 0 | Fully cleared of augmentations |
 
 ## Faction History
 
 | Faction | Status | Notes |
 |---------|--------|-------|
-| Sector-12 | Previous | First city faction |
-| CyberSec | Current | Restored during Run 5 |
+| Sector-12 | Current | Original city faction |
+| CyberSec | Current | Restored during Run 5; no augmentations remaining |
 | NiteSec | Current | Restored during Run 5 |
 | Aevum | Previous | City faction |
 | The Black Hand | Previous | Major hacking faction |
 | Tetrads | Previous | Chongqing faction |
 | Tian Di Hui | Previous | Chongqing faction |
-| Slum Snakes | Previous | First criminal faction |
-| BitRunners | Current | Unlocked via `run4theh111z` in Session 11 |
+| Slum Snakes | Current | First criminal faction |
+| BitRunners | Current | Unlocked via `run4theh111z` |
+| Netburners | Current | Joined during Run 5 |
 
 ---
 
@@ -521,6 +588,17 @@ Verified during this playthrough:
 - Reacquiring HTTPWorm.exe supplied the fourth port opener needed to root `run4theh111z`.
 - The Run 5 augmentation package produced a noticeably faster hacking-network rebuild than Run 4.
 - Crime progression can be staged: Rob Store was useful at very low combat stats, Mug became reliable later, and Homicide success rose steadily as Strength and Defense improved.
+- DarkscapeNavigator.exe unlocks the Dark Net and `ns.dnet` API.
+- The Dark Net is dynamic: servers and connections can migrate while operations are running.
+- `darkweb` acts as the stable gateway into the Dark Net.
+- Several `ns.dnet` functions require execution from a Dark Net server rather than from `home`.
+- `probe(false)` is more reliable for reconnaissance than manually following the changing Dark Net map.
+- Dark Net authentication can be automated from a directly connected Dark Net server.
+- `memoryReallocation()` can liberate blocked RAM and award Charisma XP.
+- Liberated RAM persists even after the target migrates away or an active session is lost.
+- Network migration can interrupt active exploitation with `Direct Connection Required`.
+- Stasis Links are local server operations and have a substantial RAM cost.
+- Dark Net servers can contain reward caches, data files, literature files, blocked RAM, and other unexplored resources.
 
 ---
 
@@ -559,6 +637,11 @@ Verified during this playthrough:
 | 2026-08-11 | Follow the `run4theh111z` message immediately. | New story/faction content takes priority over another repetitive reputation grind. |
 | 2026-08-11 | Progress crime from Rob Store → Mug → Homicide as success chances improve. | Provides safe combat growth first, then increasingly efficient Karma progression. |
 | 2026-08-11 | End Session 11 with crime running rather than another faction contract. | Karma and combat progression now unlock additional systems while hacking continues in the background. |
+| 2026-08-12 | Purchase DarkscapeNavigator.exe and investigate the resulting Dark Net unlock. | A new game system takes priority over another routine progression grind. |
+| 2026-08-12 | Run Dark Net scripts from `darkweb` instead of `home`. | Several `ns.dnet` operations require Dark Net-local execution. |
+| 2026-08-12 | Build `dnet-worker.js` as a reusable reconnaissance tool. | The Dark Net topology changes too quickly for reliable manual mapping. |
+| 2026-08-12 | Stop forcing Stasis Links on small Depth 0 targets. | The 13.65 GB RAM requirement makes the mechanic better suited to later footholds. |
+| 2026-08-12 | Focus future Dark Net research on reaching Depth 1+ rather than exhaustively reverse-engineering all APIs. | Progression matters more than complete documentation at this stage. |
 
 ---
 
@@ -659,6 +742,16 @@ Verified during this playthrough:
 - Joined BitRunners.
 - Earned the `run4theh111z` achievement, reaching 20 / 98 Steam achievements.
 - Ended Session 11 with the Feature Hunt philosophy intact: hacking in the background, active play focused on crime, story unlocks, utilities, factions, and achievements.
+- Session 12 purchased DarkscapeNavigator.exe and unlocked the Dark Net.
+- Entered and manually explored the unstable Dark Net for the first time.
+- Built `dnet-worker.js` and ran it from `darkweb`.
+- Successfully authenticated multiple Dark Net servers using several vulnerability models.
+- Automated authentication and RAM reclamation.
+- Confirmed `memoryReallocation()` grants Charisma XP.
+- Raised Charisma from 1 to approximately 71 during the Dark Net expedition.
+- Continued Homicide at 100% success while Karma fell to approximately -58.5k.
+- Joined Netburners.
+- Ended Session 12 with Dark Net Depth progression as the next major research target.
 
 ---
 
@@ -1111,6 +1204,138 @@ Hacking Level had already reached approximately 540, so the backdoor requirement
 - Story messages should be followed when they reveal new systems or factions.
 - The automated hacking network remains strong enough to fund Feature Hunts without making them feel like lost progression time.
 
+---
+
+## Session 12 – Into the Dark Net
+
+### Major Milestones
+
+- Started with 25 augmentations installed.
+- Continued Homicide at 100% success in the background.
+- Purchased `DarkscapeNavigator.exe`.
+- Unlocked the Dark Net and `ns.dnet` API.
+- Entered the Dark Net for the first time.
+- Confirmed that Dark Net topology changes constantly.
+- Built and ran `dnet-worker.js` from `darkweb`.
+- Successfully authenticated Dark Net servers manually and through Netscript.
+- Used `memoryReallocation()` successfully.
+- Confirmed blocked-RAM theft awards Charisma XP.
+- Raised Charisma from 1 to approximately 71.
+- Joined Netburners.
+- Continued crime progression, lowering Karma to approximately -58.5k.
+
+### Dark Net Vulnerability Models
+
+#### ZeroLogon
+
+- Blank password when no password is configured.
+- Confirmed on `smart_fridg3`, `hackergrid`, and `smart_doorbell`.
+
+#### PHP 5.4
+
+- Reverse the supplied numeric data.
+- Example: `367` -> `763`.
+- Confirmed on `netweb$networks`.
+
+#### CloudBlare(tm)
+
+- Extract digits from noisy data.
+- Examples:
+  - `8~]2[;5` -> `825`
+  - `4]#~6/(]7` -> `467`
+  - `5:8.4` -> `584`
+- Confirmed on `icarus_microsystems`.
+
+#### DeskMemo_3.1
+
+- Password is exposed through the memo/hint.
+- Examples:
+  - `The key is 801`
+  - `Remember to use 808`
+
+#### OctantVoxel
+
+- Convert a supplied number from another base into base 10.
+- Example from `blade_industries`:
+  - Base: 11
+  - Number: `322`
+  - Password: `387`
+
+#### FreshInstall_1.0
+
+- Indicates that the default password was never changed.
+- Exact password-generation behavior remains unresolved.
+
+#### DeepGreen
+
+- Encountered with hint: `Only a true master may pass`.
+- Required Charisma observed: 121.
+- Deliberately left unexplored for later.
+
+### Dark Net Resources
+
+Compromised servers can expose:
+
+- Reward caches
+- Data files
+- Literature files
+- Blocked RAM
+- Terminal resources not yet investigated
+
+Example from `facebucks`:
+
+- Reward cache: `wallet_036.cache`
+- Data file: `THE_TRUTH.data.txt`
+- Blocked RAM: 16 GB
+
+### RAM Reallocation
+
+Against `met4&4nonymous`:
+
+- Each successful operation liberated 0.0600 GB.
+- Each operation awarded 15.5 Charisma XP.
+- Network migration eventually interrupted the process with `Direct Connection Required`.
+
+Against `icarus_microsystems`:
+
+- Initial blocked RAM: 2.00 GB.
+- Approximately 0.54 GB was liberated.
+- Later blocked RAM: 1.46 GB.
+- The reduced blocked-RAM state persisted even after the active session was lost.
+
+### Stasis Links
+
+- Current Stasis Link limit observed: 1.
+- `setStasisLink()` expects a boolean.
+- Stasis must be applied locally from the server being stabilised.
+- `dnet-stasis.js` requires 13.65 GB RAM.
+- Stasis testing is deferred until a suitable server with enough RAM is available.
+
+### Current State
+
+- Current city: Sector-12
+- Money: $121.985b
+- Hacking Level: 560
+- Strength: 204
+- Defense: 177
+- Dexterity: 244
+- Agility: 179
+- Charisma: 71
+- Karma: -58.531k
+- Hacknet Nodes: 9
+- Installed augmentations: 25
+- Time since last augmentation: 1d 3h 54m 54s
+- Total play time: 30d 21h 29m 39s
+
+### Lessons Learned
+
+- Dark Net progression is a full gameplay system rather than a small side activity.
+- Dynamic topology makes scripted reconnaissance more reliable than manual navigation.
+- Charisma can increase very quickly through Dark Net activity.
+- Dark Net exploitation and Slums crime can progress simultaneously.
+- Persisting stolen RAM makes partial exploitation worthwhile even when topology changes.
+- The next useful question is how to move beyond Depth 0, not how to reverse-engineer every API function immediately.
+
 # Research Notes
 
 ## Documentation
@@ -1199,19 +1424,39 @@ Pending.
 - The eight Run 4 augmentations made Run 5's hacking recovery substantially faster than the comparable Run 4 stage.
 - BitRunners became the next major hacking faction unlocked through natural story progression.
 
+## Session 12 Discoveries
+
+- DarkscapeNavigator.exe unlocks the Dark Net and `ns.dnet`.
+- The Dark Net is an unstable network whose topology changes while the player is interacting with it.
+- `darkweb` is the stable gateway into the Dark Net.
+- Several Dark Net API calls only work when executed from a Dark Net server.
+- `probe(false)` is effective for live reconnaissance.
+- Vulnerability models currently understood: ZeroLogon, PHP 5.4, CloudBlare(tm), DeskMemo_3.1, and OctantVoxel.
+- FreshInstall_1.0 and DeepGreen remain unresolved.
+- `memoryReallocation()` both liberates blocked RAM and awards Charisma XP.
+- Liberated RAM persists after migration/session loss.
+- Stasis Links are RAM-intensive and locally applied.
+- Compromised servers can contain caches, data, literature, and other resources.
+- Dark Net activity raised Charisma from 1 to roughly 71 in one session.
+- Dark Net exploitation and Homicide can progress at the same time.
+
 # Questions To Investigate
 
+- How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
+- How can compromised Dark Net servers be used as footholds?
+- How are reward caches opened and collected?
+- How are data and literature files retrieved from compromised Dark Net servers?
+- What does the Dark Net terminal resource do?
+- How does FreshInstall_1.0 generate its default password?
+- What is required to solve or bypass DeepGreen?
+- When does Stasis become practical, and which servers are worth stabilising?
+- Should `dnet-worker.js` automate known vulnerability models?
+- Should `dnet-worker.js` track persistent blocked-RAM progress across migrations?
 - What should the first dedicated BitRunners objective be?
 - Which BitRunners augmentations are worth prioritising?
 - How far should Karma be pushed during Run 5?
-- What criminal faction or mechanic is likely to unlock next from continued crime progression?
-- At what combat stats should Homicide become the default crime?
-- Should `route.js` eventually support automatic `connect` execution?
-- Should `route.js` be integrated into `deploy.js` or remain a separate utility?
-- How large will the hacking network become after SQLInject.exe is reacquired?
-- When should purchased-server infrastructure be rebuilt in Run 5?
-- Which Feature Hunt should follow the BitRunners unlock?
-- When should Formulas.exe be reacquired this run?
+- When should SQLInject.exe and Formulas.exe be reacquired?
+- Which Feature Hunt should follow the first deeper Dark Net breakthrough?
 
 ---
 
@@ -1231,4 +1476,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 11 — Run 5 / Run for the Hills (2026-08-11)_
+_Last Updated: Session 12 — Run 5 / Into the Dark Net (2026-08-12)_
