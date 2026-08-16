@@ -83,8 +83,8 @@
 - [ ] Investigate reward caches.
 - [ ] Continue learning additional Dark Net vulnerability models.
 - [ ] Continue Homicide/Karma progression in parallel.
-- [ ] Reacquire SQLInject.exe.
-- [ ] Reacquire Formulas.exe.
+- [x] Reacquire SQLInject.exe.
+- [x] Reacquire Formulas.exe.
 
 ## Short Term
 
@@ -390,6 +390,8 @@ Run 5 rebuild checkpoints:
 
 Programs reset after augmentation installation and must be recreated or reacquired.
 
+Run 5 has now restored the **complete program set**.
+
 ## Currently Acquired in Run 5
 
 | Program | Status | Purpose |
@@ -399,20 +401,16 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | FTPcrack.exe | ✅ Acquired | Opens FTP ports |
 | relaySMTP.exe | ✅ Acquired | Opens SMTP ports |
 | HTTPWorm.exe | ✅ Acquired | Opens HTTP ports |
+| SQLInject.exe | ✅ Acquired | Opens SQL ports; fifth port opener |
+| DeepscanV1.exe | ✅ Acquired | Extends `scan-analyze` depth to 5 |
+| DeepscanV2.exe | ✅ Acquired | Extends `scan-analyze` depth to 10 |
+| ServerProfiler.exe | ✅ Acquired | Displays detailed server information |
+| AutoLink.exe | ✅ Acquired | Enables direct server links in `scan-analyze` |
+| DarkscapeNavigator.exe | ✅ Acquired | Unlocks Dark Net access and the `ns.dnet` API |
+| Formulas.exe | ✅ Acquired | Unlocks the Formulas API |
 
-## Not Yet Reconfirmed / Reacquired
+> **Run 5 program status: Complete.** All standard programs currently shown on Home have been reacquired.
 
-| Program | Notes |
-|---------|-------|
-| SQLInject.exe | Fifth port opener; not yet reacquired in Session 11 |
-| DeepscanV1.exe | Reacquisition not recorded in the Session 11 summary |
-| DeepscanV2.exe | Reacquisition not recorded in the Session 11 summary |
-| ServerProfiler.exe | Reacquisition not recorded in the Session 11 summary |
-| AutoLink.exe | Reacquisition not recorded in the Session 11 summary |
-| DarkscapeNavigator.exe | Reacquisition not recorded in the Session 11 summary |
-| Formulas.exe | Requires rebuilding to the Hacking Level 1000 milestone |
-
----
 
 # Infrastructure
 
