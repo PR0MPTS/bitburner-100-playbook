@@ -34,25 +34,25 @@
 | Current BitNode | BitNode-1 |
 | Current Run | Run 5 – Run for the Hills |
 | Current City | Sector-12 |
-| Money | $121.985b |
-| Home RAM | 1 TB |
-| Home Cores | *(To be recorded)* |
-| Hacking Level | 560 |
-| Strength | 204 |
-| Defense | 177 |
-| Dexterity | 244 |
-| Agility | 179 |
+| Money | $528.294b |
+| Home RAM | ~4.10 TB |
+| Home Cores | 2 |
+| Hacking Level | 672 |
+| Strength | 271 |
+| Defense | 235 |
+| Dexterity | 320 |
+| Agility | 236 |
 | Charisma | 71 |
-| Karma | -58.531k |
+| Karma | ~-309.111k |
 | Hacknet Nodes | 9 |
 | Purchased Servers | 0 / 25 |
-| Current Factions | BitRunners, NiteSec, Sector-12, Slum Snakes, Netburners, CyberSec |
+| Current Factions | BitRunners, NiteSec, Sector-12, The Syndicate, Slum Snakes, Netburners, CyberSec |
 | Augmentations Installed | 25 |
-| Augmentations Purchased, Not Installed | 0 |
+| Augmentations Purchased, Not Installed | 2 |
 | Worker Threads | 420+ documented during rebuild |
-| Time Since Last Augmentation | 1d 3h 54m 54s |
-| Total Play Time | 30d 21h 29m 39s |
-| Current Focus | Run 5 Feature Hunt: Dark Net exploration, crime progression, and deeper faction/story systems |
+| Time Since Last Augmentation | 5d 3h 58m 39s |
+| Total Play Time | 34d 21h 33m 24s |
+| Current Focus | Run 5 Feature Hunt: stock-market exploration, BitRunners reputation, core-content achievements, and broader system discovery |
 
 ---
 
@@ -160,7 +160,7 @@ Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continue
 
 # Achievement Tracker
 
-## Completed (20 / 98)
+## Completed (23 / 98)
 
 | Achievement | Date |
 |------------|------|
@@ -184,12 +184,15 @@ Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continue
 | ✅ Thank you folders! (Have 30 scripts on Home) | 2026-07-26 |
 | ✅ Formulas.exe (Acquire Formulas.exe) | 2026-07-30 |
 | ✅ run4theh111z (Join the BitRunners) | 2026-08-11 |
+| ✅ OUCH! (Go to the hospital) | 2026-08-15 |
+| ✅ 4S (Purchase the 4S Market Data) | 2026-08-15 |
+| ✅ You'll need upgrade for this one. (Write a script costing 32GB+ per thread) | 2026-08-15 |
 
 ## Remaining
 
-**78 Steam achievements remaining**
+**75 Steam achievements remaining**
 
-> Session 11 added `run4theh111z` for joining BitRunners, bringing the Steam total to 20 / 98.
+> Session 13 added `OUCH!`, `4S`, and `You'll need upgrade for this one.`, bringing the Steam total to 23 / 98.
 
 ---
 
@@ -250,6 +253,7 @@ _TBD_
 | drain.js | Aggressively drains a target server's money for achievement attempts | ✅ Available |
 | recover.js | Restores a drained server's money and security state | ✅ Available |
 | route.js | Finds a server and prints the full connection route from `home` | ✅ New in Session 11 |
+| list-augs.js | Lists currently installed augmentations from the Terminal | ✅ New in Session 13 |
 | dnet-worker.js | Dark Net reconnaissance and scripted authentication from `darkweb` | ✅ New in Session 12 |
 | dnet-stasis.js | Tests local Stasis Link activation on Dark Net servers | 🧪 Experimental |
 | analyzeServers.js | Reviews server suitability and network information | ✅ Available |
@@ -422,8 +426,8 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 | Upgrade | Status |
 |----------|--------|
-| RAM | 1.02 TB |
-| CPU Cores | *(To be recorded)* |
+| RAM | ~4.10 TB |
+| CPU Cores | 2 |
 
 ## Network Capacity
 
@@ -453,12 +457,13 @@ Programs reset after augmentation installation and must be recreated or reacquir
 
 | Faction | Reputation | Favor | Augmentations Remaining | Notes |
 |---------|------------|-------|-------------------------|-------|
-| BitRunners | 2.646k | 0.000 | 5 | Newly unlocked in Session 11 |
-| NiteSec | 92.367k | 231.903 | 2 | Restored in Run 5 |
-| Sector-12 | 80.375k | 190.485 | 1 | Rejoined during Run 5 |
-| Slum Snakes | 20.322k | 44.954 | 1 | Crime faction; Homicide progression continues |
-| Netburners | 2.580k | 0.000 | 5 | Newly joined during Run 5 |
-| CyberSec | 78.890k | 183.506 | 0 | Fully cleared of augmentations |
+| BitRunners | 311.534k | 0.000 | 5 | Hacking Contracts are the current background faction work |
+| NiteSec | 465.721k | 231.903 | 0 normal | Two remaining normal augmentations purchased and queued |
+| Sector-12 | 407.138k | 190.485 | 1 | Rejoined during Run 5 |
+| The Syndicate | 6.229k | 0.000 | 14 | Joined in Session 13 after the extended crimewave |
+| Slum Snakes | 109.928k | 44.954 | 1 | Criminal progression parked after Session 13 |
+| Netburners | 16.996k | 0.000 | 5 | Joined during Run 5 |
+| CyberSec | 397.803k | 183.506 | 0 | Fully cleared of augmentations |
 
 ## Faction History
 
@@ -474,6 +479,7 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | Slum Snakes | Current | First criminal faction |
 | BitRunners | Current | Unlocked via `run4theh111z` |
 | Netburners | Current | Joined during Run 5 |
+| The Syndicate | Current | Joined in Session 13 after reaching approximately -308k Karma |
 
 ---
 
@@ -519,6 +525,15 @@ Programs reset after augmentation installation and must be recreated or reacquir
 | LuminCloaking-V1 Skin Implant | ✅ Installed |
 | Neural Wit Amplifier | ✅ Installed |
 | SmartSonar Implant | ✅ Installed |
+
+## Purchased, Not Yet Installed
+
+| Augmentation | Faction | Status |
+|--------------|---------|--------|
+| CRTX42-AA Gene Modification | NiteSec | ⏳ Queued |
+| Neural-Retention Enhancement | NiteSec | ⏳ Queued |
+
+> Run 5 remains active. These are deliberately being held without installing/resetting.
 
 ## Current Multipliers
 
@@ -1336,6 +1351,72 @@ Against `icarus_microsystems`:
 - Persisting stolen RAM makes partial exploitation worthwhile even when topology changes.
 - The next useful question is how to move beyond Depth 0, not how to reverse-engineer every API function immediately.
 
+## Session 13 – From Crimewave to Wall Street
+
+### Major Milestones
+
+- Joined **The Syndicate** after the extended Run 5 crimewave.
+- Karma reached approximately **-308k** during the session; the later recorded state was approximately **-309.111k**.
+- Established that Gang functionality is unavailable in the current BitNode until the required BitNode/Source-File progression is unlocked.
+- Stopped the long-running Homicide grind.
+- Purchased and queued NiteSec's two remaining normal augmentations: **CRTX42-AA Gene Modification** and **Neural-Retention Enhancement**.
+- Deliberately did **not** install augmentations or reset Run 5.
+- Tried Alpha Enterprises Infiltration and experienced its timed keyboard minigames.
+- Earned `OUCH!`, `4S`, and `You'll need upgrade for this one.`, moving achievement progress from 20 to **23 / 98 Steam**.
+- Created permanent utility script `list-augs.js`.
+- Removed the obsolete `achievement-01.js` through `achievement-19.js`, `make-folders-achievement.js`, `big-ram.js`, and `cleanup-achievements.js` temporary scripts.
+- Investigated `Discount!` using `route.js`; `powerhouse-fitness` is parked until Hacking Level 970 and five open ports.
+- Upgraded Home CPU cores from **1 to 2**.
+- Increased Home RAM to approximately **4.10 TB**.
+- Began **BitRunners Hacking Contracts** as productive background work.
+- Purchased **4S Market Data Access** for $1b.
+- Began stock-market experimentation with **20,000 Blade Industries (BLD) shares**, long, at approximately $999m invested.
+- Dark Net and Gang progression were deliberately parked while Run 5 returned to broader original/core content.
+
+### Achievement Notes
+
+`You'll need upgrade for this one.` was triggered unexpectedly while testing a Singularity-based augmentation-listing script. Its RAM requirement exceeded 32 GB per thread, satisfying the achievement even though the Singularity call itself failed because Source-File 4 is not unlocked.
+
+### Stock Market Notes
+
+Observed 4S indicators:
+
+- `++` — strongly bullish
+- `+` — bullish
+- `-` — bearish
+- `--` — strongly bearish
+
+The first BLD position initially showed a loss because of the bid/ask spread. The plan is to monitor the forecast while BitRunners contracts run in the background.
+
+### Closing State
+
+- Money: approximately $528.294b
+- Hacking Level: 672
+- Strength: 271
+- Defense: 235
+- Dexterity: 320
+- Agility: 236
+- Charisma: 71
+- Karma: approximately -309.111k
+- Installed augmentations: 25
+- Purchased, not installed: 2
+- Home RAM: approximately 4.10 TB
+- Home CPU cores: 2
+- Steam achievements: 23 / 98
+- Time since last augmentation: 5d 3h 58m 39s
+- Total play time: 34d 21h 33m 24s
+
+### Lessons Learned
+
+- Extremely negative Karma alone does not guarantee Gang access in BitNode-1.
+- A Feature Hunt can stop once its current progression path is exhausted rather than becoming a grind.
+- Infiltration is a reflex/timing system worth revisiting as its own Feature Hunt.
+- 4S data makes the stock market approachable as a deliberate gameplay system rather than blind speculation.
+- Background faction work and active Feature Hunts continue to complement one another.
+- Run 5 does not need to end simply because useful augmentations are queued.
+
+---
+
 # Research Notes
 
 ## Documentation
@@ -1440,6 +1521,19 @@ Pending.
 - Dark Net activity raised Charisma from 1 to roughly 71 in one session.
 - Dark Net exploitation and Homicide can progress at the same time.
 
+## Session 13 Discoveries
+
+- Joining The Syndicate was achievable after the prolonged Homicide/Karma push.
+- Karma at approximately -308k still did not expose Gang functionality in the current BitNode; that system is gated by later BitNode/Source-File progression.
+- Alpha Enterprises Infiltration exposed the timed keyboard-minigame format and provided the damage needed for the Hospital/`OUCH!` achievement.
+- Purchasing 4S Market Data awarded `4S` and exposed readable bullish/bearish forecast indicators.
+- A high-RAM Singularity script can satisfy the 32GB-per-thread achievement even when unavailable Singularity access prevents successful execution.
+- `list-augs.js` is a useful permanent utility for auditing installed augmentations.
+- `route.js` successfully located `powerhouse-fitness`; it required Hacking Level 970 and five open ports in the documented state.
+- Home CPU cores were upgraded from 1 to 2; the eight-core achievement is deferred until costs are less disruptive.
+- The first 4S-guided stock experiment used a long Blade Industries position; initial losses can reflect the bid/ask spread.
+- BitRunners Hacking Contracts are productive background work while exploring stocks and achievements.
+
 # Questions To Investigate
 
 - How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
@@ -1476,4 +1570,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 12 — Run 5 / Into the Dark Net (2026-08-12)_
+_Last Updated: Session 13 — Run 5 / From Crimewave to Wall Street (2026-08-15)_
