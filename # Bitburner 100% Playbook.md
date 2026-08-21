@@ -34,15 +34,15 @@
 | Current BitNode | BitNode-1 |
 | Current Run | Run 5 – Run for the Hills |
 | Current City | Sector-12 |
-| Money | $528.294b |
+| Money | ~$1.388t |
 | Home RAM | ~4.10 TB |
 | Home Cores | 2 |
-| Hacking Level | 672 |
+| Hacking Level | 744 |
 | Strength | 271 |
 | Defense | 235 |
 | Dexterity | 320 |
 | Agility | 236 |
-| Charisma | 71 |
+| Charisma | 252 |
 | Karma | ~-309.111k |
 | Hacknet Nodes | 9 |
 | Purchased Servers | 0 / 25 |
@@ -50,9 +50,9 @@
 | Augmentations Installed | 25 |
 | Augmentations Purchased, Not Installed | 2 |
 | Worker Threads | 420+ documented during rebuild |
-| Time Since Last Augmentation | 5d 3h 58m 39s |
-| Total Play Time | 34d 21h 33m 24s |
-| Current Focus | Run 5 Feature Hunt: stock-market exploration, BitRunners reputation, core-content achievements, and broader system discovery |
+| Time Since Last Augmentation | 10d 15h 36m 34s |
+| Total Play Time | 40d 9h 11m 19s |
+| Current Focus | Run 5 Feature Hunt: stock-market API analysis, Charisma training, core-content achievements, and broader system discovery |
 
 ---
 
@@ -87,6 +87,15 @@
 - [x] Reacquire Formulas.exe.
 
 ## Short Term
+
+- [x] Purchase TIX API Access.
+- [x] Purchase 4S Market Data TIX API Access.
+- [x] Create `stock-scan.js`.
+- [x] Create `stock-watch.js`.
+- [x] Add rolling forecast persistence analysis to `stock-watch.js`.
+- [ ] Continue Leadership training to bring Charisma closer to the other character stats.
+- [ ] Continue observing forecast persistence before considering automated trading.
+- [ ] Decide whether stock history should persist to a file and/or use a longer observation window.
 
 - [ ] Explore BitRunners and its augmentation path.
 - [ ] Continue building combat stats through Homicide.
@@ -254,6 +263,8 @@ _TBD_
 | recover.js | Restores a drained server's money and security state | ✅ Available |
 | route.js | Finds a server and prints the full connection route from `home` | ✅ New in Session 11 |
 | list-augs.js | Lists currently installed augmentations from the Terminal | ✅ New in Session 13 |
+| stock-scan.js | Manual TIX/4S market snapshot, diagnostics, positions, and suggested actions | ✅ New in Session 14 |
+| stock-watch.js | Continuous rolling 4S forecast monitor using persistence filters; no automatic trades | ✅ New in Session 14 |
 | dnet-worker.js | Dark Net reconnaissance and scripted authentication from `darkweb` | ✅ New in Session 12 |
 | dnet-stasis.js | Tests local Stasis Link activation on Dark Net servers | 🧪 Experimental |
 | analyzeServers.js | Reviews server suitability and network information | ✅ Available |
@@ -455,13 +466,13 @@ Run 5 has now restored the **complete program set**.
 
 | Faction | Reputation | Favor | Augmentations Remaining | Notes |
 |---------|------------|-------|-------------------------|-------|
-| BitRunners | 311.534k | 0.000 | 5 | Hacking Contracts are the current background faction work |
-| NiteSec | 465.721k | 231.903 | 0 normal | Two remaining normal augmentations purchased and queued |
-| Sector-12 | 407.138k | 190.485 | 1 | Rejoined during Run 5 |
-| The Syndicate | 6.229k | 0.000 | 14 | Joined in Session 13 after the extended crimewave |
-| Slum Snakes | 109.928k | 44.954 | 1 | Criminal progression parked after Session 13 |
-| Netburners | 16.996k | 0.000 | 5 | Joined during Run 5 |
-| CyberSec | 397.803k | 183.506 | 0 | Fully cleared of augmentations |
+| BitRunners | 1.957m | 0.000 | 5 | Hacking Contracts stopped in Session 14 for Leadership training |
+| NiteSec | 1.070m | 231.903 | 0 normal | Two remaining normal augmentations purchased and queued |
+| Sector-12 | 940.861k | 190.485 | 1 | Rejoined during Run 5 |
+| The Syndicate | 25.974k | 0.000 | 14 | Joined in Session 13 after the extended crimewave |
+| Slum Snakes | 256.287k | 44.954 | 1 | Criminal progression parked after Session 13 |
+| Netburners | 36.740k | 0.000 | 5 | Joined during Run 5 |
+| CyberSec | 918.703k | 183.506 | 0 | Fully cleared of augmentations |
 
 ## Faction History
 
@@ -1413,6 +1424,87 @@ The first BLD position initially showed a loss because of the bid/ask spread. Th
 - Background faction work and active Feature Hunts continue to complement one another.
 - Run 5 does not need to end simply because useful augmentations are queued.
 
+
+## Session 14 – Algorithmic Market Research
+
+### Major Milestones
+
+- Continued Run 5 without installing/resetting augmentations.
+- Began with approximately **$1.271t**, Hacking Level **739**, and 25 installed augmentations.
+- Purchased **TIX API Access** for $5b and **4S Market Data TIX API Access** for $25b, completing the full stock-market access set.
+- Created `stock-scan.js` for manual TIX/4S market diagnostics.
+- Created `stock-watch.js` for continuous market monitoring.
+- Tested an API-informed Four Sigma (FSIG) long position of approximately **2.203m shares / $26.561b**.
+- Exited FSIG after its strongly bullish 4S forecast reversed sharply bearish.
+- Upgraded `stock-watch.js` to measure forecast persistence rather than relying on individual snapshots.
+- Stopped the long-running BitRunners Hacking Contracts grind.
+- Began **Leadership** training at Rothman University to raise Charisma.
+- Successfully progressed a FreshInstall_1.0 Dark Net authentication using password `46462`.
+
+### Stock-Market Research
+
+`stock-scan.js` evolved to display symbols, prices, 4S forecast, volatility, an experimental opportunity score, existing positions, directional classifications, and suggested BUY/HOLD/EXIT/SHORT/WATCH actions.
+
+Bitburner 3.x compatibility was fixed by replacing the removed `ns.formatNumber()` with `ns.format.number()`.
+
+JGN's apparent `$0.000` price was confirmed to be a genuine extremely small share price requiring different formatting, not an API failure.
+
+`stock-watch.js` v2 currently:
+
+- Samples every **5 seconds**.
+- Keeps **24 observations**, representing approximately **2 minutes**.
+- Calculates average forecast.
+- Measures the proportion of bullish/bearish observations.
+- Requires persistence across at least **75%** of observations before surfacing sustained candidates.
+- Makes **no automatic trades**.
+- Keeps history in memory only, so observations reset when the script/game restarts.
+
+Repeated FSIG and JGN observations established the central lesson of the session: **a single strong 4S forecast can reverse quickly, so future trading logic should measure signal persistence before committing significant capital.**
+
+### Blade Industries
+
+The original **20,000-share BLD** long position remains open and severely underwater. It is being retained as the unofficial museum exhibit of PR0MPTS' early stock-market decision making.
+
+### Charisma Training
+
+PR0MPTS moved to Rothman University for the **Leadership** course at **$960/sec**, observed at approximately **11.28 Charisma XP/sec**.
+
+After roughly three hours of dedicated training, Charisma reached approximately 250. The closing screenshot records **252** and continuing to rise.
+
+### Dark Net Interruption
+
+A FreshInstall_1.0 node appeared with the hint `It's still the default`, a five-digit numeric password format, and heartbeat data containing `-46462-`.
+
+Using **46462** successfully progressed authentication. This is confirmed for that observed node, but the general FreshInstall_1.0 generation rule remains unresolved.
+
+### Closing State
+
+- Current city: Sector-12
+- Money: approximately **$1.388t**
+- Hacking Level: **744**
+- Strength: **271**
+- Defense: **235**
+- Dexterity: **320**
+- Agility: **236**
+- Charisma: **252**
+- Karma: approximately **-309.111k**
+- Hacknet Nodes: **9**
+- Installed augmentations: **25**
+- Purchased, not installed: **2**
+- BitRunners reputation: approximately **1.957m**
+- Time since last augmentation: **10d 15h 36m 34s**
+- Total play time: **40d 9h 11m 19s**
+
+### Lessons Learned
+
+- TIX and 4S TIX turn the stock market into a scriptable Feature Hunt.
+- 4S forecasts are useful but individual snapshots are not stable enough for the intended strategy.
+- Rolling persistence is a better foundation for future trading logic.
+- Monitoring automation can be developed safely before granting it authority to trade.
+- Leadership training is a cheap idle-time route for bringing Charisma closer to the other stats.
+- Run 5 remains productive without another augmentation reset.
+
+
 ---
 
 # Research Notes
@@ -1532,6 +1624,18 @@ Pending.
 - The first 4S-guided stock experiment used a long Blade Industries position; initial losses can reflect the bid/ask spread.
 - BitRunners Hacking Contracts are productive background work while exploring stocks and achievements.
 
+
+## Session 14 Discoveries
+
+- TIX and 4S TIX APIs expose enough information to build useful stock scanners and monitors.
+- `ns.format.number()` is the working Bitburner 3.x replacement for the removed `ns.formatNumber()`.
+- Extremely small share prices can misleadingly display as `$0.000` under ordinary formatting.
+- Strong 4S forecasts can reverse rapidly, as observed with FSIG and JGN.
+- `stock-watch.js` v2 uses 24 five-second samples, approximately two minutes of history, and a 75% persistence requirement.
+- In-memory stock history is lost on restart; file persistence remains a future option.
+- Leadership at Rothman University is an effective idle-time Charisma training path.
+- The observed FreshInstall_1.0 node accepted `46462`; the general rule remains unresolved.
+
 # Questions To Investigate
 
 - How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
@@ -1547,7 +1651,6 @@ Pending.
 - What should the first dedicated BitRunners objective be?
 - Which BitRunners augmentations are worth prioritising?
 - How far should Karma be pushed during Run 5?
-- When should SQLInject.exe and Formulas.exe be reacquired?
 - Which Feature Hunt should follow the first deeper Dark Net breakthrough?
 
 ---
@@ -1568,4 +1671,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 13 — Run 5 / From Crimewave to Wall Street (2026-08-15)_
+_Last Updated: Session 14 — Run 5 / Algorithmic Market Research (2026-08-21)_
