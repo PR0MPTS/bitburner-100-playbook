@@ -32,27 +32,27 @@
 | Item | Value |
 |------|-------|
 | Current BitNode | BitNode-1 |
-| Current Run | Run 5 – Run for the Hills |
+| Current Run | Run 5 – Run for the Hills (Complete; ready for Run 6) |
 | Current City | Sector-12 |
-| Money | ~$1.388t |
+| Money | ~$293.379b after final shopping; peak pre-shopping liquid cash ~$7.57t |
 | Home RAM | ~4.10 TB |
 | Home Cores | 2 |
-| Hacking Level | 744 |
+| Hacking Level | 750 |
 | Strength | 271 |
 | Defense | 235 |
 | Dexterity | 320 |
 | Agility | 236 |
-| Charisma | 252 |
+| Charisma | 317 |
 | Karma | ~-309.111k |
 | Hacknet Nodes | 9 |
 | Purchased Servers | 0 / 25 |
-| Current Factions | BitRunners, NiteSec, Sector-12, The Syndicate, Slum Snakes, Netburners, CyberSec |
+| Current Factions | BitRunners, The Black Hand, NiteSec, Sector-12, The Syndicate, Slum Snakes, Netburners, CyberSec |
 | Augmentations Installed | 25 |
-| Augmentations Purchased, Not Installed | 2 |
+| Augmentations Purchased, Not Installed | 21 upgrades (18 unique names; NeuroFlux Levels 7–10 are four upgrades) |
 | Worker Threads | 420+ documented during rebuild |
-| Time Since Last Augmentation | 10d 15h 36m 34s |
-| Total Play Time | 40d 9h 11m 19s |
-| Current Focus | Run 5 Feature Hunt: stock-market API analysis, Charisma training, core-content achievements, and broader system discovery |
+| Time Since Last Augmentation | 11d 10h 37m 26s |
+| Total Play Time | 41d 4h 12m 11s |
+| Current Focus | Run 5 complete: 21 augmentation upgrades queued; ready to install and begin Run 6 |
 
 ---
 
@@ -82,7 +82,7 @@
 - [ ] Investigate how to retrieve Dark Net data and literature files.
 - [ ] Investigate reward caches.
 - [ ] Continue learning additional Dark Net vulnerability models.
-- [ ] Continue Homicide/Karma progression in parallel.
+- [x] End the Run 5 Homicide/Karma progression after joining The Syndicate.
 - [x] Reacquire SQLInject.exe.
 - [x] Reacquire Formulas.exe.
 
@@ -93,12 +93,17 @@
 - [x] Create `stock-scan.js`.
 - [x] Create `stock-watch.js`.
 - [x] Add rolling forecast persistence analysis to `stock-watch.js`.
-- [ ] Continue Leadership training to bring Charisma closer to the other character stats.
-- [ ] Continue observing forecast persistence before considering automated trading.
-- [ ] Decide whether stock history should persist to a file and/or use a longer observation window.
+- [x] Create `stock-trader.js` and upgrade it to autonomous trader v2.
+- [x] Liquidate all stock positions before reset.
+- [x] Clear BitRunners, Sector-12, Slum Snakes, and Netburners of remaining normal augmentations.
+- [x] Reach NeuroFlux Governor Level 10.
+- [ ] Install the 21 queued augmentation upgrades and begin Run 6.
+- [x] Continue Leadership training to bring Charisma closer to the other character stats.
+- [x] Progress from forecast observation to autonomous stock trading with `stock-trader.js`.
+- [ ] Investigate/fix stale persistent realised P/L statistics in `stock-trader-stats.txt` during Run 6.
 
-- [ ] Explore BitRunners and its augmentation path.
-- [ ] Continue building combat stats through Homicide.
+- [x] Clear all remaining normal BitRunners augmentations.
+- [x] End the Run 5 Homicide/crime progression.
 - [ ] Investigate Dark Net footholds and deeper traversal.
 - [ ] Investigate cache-opening mechanics.
 - [ ] Test Dark Net file retrieval from compromised hosts.
@@ -264,7 +269,8 @@ _TBD_
 | route.js | Finds a server and prints the full connection route from `home` | ✅ New in Session 11 |
 | list-augs.js | Lists currently installed augmentations from the Terminal | ✅ New in Session 13 |
 | stock-scan.js | Manual TIX/4S market snapshot, diagnostics, positions, and suggested actions | ✅ New in Session 14 |
-| stock-watch.js | Continuous rolling 4S forecast monitor using persistence filters; no automatic trades | ✅ New in Session 14 |
+| stock-watch.js | Rolling 4S forecast diagnostic/analysis tool; superseded for normal operation | ⚠️ Deprecated in Session 15 |
+| stock-trader.js | Autonomous long-only 4S trader with reserve, P/L tracking, dashboard, and persistent stats | ✅ Production – v2 |
 | dnet-worker.js | Dark Net reconnaissance and scripted authentication from `darkweb` | ✅ New in Session 12 |
 | dnet-stasis.js | Tests local Stasis Link activation on Dark Net servers | 🧪 Experimental |
 | analyzeServers.js | Reviews server suitability and network information | ✅ Available |
@@ -456,6 +462,7 @@ Run 5 has now restored the **complete program set**.
 ## Current Membership
 
 - BitRunners
+- The Black Hand
 - NiteSec
 - Sector-12
 - Slum Snakes
@@ -466,13 +473,14 @@ Run 5 has now restored the **complete program set**.
 
 | Faction | Reputation | Favor | Augmentations Remaining | Notes |
 |---------|------------|-------|-------------------------|-------|
-| BitRunners | 1.957m | 0.000 | 5 | Hacking Contracts stopped in Session 14 for Leadership training |
-| NiteSec | 1.070m | 231.903 | 0 normal | Two remaining normal augmentations purchased and queued |
-| Sector-12 | 940.861k | 190.485 | 1 | Rejoined during Run 5 |
-| The Syndicate | 25.974k | 0.000 | 14 | Joined in Session 13 after the extended crimewave |
-| Slum Snakes | 256.287k | 44.954 | 1 | Criminal progression parked after Session 13 |
-| Netburners | 36.740k | 0.000 | 5 | Joined during Run 5 |
-| CyberSec | 918.703k | 183.506 | 0 | Fully cleared of augmentations |
+| BitRunners | 2.014m | 0.000 | 0 normal | Cleared in Session 15 |
+| The Black Hand | 38.975k | 301.478 | 0 normal | I.I.I.I backdoored again; breadcrumb reconfirmed |
+| NiteSec | 1.168m | 231.903 | 0 normal | Cleared |
+| Sector-12 | 1.022m | 190.485 | 0 normal | Cleared in Session 15 |
+| The Syndicate | 72.820k | 0.000 | 10 normal | Three purchased in Session 15; remainder deferred |
+| Slum Snakes | 278.453k | 44.954 | 0 normal | Cleared in Session 15 |
+| Netburners | 39.593k | 0.000 | 0 normal | Cleared in Session 15 |
+| CyberSec | 997.593k | 183.506 | 0 normal | Fully cleared |
 
 ## Faction History
 
@@ -482,7 +490,7 @@ Run 5 has now restored the **complete program set**.
 | CyberSec | Current | Restored during Run 5; no augmentations remaining |
 | NiteSec | Current | Restored during Run 5 |
 | Aevum | Previous | City faction |
-| The Black Hand | Previous | Major hacking faction |
+| The Black Hand | Current | Reinvited after backdooring I.I.I.I in Session 15; no normal augmentations remaining |
 | Tetrads | Previous | Chongqing faction |
 | Tian Di Hui | Previous | Chongqing faction |
 | Slum Snakes | Current | First criminal faction |
@@ -537,12 +545,33 @@ Run 5 has now restored the **complete program set**.
 
 ## Purchased, Not Yet Installed
 
-| Augmentation | Faction | Status |
-|--------------|---------|--------|
+Run 5 ends with **21 queued augmentation upgrades**, consisting of 18 unique names and four NeuroFlux Governor levels.
+
+| Augmentation | Source | Status |
+|--------------|--------|--------|
 | CRTX42-AA Gene Modification | NiteSec | ⏳ Queued |
 | Neural-Retention Enhancement | NiteSec | ⏳ Queued |
+| LuminCloaking-V2 Skin Implant | Sector-12 | ⏳ Queued |
+| Augmented Targeting II | Slum Snakes | ⏳ Queued |
+| Embedded Netburner Module Core V2 Upgrade | BitRunners | ⏳ Queued |
+| BitRunners Neurolink | BitRunners | ⏳ Queued |
+| Artificial Bio-neural Network Implant | BitRunners | ⏳ Queued |
+| Cranial Signal Processors - Gen V | BitRunners | ⏳ Queued |
+| Neural Accelerator | BitRunners | ⏳ Queued |
+| Hacknet Node Core Direct-Neural Interface | Netburners | ⏳ Queued |
+| Hacknet Node Kernel Direct-Neural Interface | Netburners | ⏳ Queued |
+| Hacknet Node CPU Architecture Neural-Upload | Netburners | ⏳ Queued |
+| Hacknet Node Cache Architecture Neural-Upload | Netburners | ⏳ Queued |
+| Hacknet Node NIC Architecture Neural-Upload | Netburners | ⏳ Queued |
+| The Shadow's Simulacrum | The Syndicate | ⏳ Queued |
+| ADR-V1 Pheromone Gene | The Syndicate | ⏳ Queued |
+| HemoRecirculator | The Syndicate | ⏳ Queued |
+| NeuroFlux Governor - Level 7 | Multi-faction | ⏳ Queued |
+| NeuroFlux Governor - Level 8 | Multi-faction | ⏳ Queued |
+| NeuroFlux Governor - Level 9 | Multi-faction | ⏳ Queued |
+| NeuroFlux Governor - Level 10 | Multi-faction | ⏳ Queued |
 
-> Run 5 remains active. These are deliberately being held without installing/resetting.
+> **Run 5 is complete.** Install this package to begin Run 6.
 
 ## Current Multipliers
 
@@ -745,7 +774,7 @@ Verified during this playthrough:
 - Ended Run 4 ready to install the eight-augmentation package and begin Run 5.
 - Pivoted the project from pure hacking optimisation to balanced story progression, Feature Hunts, and achievement discovery.
 
-## Run 5 – Run for the Hills — Current
+## Run 5 – Run for the Hills — Complete
 
 - Installed the eight augmentations prepared at the end of Run 4.
 - Started with 25 installed augmentations, approximately $1m, 1.02 TB Home RAM, and reset base skills.
@@ -776,6 +805,14 @@ Verified during this playthrough:
 - Continued Homicide at 100% success while Karma fell to approximately -58.5k.
 - Joined Netburners.
 - Ended Session 12 with Dark Net Depth progression as the next major research target.
+- Session 15 developed `stock-trader.js v2` and established autonomous stock trading as a major income engine.
+- Liquidated all stock positions at approximately **$7.57t cash** before augmentation shopping.
+- Backdoored `I.I.I.I` again via `route.js`, reconfirming the jump3R/The Black Hand breadcrumb.
+- Discovered Shadows of Anarchy but deferred infiltration progression.
+- Cleared BitRunners, Sector-12, Slum Snakes, and Netburners of remaining normal augmentations.
+- Purchased three Syndicate augmentations; 10 normal Syndicate augmentations remain.
+- Advanced NeuroFlux Governor from Level 6 to **Level 10**.
+- Ended Run 5 with **21 augmentation upgrades queued** and ready for installation.
 
 ---
 
@@ -1505,6 +1542,121 @@ Using **46462** successfully progressed authentication. This is confirmed for th
 - Run 5 remains productive without another augmentation reset.
 
 
+
+## Session 15 – Run 5 Finale: PR0MPTS Capital Management
+
+### Major Milestones
+
+- Continued Run 5 with approximately $1.5t, Hacking Level ~747, and Charisma ~316.
+- Finally liquidated the old 20,000-share Blade Industries position.
+- Purchased the final normal augmentations from Sector-12 and Slum Snakes.
+- Developed `stock-trader.js`, then upgraded it to **PR0MPTS AUTONOMOUS STOCK TRADER v2**.
+- Stopped trading and liquidated the complete portfolio at approximately **$7.57t cash** before augmentation shopping.
+- Revisited and backdoored `I.I.I.I`, confirming the jump3R message as a Black Hand progression breadcrumb.
+- Discovered **Shadows of Anarchy** through infiltration activity and deferred its progression.
+- Purchased three Syndicate augmentations.
+- Cleared all five remaining normal BitRunners augmentations.
+- Cleared all five remaining normal Netburners augmentations.
+- Advanced NeuroFlux Governor from Level 6 to **Level 10**.
+- Finished Run 5 with **21 augmentation upgrades queued**.
+
+### Autonomous Stock Trading
+
+Manual 4S-guided trades included Catalyst Ventures, Joe's Guns, and Four Sigma. Rapid reversals reinforced that manual monitoring was impractical.
+
+`stock-trader.js` v1 introduced autonomous 4S monitoring, long-only trading, buying at >=65% forecast, selling below 50%, automatic position sizing, a $100b protected cash reserve, five-second checks, and duplicate-position prevention.
+
+Version 2 added persistent realised P/L, win/loss counts, win rate, unrealised and total P/L, human-readable company names, `stock-trader-stats.txt`, and a live dashboard.
+
+The persistent stats file appeared stale compared with the much larger realised P/L visible in live logs. This is a Run 6 investigation item.
+
+### Stock Trading Results
+
+Visible realised-profit checkpoints: **+$29.56b, +$196.99b, +$446.72b, +$1.568t, and +$3.552t**.
+
+Notable trades included Catalyst Ventures at +$131.825b, +$208.178b, +$288.417b, and +$1.368t; SysCore Securities at +$175.491b and +$581.254b; and Clarke Incorporated at +$323.005b.
+
+The increasing bankroll allowed increasingly large positions and strong compounding. The portfolio was fully liquidated at approximately **$7.57t cash**.
+
+### `stock-watch.js` Deprecated
+
+`stock-watch.js v2` remains in the repository for debugging, 4S analysis, and strategy tuning. `stock-trader.js v2` is now the normal production trader.
+
+### I.I.I.I / The Black Hand
+
+`route.js` found the current route:
+
+```text
+home -> joesguns -> zer0 -> phantasy -> johnson-ortho -> I.I.I.I
+```
+
+Backdooring I.I.I.I triggered another Black Hand invitation, confirming the old jump3R message as the original faction breadcrumb.
+
+### Shadows of Anarchy
+
+An obfuscated rumor stated: **“Your infiltration activity has attracted attention.”**
+
+Joe's Guns infiltration showed Difficulty 13/100 — Trivial and maximum clearance 5, but the reaction/read-heavy minigames remained frustrating.
+
+**Decision: defer Shadows of Anarchy infiltration to a future run.**
+
+### Final Faction Cleanup
+
+Purchased:
+
+- **Sector-12:** LuminCloaking-V2 Skin Implant
+- **Slum Snakes:** Augmented Targeting II
+- **BitRunners:** Embedded Netburner Module Core V2 Upgrade; BitRunners Neurolink; Artificial Bio-neural Network Implant; Cranial Signal Processors - Gen V; Neural Accelerator
+- **Netburners:** all five remaining Hacknet direct-neural/neural-upload augmentations
+- **The Syndicate:** The Shadow's Simulacrum; ADR-V1 Pheromone Gene; HemoRecirculator
+
+Ten normal Syndicate augmentations remain.
+
+### NeuroFlux Governor
+
+Remaining useful money and reputation were converted into **NeuroFlux Governor Levels 7–10**, advancing the installed/queued progression from Level 6 to Level 10.
+
+### Closing State
+
+- Money: approximately **$293.379b** after final shopping
+- Peak liquid pre-shopping bankroll: approximately **$7.57t**
+- Hacking: **750**
+- Strength: **271**
+- Defense: **235**
+- Dexterity: **320**
+- Agility: **236**
+- Charisma: **317**
+- Karma: approximately **-309.111k**
+- Hacknet Nodes: **9**
+- Installed augmentations: **25**
+- Queued augmentation upgrades: **21**
+- Time since last augmentation: **11d 10h 37m 26s**
+- Total play time: **41d 4h 12m 11s**
+
+Faction screenshot confirms BitRunners, The Black Hand, NiteSec, Sector-12, Slum Snakes, Netburners, and CyberSec have no normal augmentations remaining. The Syndicate has 10 remaining.
+
+Hacknet closing snapshot: 9 nodes, $339.472k spent, $164.929m produced, $173.561/sec production; node 0 is Level 21 and nodes 1–8 are Level 11.
+
+### Run 5 Story
+
+Run 5 began as another hacking and faction progression cycle, took an extended detour through an industrial-scale homicide spree, and ended with PR0MPTS becoming an algorithmic multi-trillionaire.
+
+After retiring from homicide, he briefly invested in Joe's Guns — presumably attempting vertical integration — before discovering that murdering half the city may already have been priced into the stock.
+
+Manual trading rapidly gave way to automation. `stock-watch.js` taught PR0MPTS how the market behaved; `stock-trader.js` removed the need for him to care.
+
+Run 5 ends after reaching approximately **$7.57t in liquid capital**, converting the fortune into one of the largest augmentation packages of the playthrough so far, and preparing to wake up in Run 6 considerably richer in hardware — if temporarily much poorer in cash.
+
+### Lessons Learned
+
+- Autonomous stock trading is now a proven major income source.
+- Capital scale creates a powerful compounding effect.
+- Diagnostic tooling can be retained even after production automation supersedes it.
+- Stock positions should be fully liquidated before augmentation installation.
+- The augmentation price multiplier can become a stronger end-of-run constraint than faction reputation.
+- Run 5's Feature Hunt philosophy produced major progress across crime, Dark Net, factions, stock trading, automation, and permanent augmentations.
+
+
 ---
 
 # Research Notes
@@ -1636,6 +1788,17 @@ Pending.
 - Leadership at Rothman University is an effective idle-time Charisma training path.
 - The observed FreshInstall_1.0 node accepted `46462`; the general rule remains unresolved.
 
+## Session 15 Discoveries
+
+- Autonomous 4S trading became a multi-trillion-dollar income engine.
+- `stock-trader.js v2` is now the production trader; `stock-watch.js v2` is retained for diagnostics.
+- Increasing capital allowed position size and realised profit to compound rapidly.
+- `stock-trader-stats.txt` needs validation because its persistent realised P/L appeared stale.
+- Network routes can change; `route.js` should be preferred over old handwritten paths.
+- Backdooring I.I.I.I again reconfirmed the jump3R breadcrumb as The Black Hand progression.
+- Shadows of Anarchy progression is tied to successful company infiltration.
+- End-of-run augmentation price multipliers can become more restrictive than reputation.
+
 # Questions To Investigate
 
 - How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
@@ -1648,10 +1811,12 @@ Pending.
 - When does Stasis become practical, and which servers are worth stabilising?
 - Should `dnet-worker.js` automate known vulnerability models?
 - Should `dnet-worker.js` track persistent blocked-RAM progress across migrations?
-- What should the first dedicated BitRunners objective be?
-- Which BitRunners augmentations are worth prioritising?
-- How far should Karma be pushed during Run 5?
-- Which Feature Hunt should follow the first deeper Dark Net breakthrough?
+- How should `stock-trader-stats.txt` persistence be fixed or validated in Run 6?
+- How quickly can `stock-trader.js v2` be restored after the Run 6 reset?
+- Should the trader eventually support short positions?
+- When should Shadows of Anarchy infiltration be revisited?
+- When should the remaining 10 Syndicate augmentations be harvested?
+- Which Feature Hunt should follow the Run 6 rebuild?
 
 ---
 
@@ -1671,4 +1836,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 14 — Run 5 / Algorithmic Market Research (2026-08-21)_
+_Last Updated: Session 15 — End of Run 5 / PR0MPTS Capital Management (2026-08-22)_

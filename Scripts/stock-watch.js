@@ -1,4 +1,22 @@
 /** @param {NS} ns */
+// ============================================================
+// DEPRECATED FOR NORMAL USE
+//
+// stock-watch.js was developed during Session 14/15 as a
+// diagnostic tool for observing 4S market forecasts, rolling
+// history, sustained long/short signals, and open positions.
+//
+// It has been superseded for normal gameplay by stock-trader.js,
+// which autonomously handles stock selection, buying, selling,
+// position sizing, cash reserves, and persistent profit tracking.
+//
+// This script remains useful for debugging, market analysis, and tuning
+// future versions of the autonomous trader.
+//
+// Normal operation:
+//   stock-trader.js  -> autonomous production trading
+//   stock-watch.js   -> optional diagnostic/analysis tool
+// ============================================================
 export async function main(ns) {
     ns.disableLog("ALL");
 
