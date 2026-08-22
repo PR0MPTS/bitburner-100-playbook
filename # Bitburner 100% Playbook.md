@@ -32,27 +32,27 @@
 | Item | Value |
 |------|-------|
 | Current BitNode | BitNode-1 |
-| Current Run | Run 5 – Run for the Hills (Complete; ready for Run 6) |
-| Current City | Sector-12 |
-| Money | ~$293.379b after final shopping; peak pre-shopping liquid cash ~$7.57t |
+| Current Run | Run 6 – The Machine Awakens |
+| Current City | Aevum |
+| Money | ~$3.013t |
 | Home RAM | ~4.10 TB |
 | Home Cores | 2 |
-| Hacking Level | 750 |
-| Strength | 271 |
-| Defense | 235 |
-| Dexterity | 320 |
-| Agility | 236 |
-| Charisma | 317 |
+| Hacking Level | 1,162 |
+| Strength | 1 |
+| Defense | 1 |
+| Dexterity | 2 |
+| Agility | 1 |
+| Charisma | 91 |
 | Karma | ~-309.111k |
-| Hacknet Nodes | 9 |
+| Hacknet Nodes | 0 |
 | Purchased Servers | 0 / 25 |
-| Current Factions | BitRunners, The Black Hand, NiteSec, Sector-12, The Syndicate, Slum Snakes, Netburners, CyberSec |
-| Augmentations Installed | 25 |
-| Augmentations Purchased, Not Installed | 21 upgrades (18 unique names; NeuroFlux Levels 7–10 are four upgrades) |
-| Worker Threads | 420+ documented during rebuild |
-| Time Since Last Augmentation | 11d 10h 37m 26s |
-| Total Play Time | 41d 4h 12m 11s |
-| Current Focus | Run 5 complete: 21 augmentation upgrades queued; ready to install and begin Run 6 |
+| Current Factions | BitRunners, The Black Hand, NiteSec, Aevum, Sector-12, CyberSec |
+| Augmentations Installed | 42 |
+| Augmentations Purchased, Not Installed | 0 |
+| Worker Threads | 1,338 |
+| Time Since Last Augmentation | 3h 5m 24s |
+| Total Play Time | 41d 7h 26m 8s |
+| Current Focus | Run 6 Feature Hunt: Aevum reputation, full-network hacking, renewed stock-market operation, Dark Net exploration, and achievements |
 
 ---
 
@@ -97,7 +97,14 @@
 - [x] Liquidate all stock positions before reset.
 - [x] Clear BitRunners, Sector-12, Slum Snakes, and Netburners of remaining normal augmentations.
 - [x] Reach NeuroFlux Governor Level 10.
-- [ ] Install the 21 queued augmentation upgrades and begin Run 6.
+- [x] Install the 21 queued augmentation upgrades and begin Run 6.
+- [x] Restore the complete five-port program toolkit.
+- [x] Rejoin NiteSec, The Black Hand, and BitRunners.
+- [x] Join Aevum.
+- [x] Expand the network to 69 / 70 rooted servers and 1,338 worker threads.
+- [x] Restore Formulas.exe.
+- [ ] Obtain Aevum's remaining normal augmentation.
+- [ ] Reopen autonomous stock trading after market history is rebuilt.
 - [x] Continue Leadership training to bring Charisma closer to the other character stats.
 - [x] Progress from forecast observation to autonomous stock trading with `stock-trader.js`.
 - [ ] Investigate/fix stale persistent realised P/L statistics in `stock-trader-stats.txt` during Run 6.
@@ -543,68 +550,65 @@ Run 5 has now restored the **complete program set**.
 | Neural Wit Amplifier | ✅ Installed |
 | SmartSonar Implant | ✅ Installed |
 
+## Installed During Run 5 → Run 6
+
+The Run 5 finale package was installed to begin Run 6. The game now reports **42 installed augmentations**.
+
+Installed in this cycle:
+
+- CRTX42-AA Gene Modification
+- Neural-Retention Enhancement
+- LuminCloaking-V2 Skin Implant
+- Augmented Targeting II
+- Embedded Netburner Module Core V2 Upgrade
+- BitRunners Neurolink
+- Artificial Bio-neural Network Implant
+- Cranial Signal Processors - Gen V
+- Neural Accelerator
+- Hacknet Node Core Direct-Neural Interface
+- Hacknet Node Kernel Direct-Neural Interface
+- Hacknet Node CPU Architecture Neural-Upload
+- Hacknet Node Cache Architecture Neural-Upload
+- Hacknet Node NIC Architecture Neural-Upload
+- The Shadow's Simulacrum
+- ADR-V1 Pheromone Gene
+- HemoRecirculator
+- NeuroFlux Governor through Level 10
+
 ## Purchased, Not Yet Installed
 
-Run 5 ends with **21 queued augmentation upgrades**, consisting of 18 unique names and four NeuroFlux Governor levels.
-
-| Augmentation | Source | Status |
-|--------------|--------|--------|
-| CRTX42-AA Gene Modification | NiteSec | ⏳ Queued |
-| Neural-Retention Enhancement | NiteSec | ⏳ Queued |
-| LuminCloaking-V2 Skin Implant | Sector-12 | ⏳ Queued |
-| Augmented Targeting II | Slum Snakes | ⏳ Queued |
-| Embedded Netburner Module Core V2 Upgrade | BitRunners | ⏳ Queued |
-| BitRunners Neurolink | BitRunners | ⏳ Queued |
-| Artificial Bio-neural Network Implant | BitRunners | ⏳ Queued |
-| Cranial Signal Processors - Gen V | BitRunners | ⏳ Queued |
-| Neural Accelerator | BitRunners | ⏳ Queued |
-| Hacknet Node Core Direct-Neural Interface | Netburners | ⏳ Queued |
-| Hacknet Node Kernel Direct-Neural Interface | Netburners | ⏳ Queued |
-| Hacknet Node CPU Architecture Neural-Upload | Netburners | ⏳ Queued |
-| Hacknet Node Cache Architecture Neural-Upload | Netburners | ⏳ Queued |
-| Hacknet Node NIC Architecture Neural-Upload | Netburners | ⏳ Queued |
-| The Shadow's Simulacrum | The Syndicate | ⏳ Queued |
-| ADR-V1 Pheromone Gene | The Syndicate | ⏳ Queued |
-| HemoRecirculator | The Syndicate | ⏳ Queued |
-| NeuroFlux Governor - Level 7 | Multi-faction | ⏳ Queued |
-| NeuroFlux Governor - Level 8 | Multi-faction | ⏳ Queued |
-| NeuroFlux Governor - Level 9 | Multi-faction | ⏳ Queued |
-| NeuroFlux Governor - Level 10 | Multi-faction | ⏳ Queued |
-
-> **Run 5 is complete.** Install this package to begin Run 6.
+None at the Session 16 closing checkpoint.
 
 ## Current Multipliers
 
 | Multiplier | Current Value |
 |------------|---------------|
-| Hacking Chance | 132.60% |
-| Hacking Speed | 131.94% |
-| Hacking Money | 221.57% |
-| Hacking Growth | 132.69% |
-| Hacking Level | 187.39% |
-| Hacking Experience | 185.87% |
-| Hacknet Production | 100.15% |
-| Hacknet Purchase Cost | 94.20% |
-| Hacknet RAM Upgrade Cost | 94.20% |
-| Hacknet Core Purchase Cost | 94.20% |
-| Hacknet Level Upgrade Cost | 94.20% |
-| Company Reputation Gain | 122.61% |
-| Faction Reputation Gain | 100.15% |
-| Salary | 100.15% |
-| Crime Success Chance | 100.15% |
-| Crime Money | 145.96% |
-| Strength Level | 134.28% |
-| Strength Experience | 134.28% |
-| Defense Level | 116.77% |
-| Defense Experience | 134.28% |
-| Dexterity Level | 155.10% |
-| Dexterity Experience | 154.43% |
-| Agility Level | 117.03% |
-| Agility Experience | 134.28% |
-| Charisma Level | 141.90% |
-| Charisma Experience | 141.00% |
-
-> The game reports **25 installed augmentations**. NeuroFlux Governor levels are tracked historically in this playbook, so the row count across installation tables should not be used as the authoritative total.
+| Hacking Chance | 159.37% |
+| Hacking Speed | 155.91% |
+| Hacking Money | 517.05% |
+| Hacking Growth | 241.64% |
+| Hacking Level | 418.93% |
+| Hacking Experience | 441.25% |
+| Hacknet Production | 278.60% |
+| Hacknet Purchase Cost | 69.25% |
+| Hacknet RAM Upgrade Cost | 90.53% |
+| Hacknet Core Purchase Cost | 90.53% |
+| Hacknet Level Upgrade Cost | 76.95% |
+| Company Reputation Gain | 161.40% |
+| Faction Reputation Gain | 137.74% |
+| Salary | 110.47% |
+| Crime Success Chance | 110.47% |
+| Crime Money | 189.86% |
+| Strength Level | 150.92% |
+| Strength Experience | 139.74% |
+| Defense Level | 144.36% |
+| Defense Experience | 139.74% |
+| Dexterity Level | 209.17% |
+| Dexterity Experience | 160.70% |
+| Agility Level | 144.68% |
+| Agility Experience | 139.74% |
+| Charisma Level | 159.48% |
+| Charisma Experience | 169.47% |
 
 ---
 
@@ -815,6 +819,20 @@ Verified during this playthrough:
 - Ended Run 5 with **21 augmentation upgrades queued** and ready for installation.
 
 ---
+
+## Run 6 – The Machine Awakens — Current
+
+- Installed the enormous Run 5 augmentation package, reaching **42 installed augmentations**.
+- Began with roughly $1,000 and Hacking Level 4; the new multipliers drove hacking above 1,000 within the opening session.
+- Initial `deploy.js` pass found 70 servers, rooted 27, activated 24 worker hosts, and deployed 293 threads to `foodnstuff`.
+- Restored NiteSec, The Black Hand, and BitRunners using `route.js` and backdoors.
+- Moved to Aevum, joined its faction, and began faction reputation work.
+- Rebuilt the full five-port toolkit plus DeepscanV1/V2, AutoLink, DarkscapeNavigator, ServerProfiler, and Formulas.
+- Purchased Formulas.exe for $5b after money had already climbed into the trillions.
+- Full redeployment rooted **69 / 70 servers**, activated **43 worker hosts**, and reached **1,338 threads**, targeting `4sigma`.
+- Confirmed permanent WSE/TIX/4S access survived the augmentation reset.
+- Restarted `stock-watch.js` to rebuild market history before renewed trading.
+- Session closed in Aevum with approximately **$3.013t**, Hacking Level **1,162**, Charisma **91**, and Aevum faction work active.
 
 # Session Log
 
@@ -1657,6 +1675,78 @@ Run 5 ends after reaching approximately **$7.57t in liquid capital**, converting
 - Run 5's Feature Hunt philosophy produced major progress across crime, Dark Net, factions, stock trading, automation, and permanent augmentations.
 
 
+## Session 16 – Run 6: The Machine Awakens
+
+### Major Milestones
+
+- Began Run 6 after installing the Run 5 augmentation package, reaching **42 installed augmentations**.
+- Started around $1,000 and Hacking Level 4 with 4.10 TB free Home RAM and retained Karma near -309k.
+- Restarted `deploy.js`: 70 discovered, 27 rooted, 24 worker hosts, 293 threads, targeting `foodnstuff`.
+- Hacking exploded from 4 to 500+ within minutes and passed 1,000 during the session.
+- Rejoined NiteSec, The Black Hand, and BitRunners.
+- Travelled to Aevum, joined the faction, and began Aevum reputation work.
+- Rebuilt the full program toolkit, including all five port openers, DarkscapeNavigator, ServerProfiler, and Formulas.
+- Reran `deploy.js` with five port openers: **69 / 70 rooted**, **43 active worker hosts**, **1,338 threads**, automatic target `4sigma`.
+- Confirmed WSE, TIX, 4S UI, and 4S TIX access survived the reset.
+- Restarted `stock-watch.js` to rebuild its 24-sample history before PR0MPTS Capital Management resumes trading.
+
+### Full Network Deployment
+
+The network grew from 293 to 1,338 worker threads — roughly **4.6×** the initial Run 6 capacity. Major hosts included `fulcrumtech` (409 threads), `omnitek` (204), `run4theh111z` (102), and `blade` (102). This transformation occurred within roughly the first 30 minutes of Run 6.
+
+### Program Toolkit
+
+Owned/recovered: `NUKE.exe`, `BruteSSH.exe`, `FTPCrack.exe`, `relaySMTP.exe`, `HTTPWorm.exe`, `SQLInject.exe`, `DeepscanV1.exe`, `DeepscanV2.exe`, `AutoLink.exe`, `DarkscapeNavigator.exe`, `ServerProfiler.exe`, and `Formulas.exe`.
+
+`ServerProfiler.exe` was created manually. `SQLInject.exe` was purchased to complete the five-port toolkit. Formulas creation was stopped when the remaining time was still several hours; with money already near $3t, `Formulas.exe` was purchased for $5b instead.
+
+### Faction Restoration and Aevum
+
+NiteSec and The Black Hand were restored through their familiar backdoor routes and showed no normal augmentations remaining. BitRunners initially remained blocked because `run4theh111z` required four ports; purchasing `HTTPWorm.exe` solved the problem.
+
+PR0MPTS then moved from Sector-12 to **Aevum**, accepted its faction invitation, and began working toward Aevum's one remaining normal augmentation. Joining Aevum locks out its enemy city factions until the next augmentation reset.
+
+### Stock Market Returns
+
+Permanent WSE Account, TIX API, 4S Market Data UI, and 4S TIX API access all survived installation; only positions reset. `stock-watch.js` was restarted to rebuild its 24-sample history before autonomous trading resumes.
+
+### Closing State
+
+- Current city: **Aevum**
+- Money: approximately **$3.013t**
+- Hacking: **1,162**
+- Strength: **1**
+- Defense: **1**
+- Dexterity: **2**
+- Agility: **1**
+- Charisma: **91**
+- Karma: approximately **-309.111k**
+- Hacknet Nodes: **0**
+- Installed augmentations: **42**
+- Worker threads: **1,338**
+- Rooted servers: **69 / 70**
+- Time since last augmentation: **3h 5m 24s**
+- Total play time: **41d 7h 26m 8s**
+
+Current faction screenshot records BitRunners (222.270 favor), The Black Hand (301.683), NiteSec (251.478), Aevum (101.936), Sector-12 (223.967), and CyberSec (219.868). Aevum has **one normal augmentation remaining**; the others shown are cleared.
+
+### Run 6 Direction
+
+Run 6 is named **The Machine Awakens**. The project will not rush directly to the BitNode-1 ending. The hacking network, Aevum reputation work, stock market, Dark Net, infiltration, city systems, and achievements remain active Feature Hunt targets.
+
+### Story Note
+
+Run 5 built the machine. Run 6 switched it on. The rebuild phase that once defined an augmentation reset has effectively collapsed: within hours PR0MPTS was back above Hacking Level 1,100, holding trillions of dollars, controlling almost the entire public network, and preparing to reopen his algorithmic trading operation.
+
+### Lessons Learned
+
+- The Run 5 augmentation package fundamentally changed the scale of post-reset recovery.
+- Five-port access now converts almost the entire public network into usable infrastructure immediately.
+- At this power level, purchasing expensive programs can be more rational than waiting hours for manual creation.
+- Permanent stock-market access makes PR0MPTS Capital Management easy to restore after resets.
+- Run 6 has enough passive power to pursue faction, Dark Net, stock-market, infiltration, and achievement goals in parallel.
+
+
 ---
 
 # Research Notes
@@ -1799,6 +1889,15 @@ Pending.
 - Shadows of Anarchy progression is tied to successful company infiltration.
 - End-of-run augmentation price multipliers can become more restrictive than reputation.
 
+## Session 16 Discoveries
+
+- The 42-augmentation stack can drive Hacking Level from 4 to 1,000+ within the opening hours of a reset.
+- Run 6 reached 69 / 70 rooted servers and 1,338 worker threads once the five-port toolkit was restored.
+- WSE, TIX, 4S UI, and 4S TIX access persist through augmentation installation; positions do not.
+- High post-reset income can make buying Formulas.exe preferable to spending hours creating it.
+- Large retained faction favor makes faction restoration immediately useful even though reputation resets.
+- Aevum has one normal augmentation remaining at the Session 16 checkpoint.
+
 # Questions To Investigate
 
 - How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
@@ -1836,4 +1935,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 15 — End of Run 5 / PR0MPTS Capital Management (2026-08-22)_
+_Last Updated: Session 16 — Run 6: The Machine Awakens (2026-08-22)_
