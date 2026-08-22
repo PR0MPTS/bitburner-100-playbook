@@ -156,6 +156,84 @@ repetitive manual systems with increasingly capable automation.
 
 ------------------------------------------------------------------------
 
+
+## In-Game Guide --- The Darkweb Network
+
+**Source:**\
+In-game Bitburner documentation --- `The Darkweb Network`
+
+**Reliability:** ★★★★★
+
+**Topics:** - Darknet - `ns.dnet` API - Dynamic network exploration -
+Authentication - Sessions - Self-replicating scripts - `.cache` files -
+Phishing - RAM reallocation - Stasis links - Server migration - Stock
+volatility
+
+**Status:** Active and future implementation reference
+
+**What is the Darknet?**\
+The Darknet is a separate, unstable network environment in Bitburner
+that becomes accessible after obtaining `DarkscapeNavigator.exe`.
+Unlike the normal network, its topology can change over time: servers
+may restart, move between connections, go offline, form loops, or exist
+in disconnected islands. Darknet servers generally cannot be operated
+on remotely in the same way as ordinary servers, so effective
+exploration depends on scripts that can probe nearby machines,
+authenticate to them, preserve credentials, and spread through the
+network.
+
+**Why this resource is useful:**\
+This in-game guide explains both the design of the Darknet and the
+intended use of the `ns.dnet` API. It directly supports the project's
+existing Darknet exploration and provides the foundation for turning
+experimental workers into a resilient distributed automation system.
+Important capabilities covered include:
+
+-   Discovering directly connected Darknet servers with
+    `ns.dnet.probe()`.
+-   Inspecting server state, model information, and password hints with
+    `ns.dnet.getServerDetails()`.
+-   Cracking nearby servers with `ns.dnet.authenticate()` and extracting
+    useful authentication clues from logs with `ns.dnet.heartbleed()`.
+-   Preserving discovered passwords so access can be recovered after
+    scripts are killed or network conditions change.
+-   Establishing per-script sessions with `ns.dnet.connectToSession()`
+    so scripts can use authenticated servers.
+-   Copying and executing scripts across the Darknet once the required
+    session and connectivity conditions are satisfied.
+-   Finding and opening valuable `.cache` files with
+    `ns.dnet.openCache()`.
+-   Reclaiming blocked server RAM with `ns.dnet.memoryReallocation()`.
+-   Running `ns.dnet.phishingAttack()` for money, charisma progression,
+    and possible `.cache` rewards.
+-   Stabilising strategically important servers with
+    `ns.dnet.setStasisLink()`, allowing persistent remote access.
+-   Forcing server movement with `ns.dnet.induceServerMigration()` to
+    help cross otherwise disconnected parts of the Darknet.
+-   Increasing stock volatility with `ns.dnet.promoteStock()`, creating
+    a potential future link between Darknet automation and the project's
+    stock-market strategy.
+
+The guide also includes an official example of a simple self-replicating
+Darknet script. It probes neighbouring servers, solves supported
+authentication models, copies itself to successfully authenticated
+machines, and launches another copy there. Its TODOs provide a useful
+development roadmap for adding password persistence, additional server
+models, Heartbleed analysis, RAM reclamation, cache collection, and
+phishing.
+
+**Operational takeaway:**\
+Retain this guide as the primary design reference for future Darknet
+automation. Our earlier Darknet exploration established the basic
+workflow; this document explains how to make that workflow resilient to
+moving, restarting, disconnected, and disappearing servers. The example
+script should also be retained as reference architecture rather than
+treated as a finished solution. Longer term, Darknet RAM, caches,
+phishing, server migration, stasis links, and stock promotion may all
+become useful components of the wider automation system.
+
+------------------------------------------------------------------------
+
 # Community Resources
 
 ## Placeholder - Steam Achievement Guide
@@ -468,6 +546,19 @@ achievements without abandoning faction or story progression.
 # Research Log
 
 ## 2026-08-22
+
+-   Added the in-game `The Darkweb Network` guide as a ★★★★★ official
+    resource.
+-   Documented the Darknet as a dynamic, unstable network requiring
+    local probing, authentication, sessions, credential persistence, and
+    self-replicating scripts.
+-   Recorded the `ns.dnet` capabilities for cache collection, RAM
+    reclamation, phishing, stasis links, forced server migration, and
+    stock-volatility promotion.
+-   Retained the official self-replicating starter script as reference
+    architecture for future Darknet automation.
+-   Identified a potential future integration between Darknet stock
+    promotion and the automated stock-market strategy.
 
 -   Added the in-game `Automating IPvGO` guide as a ★★★★★ official
     resource.
