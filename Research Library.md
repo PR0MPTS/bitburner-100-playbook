@@ -17,13 +17,13 @@ The Research Library answers: **Why do we believe this is correct?**
 
 # Reliability Scale
 
-  Rating   Meaning
-  -------- ------------------------------------------------
-  ★★★★★    Official documentation or source code
-  ★★★★☆    Strong community consensus or maintained guide
-  ★★★☆☆    Useful but needs verification
-  ★★☆☆☆    Anecdotal or narrow use case
-  ★☆☆☆☆    Outdated, unreliable, or superseded
+| Rating | Meaning | Guidance |
+|:------:|---------|----------|
+| ★★★★★ | **Official documentation or source code** | Authoritative, verified, and reliable reference. |
+| ★★★★☆ | **Strong community consensus or maintained guide** | Generally trusted, widely used, and well supported. |
+| ★★★☆☆ | **Useful but needs verification** | Helpful resource, but should be cross-checked. |
+| ★★☆☆☆ | **Anecdotal or narrow use case** | Limited evidence or scope. Use with caution. |
+| ★☆☆☆☆ | **Outdated, unreliable, or superseded** | Likely no longer accurate or relevant. |
 
 ------------------------------------------------------------------------
 
