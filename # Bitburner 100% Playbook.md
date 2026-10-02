@@ -34,17 +34,17 @@
 | Current BitNode | BitNode-1 |
 | Current Run | Run 6 – The Machine Awakens |
 | Current City | Aevum |
-| Money | ~$3.013t |
+| Money | ~$111.305q |
 | Home RAM | ~4.10 TB |
-| Home Cores | 2 |
-| Hacking Level | 1,162 |
-| Strength | 1 |
-| Defense | 1 |
-| Dexterity | 2 |
-| Agility | 1 |
-| Charisma | 91 |
+| Home Cores | 8 / 8 |
+| Hacking Level | 2,000 |
+| Strength | 120 |
+| Defense | 120 |
+| Dexterity | 138 |
+| Agility | 126 |
+| Charisma | 161 |
 | Karma | ~-309.111k |
-| Hacknet Nodes | 0 |
+| Hacknet Nodes | 30 |
 | Purchased Servers | 0 / 25 |
 | Current Factions | BitRunners, The Black Hand, NiteSec, Aevum, Sector-12, CyberSec |
 | Augmentations Installed | 42 |
@@ -52,7 +52,7 @@
 | Worker Threads | 1,338 |
 | Time Since Last Augmentation | 3h 5m 24s |
 | Total Play Time | 41d 7h 26m 8s |
-| Current Focus | Run 6 Feature Hunt: Aevum reputation, full-network hacking, renewed stock-market operation, Dark Net exploration, and achievements |
+| Current Focus | Algorithms training to Hacking 2,500 while autonomous hacking and stock trading continue |
 
 ---
 
@@ -108,6 +108,15 @@
 - [x] Continue Leadership training to bring Charisma closer to the other character stats.
 - [x] Progress from forecast observation to autonomous stock trading with `stock-trader.js`.
 - [ ] Investigate/fix stale persistent realised P/L statistics in `stock-trader-stats.txt` during Run 6.
+- [x] Restore autonomous trading with `stock-trader.js`.
+- [x] Reach Hacking Level 2,000.
+- [x] Expand to 30 Hacknet Nodes.
+- [x] Maximize Home CPU cores at 8 / 8.
+- [x] Run 1,000 simultaneous scripts for the achievement, then remove the temporary scripts.
+- [x] Reach 27 / 98 Steam achievements.
+- [ ] Train Algorithms from Hacking Level 2,000 to 2,500.
+- [ ] Reassess `fl1ght.exe` / Daedalus progression at Hacking Level 2,500.
+- [ ] Watch for the `$1Q` `Here comes the money!` achievement while passive income continues.
 
 - [x] Clear all remaining normal BitRunners augmentations.
 - [x] End the Run 5 Homicide/crime progression.
@@ -181,7 +190,7 @@ Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continue
 
 # Achievement Tracker
 
-## Completed (23 / 98)
+## Completed (27 / 98)
 
 | Achievement | Date |
 |------------|------|
@@ -208,12 +217,16 @@ Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continue
 | ✅ OUCH! (Go to the hospital) | 2026-08-15 |
 | ✅ 4S (Purchase the 4S Market Data) | 2026-08-15 |
 | ✅ You'll need upgrade for this one. (Write a script costing 32GB+ per thread) | 2026-08-15 |
+| ✅ Well Liked (Reach 10m reputation with a faction) | Session 17 |
+| ✅ Big network (Have 30 Hacknet nodes) | Session 17 |
+| ✅ Download more cores? (Maximize Home computer cores) | Session 17 |
+| ✅ Need more real life ram (Run 1,000 scripts simultaneously) | Session 17 |
 
 ## Remaining
 
-**75 Steam achievements remaining**
+**71 Steam achievements remaining**
 
-> Session 13 added `OUCH!`, `4S`, and `You'll need upgrade for this one.`, bringing the Steam total to 23 / 98.
+> Session 17 added `Well Liked`, `Big network`, `Download more cores?`, and `Need more real life ram`, bringing the Steam total to **27 / 98**.
 
 ---
 
@@ -449,7 +462,7 @@ Run 5 has now restored the **complete program set**.
 | Upgrade | Status |
 |----------|--------|
 | RAM | ~4.10 TB |
-| CPU Cores | 2 |
+| CPU Cores | 8 / 8 |
 
 ## Network Capacity
 
@@ -833,6 +846,13 @@ Verified during this playthrough:
 - Confirmed permanent WSE/TIX/4S access survived the augmentation reset.
 - Restarted `stock-watch.js` to rebuild market history before renewed trading.
 - Session closed in Aevum with approximately **$3.013t**, Hacking Level **1,162**, Charisma **91**, and Aevum faction work active.
+- Session 17 extended Run 6 into a long passive-automation grind.
+- Hacking advanced from **1,162 → 2,000** while training Algorithms.
+- `stock-trader.js` compounded the bankroll into the **quadrillions**, with cash peaking near **$112.752q** before infrastructure spending.
+- Expanded Hacknet to **30 nodes** and maximized Home CPU cores at **8 / 8**.
+- Used temporary lightweight scripts to reach **1,000 simultaneous processes**, then removed them after the achievement triggered.
+- Earned four achievements, increasing progress from **23 / 98 → 27 / 98**.
+- The next progression checkpoint is **Hacking Level 2,500**, followed by reassessment of `fl1ght.exe` / Daedalus progression.
 
 # Session Log
 
@@ -1749,6 +1769,101 @@ Run 5 built the machine. Run 6 switched it on. The rebuild phase that once defin
 
 ---
 
+
+---
+
+## Session 17 – Run 6: The Machine Awakens — The Long Grind
+
+### Major Milestones
+
+- Continued **Run 6 – The Machine Awakens** through an extended period of passive automation and idle progression.
+- Left the full hacking network and `stock-trader.js` running continuously while training **Algorithms**.
+- Hacking increased from **1,162** to **2,000**.
+- Revised the immediate objective to **Hacking Level 2,500** after investigating the remaining `fl1ght.exe` / Daedalus progression requirement.
+- Confirmed the alternative route would require **1,500 Strength, Defense, Dexterity, and Agility**, making continued hacking progression the practical path for PR0MPTS.
+- Autonomous stock trading compounded the bankroll from the low trillions into the **quadrillions**.
+- Cash peaked at approximately **$112.752q** before infrastructure spending.
+- Expanded Hacknet from **1 node to 30 nodes**.
+- Upgraded Home CPU cores from **3 to the maximum of 8**.
+- Created temporary lightweight scripts to run **1,000 simultaneous processes** without disrupting production systems, then removed them after the achievement triggered.
+- Continued using the existing **1,338-thread** distributed hacking network against `4sigma`.
+
+### Achievement Progress
+
+Four additional Steam achievements were earned:
+
+- [x] **Well Liked** — Reach 10m reputation with a faction.
+- [x] **Big network** — Have 30 Hacknet nodes.
+- [x] **Download more cores?** — Maximize Home computer cores.
+- [x] **Need more real life ram** — Run 1,000 scripts simultaneously.
+
+Achievement progress increased from **23 / 98** to **27 / 98**.
+
+Next major money-based achievement under observation:
+
+- [ ] **Here comes the money!** — Have $1Q on Home.
+
+### Hacking Network
+
+Current `hack-stats.js` checkpoint:
+
+- Servers discovered: **70**
+- Active worker hosts: **43**
+- Active worker processes: **43**
+- Total worker threads: **1,338**
+- Current target: `4sigma`
+- Current hacking income: approximately **$307.4m/sec**
+- Current hacking XP: approximately **393.28/sec**
+- Running worker lifetime earnings: approximately **$733.797t**
+
+Infrastructure purchases during the achievement sweep had effectively no impact on the production hacking network.
+
+### Stock Market
+
+`stock-trader.js` remains active as a major parallel income engine.
+
+The difference between approximately **$733.8t** recorded by the currently running hacking workers and PR0MPTS' total cash balance demonstrates how dominant autonomous stock trading has become during Run 6.
+
+The stock trader will remain active throughout the push from Hacking Level 2,000 to 2,500.
+
+### Current State
+
+- Current Run: **Run 6 – The Machine Awakens**
+- Current city: **Aevum**
+- Money: approximately **$111.305q**
+- Hacking: **2,000**
+- Strength: **120**
+- Defense: **120**
+- Dexterity: **138**
+- Agility: **126**
+- Charisma: **161**
+- Karma: approximately **-309.111k**
+- Installed augmentations: **42**
+- Home RAM: approximately **4.10 TB**
+- Home CPU cores: **8 / 8**
+- Hacknet Nodes: **30**
+- Worker threads: **1,338**
+- Active worker hosts: **43**
+- Current hacking target: `4sigma`
+- Current activity: **Algorithms course**
+- Steam achievements: **27 / 98**
+
+### Current Objective
+
+Continue **Algorithms** training from Hacking Level **2,000 → 2,500** while leaving `stock-trader.js` and the distributed hacking network active, allowing the bankroll to compound, and watching progress toward **$1Q / `Here comes the money!`**.
+
+Once Hacking Level **2,500** is reached, immediately reassess `fl1ght.exe` / Daedalus progression before beginning another augmentation installation cycle.
+
+### Lessons Learned
+
+- Long-duration automation can produce enormous progression without active intervention.
+- Autonomous stock trading has grown from a useful side system into PR0MPTS' dominant source of wealth.
+- Money-heavy achievements are efficient late-run targets when the stock trader can rapidly replenish spent capital.
+- Temporary achievement scripts can be created, executed, and removed without disturbing the permanent automation stack.
+- Home CPU cores and Hacknet node count become straightforward infrastructure achievements once money is no longer a meaningful constraint.
+- The Run 6 augmentation stack can sustain hacking, stock trading, education, and achievement hunting simultaneously.
+- At this stage of BitNode-1, the limiting resource is increasingly **progression requirements rather than money**.
+
 # Research Notes
 
 ## Documentation
@@ -1898,6 +2013,15 @@ Pending.
 - Large retained faction favor makes faction restoration immediately useful even though reputation resets.
 - Aevum has one normal augmentation remaining at the Session 16 checkpoint.
 
+## Session 17 Discoveries
+
+- Passive Algorithms training can run alongside distributed hacking and autonomous stock trading.
+- `stock-trader.js` can compound a trillion-scale bankroll into quadrillion-scale cash during a long idle grind.
+- Thirty Hacknet nodes and maximum Home CPU cores became inexpensive achievement targets at Run 6's capital scale.
+- A temporary 1,000-process workload can earn `Need more real life ram` without changing permanent production automation.
+- At the Session 17 checkpoint, progression requirements rather than money are the primary constraint.
+- Hacking Level **2,500** is the next deliberate checkpoint before reassessing `fl1ght.exe` / Daedalus progression.
+
 # Questions To Investigate
 
 - How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
@@ -1935,4 +2059,4 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last Updated: Session 16 — Run 6: The Machine Awakens (2026-08-22)_
+_Last Updated: Session 17 — Run 6: The Machine Awakens — The Long Grind_
