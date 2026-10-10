@@ -247,20 +247,30 @@ Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continue
 
 ### Current Strategy
 
-Run 5 continues the Feature Hunt philosophy rather than returning to a long augmentation/reputation grind. Session 12 opened the Dark Net, giving the playthrough a second cybercrime progression path alongside the Slums crime system.
+Run 6 continues the Feature Hunt philosophy while the automated network and
+stock trader provide passive income. The latest verified checkpoint is Session
+17: Hacking Level 2,000, 27 / 98 achievements, 30 Hacknet nodes, and a
+quadrillion-scale bankroll. Earlier Run 5 Dark Net and crime checkpoints remain
+historical context, not the current activity state.
 
-The hacking network remains the economic engine while Homicide runs in parallel and active play focuses on Dark Net reconnaissance, authentication, exploitation, Charisma growth, deeper faction/story systems, and achievements.
+The documented immediate gate is Hacking Level 2,500. Reassess
+`fl1ght.exe` / Daedalus only after reaching it; the alternative combat-stat
+route was recorded as impractical at the Session 17 checkpoint. Dark Net,
+infiltration, faction, and achievement work remain deliberate future Feature
+Hunts rather than active claims.
 
 ### Current Priorities
 
-1. Keep `deploy.js` running as the background progression engine.
-2. Keep Homicide running while it remains at 100% success.
-3. Use `route.js` for normal-network faction and server routing.
-4. Use `dnet-worker.js` for Dark Net reconnaissance from `darkweb`.
-5. Focus Dark Net research on progressing beyond Depth 0 instead of reverse-engineering every API immediately.
-6. Investigate Dark Net files, caches, footholds, and deeper traversal.
-7. Reacquire remaining port-opening programs as hacking level rises.
-8. Continue choosing Feature Hunts and achievements over repetitive faction grinding when both paths remain viable.
+1. Continue Algorithms training from Hacking Level 2,000 to 2,500.
+2. Leave the existing `worker.js` deployment and `stock-trader.js` active
+   while training; rerun `deploy.js` only for deployment or recovery.
+3. Watch for the $1Q `Here comes the money!` achievement.
+4. Obtain Aevum's remaining normal augmentation when the recorded
+   prerequisites are satisfied.
+5. Investigate the stale persistent realised P/L in `stock-trader-stats.txt`
+   without treating it as authoritative.
+6. Keep Dark Net depth, cache, file, and Stasis Link work deferred until a
+   verified next step is available.
 
 ---
 
@@ -286,24 +296,30 @@ _TBD_
 | deploy.js V3 | Scans, roots, deploys, selects targets, and starts workers | ✅ Active |
 | drain.js | Aggressively drains a target server's money for achievement attempts | ✅ Available |
 | recover.js | Restores a drained server's money and security state | ✅ Available |
-| route.js | Finds a server and prints the full connection route from `home` | ✅ New in Session 11 |
-| list-augs.js | Lists currently installed augmentations from the Terminal | ✅ New in Session 13 |
-| stock-scan.js | Manual TIX/4S market snapshot, diagnostics, positions, and suggested actions | ✅ New in Session 14 |
+| route.js | Finds a server and prints the full connection route from `home` | ✅ Available |
+| list-augs.js | Lists currently installed augmentations from the Terminal | ✅ Available |
+| stock-scan.js | Manual TIX/4S market snapshot, diagnostics, positions, and suggested actions | ✅ Available |
 | stock-watch.js | Rolling 4S forecast diagnostic/analysis tool; superseded for normal operation | ⚠️ Deprecated in Session 15 |
 | stock-trader.js | Autonomous long-only 4S trader with reserve, P/L tracking, dashboard, and persistent stats | ✅ Production – v2 |
-| dnet-worker.js | Dark Net reconnaissance and scripted authentication from `darkweb` | ✅ New in Session 12 |
-| dnet-stasis.js | Tests local Stasis Link activation on Dark Net servers | 🧪 Experimental |
 | analyzeServers.js | Reviews server suitability and network information | ✅ Available |
-| weaken-only.js | Runs dedicated weaken operations | ✅ Available |
-| scan.js | Network discovery | ✅ Available |
-| n00dles.js | Early-game hacking helper | ✅ Available |
+| scan.js | Reports the current host's immediate neighbours and access state | ✅ Available |
 | hack.js | Dedicated hacking action | ✅ Available |
 | grow.js | Dedicated growth action | ✅ Available |
 | weaken.js | Dedicated security reduction action | ✅ Available |
 
+> `dnet-worker.js`, `dnet-stasis.js`, `weaken-only.js`, and `n00dles.js` are
+> documented in historical sessions but are not present in the current
+> repository. Their availability and operational status are therefore
+> unverified.
+
 ## deploy.js V3
 
-The third deployment version discovers eligible servers, opens all ports supported by the available programs, gains root access where possible, copies the worker script, calculates usable threads, and automatically chooses a suitable target when none is supplied.
+The third deployment version discovers eligible servers, opens all ports
+supported by the available programs, gains root access where possible, copies
+the worker script, calculates usable remote-host threads, and automatically
+chooses a suitable target when none is supplied. It is an on-demand deployment
+command, not a persistent orchestrator; it does not deploy to Home, install
+backdoors, reserve remote RAM, or schedule HWGW batches.
 
 ## route.js
 
@@ -400,7 +416,7 @@ Created as the companion recovery tool for `drain.js`. It weakens and grows a de
 
 ## Current Capacity
 
-Run 5 rebuild checkpoints:
+Historical Run 5 rebuild checkpoints:
 
 - Initial deployment:
   - 70 servers discovered
@@ -421,15 +437,20 @@ Run 5 rebuild checkpoints:
 - Home RAM: **1.02 TB**
 - Purchased servers: **0 / 25**
 
+Latest verified capacity (Session 17): **69 / 70** rooted servers, **43** active
+worker hosts, **1,338** worker threads, target `4sigma`, approximately **4.10
+TB** Home RAM, and **0 / 25** purchased servers. This supersedes the Run 5
+checkpoint as the current documented state.
+
 ---
 
 # Programs
 
 Programs reset after augmentation installation and must be recreated or reacquired.
 
-Run 5 has now restored the **complete program set**.
+The Session 16 Run 6 recovery recorded the **complete program set** as restored.
 
-## Currently Acquired in Run 5
+## Verified Run 6 Toolkit
 
 | Program | Status | Purpose |
 |---------|--------|---------|
@@ -446,7 +467,9 @@ Run 5 has now restored the **complete program set**.
 | DarkscapeNavigator.exe | ✅ Acquired | Unlocks Dark Net access and the `ns.dnet` API |
 | Formulas.exe | ✅ Acquired | Unlocks the Formulas API |
 
-> **Run 5 program status: Complete.** All standard programs currently shown on Home have been reacquired.
+> **Run 6 program status: Complete at the Session 16 checkpoint.** All standard
+> programs listed here had been reacquired. Reconfirm in-game after any later
+> reset or program loss.
 
 
 # Infrastructure
@@ -455,7 +478,7 @@ Run 5 has now restored the **complete program set**.
 
 | Count | Status | Notes |
 |------:|--------|-------|
-| 0 / 25 | Reset | Purchased servers were lost during the Run 4 augmentation installation |
+| 0 / 25 | Current verified checkpoint | Session 17 records no purchased servers; the earlier Run 4 loss is historical context. |
 
 ## Home Upgrades
 
@@ -466,14 +489,14 @@ Run 5 has now restored the **complete program set**.
 
 ## Network Capacity
 
-- Run 5 began with 88 worker threads immediately after the reset.
-- The network reached 420 worker threads after reacquiring three port openers.
-- HTTPWorm.exe enabled a fourth-port redeploy and access to `run4theh111z`.
-- Run 5 already exceeded the comparable 341-thread Run 4 checkpoint.
-- Purchased-server infrastructure remains at 0 / 25.
-- Hacknet Nodes rebuilt to **9** by Session 12.
-- `deploy.js V3` remains the central deployment tool.
-- `route.js` now handles deep-server route discovery.
+- Session 17 records 69 / 70 rooted servers, 43 worker hosts, 1,338 worker
+  threads, and target `4sigma`.
+- Purchased-server infrastructure remains 0 / 25 at that checkpoint.
+- Hacknet expanded to **30** nodes and Home CPU cores reached **8 / 8**.
+- `deploy.js V3` remains the central deployment tool; `route.js` handles
+  deep-server route discovery.
+- The 88-, 420-, and 341-thread figures elsewhere in this playbook are
+  historical Run 4/5 checkpoints, not current capacity.
 
 ---
 
@@ -484,23 +507,34 @@ Run 5 has now restored the **complete program set**.
 - BitRunners
 - The Black Hand
 - NiteSec
+- Aevum
 - Sector-12
-- Slum Snakes
-- Netburners
 - CyberSec
 
-## Current Faction Progress
+> This membership list is the latest verified Session 17 summary. Slum Snakes,
+> Netburners, and The Syndicate remain important historical factions, but the
+> repository does not provide a later Run 6 membership confirmation for them.
+
+## Last Detailed Faction Progress (Run 5 Endpoint)
+
+The following reputation, favor, and augmentation figures are preserved from
+the Run 5 endpoint. They are not asserted as current Run 6 values because
+faction membership and reputation reset after augmentation installation.
 
 | Faction | Reputation | Favor | Augmentations Remaining | Notes |
 |---------|------------|-------|-------------------------|-------|
-| BitRunners | 2.014m | 0.000 | 0 normal | Cleared in Session 15 |
-| The Black Hand | 38.975k | 301.478 | 0 normal | I.I.I.I backdoored again; breadcrumb reconfirmed |
-| NiteSec | 1.168m | 231.903 | 0 normal | Cleared |
-| Sector-12 | 1.022m | 190.485 | 0 normal | Cleared in Session 15 |
-| The Syndicate | 72.820k | 0.000 | 10 normal | Three purchased in Session 15; remainder deferred |
-| Slum Snakes | 278.453k | 44.954 | 0 normal | Cleared in Session 15 |
-| Netburners | 39.593k | 0.000 | 0 normal | Cleared in Session 15 |
-| CyberSec | 997.593k | 183.506 | 0 normal | Fully cleared |
+| BitRunners | 2.014m | 0.000 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
+| The Black Hand | 38.975k | 301.478 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
+| NiteSec | 1.168m | 231.903 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
+| Sector-12 | 1.022m | 190.485 | 0 normal | Run 5 endpoint; current Run 6 value unverified |
+| The Syndicate | 72.820k | 0.000 | 10 normal | Run 5 endpoint; remainder deferred, Run 6 status unverified |
+| Slum Snakes | 278.453k | 44.954 | 0 normal | Run 5 endpoint; current Run 6 status unverified |
+| Netburners | 39.593k | 0.000 | 0 normal | Run 5 endpoint; current Run 6 status unverified |
+| CyberSec | 997.593k | 183.506 | 0 normal | Run 5 endpoint; current Run 6 value unverified |
+
+The latest detailed Run 6 evidence (Session 16) records Aevum as joined with
+one normal augmentation remaining. Session 17 retains obtaining it as an
+objective; a newer exact reputation value is not recorded.
 
 ## Faction History
 
@@ -592,9 +626,13 @@ Installed in this cycle:
 
 None at the Session 16 closing checkpoint.
 
-## Current Multipliers
+## Recorded Multipliers (Run 6 Start)
 
-| Multiplier | Current Value |
+These values were recorded after the Run 5 → Run 6 installation. No later
+multiplier snapshot is present, so they are reference values rather than live
+state claims.
+
+| Multiplier | Recorded Value |
 |------------|---------------|
 | Hacking Chance | 159.37% |
 | Hacking Speed | 155.91% |

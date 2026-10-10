@@ -14,11 +14,11 @@ The goal of this project is to earn every achievement while building a practical
 
 ## Repository Contents
 
-- **Bitburner-100%-Playbook.md** – The canonical playbook for the run.
-- Strategy notes and progression planning.
-- Achievement tracking.
-- Script documentation.
-- Session logs and lessons learned.
+- [# Bitburner 100% Playbook.md](%23%20Bitburner%20100%25%20Playbook.md) – The canonical playbook, run history, objectives, achievements, and decisions.
+- [ARCHITECTURE.md](ARCHITECTURE.md) – The current automation architecture and evidence-backed operating model.
+- [Research Library.md](Research%20Library.md) – Sources, verified findings, and research priorities.
+- [CHARACTER-EVOLUTION.md](CHARACTER-EVOLUTION.md) – PR0MPTS' approved visual history and continuity rules.
+- `Scripts/` – Netscript automation and diagnostic tools.
 
 ## Philosophy
 

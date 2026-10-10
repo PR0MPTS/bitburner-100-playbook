@@ -518,8 +518,10 @@ progression.
 
 **Summary:**
 
-Our current strategy favours reliable, unattended automation over
-short-term optimisation.
+The latest verified strategy (Session 17) favours reliable, unattended
+automation over short-term optimisation: distributed hacking and autonomous
+stock trading fund progression while active play focuses on the next verified
+gate, Hacking Level 2,500.
 
 **Key Decisions**
 
@@ -527,6 +529,8 @@ short-term optimisation.
     targets, and restore the network after resets.
 -   Use a generic `worker.js` that continuously decides whether to
     weaken, grow, or hack based on the server's current state.
+-   Use `stock-trader.js` v2 as the normal long-only 4S trader; retain
+    `stock-watch.js` as a diagnostic tool rather than a production trader.
 -   Allow deployment to any target by passing the desired server to
     `deploy.js`, avoiding hard-coded targets.
 -   Optimise for continuous progression while offline or AFK rather than
@@ -538,8 +542,11 @@ short-term optimisation.
 **Outcome**
 
 This approach has provided stable income, consistent hacking experience,
-fast post-reset recovery, and enough spare capacity to pursue
-achievements without abandoning faction or story progression.
+fast post-reset recovery, and enough spare capacity to pursue achievements
+without abandoning faction or story progression. At the Session 17 checkpoint,
+the documented network had 1,338 worker threads and the stock trader was a
+major parallel income source. Those figures are checkpoint evidence, not live
+runtime measurements.
 
 ------------------------------------------------------------------------
 
