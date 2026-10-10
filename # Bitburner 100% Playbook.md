@@ -1,33 +1,29 @@
 # Bitburner 100% Playbook
 
-> Living playbook for achieving **100% completion (98 Steam achievements)** in Bitburner.
+> Living record of the journey toward **98 / 98 Steam achievements**, with current plans first and historical details preserved below.
+
+**Checkpoint:** Session 17 · Run 6 — The Machine Awakens · BitNode-1 · 27 / 98 achievements  
+**Reading guide:** For the next play session, read only **1. Command Center**. The other sections are reference and historical records.
+
+## Contents
+
+- [1. Command Center](#1-command-center)
+- [2. Achievement Progress](#2-achievement-progress)
+- [3. Progression & Infrastructure](#3-progression--infrastructure)
+- [4. Automation & Scripts](#4-automation--scripts)
+- [5. Knowledge Base](#5-knowledge-base)
+- [6. Feature Hunt Backlog](#6-feature-hunt-backlog)
+- [7. Strategic Decisions](#7-strategic-decisions)
+- [8. Playthrough Chronicle](#8-playthrough-chronicle)
+- [9. References & Project Principles](#9-references--project-principles)
 
 ---
 
-# Project Goal
+# 1. Command Center
 
-## Primary Objectives
+> **Current operational snapshot only.** Historic objectives and session details are filed in the Chronicle. This checkpoint is not live game telemetry.
 
-- Complete all 98 Steam achievements.
-- Follow a normal first-playthrough progression.
-- Learn game systems before heavily optimizing.
-- Build reusable automation over time.
-- Document every important strategy and discovery.
-
----
-
-# Playthrough Philosophy
-
-1. Experience the game naturally on the first BitNode.
-2. Automate repetitive tasks only after understanding them.
-3. Verify mechanics against official documentation where possible.
-4. Keep this document as the canonical record of the playthrough.
-
----
-
-# Current Progress
-
-## Current Run
+## Verified Run 6 State
 
 | Item | Value |
 |------|-------|
@@ -56,141 +52,51 @@
 
 ---
 
-# Current Objectives
+## Active Objective
 
-## Immediate
+**Reach Hacking Level 2,500** through Algorithms training, then reassess `fl1ght.exe` / Daedalus progression. Keep distributed hacking and autonomous stock trading running in parallel.
 
-- [x] Install the eight Run 4 augmentations.
-- [x] Begin Run 5 with 25 installed augmentations.
-- [x] Rebuild the hacking network immediately with `deploy.js`.
-- [x] Reacquire FTPcrack.exe.
-- [x] Reacquire relaySMTP.exe.
-- [x] Reacquire HTTPWorm.exe.
-- [x] Rejoin CyberSec.
-- [x] Rejoin NiteSec.
-- [x] Create `route.js`.
-- [x] Backdoor `run4theh111z`.
-- [x] Join BitRunners.
-- [x] Reach 20 / 98 Steam achievements.
-- [x] Purchase DarkscapeNavigator.exe.
-- [x] Unlock and enter the Dark Net.
-- [x] Build a working Dark Net reconnaissance script.
-- [x] Authenticate Dark Net servers through Netscript.
-- [x] Use `memoryReallocation()` successfully.
-- [x] Raise Charisma substantially through Dark Net activity.
-- [ ] Determine how to progress beyond Dark Net Depth 0.
-- [ ] Investigate how to retrieve Dark Net data and literature files.
-- [ ] Investigate reward caches.
-- [ ] Continue learning additional Dark Net vulnerability models.
-- [x] End the Run 5 Homicide/Karma progression after joining The Syndicate.
-- [x] Reacquire SQLInject.exe.
-- [x] Reacquire Formulas.exe.
+## Next Actions
 
-## Short Term
-
-- [x] Purchase TIX API Access.
-- [x] Purchase 4S Market Data TIX API Access.
-- [x] Create `stock-scan.js`.
-- [x] Create `stock-watch.js`.
-- [x] Add rolling forecast persistence analysis to `stock-watch.js`.
-- [x] Create `stock-trader.js` and upgrade it to autonomous trader v2.
-- [x] Liquidate all stock positions before reset.
-- [x] Clear BitRunners, Sector-12, Slum Snakes, and Netburners of remaining normal augmentations.
-- [x] Reach NeuroFlux Governor Level 10.
-- [x] Install the 21 queued augmentation upgrades and begin Run 6.
-- [x] Restore the complete five-port program toolkit.
-- [x] Rejoin NiteSec, The Black Hand, and BitRunners.
-- [x] Join Aevum.
-- [x] Expand the network to 69 / 70 rooted servers and 1,338 worker threads.
-- [x] Restore Formulas.exe.
-- [ ] Obtain Aevum's remaining normal augmentation.
-- [ ] Reopen autonomous stock trading after market history is rebuilt.
-- [x] Continue Leadership training to bring Charisma closer to the other character stats.
-- [x] Progress from forecast observation to autonomous stock trading with `stock-trader.js`.
-- [ ] Investigate/fix stale persistent realised P/L statistics in `stock-trader-stats.txt` during Run 6.
-- [x] Restore autonomous trading with `stock-trader.js`.
-- [x] Reach Hacking Level 2,000.
-- [x] Expand to 30 Hacknet Nodes.
-- [x] Maximize Home CPU cores at 8 / 8.
-- [x] Run 1,000 simultaneous scripts for the achievement, then remove the temporary scripts.
-- [x] Reach 27 / 98 Steam achievements.
-- [ ] Train Algorithms from Hacking Level 2,000 to 2,500.
-- [ ] Reassess `fl1ght.exe` / Daedalus progression at Hacking Level 2,500.
-- [ ] Watch for the `$1Q` `Here comes the money!` achievement while passive income continues.
-
-- [x] Clear all remaining normal BitRunners augmentations.
-- [x] End the Run 5 Homicide/crime progression.
-- [ ] Investigate Dark Net footholds and deeper traversal.
-- [ ] Investigate cache-opening mechanics.
-- [ ] Test Dark Net file retrieval from compromised hosts.
-- [ ] Revisit Stasis Links once sufficient RAM is available on a suitable Dark Net server.
-- [ ] Expand the hacking network after additional port openers are reacquired.
-- [ ] Rebuild purchased-server infrastructure when useful.
-- [ ] Continue balancing story progression with achievements and Feature Hunts.
-
-## Long Term
-
-- [ ] Complete BitNode 1.
-- [ ] Unlock advanced game mechanics.
-- [ ] Progress toward all 98 achievements.
+1. Continue Algorithms training from Hacking Level 2,000 to 2,500.
+2. Leave the existing `worker.js` deployment and `stock-trader.js` active
+   while training; rerun `deploy.js` only for deployment or recovery.
+3. Watch for the $1Q `Here comes the money!` achievement.
+4. Obtain Aevum's remaining normal augmentation when the recorded
+   prerequisites are satisfied.
+5. Investigate the stale persistent realised P/L in `stock-trader-stats.txt`
+   without treating it as authoritative.
+6. Keep Dark Net depth, cache, file, and Stasis Link work deferred until a
+   verified next step is available.
 
 ---
 
-# Achievement Roadmap
+## Production Status
 
-The ultimate objective of this playthrough is to earn **all 98 Steam achievements** while following a natural first playthrough before moving into heavy optimisation. Progression is divided into phases that naturally build toward 100% completion.
+- **Hacking:** `deploy.js V3` manages deployment; `worker.js` runs across the rooted network. Last verified: **69 / 70 rooted**, **43 worker hosts**, **1,338 threads**, target **`4sigma`**.
+- **Markets:** `stock-trader.js v2` is the production trader. `stock-watch.js` is retained for diagnostics, not normal production.
+- **Training:** Algorithms is the foreground activity until the 2,500 checkpoint.
+- **Known data quality issue:** persistent `stock-trader-stats.txt` realised P/L needs validation.
 
-## Phase 1 — Foundation
+## Parked Until Revisited
 
-- [x] Build a reusable distributed hacking framework.
-- [x] Create automated deployment with `deploy.js`.
-- [x] Develop a universal `worker.js` automation loop.
-- [x] Complete the first augmentation cycle.
-- [x] Complete the second augmentation cycle.
-- [x] Reacquire the full Dark Web program set except Formulas.exe.
-- [x] Rejoin CyberSec and NiteSec.
-- [x] Join The Black Hand.
-- [x] Begin purchased-server infrastructure.
-- [x] Prepare the third augmentation batch.
+- Aevum’s remaining normal augmentation
+- Dark Net depth, footholds, caches, files and Stasis Links
+- Infiltration / Shadows of Anarchy
+- Purchased servers and HWGW optimisation when they meaningfully support the next objective
+- Other features in [Feature Hunt Backlog](#6-feature-hunt-backlog)
 
-## Phase 2 — Network Expansion
+## Achievement Pulse
 
-- [ ] Root every accessible server.
-- [x] Backdoor key early hacking-faction servers.
-- [x] Upgrade Home RAM to 1 TB.
-- [x] Purchase the first server.
-- [x] Expand to four purchased servers.
-- [x] Reach 1,615 worker threads.
-- [ ] Continue expanding automation to stronger targets.
-
-## Phase 3 — Feature Discovery *(Current)*
-
-- [ ] Implement advanced HWGW batch hacking.
-- [ ] Optimise faction reputation farming.
-- [ ] Optimise augmentation purchase order.
-- [ ] Unlock advanced game mechanics.
-
-## Phase 4 — Achievement Hunt
-
-- [ ] Complete hidden achievements.
-- [ ] Complete corporation achievements.
-- [ ] Complete gang achievements.
-- [ ] Complete sleeve achievements.
-- [ ] Complete Bladeburner achievements.
-- [ ] Complete BitNode-specific achievements.
-- [ ] Reach **98 / 98 Steam achievements**.
-
-### Current Focus
-
-**Phase 3 — Feature Discovery**
-
-Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continues in parallel while the automated hacking network funds exploration. Session 12 unlocked a major new subsystem: a dynamic Dark Net with its own API, vulnerability models, authentication, blocked RAM, reward caches, data files, Stasis Links, and depth-based progression.
+**27 / 98 earned · 71 remaining.** Last four were `Well Liked`, `Big network`, `Download more cores?`, and `Need more real life ram`. Watch for `$1Q` / `Here comes the money!` as cash grows.
 
 ---
 
-# Achievement Tracker
+# 2. Achievement Progress
 
-## Completed (27 / 98)
+## Achievement Tracker
+
+### Completed (27 / 98)
 
 | Achievement | Date |
 |------------|------|
@@ -222,7 +128,7 @@ Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continue
 | ✅ Download more cores? (Maximize Home computer cores) | Session 17 |
 | ✅ Need more real life ram (Run 1,000 scripts simultaneously) | Session 17 |
 
-## Remaining
+### Remaining
 
 **71 Steam achievements remaining**
 
@@ -230,65 +136,289 @@ Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continue
 
 ---
 
-# Strategy
+## Achievement Roadmap
 
-## Early Game
+The ultimate objective of this playthrough is to earn **all 98 Steam achievements** while following a natural first playthrough before moving into heavy optimisation. Progression is divided into phases that naturally build toward 100% completion.
 
-### Completed
+### Phase 1 — Foundation
 
-- Built the first distributed automation network.
-- Purchased the TOR Router.
-- Acquired the full port-opening program set.
-- Joined Sector-12, CyberSec, NiteSec, Aevum, and The Black Hand.
-- Completed two augmentation cycles.
-- Rebuilt and expanded the hacking network after each installation.
-- Began purchased-server infrastructure.
-- Built dedicated achievement scripts.
+- [x] Build a reusable distributed hacking framework.
+- [x] Create automated deployment with `deploy.js`.
+- [x] Develop a universal `worker.js` automation loop.
+- [x] Complete the first augmentation cycle.
+- [x] Complete the second augmentation cycle.
+- [x] Reacquire the full Dark Web program set except Formulas.exe.
+- [x] Rejoin CyberSec and NiteSec.
+- [x] Join The Black Hand.
+- [x] Begin purchased-server infrastructure.
+- [x] Prepare the third augmentation batch.
 
-### Current Strategy
+### Phase 2 — Network Expansion
 
-Run 6 continues the Feature Hunt philosophy while the automated network and
-stock trader provide passive income. The latest verified checkpoint is Session
-17: Hacking Level 2,000, 27 / 98 achievements, 30 Hacknet nodes, and a
-quadrillion-scale bankroll. Earlier Run 5 Dark Net and crime checkpoints remain
-historical context, not the current activity state.
+- [ ] Root every accessible server.
+- [x] Backdoor key early hacking-faction servers.
+- [x] Upgrade Home RAM to 1 TB.
+- [x] Purchase the first server.
+- [x] Expand to four purchased servers.
+- [x] Reach 1,615 worker threads.
+- [ ] Continue expanding automation to stronger targets.
 
-The documented immediate gate is Hacking Level 2,500. Reassess
-`fl1ght.exe` / Daedalus only after reaching it; the alternative combat-stat
-route was recorded as impractical at the Session 17 checkpoint. Dark Net,
-infiltration, faction, and achievement work remain deliberate future Feature
-Hunts rather than active claims.
+### Phase 3 — Feature Discovery
 
-### Current Priorities
+- [ ] Implement advanced HWGW batch hacking.
+- [ ] Optimise faction reputation farming.
+- [ ] Optimise augmentation purchase order.
+- [ ] Unlock advanced game mechanics.
 
-1. Continue Algorithms training from Hacking Level 2,000 to 2,500.
-2. Leave the existing `worker.js` deployment and `stock-trader.js` active
-   while training; rerun `deploy.js` only for deployment or recovery.
-3. Watch for the $1Q `Here comes the money!` achievement.
-4. Obtain Aevum's remaining normal augmentation when the recorded
-   prerequisites are satisfied.
-5. Investigate the stale persistent realised P/L in `stock-trader-stats.txt`
-   without treating it as authoritative.
-6. Keep Dark Net depth, cache, file, and Stasis Link work deferred until a
-   verified next step is available.
+### Phase 4 — Achievement Hunt
 
----
+- [ ] Complete hidden achievements.
+- [ ] Complete corporation achievements.
+- [ ] Complete gang achievements.
+- [ ] Complete sleeve achievements.
+- [ ] Complete Bladeburner achievements.
+- [ ] Complete BitNode-specific achievements.
+- [ ] Reach **98 / 98 Steam achievements**.
 
-## Mid Game
+#### Historical Feature Hunt Focus (Run 5)
 
-_TBD_
+**Phase 3 — Feature Discovery**
 
----
-
-## Late Game
-
-_TBD_
+Run 5 has expanded the Feature Hunt philosophy into the Dark Net. Crime continues in parallel while the automated hacking network funds exploration. Session 12 unlocked a major new subsystem: a dynamic Dark Net with its own API, vulnerability models, authentication, blocked RAM, reward caches, data files, Stasis Links, and depth-based progression.
 
 ---
 
-# Scripts
+---
 
-## Scripts in Use
+# 3. Progression & Infrastructure
+
+## Factions
+
+### Current Membership
+
+- BitRunners
+- The Black Hand
+- NiteSec
+- Aevum
+- Sector-12
+- CyberSec
+
+> This membership list is the latest verified Session 17 summary. Slum Snakes,
+> Netburners, and The Syndicate remain important historical factions, but the
+> repository does not provide a later Run 6 membership confirmation for them.
+
+### Last Detailed Faction Progress (Run 5 Endpoint)
+
+The following reputation, favor, and augmentation figures are preserved from
+the Run 5 endpoint. They are not asserted as current Run 6 values because
+faction membership and reputation reset after augmentation installation.
+
+| Faction | Reputation | Favor | Augmentations Remaining | Notes |
+|---------|------------|-------|-------------------------|-------|
+| BitRunners | 2.014m | 0.000 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
+| The Black Hand | 38.975k | 301.478 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
+| NiteSec | 1.168m | 231.903 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
+| Sector-12 | 1.022m | 190.485 | 0 normal | Run 5 endpoint; current Run 6 value unverified |
+| The Syndicate | 72.820k | 0.000 | 10 normal | Run 5 endpoint; remainder deferred, Run 6 status unverified |
+| Slum Snakes | 278.453k | 44.954 | 0 normal | Run 5 endpoint; current Run 6 status unverified |
+| Netburners | 39.593k | 0.000 | 0 normal | Run 5 endpoint; current Run 6 status unverified |
+| CyberSec | 997.593k | 183.506 | 0 normal | Run 5 endpoint; current Run 6 value unverified |
+
+The latest detailed Run 6 evidence (Session 16) records Aevum as joined with
+one normal augmentation remaining. Session 17 retains obtaining it as an
+objective; a newer exact reputation value is not recorded.
+
+### Faction History
+
+| Faction | Status | Notes |
+|---------|--------|-------|
+| Sector-12 | Current | Original city faction |
+| CyberSec | Current | Restored during Run 5; no augmentations remaining |
+| NiteSec | Current | Restored during Run 5 |
+| Aevum | Previous | City faction |
+| The Black Hand | Current | Reinvited after backdooring I.I.I.I in Session 15; no normal augmentations remaining |
+| Tetrads | Previous | Chongqing faction |
+| Tian Di Hui | Previous | Chongqing faction |
+| Slum Snakes | Current | First criminal faction |
+| BitRunners | Current | Unlocked via `run4theh111z` |
+| Netburners | Current | Joined during Run 5 |
+| The Syndicate | Current | Joined in Session 13 after reaching approximately -308k Karma |
+
+---
+
+## Augmentations
+
+### Installed
+
+| Augmentation | Installation Cycle |
+|--------------|--------------------|
+| BitWire | Run 1 → Run 2 |
+| Synaptic Enhancement Implant | Run 1 → Run 2 |
+| Neurotrainer I | Run 1 → Run 2 |
+| Cranial Signal Processors - Gen I | Run 2 → Run 3 |
+| Cranial Signal Processors - Gen II | Run 2 → Run 3 |
+| Cranial Signal Processors - Gen III | Run 2 → Run 3 |
+| DataJack | Run 2 → Run 3 |
+| Neurotrainer II | Run 2 → Run 3 |
+| Wired Reflexes | Run 2 → Run 3 |
+| NeuroFlux Governor - Level 4 | Run 2 → Run 3 |
+
+### Installed During Run 3 → Run 4
+
+| Augmentation | Status |
+|--------------|--------|
+| Augmented Targeting I | ✅ Installed |
+| CashRoot Starter Kit | ✅ Installed |
+| Speech Processor Implant | ✅ Installed |
+| Artificial Synaptic Potentiation | ✅ Installed |
+| Embedded Netburner Module | ✅ Installed |
+| Magnetism Amplifier | ✅ Installed |
+| The Black Hand | ✅ Installed |
+| NeuroFlux Governor - Level 6 | ✅ Installed |
+
+### Installed During Run 4 → Run 5
+
+| Augmentation | Status |
+|--------------|--------|
+| Neuralstimulator | ✅ Installed |
+| Embedded Netburner Module Core Implant | ✅ Installed |
+| Enhanced Myelin Sheathing | ✅ Installed |
+| Cranial Signal Processors - Gen IV | ✅ Installed |
+| Combat Rib I | ✅ Installed |
+| LuminCloaking-V1 Skin Implant | ✅ Installed |
+| Neural Wit Amplifier | ✅ Installed |
+| SmartSonar Implant | ✅ Installed |
+
+### Installed During Run 5 → Run 6
+
+The Run 5 finale package was installed to begin Run 6. The game now reports **42 installed augmentations**.
+
+Installed in this cycle:
+
+- CRTX42-AA Gene Modification
+- Neural-Retention Enhancement
+- LuminCloaking-V2 Skin Implant
+- Augmented Targeting II
+- Embedded Netburner Module Core V2 Upgrade
+- BitRunners Neurolink
+- Artificial Bio-neural Network Implant
+- Cranial Signal Processors - Gen V
+- Neural Accelerator
+- Hacknet Node Core Direct-Neural Interface
+- Hacknet Node Kernel Direct-Neural Interface
+- Hacknet Node CPU Architecture Neural-Upload
+- Hacknet Node Cache Architecture Neural-Upload
+- Hacknet Node NIC Architecture Neural-Upload
+- The Shadow's Simulacrum
+- ADR-V1 Pheromone Gene
+- HemoRecirculator
+- NeuroFlux Governor through Level 10
+
+### Purchased, Not Yet Installed
+
+None at the Session 16 closing checkpoint.
+
+### Recorded Multipliers (Run 6 Start)
+
+These values were recorded after the Run 5 → Run 6 installation. No later
+multiplier snapshot is present, so they are reference values rather than live
+state claims.
+
+| Multiplier | Recorded Value |
+|------------|---------------|
+| Hacking Chance | 159.37% |
+| Hacking Speed | 155.91% |
+| Hacking Money | 517.05% |
+| Hacking Growth | 241.64% |
+| Hacking Level | 418.93% |
+| Hacking Experience | 441.25% |
+| Hacknet Production | 278.60% |
+| Hacknet Purchase Cost | 69.25% |
+| Hacknet RAM Upgrade Cost | 90.53% |
+| Hacknet Core Purchase Cost | 90.53% |
+| Hacknet Level Upgrade Cost | 76.95% |
+| Company Reputation Gain | 161.40% |
+| Faction Reputation Gain | 137.74% |
+| Salary | 110.47% |
+| Crime Success Chance | 110.47% |
+| Crime Money | 189.86% |
+| Strength Level | 150.92% |
+| Strength Experience | 139.74% |
+| Defense Level | 144.36% |
+| Defense Experience | 139.74% |
+| Dexterity Level | 209.17% |
+| Dexterity Experience | 160.70% |
+| Agility Level | 144.68% |
+| Agility Experience | 139.74% |
+| Charisma Level | 159.48% |
+| Charisma Experience | 169.47% |
+
+---
+
+## Programs
+
+Programs reset after augmentation installation and must be recreated or reacquired.
+
+The Session 16 Run 6 recovery recorded the **complete program set** as restored.
+
+### Verified Run 6 Toolkit
+
+| Program | Status | Purpose |
+|---------|--------|---------|
+| NUKE.exe | ✅ Acquired | Gains root access when enough ports are open |
+| BruteSSH.exe | ✅ Acquired | Opens SSH ports |
+| FTPcrack.exe | ✅ Acquired | Opens FTP ports |
+| relaySMTP.exe | ✅ Acquired | Opens SMTP ports |
+| HTTPWorm.exe | ✅ Acquired | Opens HTTP ports |
+| SQLInject.exe | ✅ Acquired | Opens SQL ports; fifth port opener |
+| DeepscanV1.exe | ✅ Acquired | Extends `scan-analyze` depth to 5 |
+| DeepscanV2.exe | ✅ Acquired | Extends `scan-analyze` depth to 10 |
+| ServerProfiler.exe | ✅ Acquired | Displays detailed server information |
+| AutoLink.exe | ✅ Acquired | Enables direct server links in `scan-analyze` |
+| DarkscapeNavigator.exe | ✅ Acquired | Unlocks Dark Net access and the `ns.dnet` API |
+| Formulas.exe | ✅ Acquired | Unlocks the Formulas API |
+
+> **Run 6 program status: Complete at the Session 16 checkpoint.** All standard
+> programs listed here had been reacquired. Reconfirm in-game after any later
+> reset or program loss.
+
+## Infrastructure
+
+### Purchased Servers
+
+| Count | Status | Notes |
+|------:|--------|-------|
+| 0 / 25 | Current verified checkpoint | Session 17 records no purchased servers; the earlier Run 4 loss is historical context. |
+
+### Home Upgrades
+
+| Upgrade | Status |
+|----------|--------|
+| RAM | ~4.10 TB |
+| CPU Cores | 8 / 8 |
+
+### Network Capacity
+
+- Session 17 records 69 / 70 rooted servers, 43 worker hosts, 1,338 worker
+  threads, and target `4sigma`.
+- Purchased-server infrastructure remains 0 / 25 at that checkpoint.
+- Hacknet expanded to **30** nodes and Home CPU cores reached **8 / 8**.
+- `deploy.js V3` remains the central deployment tool; `route.js` handles
+  deep-server route discovery.
+- The 88-, 420-, and 341-thread figures elsewhere in this playbook are
+  historical Run 4/5 checkpoints, not current capacity.
+
+---
+
+---
+
+# 4. Automation & Scripts
+
+> Detailed architectural documentation lives in `ARCHITECTURE.md`. This section retains the playbook’s script inventory, usage notes and historical implementation detail.
+
+## Script Inventory & Operating Notes
+
+### Scripts in Use
 
 | Script | Purpose | Status |
 |---------|---------|--------|
@@ -312,7 +442,7 @@ _TBD_
 > repository. Their availability and operational status are therefore
 > unverified.
 
-## deploy.js V3
+### deploy.js V3
 
 The third deployment version discovers eligible servers, opens all ports
 supported by the available programs, gains root access where possible, copies
@@ -321,7 +451,7 @@ chooses a suitable target when none is supplied. It is an on-demand deployment
 command, not a persistent orchestrator; it does not deploy to Home, install
 backdoors, reserve remote RAM, or schedule HWGW batches.
 
-## route.js
+### route.js
 
 Created in Session 11 after manually rediscovering deep faction-server routes became inefficient.
 
@@ -359,9 +489,9 @@ home
 
 This is now part of the permanent post-reset utility toolkit.
 
-## Dark Net Scripts
+### Dark Net Scripts
 
-### dnet-worker.js
+#### dnet-worker.js
 
 Created during Session 12 and copied to `darkweb` so Dark Net-local APIs can execute from the correct context.
 
@@ -389,7 +519,7 @@ First confirmed scripted authentication:
 - Result: `200 Success`
 - Session established: yes
 
-### dnet-stasis.js
+#### dnet-stasis.js
 
 Created to test `ns.dnet.setStasisLink()`.
 
@@ -404,17 +534,17 @@ Findings:
 
 Stasis testing is deferred until a suitable higher-RAM Dark Net foothold is available.
 
-## Achievement Scripts
+### Achievement Scripts
 
-### drain.js
+#### drain.js
 
 Created to deliberately drive a target server's available money to zero without changing the normal `worker.js` logic. This isolates the achievement attempt from the main production network.
 
-### recover.js
+#### recover.js
 
 Created as the companion recovery tool for `drain.js`. It weakens and grows a depleted target so the server can return to normal use after the achievement attempt.
 
-## Current Capacity
+### Current Capacity
 
 Historical Run 5 rebuild checkpoints:
 
@@ -444,226 +574,13 @@ checkpoint as the current documented state.
 
 ---
 
-# Programs
-
-Programs reset after augmentation installation and must be recreated or reacquired.
-
-The Session 16 Run 6 recovery recorded the **complete program set** as restored.
-
-## Verified Run 6 Toolkit
-
-| Program | Status | Purpose |
-|---------|--------|---------|
-| NUKE.exe | ✅ Acquired | Gains root access when enough ports are open |
-| BruteSSH.exe | ✅ Acquired | Opens SSH ports |
-| FTPcrack.exe | ✅ Acquired | Opens FTP ports |
-| relaySMTP.exe | ✅ Acquired | Opens SMTP ports |
-| HTTPWorm.exe | ✅ Acquired | Opens HTTP ports |
-| SQLInject.exe | ✅ Acquired | Opens SQL ports; fifth port opener |
-| DeepscanV1.exe | ✅ Acquired | Extends `scan-analyze` depth to 5 |
-| DeepscanV2.exe | ✅ Acquired | Extends `scan-analyze` depth to 10 |
-| ServerProfiler.exe | ✅ Acquired | Displays detailed server information |
-| AutoLink.exe | ✅ Acquired | Enables direct server links in `scan-analyze` |
-| DarkscapeNavigator.exe | ✅ Acquired | Unlocks Dark Net access and the `ns.dnet` API |
-| Formulas.exe | ✅ Acquired | Unlocks the Formulas API |
-
-> **Run 6 program status: Complete at the Session 16 checkpoint.** All standard
-> programs listed here had been reacquired. Reconfirm in-game after any later
-> reset or program loss.
-
-
-# Infrastructure
-
-## Purchased Servers
-
-| Count | Status | Notes |
-|------:|--------|-------|
-| 0 / 25 | Current verified checkpoint | Session 17 records no purchased servers; the earlier Run 4 loss is historical context. |
-
-## Home Upgrades
-
-| Upgrade | Status |
-|----------|--------|
-| RAM | ~4.10 TB |
-| CPU Cores | 8 / 8 |
-
-## Network Capacity
-
-- Session 17 records 69 / 70 rooted servers, 43 worker hosts, 1,338 worker
-  threads, and target `4sigma`.
-- Purchased-server infrastructure remains 0 / 25 at that checkpoint.
-- Hacknet expanded to **30** nodes and Home CPU cores reached **8 / 8**.
-- `deploy.js V3` remains the central deployment tool; `route.js` handles
-  deep-server route discovery.
-- The 88-, 420-, and 341-thread figures elsewhere in this playbook are
-  historical Run 4/5 checkpoints, not current capacity.
-
 ---
 
-# Factions
+# 5. Knowledge Base
 
-## Current Membership
+> Verified playthrough observations are kept distinct from historical session discoveries. Older observations retain their original session context rather than being silently re-verified for Run 6.
 
-- BitRunners
-- The Black Hand
-- NiteSec
-- Aevum
-- Sector-12
-- CyberSec
-
-> This membership list is the latest verified Session 17 summary. Slum Snakes,
-> Netburners, and The Syndicate remain important historical factions, but the
-> repository does not provide a later Run 6 membership confirmation for them.
-
-## Last Detailed Faction Progress (Run 5 Endpoint)
-
-The following reputation, favor, and augmentation figures are preserved from
-the Run 5 endpoint. They are not asserted as current Run 6 values because
-faction membership and reputation reset after augmentation installation.
-
-| Faction | Reputation | Favor | Augmentations Remaining | Notes |
-|---------|------------|-------|-------------------------|-------|
-| BitRunners | 2.014m | 0.000 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
-| The Black Hand | 38.975k | 301.478 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
-| NiteSec | 1.168m | 231.903 | 0 normal | Run 5 endpoint; restored in Run 6, current value unverified |
-| Sector-12 | 1.022m | 190.485 | 0 normal | Run 5 endpoint; current Run 6 value unverified |
-| The Syndicate | 72.820k | 0.000 | 10 normal | Run 5 endpoint; remainder deferred, Run 6 status unverified |
-| Slum Snakes | 278.453k | 44.954 | 0 normal | Run 5 endpoint; current Run 6 status unverified |
-| Netburners | 39.593k | 0.000 | 0 normal | Run 5 endpoint; current Run 6 status unverified |
-| CyberSec | 997.593k | 183.506 | 0 normal | Run 5 endpoint; current Run 6 value unverified |
-
-The latest detailed Run 6 evidence (Session 16) records Aevum as joined with
-one normal augmentation remaining. Session 17 retains obtaining it as an
-objective; a newer exact reputation value is not recorded.
-
-## Faction History
-
-| Faction | Status | Notes |
-|---------|--------|-------|
-| Sector-12 | Current | Original city faction |
-| CyberSec | Current | Restored during Run 5; no augmentations remaining |
-| NiteSec | Current | Restored during Run 5 |
-| Aevum | Previous | City faction |
-| The Black Hand | Current | Reinvited after backdooring I.I.I.I in Session 15; no normal augmentations remaining |
-| Tetrads | Previous | Chongqing faction |
-| Tian Di Hui | Previous | Chongqing faction |
-| Slum Snakes | Current | First criminal faction |
-| BitRunners | Current | Unlocked via `run4theh111z` |
-| Netburners | Current | Joined during Run 5 |
-| The Syndicate | Current | Joined in Session 13 after reaching approximately -308k Karma |
-
----
-
-# Augmentations
-
-## Installed
-
-| Augmentation | Installation Cycle |
-|--------------|--------------------|
-| BitWire | Run 1 → Run 2 |
-| Synaptic Enhancement Implant | Run 1 → Run 2 |
-| Neurotrainer I | Run 1 → Run 2 |
-| Cranial Signal Processors - Gen I | Run 2 → Run 3 |
-| Cranial Signal Processors - Gen II | Run 2 → Run 3 |
-| Cranial Signal Processors - Gen III | Run 2 → Run 3 |
-| DataJack | Run 2 → Run 3 |
-| Neurotrainer II | Run 2 → Run 3 |
-| Wired Reflexes | Run 2 → Run 3 |
-| NeuroFlux Governor - Level 4 | Run 2 → Run 3 |
-
-## Installed During Run 3 → Run 4
-
-| Augmentation | Status |
-|--------------|--------|
-| Augmented Targeting I | ✅ Installed |
-| CashRoot Starter Kit | ✅ Installed |
-| Speech Processor Implant | ✅ Installed |
-| Artificial Synaptic Potentiation | ✅ Installed |
-| Embedded Netburner Module | ✅ Installed |
-| Magnetism Amplifier | ✅ Installed |
-| The Black Hand | ✅ Installed |
-| NeuroFlux Governor - Level 6 | ✅ Installed |
-
-## Installed During Run 4 → Run 5
-
-| Augmentation | Status |
-|--------------|--------|
-| Neuralstimulator | ✅ Installed |
-| Embedded Netburner Module Core Implant | ✅ Installed |
-| Enhanced Myelin Sheathing | ✅ Installed |
-| Cranial Signal Processors - Gen IV | ✅ Installed |
-| Combat Rib I | ✅ Installed |
-| LuminCloaking-V1 Skin Implant | ✅ Installed |
-| Neural Wit Amplifier | ✅ Installed |
-| SmartSonar Implant | ✅ Installed |
-
-## Installed During Run 5 → Run 6
-
-The Run 5 finale package was installed to begin Run 6. The game now reports **42 installed augmentations**.
-
-Installed in this cycle:
-
-- CRTX42-AA Gene Modification
-- Neural-Retention Enhancement
-- LuminCloaking-V2 Skin Implant
-- Augmented Targeting II
-- Embedded Netburner Module Core V2 Upgrade
-- BitRunners Neurolink
-- Artificial Bio-neural Network Implant
-- Cranial Signal Processors - Gen V
-- Neural Accelerator
-- Hacknet Node Core Direct-Neural Interface
-- Hacknet Node Kernel Direct-Neural Interface
-- Hacknet Node CPU Architecture Neural-Upload
-- Hacknet Node Cache Architecture Neural-Upload
-- Hacknet Node NIC Architecture Neural-Upload
-- The Shadow's Simulacrum
-- ADR-V1 Pheromone Gene
-- HemoRecirculator
-- NeuroFlux Governor through Level 10
-
-## Purchased, Not Yet Installed
-
-None at the Session 16 closing checkpoint.
-
-## Recorded Multipliers (Run 6 Start)
-
-These values were recorded after the Run 5 → Run 6 installation. No later
-multiplier snapshot is present, so they are reference values rather than live
-state claims.
-
-| Multiplier | Recorded Value |
-|------------|---------------|
-| Hacking Chance | 159.37% |
-| Hacking Speed | 155.91% |
-| Hacking Money | 517.05% |
-| Hacking Growth | 241.64% |
-| Hacking Level | 418.93% |
-| Hacking Experience | 441.25% |
-| Hacknet Production | 278.60% |
-| Hacknet Purchase Cost | 69.25% |
-| Hacknet RAM Upgrade Cost | 90.53% |
-| Hacknet Core Purchase Cost | 90.53% |
-| Hacknet Level Upgrade Cost | 76.95% |
-| Company Reputation Gain | 161.40% |
-| Faction Reputation Gain | 137.74% |
-| Salary | 110.47% |
-| Crime Success Chance | 110.47% |
-| Crime Money | 189.86% |
-| Strength Level | 150.92% |
-| Strength Experience | 139.74% |
-| Defense Level | 144.36% |
-| Defense Experience | 139.74% |
-| Dexterity Level | 209.17% |
-| Dexterity Experience | 160.70% |
-| Agility Level | 144.68% |
-| Agility Experience | 139.74% |
-| Charisma Level | 159.48% |
-| Charisma Experience | 169.47% |
-
----
-
-# Verified Facts
+## Verified Playthrough Facts
 
 Verified during this playthrough:
 
@@ -710,7 +627,204 @@ Verified during this playthrough:
 
 ---
 
-# Decisions
+## Discovery Notes by Session
+
+### Session 3 Discoveries
+
+- Automation can be restored rapidly after an augmentation installation because script files remain on `home`.
+- Program creation can be paused and resumed without losing progress.
+
+### Session 4 Discoveries
+
+- Purchased augmentations do not need to be installed immediately.
+- Distributed automation can continue running while the player performs faction work.
+
+### Session 5 Discoveries
+
+- Faction donations become available after building sufficient favor.
+- A final NeuroFlux Governor purchase can use money and reputation that would otherwise be lost on reset.
+- The value of an augmentation cycle depends more on the combined multiplier package than the raw number of purchases.
+
+### Session 6 Discoveries
+
+- Faction memberships reset after augmentation installation, while faction favor persists.
+- Program files must be reacquired or recreated after installation.
+- A strong hacking augmentation batch can compress many hours of early progression into a few hours.
+
+### Session 7 Discoveries
+
+- deploy.js V3 can choose a target automatically when one is not supplied.
+- High retained faction favor makes rebuilding reputation substantially faster.
+- Run 3 automation scaled beyond the initial recovery network.
+
+### Session 9 Discoveries
+
+- Formulas.exe is the final Dark Web program and has its own Steam achievement.
+- Maintaining 30 scripts on Home awards `Thank you folders!`.
+- Home RAM upgrades can be used as an end-of-run money sink that permanently improves future scripting capacity.
+- A major faction augmentation can serve as the capstone for an augmentation cycle.
+- The most efficient reset so far combined story progression, infrastructure upgrades, faction work, and two additional achievements.
+- The automation stack remained reliable throughout a very long run without needing a fundamental redesign.
+
+### Session 8 Discoveries
+
+- A separate drain/recovery script pair is safer than modifying the general worker loop for a one-off achievement.
+- Four purchased servers plus rooted public hosts produced 1,615 worker threads.
+- All Dark Web programs except Formulas.exe were obtainable before Hacking Level 1000.
+- The Black Hand provides the next major hacking-faction augmentation pool.
+- Home RAM upgrades become increasingly valuable as automation and utility scripts grow.
+
+---
+
+
+### Session 10 Discoveries
+
+- At approximately 100 combat stats, Homicide had about a 55% success rate.
+- Homicide reduced Karma quickly and immediately led to Slum Snakes.
+- Balanced combat training was a useful prerequisite for crime.
+- The WSE Account persists through augmentation installation.
+- Stock holdings do not persist through augmentation installation.
+- City travel can instantly unlock factions and unique locations.
+- Permanent hardware upgrades are available at more than one technology corporation.
+- The Iker Molina Casino is a distinct gameplay system worth a future Feature Hunt.
+- IPvGO is a separate strategy system with permanent rewards and faction-favor mechanics.
+- The Church of the Machine God and Shadowed Walkway are significant unique locations.
+- New Tokyo's arcade and noodle interaction indicate small side systems and mysteries exist outside core progression.
+
+### Session 11 Discoveries
+
+- `route.js` can eliminate most manual deep-network route hunting after resets.
+- The first Run 5 use found an 11-hop route from `home` to `run4theh111z`.
+- `run4theh111z` required four open ports and Hacking Level 516 in the documented state.
+- HTTPWorm.exe was the missing fourth port opener needed for the BitRunners path.
+- Rob Store is useful as an early safe crime when combat stats are near 1.
+- Mug becomes an effective all-round combat-training crime once its success rate rises.
+- Homicide success improved steadily as Strength and Defense increased.
+- The eight Run 4 augmentations made Run 5's hacking recovery substantially faster than the comparable Run 4 stage.
+- BitRunners became the next major hacking faction unlocked through natural story progression.
+
+### Session 12 Discoveries
+
+- DarkscapeNavigator.exe unlocks the Dark Net and `ns.dnet`.
+- The Dark Net is an unstable network whose topology changes while the player is interacting with it.
+- `darkweb` is the stable gateway into the Dark Net.
+- Several Dark Net API calls only work when executed from a Dark Net server.
+- `probe(false)` is effective for live reconnaissance.
+- Vulnerability models currently understood: ZeroLogon, PHP 5.4, CloudBlare(tm), DeskMemo_3.1, and OctantVoxel.
+- FreshInstall_1.0 and DeepGreen remain unresolved.
+- `memoryReallocation()` both liberates blocked RAM and awards Charisma XP.
+- Liberated RAM persists after migration/session loss.
+- Stasis Links are RAM-intensive and locally applied.
+- Compromised servers can contain caches, data, literature, and other resources.
+- Dark Net activity raised Charisma from 1 to roughly 71 in one session.
+- Dark Net exploitation and Homicide can progress at the same time.
+
+### Session 13 Discoveries
+
+- Joining The Syndicate was achievable after the prolonged Homicide/Karma push.
+- Karma at approximately -308k still did not expose Gang functionality in the current BitNode; that system is gated by later BitNode/Source-File progression.
+- Alpha Enterprises Infiltration exposed the timed keyboard-minigame format and provided the damage needed for the Hospital/`OUCH!` achievement.
+- Purchasing 4S Market Data awarded `4S` and exposed readable bullish/bearish forecast indicators.
+- A high-RAM Singularity script can satisfy the 32GB-per-thread achievement even when unavailable Singularity access prevents successful execution.
+- `list-augs.js` is a useful permanent utility for auditing installed augmentations.
+- `route.js` successfully located `powerhouse-fitness`; it required Hacking Level 970 and five open ports in the documented state.
+- Home CPU cores were upgraded from 1 to 2; the eight-core achievement is deferred until costs are less disruptive.
+- The first 4S-guided stock experiment used a long Blade Industries position; initial losses can reflect the bid/ask spread.
+- BitRunners Hacking Contracts are productive background work while exploring stocks and achievements.
+
+
+### Session 14 Discoveries
+
+- TIX and 4S TIX APIs expose enough information to build useful stock scanners and monitors.
+- `ns.format.number()` is the working Bitburner 3.x replacement for the removed `ns.formatNumber()`.
+- Extremely small share prices can misleadingly display as `$0.000` under ordinary formatting.
+- Strong 4S forecasts can reverse rapidly, as observed with FSIG and JGN.
+- `stock-watch.js` v2 uses 24 five-second samples, approximately two minutes of history, and a 75% persistence requirement.
+- In-memory stock history is lost on restart; file persistence remains a future option.
+- Leadership at Rothman University is an effective idle-time Charisma training path.
+- The observed FreshInstall_1.0 node accepted `46462`; the general rule remains unresolved.
+
+### Session 15 Discoveries
+
+- Autonomous 4S trading became a multi-trillion-dollar income engine.
+- `stock-trader.js v2` is now the production trader; `stock-watch.js v2` is retained for diagnostics.
+- Increasing capital allowed position size and realised profit to compound rapidly.
+- `stock-trader-stats.txt` needs validation because its persistent realised P/L appeared stale.
+- Network routes can change; `route.js` should be preferred over old handwritten paths.
+- Backdooring I.I.I.I again reconfirmed the jump3R breadcrumb as The Black Hand progression.
+- Shadows of Anarchy progression is tied to successful company infiltration.
+- End-of-run augmentation price multipliers can become more restrictive than reputation.
+
+### Session 16 Discoveries
+
+- The 42-augmentation stack can drive Hacking Level from 4 to 1,000+ within the opening hours of a reset.
+- Run 6 reached 69 / 70 rooted servers and 1,338 worker threads once the five-port toolkit was restored.
+- WSE, TIX, 4S UI, and 4S TIX access persist through augmentation installation; positions do not.
+- High post-reset income can make buying Formulas.exe preferable to spending hours creating it.
+- Large retained faction favor makes faction restoration immediately useful even though reputation resets.
+- Aevum has one normal augmentation remaining at the Session 16 checkpoint.
+
+### Session 17 Discoveries
+
+- Passive Algorithms training can run alongside distributed hacking and autonomous stock trading.
+- `stock-trader.js` can compound a trillion-scale bankroll into quadrillion-scale cash during a long idle grind.
+- Thirty Hacknet nodes and maximum Home CPU cores became inexpensive achievement targets at Run 6's capital scale.
+- A temporary 1,000-process workload can earn `Need more real life ram` without changing permanent production automation.
+- At the Session 17 checkpoint, progression requirements rather than money are the primary constraint.
+- Hacking Level **2,500** is the next deliberate checkpoint before reassessing `fl1ght.exe` / Daedalus progression.
+
+---
+
+# 6. Feature Hunt Backlog
+
+> Questions, not confirmed solutions. These are **parked** unless also listed under the Command Center’s next actions.
+
+## Open Questions
+
+- How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
+- How can compromised Dark Net servers be used as footholds?
+- How are reward caches opened and collected?
+- How are data and literature files retrieved from compromised Dark Net servers?
+- What does the Dark Net terminal resource do?
+- How does FreshInstall_1.0 generate its default password?
+- What is required to solve or bypass DeepGreen?
+- When does Stasis become practical, and which servers are worth stabilising?
+- Should `dnet-worker.js` automate known vulnerability models?
+- Should `dnet-worker.js` track persistent blocked-RAM progress across migrations?
+- How should `stock-trader-stats.txt` persistence be fixed or validated in Run 6?
+- How quickly can `stock-trader.js v2` be restored after the Run 6 reset?
+- Should the trader eventually support short positions?
+- When should Shadows of Anarchy infiltration be revisited?
+- When should the remaining 10 Syndicate augmentations be harvested?
+- Which Feature Hunt should follow the Run 6 rebuild?
+
+---
+
+## Long-Term Targets
+
+- Complete BitNode 1 and unlock advanced mechanics.
+- Continue toward all 98 Steam achievements.
+- Explore the remaining game systems naturally, retaining the no-premature-spoilers approach.
+
+---
+
+# 7. Strategic Decisions
+
+## Active Strategy
+
+Run 6 continues the Feature Hunt philosophy while the automated network and
+stock trader provide passive income. The latest verified checkpoint is Session
+17: Hacking Level 2,000, 27 / 98 achievements, 30 Hacknet nodes, and a
+quadrillion-scale bankroll. Earlier Run 5 Dark Net and crime checkpoints remain
+historical context, not the current activity state.
+
+The documented immediate gate is Hacking Level 2,500. Reassess
+`fl1ght.exe` / Daedalus only after reaching it; the alternative combat-stat
+route was recorded as impractical at the Session 17 checkpoint. Dark Net,
+infiltration, faction, and achievement work remain deliberate future Feature
+Hunts rather than active claims.
+
+## Decision History
 
 | Date | Decision | Reason |
 |------|----------|--------|
@@ -753,9 +867,15 @@ Verified during this playthrough:
 
 ---
 
-# Run Timeline
+---
 
-## Run 1 – The Script Kiddie
+# 8. Playthrough Chronicle
+
+> Read this section for the story. Run summaries introduce their associated session logs, keeping earlier milestones intact without competing with the current Command Center.
+
+## Run 1 — The Script Kiddie
+
+### Run Summary
 
 - Started BitNode-1.
 - Built the first distributed hacking system.
@@ -764,7 +884,53 @@ Verified during this playthrough:
 - Joined Sector-12 and CyberSec.
 - Installed BitWire, Synaptic Enhancement Implant, and Neurotrainer I.
 
-## Run 2 – Building the Botnet
+### Session 0 — Planning
+
+#### Milestones
+
+- Created the GitHub repository.
+- Created the living playbook.
+- Established research sources.
+
+---
+
+### Session 1 — First Automation
+
+#### Major Milestones
+
+- Reached Hacking Level 93.
+- Purchased the TOR Router.
+- Purchased the first Hacknet Node.
+- Acquired BruteSSH.exe.
+- Built the first distributed deployment system.
+- Successfully deployed `worker.js` to rooted servers.
+
+#### Lessons Learned
+
+- A unified worker script dramatically simplifies management.
+- Early automation compounds both money and hacking experience.
+
+---
+
+### Session 2 — First Augmentation Cycle
+
+#### Major Milestones
+
+- Acquired FTPcrack.exe.
+- Joined Sector-12.
+- Joined CyberSec.
+- Purchased and installed BitWire, Synaptic Enhancement Implant, and Neurotrainer I.
+- Began Run 2.
+
+#### Lessons Learned
+
+The first augmentation installation marked the transition from learning the game to accelerating progression. Although short-term progress reset, the permanent augmentations and reusable scripts made the next run much faster.
+
+---
+
+## Run 2 — Building the Botnet
+
+### Run Summary
 
 - Rebuilt and expanded distributed automation.
 - Reached the higher hacking levels needed for relaySMTP.exe, HTTPWorm.exe, and SQLInject.exe.
@@ -774,7 +940,65 @@ Verified during this playthrough:
 - Purchased a large hacking-focused augmentation batch.
 - Ended with the second augmentation installation.
 
-## Run 3 – The Black Hand Rises
+### Session 3 — Rebuild Complete
+
+#### Major Milestones
+
+- Fully rebuilt the distributed hacking network after augmentation installation.
+- Expanded active automation to 12 hosts.
+- Reached Hacking Level 155.
+- Recovered to $42.585m.
+- Restored one Hacknet Node.
+- Acquired DeepscanV1.exe and AutoLink.exe.
+- Began creating ServerProfiler.exe.
+
+#### Lessons Learned
+
+The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hacking level and income, showing the value of permanent augmentation bonuses, retained scripts, and a repeatable deployment process.
+
+---
+
+### Session 4 — NiteSec and Second Augmentation Preparation
+
+#### Major Milestones
+
+- Reached Hacking Level 265.
+- Increased available money to $975.879m.
+- Completed ServerProfiler.exe.
+- Acquired relaySMTP.exe.
+- Joined NiteSec.
+- Expanded distributed automation.
+- Purchased Cranial Signal Processors - Gen I.
+- Began building NiteSec reputation.
+
+#### Lessons Learned
+
+- Holding purchased augmentations until several are ready avoids resetting progress too often.
+- Hacking-faction progression provides a clear path toward stronger hacking multipliers.
+
+---
+
+### Session 5 — End of Run 2
+
+#### Major Milestones
+
+- Continued NiteSec and faction progression.
+- Acquired HTTPWorm.exe and SQLInject.exe.
+- Earned `The original hacker`.
+- Unlocked faction donations and earned `Donate!`.
+- Purchased and installed the full second augmentation batch.
+- Ended Run 2.
+
+#### Lessons Learned
+
+- Waiting for a substantial augmentation batch produced a much stronger next-run starting point.
+- Money that would be lost during installation is best spent on useful augmentations before resetting.
+
+---
+
+## Run 3 — The Black Hand Rises
+
+### Run Summary
 
 - Installed seven additional augmentations, bringing the total to 10.
 - Began with substantially improved hacking multipliers.
@@ -797,8 +1021,151 @@ Verified during this playthrough:
 
 ---
 
+### Session 6 — Start of Run 3
 
-## Run 4 – Into the Underworld
+#### Major Milestones
+
+- Began Run 3 with 10 installed augmentations.
+- Created deploy.js V2.
+- Restored distributed automation.
+- Rejoined Sector-12.
+- Reacquired early programs.
+- Began recreating ServerProfiler.exe.
+
+#### Lessons Learned
+
+- The larger augmentation package transformed the pace of the early rebuild.
+- Hacking skill rose far faster than in Runs 1 and 2.
+
+---
+
+### Session 7 — Run 3 Expansion and deploy.js V3
+
+#### Major Milestones
+
+- Upgraded deployment automation from deploy.js V2 to deploy.js V3.
+- Expanded distributed automation to 17 active hosts.
+- Rejoined CyberSec and NiteSec.
+- Recreated ServerProfiler.exe.
+- Reached Hacking Level 243.
+- Increased available money to $259.633m.
+
+#### Lessons Learned
+
+- deploy.js V3 further reduced manual work through automatic target selection.
+- Retained faction favor made Run 3 faction recovery much faster.
+- CyberSec was fully cleared of augmentations.
+
+---
+
+### Session 8 — Achievement Sprint and Infrastructure Expansion
+
+#### Major Milestones
+
+- Reached Hacking Level 428.
+- Increased available money to $1.976b.
+- Joined The Black Hand after backdooring `I.I.I.I`.
+- Joined Aevum.
+- Purchased four servers.
+- Upgraded Home RAM to 32 GB.
+- Expanded the distributed network to 1,615 worker threads.
+- Reacquired every Dark Web program except Formulas.exe.
+- Created `drain.js` and earned `Big trouble` by draining a server to $0.
+- Created `recover.js` to restore drained targets.
+- Purchased three augmentations without installing them:
+  - Augmented Targeting I
+  - CashRoot Starter Kit
+  - Speech Processor Implant
+- Continued building reputation across The Black Hand, NiteSec, Aevum, and Sector-12.
+
+#### Current State
+
+- Money: $1.976b
+- Hacking Level: 428
+- Agility: 15
+- Purchased Servers: 4 / 25
+- Home RAM: 32 GB
+- Hacknet Nodes: 0
+- Augmentations Installed: 10
+- Augmentations Purchased, Not Installed: 3
+- Worker Threads: 1,615
+- Current factions: The Black Hand, NiteSec, Aevum, Sector-12, CyberSec
+- The Black Hand reputation: 24.774k
+- NiteSec reputation: 925.528k
+- Aevum reputation: 906.217
+- Sector-12 reputation: 156.064k
+- CyberSec reputation: 67.756k
+- Time since last augmentation: 3d 19h 53m 14s
+- Total play time: 13d 0h 29m 28s
+
+#### Lessons Learned
+
+- Purpose-built scripts are useful for achievements that conflict with normal production logic.
+- Purchased servers quickly multiply total worker capacity once the economy can support them.
+- The achievement sprint can run alongside normal faction and augmentation progression.
+- Run 3 is now strong enough to treat early achievements as side objectives rather than major detours.
+- The third augmentation cycle should still be delayed until the purchased batch is large enough to justify another reset.
+
+---
+
+### Session 9 — Final Run 3 Push
+
+#### Major Milestones
+
+- Continued the achievement sprint without interrupting the core hacking network.
+- Earned `Thank you folders!` by maintaining at least 30 scripts on Home.
+- Reached the Hacking Level 1000 milestone and purchased Formulas.exe.
+- Earned the `Formulas.exe` achievement, increasing progress to 19 / 98.
+- Completed the Dark Web program collection.
+- Upgraded Home RAM from 32 GB to 1 TB.
+- Built The Black Hand reputation to 1.110m.
+- Purchased The Black Hand augmentation.
+- Purchased additional Run 4 augmentations:
+  - Artificial Synaptic Potentiation
+  - Embedded Netburner Module
+  - Magnetism Amplifier
+  - NeuroFlux Governor - Level 6
+- Reached more than $26b cash during the run.
+- Spent nearly all remaining funds on permanent upgrades before installation.
+- Kept the automation network stable using:
+  - `deploy.js`
+  - `worker.js`
+  - `recover.js`
+  - `drain.js`
+
+#### End-of-Run State
+
+- Steam achievements: 19 / 98
+- Home RAM: 1 TB
+- Purchased servers: 4 / 25
+- Dark Web programs: Complete
+- Pending augmentations: 8
+- The Black Hand reputation: 1.110m
+- NiteSec reputation: 1.308m
+- Sector-12 reputation: 285.404k
+- CyberSec reputation: 194.666k
+- Aevum reputation: 19.794k
+- Money earned since the last installation:
+  - Total: $290.369m
+  - Hacking: $43.758b
+  - Augmentations spent: $36.664b
+  - Servers spent: $1.472b
+  - Other spending: $5.331b
+
+#### Lessons Learned
+
+- Run 3 was the first cycle to balance story progression and achievement hunting successfully.
+- The best reset timing is not always the moment an augmentation becomes affordable; nearby achievements can be completed first when the delay is small.
+- Stable automation allows faction reputation, money generation, infrastructure upgrades, and achievement work to progress in parallel.
+- End-of-run cash should be converted into permanent upgrades because most of it will be lost on installation.
+- The Black Hand augmentation became the capstone purchase for Run 3.
+
+
+---
+
+## Run 4 — Into the Underworld
+
+### Run Summary
 
 - Installed the Run 3 augmentation batch, bringing the total to 17 installed augmentations.
 - Rebuilt hacking rapidly, reaching well beyond Hacking Level 600 by the end of the run.
@@ -829,7 +1196,82 @@ Verified during this playthrough:
 - Ended Run 4 ready to install the eight-augmentation package and begin Run 5.
 - Pivoted the project from pure hacking optimisation to balanced story progression, Feature Hunts, and achievement discovery.
 
-## Run 5 – Run for the Hills — Complete
+### Session 10 — Feature Hunt Pivot
+
+#### Major Milestones
+
+- Began Run 4 with 17 installed augmentations.
+- Reached Hacking Level 496.
+- Trained combat stats to approximately 100.
+- Began repeated Homicide with approximately 55% success.
+- Lowered Karma to -711.050.
+- Joined Slum Snakes.
+- Purchased the permanent WSE Account.
+- Explored Chongqing, Aevum, Volhaven, and New Tokyo.
+- Joined Tetrads and Tian Di Hui.
+- Purchased DarkscapeNavigator.exe from the Shadowed Walkway.
+- Discovered the Church of the Machine God.
+- Discovered the Iker Molina Casino.
+- Discovered IPvGO at DefComm.
+- Confirmed universities offer multiple education paths.
+- Confirmed permanent hardware upgrades are available from multiple technology corporations.
+- Shifted the playthrough from pure hacking optimisation toward Feature Hunts and broader system discovery.
+
+#### Current State
+
+- Current city: Chongqing
+- Money: $3.174b
+- Hacking Level: 496
+- Strength: 103
+- Defense: 102
+- Dexterity: 106
+- Agility: 105
+- Charisma: 1
+- Karma: -711.050
+- Installed augmentations: 17
+- Purchased servers: 0 / 25
+- Time since last augmentation: 1d 12h 57m 27s
+- Total play time: 19d 19h 23m 43s
+
+
+#### End-of-Run Addendum
+
+- Hacking rose from the low 300s to well over 600 during Run 4.
+- Once relaySMTP.exe was available, the deployment network could open three ports.
+- At one documented checkpoint:
+  - 70 servers discovered
+  - 27 servers rooted
+  - 24 active worker hosts
+  - 341 worker threads
+  - `foodnstuff` selected automatically as the target
+- `j3.msg` from jump3R pointed toward The Black Hand and `I.I.I.I`; the latter had already been backdoored.
+- The Black Hand reputation continued to grow substantially.
+- Tetrads and Tian Di Hui were checked for worthwhile additions to the reset package, but no further augmentations were selected.
+- Eight augmentations were purchased for the Run 5 reset:
+  - Neuralstimulator
+  - Embedded Netburner Module Core Implant
+  - Enhanced Myelin Sheathing
+  - Cranial Signal Processors - Gen IV
+  - Combat Rib I
+  - LuminCloaking-V1 Skin Implant
+  - Neural Wit Amplifier
+  - SmartSonar Implant
+- The package is deliberately broader than previous resets, combining hacking improvements with combat/crime progression.
+- Run 4 ended with the decision to install all eight together and begin Run 5.
+
+#### Lessons Learned
+
+- Feature Hunts produce meaningful progression rather than merely distracting from hacking.
+- Exploring cities can unlock factions, permanent services, minigames, hidden locations, and future story systems.
+- Crime provides an alternative progression path through Karma, factions, and augmentations.
+- The automated hacking network makes it possible to explore other systems without giving up income or experience.
+- The project should continue balancing story progression, system discovery, and achievement hunting.
+
+---
+
+## Run 5 — Run for the Hills — Complete
+
+### Run Summary
 
 - Installed the eight augmentations prepared at the end of Run 4.
 - Started with 25 installed augmentations, approximately $1m, 1.02 TB Home RAM, and reset base skills.
@@ -871,347 +1313,9 @@ Verified during this playthrough:
 
 ---
 
-## Run 6 – The Machine Awakens — Current
+### Session 11 — Run for the Hills
 
-- Installed the enormous Run 5 augmentation package, reaching **42 installed augmentations**.
-- Began with roughly $1,000 and Hacking Level 4; the new multipliers drove hacking above 1,000 within the opening session.
-- Initial `deploy.js` pass found 70 servers, rooted 27, activated 24 worker hosts, and deployed 293 threads to `foodnstuff`.
-- Restored NiteSec, The Black Hand, and BitRunners using `route.js` and backdoors.
-- Moved to Aevum, joined its faction, and began faction reputation work.
-- Rebuilt the full five-port toolkit plus DeepscanV1/V2, AutoLink, DarkscapeNavigator, ServerProfiler, and Formulas.
-- Purchased Formulas.exe for $5b after money had already climbed into the trillions.
-- Full redeployment rooted **69 / 70 servers**, activated **43 worker hosts**, and reached **1,338 threads**, targeting `4sigma`.
-- Confirmed permanent WSE/TIX/4S access survived the augmentation reset.
-- Restarted `stock-watch.js` to rebuild market history before renewed trading.
-- Session closed in Aevum with approximately **$3.013t**, Hacking Level **1,162**, Charisma **91**, and Aevum faction work active.
-- Session 17 extended Run 6 into a long passive-automation grind.
-- Hacking advanced from **1,162 → 2,000** while training Algorithms.
-- `stock-trader.js` compounded the bankroll into the **quadrillions**, with cash peaking near **$112.752q** before infrastructure spending.
-- Expanded Hacknet to **30 nodes** and maximized Home CPU cores at **8 / 8**.
-- Used temporary lightweight scripts to reach **1,000 simultaneous processes**, then removed them after the achievement triggered.
-- Earned four achievements, increasing progress from **23 / 98 → 27 / 98**.
-- The next progression checkpoint is **Hacking Level 2,500**, followed by reassessment of `fl1ght.exe` / Daedalus progression.
-
-# Session Log
-
-## Session 0 – Planning
-
-### Milestones
-
-- Created the GitHub repository.
-- Created the living playbook.
-- Established research sources.
-
----
-
-## Session 1 – First Automation
-
-### Major Milestones
-
-- Reached Hacking Level 93.
-- Purchased the TOR Router.
-- Purchased the first Hacknet Node.
-- Acquired BruteSSH.exe.
-- Built the first distributed deployment system.
-- Successfully deployed `worker.js` to rooted servers.
-
-### Lessons Learned
-
-- A unified worker script dramatically simplifies management.
-- Early automation compounds both money and hacking experience.
-
----
-
-## Session 2 – First Augmentation Cycle
-
-### Major Milestones
-
-- Acquired FTPcrack.exe.
-- Joined Sector-12.
-- Joined CyberSec.
-- Purchased and installed BitWire, Synaptic Enhancement Implant, and Neurotrainer I.
-- Began Run 2.
-
-### Lessons Learned
-
-The first augmentation installation marked the transition from learning the game to accelerating progression. Although short-term progress reset, the permanent augmentations and reusable scripts made the next run much faster.
-
----
-
-## Session 3 – Rebuild Complete
-
-### Major Milestones
-
-- Fully rebuilt the distributed hacking network after augmentation installation.
-- Expanded active automation to 12 hosts.
-- Reached Hacking Level 155.
-- Recovered to $42.585m.
-- Restored one Hacknet Node.
-- Acquired DeepscanV1.exe and AutoLink.exe.
-- Began creating ServerProfiler.exe.
-
-### Lessons Learned
-
-The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hacking level and income, showing the value of permanent augmentation bonuses, retained scripts, and a repeatable deployment process.
-
----
-
-## Session 4 – NiteSec and Second Augmentation Preparation
-
-### Major Milestones
-
-- Reached Hacking Level 265.
-- Increased available money to $975.879m.
-- Completed ServerProfiler.exe.
-- Acquired relaySMTP.exe.
-- Joined NiteSec.
-- Expanded distributed automation.
-- Purchased Cranial Signal Processors - Gen I.
-- Began building NiteSec reputation.
-
-### Lessons Learned
-
-- Holding purchased augmentations until several are ready avoids resetting progress too often.
-- Hacking-faction progression provides a clear path toward stronger hacking multipliers.
-
----
-
-## Session 5 – End of Run 2
-
-### Major Milestones
-
-- Continued NiteSec and faction progression.
-- Acquired HTTPWorm.exe and SQLInject.exe.
-- Earned `The original hacker`.
-- Unlocked faction donations and earned `Donate!`.
-- Purchased and installed the full second augmentation batch.
-- Ended Run 2.
-
-### Lessons Learned
-
-- Waiting for a substantial augmentation batch produced a much stronger next-run starting point.
-- Money that would be lost during installation is best spent on useful augmentations before resetting.
-
----
-
-## Session 6 – Start of Run 3
-
-### Major Milestones
-
-- Began Run 3 with 10 installed augmentations.
-- Created deploy.js V2.
-- Restored distributed automation.
-- Rejoined Sector-12.
-- Reacquired early programs.
-- Began recreating ServerProfiler.exe.
-
-### Lessons Learned
-
-- The larger augmentation package transformed the pace of the early rebuild.
-- Hacking skill rose far faster than in Runs 1 and 2.
-
----
-
-## Session 7 – Run 3 Expansion and deploy.js V3
-
-### Major Milestones
-
-- Upgraded deployment automation from deploy.js V2 to deploy.js V3.
-- Expanded distributed automation to 17 active hosts.
-- Rejoined CyberSec and NiteSec.
-- Recreated ServerProfiler.exe.
-- Reached Hacking Level 243.
-- Increased available money to $259.633m.
-
-### Lessons Learned
-
-- deploy.js V3 further reduced manual work through automatic target selection.
-- Retained faction favor made Run 3 faction recovery much faster.
-- CyberSec was fully cleared of augmentations.
-
----
-
-## Session 8 – Achievement Sprint and Infrastructure Expansion
-
-### Major Milestones
-
-- Reached Hacking Level 428.
-- Increased available money to $1.976b.
-- Joined The Black Hand after backdooring `I.I.I.I`.
-- Joined Aevum.
-- Purchased four servers.
-- Upgraded Home RAM to 32 GB.
-- Expanded the distributed network to 1,615 worker threads.
-- Reacquired every Dark Web program except Formulas.exe.
-- Created `drain.js` and earned `Big trouble` by draining a server to $0.
-- Created `recover.js` to restore drained targets.
-- Purchased three augmentations without installing them:
-  - Augmented Targeting I
-  - CashRoot Starter Kit
-  - Speech Processor Implant
-- Continued building reputation across The Black Hand, NiteSec, Aevum, and Sector-12.
-
-### Current State
-
-- Money: $1.976b
-- Hacking Level: 428
-- Agility: 15
-- Purchased Servers: 4 / 25
-- Home RAM: 32 GB
-- Hacknet Nodes: 0
-- Augmentations Installed: 10
-- Augmentations Purchased, Not Installed: 3
-- Worker Threads: 1,615
-- Current factions: The Black Hand, NiteSec, Aevum, Sector-12, CyberSec
-- The Black Hand reputation: 24.774k
-- NiteSec reputation: 925.528k
-- Aevum reputation: 906.217
-- Sector-12 reputation: 156.064k
-- CyberSec reputation: 67.756k
-- Time since last augmentation: 3d 19h 53m 14s
-- Total play time: 13d 0h 29m 28s
-
-### Lessons Learned
-
-- Purpose-built scripts are useful for achievements that conflict with normal production logic.
-- Purchased servers quickly multiply total worker capacity once the economy can support them.
-- The achievement sprint can run alongside normal faction and augmentation progression.
-- Run 3 is now strong enough to treat early achievements as side objectives rather than major detours.
-- The third augmentation cycle should still be delayed until the purchased batch is large enough to justify another reset.
-
----
-
-## Session 9 – Final Run 3 Push
-
-### Major Milestones
-
-- Continued the achievement sprint without interrupting the core hacking network.
-- Earned `Thank you folders!` by maintaining at least 30 scripts on Home.
-- Reached the Hacking Level 1000 milestone and purchased Formulas.exe.
-- Earned the `Formulas.exe` achievement, increasing progress to 19 / 98.
-- Completed the Dark Web program collection.
-- Upgraded Home RAM from 32 GB to 1 TB.
-- Built The Black Hand reputation to 1.110m.
-- Purchased The Black Hand augmentation.
-- Purchased additional Run 4 augmentations:
-  - Artificial Synaptic Potentiation
-  - Embedded Netburner Module
-  - Magnetism Amplifier
-  - NeuroFlux Governor - Level 6
-- Reached more than $26b cash during the run.
-- Spent nearly all remaining funds on permanent upgrades before installation.
-- Kept the automation network stable using:
-  - `deploy.js`
-  - `worker.js`
-  - `recover.js`
-  - `drain.js`
-
-### End-of-Run State
-
-- Steam achievements: 19 / 98
-- Home RAM: 1 TB
-- Purchased servers: 4 / 25
-- Dark Web programs: Complete
-- Pending augmentations: 8
-- The Black Hand reputation: 1.110m
-- NiteSec reputation: 1.308m
-- Sector-12 reputation: 285.404k
-- CyberSec reputation: 194.666k
-- Aevum reputation: 19.794k
-- Money earned since the last installation:
-  - Total: $290.369m
-  - Hacking: $43.758b
-  - Augmentations spent: $36.664b
-  - Servers spent: $1.472b
-  - Other spending: $5.331b
-
-### Lessons Learned
-
-- Run 3 was the first cycle to balance story progression and achievement hunting successfully.
-- The best reset timing is not always the moment an augmentation becomes affordable; nearby achievements can be completed first when the delay is small.
-- Stable automation allows faction reputation, money generation, infrastructure upgrades, and achievement work to progress in parallel.
-- End-of-run cash should be converted into permanent upgrades because most of it will be lost on installation.
-- The Black Hand augmentation became the capstone purchase for Run 3.
-
-
----
-
-## Session 10 – Feature Hunt Pivot
-
-### Major Milestones
-
-- Began Run 4 with 17 installed augmentations.
-- Reached Hacking Level 496.
-- Trained combat stats to approximately 100.
-- Began repeated Homicide with approximately 55% success.
-- Lowered Karma to -711.050.
-- Joined Slum Snakes.
-- Purchased the permanent WSE Account.
-- Explored Chongqing, Aevum, Volhaven, and New Tokyo.
-- Joined Tetrads and Tian Di Hui.
-- Purchased DarkscapeNavigator.exe from the Shadowed Walkway.
-- Discovered the Church of the Machine God.
-- Discovered the Iker Molina Casino.
-- Discovered IPvGO at DefComm.
-- Confirmed universities offer multiple education paths.
-- Confirmed permanent hardware upgrades are available from multiple technology corporations.
-- Shifted the playthrough from pure hacking optimisation toward Feature Hunts and broader system discovery.
-
-### Current State
-
-- Current city: Chongqing
-- Money: $3.174b
-- Hacking Level: 496
-- Strength: 103
-- Defense: 102
-- Dexterity: 106
-- Agility: 105
-- Charisma: 1
-- Karma: -711.050
-- Installed augmentations: 17
-- Purchased servers: 0 / 25
-- Time since last augmentation: 1d 12h 57m 27s
-- Total play time: 19d 19h 23m 43s
-
-
-### End-of-Run Addendum
-
-- Hacking rose from the low 300s to well over 600 during Run 4.
-- Once relaySMTP.exe was available, the deployment network could open three ports.
-- At one documented checkpoint:
-  - 70 servers discovered
-  - 27 servers rooted
-  - 24 active worker hosts
-  - 341 worker threads
-  - `foodnstuff` selected automatically as the target
-- `j3.msg` from jump3R pointed toward The Black Hand and `I.I.I.I`; the latter had already been backdoored.
-- The Black Hand reputation continued to grow substantially.
-- Tetrads and Tian Di Hui were checked for worthwhile additions to the reset package, but no further augmentations were selected.
-- Eight augmentations were purchased for the Run 5 reset:
-  - Neuralstimulator
-  - Embedded Netburner Module Core Implant
-  - Enhanced Myelin Sheathing
-  - Cranial Signal Processors - Gen IV
-  - Combat Rib I
-  - LuminCloaking-V1 Skin Implant
-  - Neural Wit Amplifier
-  - SmartSonar Implant
-- The package is deliberately broader than previous resets, combining hacking improvements with combat/crime progression.
-- Run 4 ended with the decision to install all eight together and begin Run 5.
-
-### Lessons Learned
-
-- Feature Hunts produce meaningful progression rather than merely distracting from hacking.
-- Exploring cities can unlock factions, permanent services, minigames, hidden locations, and future story systems.
-- Crime provides an alternative progression path through Karma, factions, and augmentations.
-- The automated hacking network makes it possible to explore other systems without giving up income or experience.
-- The project should continue balancing story progression, system discovery, and achievement hunting.
-
----
-
-## Session 11 – Run for the Hills
-
-### Major Milestones
+#### Major Milestones
 
 - Began Run 5 with 25 installed augmentations.
 - Rebuilt hacking immediately after the reset.
@@ -1227,7 +1331,7 @@ The first augmentation reset paid off quickly. Run 2 surpassed Run 1 in both hac
 - Joined BitRunners.
 - Earned achievement #20: `run4theh111z`.
 
-### Hacking Network Rebuild
+#### Hacking Network Rebuild
 
 Initial deployment:
 
@@ -1251,7 +1355,7 @@ After HTTPWorm.exe:
 - `run4theh111z` successfully rooted
 - Network expanded beyond the documented 420-thread checkpoint
 
-### Crime / Combat Progression
+#### Crime / Combat Progression
 
 - Started Run 5 with combat stats reset to 1.
 - Used Rob Store first because it had 100% success.
@@ -1266,7 +1370,7 @@ After HTTPWorm.exe:
   - ~63.09% later
 - Karma became increasingly negative.
 
-### Faction Restoration
+#### Faction Restoration
 
 CyberSec route:
 
@@ -1297,7 +1401,7 @@ home
 -> run4theh111z
 ```
 
-### `run4theh111z`
+#### `run4theh111z`
 
 Documented final analysis:
 
@@ -1315,7 +1419,7 @@ SQL:  Closed
 
 Hacking Level had already reached approximately 540, so the backdoor requirement was satisfied.
 
-### Current State
+#### Current State
 
 - Current city: Sector-12
 - Money: $52.911b
@@ -1333,7 +1437,7 @@ Hacking Level had already reached approximately 540, so the backdoor requirement
 - Time since last augmentation: 10h 24m 32s
 - Total play time: 30d 3h 59m 17s
 
-### Lessons Learned
+#### Lessons Learned
 
 - The Run 5 augmentation package dramatically accelerated the rebuild.
 - A reusable network-route utility is now as important as the deployment script after resets.
@@ -1343,9 +1447,9 @@ Hacking Level had already reached approximately 540, so the backdoor requirement
 
 ---
 
-## Session 12 – Into the Dark Net
+### Session 12 — Into the Dark Net
 
-### Major Milestones
+#### Major Milestones
 
 - Started with 25 augmentations installed.
 - Continued Homicide at 100% success in the background.
@@ -1361,20 +1465,20 @@ Hacking Level had already reached approximately 540, so the backdoor requirement
 - Joined Netburners.
 - Continued crime progression, lowering Karma to approximately -58.5k.
 
-### Dark Net Vulnerability Models
+#### Dark Net Vulnerability Models
 
-#### ZeroLogon
+##### ZeroLogon
 
 - Blank password when no password is configured.
 - Confirmed on `smart_fridg3`, `hackergrid`, and `smart_doorbell`.
 
-#### PHP 5.4
+##### PHP 5.4
 
 - Reverse the supplied numeric data.
 - Example: `367` -> `763`.
 - Confirmed on `netweb$networks`.
 
-#### CloudBlare(tm)
+##### CloudBlare(tm)
 
 - Extract digits from noisy data.
 - Examples:
@@ -1383,14 +1487,14 @@ Hacking Level had already reached approximately 540, so the backdoor requirement
   - `5:8.4` -> `584`
 - Confirmed on `icarus_microsystems`.
 
-#### DeskMemo_3.1
+##### DeskMemo_3.1
 
 - Password is exposed through the memo/hint.
 - Examples:
   - `The key is 801`
   - `Remember to use 808`
 
-#### OctantVoxel
+##### OctantVoxel
 
 - Convert a supplied number from another base into base 10.
 - Example from `blade_industries`:
@@ -1398,18 +1502,18 @@ Hacking Level had already reached approximately 540, so the backdoor requirement
   - Number: `322`
   - Password: `387`
 
-#### FreshInstall_1.0
+##### FreshInstall_1.0
 
 - Indicates that the default password was never changed.
 - Exact password-generation behavior remains unresolved.
 
-#### DeepGreen
+##### DeepGreen
 
 - Encountered with hint: `Only a true master may pass`.
 - Required Charisma observed: 121.
 - Deliberately left unexplored for later.
 
-### Dark Net Resources
+#### Dark Net Resources
 
 Compromised servers can expose:
 
@@ -1425,7 +1529,7 @@ Example from `facebucks`:
 - Data file: `THE_TRUTH.data.txt`
 - Blocked RAM: 16 GB
 
-### RAM Reallocation
+#### RAM Reallocation
 
 Against `met4&4nonymous`:
 
@@ -1440,7 +1544,7 @@ Against `icarus_microsystems`:
 - Later blocked RAM: 1.46 GB.
 - The reduced blocked-RAM state persisted even after the active session was lost.
 
-### Stasis Links
+#### Stasis Links
 
 - Current Stasis Link limit observed: 1.
 - `setStasisLink()` expects a boolean.
@@ -1448,7 +1552,7 @@ Against `icarus_microsystems`:
 - `dnet-stasis.js` requires 13.65 GB RAM.
 - Stasis testing is deferred until a suitable server with enough RAM is available.
 
-### Current State
+#### Current State
 
 - Current city: Sector-12
 - Money: $121.985b
@@ -1464,7 +1568,7 @@ Against `icarus_microsystems`:
 - Time since last augmentation: 1d 3h 54m 54s
 - Total play time: 30d 21h 29m 39s
 
-### Lessons Learned
+#### Lessons Learned
 
 - Dark Net progression is a full gameplay system rather than a small side activity.
 - Dynamic topology makes scripted reconnaissance more reliable than manual navigation.
@@ -1473,9 +1577,9 @@ Against `icarus_microsystems`:
 - Persisting stolen RAM makes partial exploitation worthwhile even when topology changes.
 - The next useful question is how to move beyond Depth 0, not how to reverse-engineer every API function immediately.
 
-## Session 13 – From Crimewave to Wall Street
+### Session 13 — From Crimewave to Wall Street
 
-### Major Milestones
+#### Major Milestones
 
 - Joined **The Syndicate** after the extended Run 5 crimewave.
 - Karma reached approximately **-308k** during the session; the later recorded state was approximately **-309.111k**.
@@ -1495,11 +1599,11 @@ Against `icarus_microsystems`:
 - Began stock-market experimentation with **20,000 Blade Industries (BLD) shares**, long, at approximately $999m invested.
 - Dark Net and Gang progression were deliberately parked while Run 5 returned to broader original/core content.
 
-### Achievement Notes
+#### Achievement Notes
 
 `You'll need upgrade for this one.` was triggered unexpectedly while testing a Singularity-based augmentation-listing script. Its RAM requirement exceeded 32 GB per thread, satisfying the achievement even though the Singularity call itself failed because Source-File 4 is not unlocked.
 
-### Stock Market Notes
+#### Stock Market Notes
 
 Observed 4S indicators:
 
@@ -1510,7 +1614,7 @@ Observed 4S indicators:
 
 The first BLD position initially showed a loss because of the bid/ask spread. The plan is to monitor the forecast while BitRunners contracts run in the background.
 
-### Closing State
+#### Closing State
 
 - Money: approximately $528.294b
 - Hacking Level: 672
@@ -1528,7 +1632,7 @@ The first BLD position initially showed a loss because of the bid/ask spread. Th
 - Time since last augmentation: 5d 3h 58m 39s
 - Total play time: 34d 21h 33m 24s
 
-### Lessons Learned
+#### Lessons Learned
 
 - Extremely negative Karma alone does not guarantee Gang access in BitNode-1.
 - A Feature Hunt can stop once its current progression path is exhausted rather than becoming a grind.
@@ -1537,10 +1641,9 @@ The first BLD position initially showed a loss because of the bid/ask spread. Th
 - Background faction work and active Feature Hunts continue to complement one another.
 - Run 5 does not need to end simply because useful augmentations are queued.
 
+### Session 14 — Algorithmic Market Research
 
-## Session 14 – Algorithmic Market Research
-
-### Major Milestones
+#### Major Milestones
 
 - Continued Run 5 without installing/resetting augmentations.
 - Began with approximately **$1.271t**, Hacking Level **739**, and 25 installed augmentations.
@@ -1554,7 +1657,7 @@ The first BLD position initially showed a loss because of the bid/ask spread. Th
 - Began **Leadership** training at Rothman University to raise Charisma.
 - Successfully progressed a FreshInstall_1.0 Dark Net authentication using password `46462`.
 
-### Stock-Market Research
+#### Stock-Market Research
 
 `stock-scan.js` evolved to display symbols, prices, 4S forecast, volatility, an experimental opportunity score, existing positions, directional classifications, and suggested BUY/HOLD/EXIT/SHORT/WATCH actions.
 
@@ -1574,23 +1677,23 @@ JGN's apparent `$0.000` price was confirmed to be a genuine extremely small shar
 
 Repeated FSIG and JGN observations established the central lesson of the session: **a single strong 4S forecast can reverse quickly, so future trading logic should measure signal persistence before committing significant capital.**
 
-### Blade Industries
+#### Blade Industries
 
 The original **20,000-share BLD** long position remains open and severely underwater. It is being retained as the unofficial museum exhibit of PR0MPTS' early stock-market decision making.
 
-### Charisma Training
+#### Charisma Training
 
 PR0MPTS moved to Rothman University for the **Leadership** course at **$960/sec**, observed at approximately **11.28 Charisma XP/sec**.
 
 After roughly three hours of dedicated training, Charisma reached approximately 250. The closing screenshot records **252** and continuing to rise.
 
-### Dark Net Interruption
+#### Dark Net Interruption
 
 A FreshInstall_1.0 node appeared with the hint `It's still the default`, a five-digit numeric password format, and heartbeat data containing `-46462-`.
 
 Using **46462** successfully progressed authentication. This is confirmed for that observed node, but the general FreshInstall_1.0 generation rule remains unresolved.
 
-### Closing State
+#### Closing State
 
 - Current city: Sector-12
 - Money: approximately **$1.388t**
@@ -1608,7 +1711,7 @@ Using **46462** successfully progressed authentication. This is confirmed for th
 - Time since last augmentation: **10d 15h 36m 34s**
 - Total play time: **40d 9h 11m 19s**
 
-### Lessons Learned
+#### Lessons Learned
 
 - TIX and 4S TIX turn the stock market into a scriptable Feature Hunt.
 - 4S forecasts are useful but individual snapshots are not stable enough for the intended strategy.
@@ -1617,11 +1720,9 @@ Using **46462** successfully progressed authentication. This is confirmed for th
 - Leadership training is a cheap idle-time route for bringing Charisma closer to the other stats.
 - Run 5 remains productive without another augmentation reset.
 
+### Session 15 — Run 5 Finale: PR0MPTS Capital Management
 
-
-## Session 15 – Run 5 Finale: PR0MPTS Capital Management
-
-### Major Milestones
+#### Major Milestones
 
 - Continued Run 5 with approximately $1.5t, Hacking Level ~747, and Charisma ~316.
 - Finally liquidated the old 20,000-share Blade Industries position.
@@ -1636,7 +1737,7 @@ Using **46462** successfully progressed authentication. This is confirmed for th
 - Advanced NeuroFlux Governor from Level 6 to **Level 10**.
 - Finished Run 5 with **21 augmentation upgrades queued**.
 
-### Autonomous Stock Trading
+#### Autonomous Stock Trading
 
 Manual 4S-guided trades included Catalyst Ventures, Joe's Guns, and Four Sigma. Rapid reversals reinforced that manual monitoring was impractical.
 
@@ -1646,7 +1747,7 @@ Version 2 added persistent realised P/L, win/loss counts, win rate, unrealised a
 
 The persistent stats file appeared stale compared with the much larger realised P/L visible in live logs. This is a Run 6 investigation item.
 
-### Stock Trading Results
+#### Stock Trading Results
 
 Visible realised-profit checkpoints: **+$29.56b, +$196.99b, +$446.72b, +$1.568t, and +$3.552t**.
 
@@ -1654,11 +1755,11 @@ Notable trades included Catalyst Ventures at +$131.825b, +$208.178b, +$288.417b,
 
 The increasing bankroll allowed increasingly large positions and strong compounding. The portfolio was fully liquidated at approximately **$7.57t cash**.
 
-### `stock-watch.js` Deprecated
+#### `stock-watch.js` Deprecated
 
 `stock-watch.js v2` remains in the repository for debugging, 4S analysis, and strategy tuning. `stock-trader.js v2` is now the normal production trader.
 
-### I.I.I.I / The Black Hand
+#### I.I.I.I / The Black Hand
 
 `route.js` found the current route:
 
@@ -1668,7 +1769,7 @@ home -> joesguns -> zer0 -> phantasy -> johnson-ortho -> I.I.I.I
 
 Backdooring I.I.I.I triggered another Black Hand invitation, confirming the old jump3R message as the original faction breadcrumb.
 
-### Shadows of Anarchy
+#### Shadows of Anarchy
 
 An obfuscated rumor stated: **“Your infiltration activity has attracted attention.”**
 
@@ -1676,7 +1777,7 @@ Joe's Guns infiltration showed Difficulty 13/100 — Trivial and maximum clearan
 
 **Decision: defer Shadows of Anarchy infiltration to a future run.**
 
-### Final Faction Cleanup
+#### Final Faction Cleanup
 
 Purchased:
 
@@ -1688,11 +1789,11 @@ Purchased:
 
 Ten normal Syndicate augmentations remain.
 
-### NeuroFlux Governor
+#### NeuroFlux Governor
 
 Remaining useful money and reputation were converted into **NeuroFlux Governor Levels 7–10**, advancing the installed/queued progression from Level 6 to Level 10.
 
-### Closing State
+#### Closing State
 
 - Money: approximately **$293.379b** after final shopping
 - Peak liquid pre-shopping bankroll: approximately **$7.57t**
@@ -1713,7 +1814,7 @@ Faction screenshot confirms BitRunners, The Black Hand, NiteSec, Sector-12, Slum
 
 Hacknet closing snapshot: 9 nodes, $339.472k spent, $164.929m produced, $173.561/sec production; node 0 is Level 21 and nodes 1–8 are Level 11.
 
-### Run 5 Story
+#### Run 5 Story
 
 Run 5 began as another hacking and faction progression cycle, took an extended detour through an industrial-scale homicide spree, and ended with PR0MPTS becoming an algorithmic multi-trillionaire.
 
@@ -1723,7 +1824,7 @@ Manual trading rapidly gave way to automation. `stock-watch.js` taught PR0MPTS h
 
 Run 5 ends after reaching approximately **$7.57t in liquid capital**, converting the fortune into one of the largest augmentation packages of the playthrough so far, and preparing to wake up in Run 6 considerably richer in hardware — if temporarily much poorer in cash.
 
-### Lessons Learned
+#### Lessons Learned
 
 - Autonomous stock trading is now a proven major income source.
 - Capital scale creates a powerful compounding effect.
@@ -1732,10 +1833,32 @@ Run 5 ends after reaching approximately **$7.57t in liquid capital**, converting
 - The augmentation price multiplier can become a stronger end-of-run constraint than faction reputation.
 - Run 5's Feature Hunt philosophy produced major progress across crime, Dark Net, factions, stock trading, automation, and permanent augmentations.
 
+## Run 6 — The Machine Awakens — Current
 
-## Session 16 – Run 6: The Machine Awakens
+### Run Summary
 
-### Major Milestones
+- Installed the enormous Run 5 augmentation package, reaching **42 installed augmentations**.
+- Began with roughly $1,000 and Hacking Level 4; the new multipliers drove hacking above 1,000 within the opening session.
+- Initial `deploy.js` pass found 70 servers, rooted 27, activated 24 worker hosts, and deployed 293 threads to `foodnstuff`.
+- Restored NiteSec, The Black Hand, and BitRunners using `route.js` and backdoors.
+- Moved to Aevum, joined its faction, and began faction reputation work.
+- Rebuilt the full five-port toolkit plus DeepscanV1/V2, AutoLink, DarkscapeNavigator, ServerProfiler, and Formulas.
+- Purchased Formulas.exe for $5b after money had already climbed into the trillions.
+- Full redeployment rooted **69 / 70 servers**, activated **43 worker hosts**, and reached **1,338 threads**, targeting `4sigma`.
+- Confirmed permanent WSE/TIX/4S access survived the augmentation reset.
+- Restarted `stock-watch.js` to rebuild market history before renewed trading.
+- Session closed in Aevum with approximately **$3.013t**, Hacking Level **1,162**, Charisma **91**, and Aevum faction work active.
+- Session 17 extended Run 6 into a long passive-automation grind.
+- Hacking advanced from **1,162 → 2,000** while training Algorithms.
+- `stock-trader.js` compounded the bankroll into the **quadrillions**, with cash peaking near **$112.752q** before infrastructure spending.
+- Expanded Hacknet to **30 nodes** and maximized Home CPU cores at **8 / 8**.
+- Used temporary lightweight scripts to reach **1,000 simultaneous processes**, then removed them after the achievement triggered.
+- Earned four achievements, increasing progress from **23 / 98 → 27 / 98**.
+- The next progression checkpoint is **Hacking Level 2,500**, followed by reassessment of `fl1ght.exe` / Daedalus progression.
+
+### Session 16 — Run 6: The Machine Awakens
+
+#### Major Milestones
 
 - Began Run 6 after installing the Run 5 augmentation package, reaching **42 installed augmentations**.
 - Started around $1,000 and Hacking Level 4 with 4.10 TB free Home RAM and retained Karma near -309k.
@@ -1748,27 +1871,27 @@ Run 5 ends after reaching approximately **$7.57t in liquid capital**, converting
 - Confirmed WSE, TIX, 4S UI, and 4S TIX access survived the reset.
 - Restarted `stock-watch.js` to rebuild its 24-sample history before PR0MPTS Capital Management resumes trading.
 
-### Full Network Deployment
+#### Full Network Deployment
 
 The network grew from 293 to 1,338 worker threads — roughly **4.6×** the initial Run 6 capacity. Major hosts included `fulcrumtech` (409 threads), `omnitek` (204), `run4theh111z` (102), and `blade` (102). This transformation occurred within roughly the first 30 minutes of Run 6.
 
-### Program Toolkit
+#### Program Toolkit
 
 Owned/recovered: `NUKE.exe`, `BruteSSH.exe`, `FTPCrack.exe`, `relaySMTP.exe`, `HTTPWorm.exe`, `SQLInject.exe`, `DeepscanV1.exe`, `DeepscanV2.exe`, `AutoLink.exe`, `DarkscapeNavigator.exe`, `ServerProfiler.exe`, and `Formulas.exe`.
 
 `ServerProfiler.exe` was created manually. `SQLInject.exe` was purchased to complete the five-port toolkit. Formulas creation was stopped when the remaining time was still several hours; with money already near $3t, `Formulas.exe` was purchased for $5b instead.
 
-### Faction Restoration and Aevum
+#### Faction Restoration and Aevum
 
 NiteSec and The Black Hand were restored through their familiar backdoor routes and showed no normal augmentations remaining. BitRunners initially remained blocked because `run4theh111z` required four ports; purchasing `HTTPWorm.exe` solved the problem.
 
 PR0MPTS then moved from Sector-12 to **Aevum**, accepted its faction invitation, and began working toward Aevum's one remaining normal augmentation. Joining Aevum locks out its enemy city factions until the next augmentation reset.
 
-### Stock Market Returns
+#### Stock Market Returns
 
 Permanent WSE Account, TIX API, 4S Market Data UI, and 4S TIX API access all survived installation; only positions reset. `stock-watch.js` was restarted to rebuild its 24-sample history before autonomous trading resumes.
 
-### Closing State
+#### Closing State
 
 - Current city: **Aevum**
 - Money: approximately **$3.013t**
@@ -1788,15 +1911,15 @@ Permanent WSE Account, TIX API, 4S Market Data UI, and 4S TIX API access all sur
 
 Current faction screenshot records BitRunners (222.270 favor), The Black Hand (301.683), NiteSec (251.478), Aevum (101.936), Sector-12 (223.967), and CyberSec (219.868). Aevum has **one normal augmentation remaining**; the others shown are cleared.
 
-### Run 6 Direction
+#### Run 6 Direction
 
 Run 6 is named **The Machine Awakens**. The project will not rush directly to the BitNode-1 ending. The hacking network, Aevum reputation work, stock market, Dark Net, infiltration, city systems, and achievements remain active Feature Hunt targets.
 
-### Story Note
+#### Story Note
 
 Run 5 built the machine. Run 6 switched it on. The rebuild phase that once defined an augmentation reset has effectively collapsed: within hours PR0MPTS was back above Hacking Level 1,100, holding trillions of dollars, controlling almost the entire public network, and preparing to reopen his algorithmic trading operation.
 
-### Lessons Learned
+#### Lessons Learned
 
 - The Run 5 augmentation package fundamentally changed the scale of post-reset recovery.
 - Five-port access now converts almost the entire public network into usable infrastructure immediately.
@@ -1810,9 +1933,9 @@ Run 5 built the machine. Run 6 switched it on. The rebuild phase that once defin
 
 ---
 
-## Session 17 – Run 6: The Machine Awakens — The Long Grind
+### Session 17 — Run 6: The Machine Awakens — The Long Grind
 
-### Major Milestones
+#### Major Milestones
 
 - Continued **Run 6 – The Machine Awakens** through an extended period of passive automation and idle progression.
 - Left the full hacking network and `stock-trader.js` running continuously while training **Algorithms**.
@@ -1826,7 +1949,7 @@ Run 5 built the machine. Run 6 switched it on. The rebuild phase that once defin
 - Created temporary lightweight scripts to run **1,000 simultaneous processes** without disrupting production systems, then removed them after the achievement triggered.
 - Continued using the existing **1,338-thread** distributed hacking network against `4sigma`.
 
-### Achievement Progress
+#### Achievement Progress
 
 Four additional Steam achievements were earned:
 
@@ -1841,7 +1964,7 @@ Next major money-based achievement under observation:
 
 - [ ] **Here comes the money!** — Have $1Q on Home.
 
-### Hacking Network
+#### Hacking Network
 
 Current `hack-stats.js` checkpoint:
 
@@ -1856,7 +1979,7 @@ Current `hack-stats.js` checkpoint:
 
 Infrastructure purchases during the achievement sweep had effectively no impact on the production hacking network.
 
-### Stock Market
+#### Stock Market
 
 `stock-trader.js` remains active as a major parallel income engine.
 
@@ -1864,7 +1987,7 @@ The difference between approximately **$733.8t** recorded by the currently runni
 
 The stock trader will remain active throughout the push from Hacking Level 2,000 to 2,500.
 
-### Current State
+#### Current State
 
 - Current Run: **Run 6 – The Machine Awakens**
 - Current city: **Aevum**
@@ -1886,13 +2009,13 @@ The stock trader will remain active throughout the push from Hacking Level 2,000
 - Current activity: **Algorithms course**
 - Steam achievements: **27 / 98**
 
-### Current Objective
+#### Current Objective
 
 Continue **Algorithms** training from Hacking Level **2,000 → 2,500** while leaving `stock-trader.js` and the distributed hacking network active, allowing the bankroll to compound, and watching progress toward **$1Q / `Here comes the money!`**.
 
 Once Hacking Level **2,500** is reached, immediately reassess `fl1ght.exe` / Daedalus progression before beginning another augmentation installation cycle.
 
-### Lessons Learned
+#### Lessons Learned
 
 - Long-duration automation can produce enormous progression without active intervention.
 - Autonomous stock trading has grown from a useful side system into PR0MPTS' dominant source of wealth.
@@ -1902,199 +2025,183 @@ Once Hacking Level **2,500** is reached, immediately reassess `fl1ght.exe` / Dae
 - The Run 6 augmentation stack can sustain hacking, stock trading, education, and achievement hunting simultaneously.
 - At this stage of BitNode-1, the limiting resource is increasingly **progression requirements rather than money**.
 
-# Research Notes
+## Historical Objectives Register (Original Checklist)
 
-## Documentation
+> Archived from the former Current Objectives section. Some unchecked items remain open investigations, not active Run 6 priorities. Consult the Command Center for what is current.
 
-Pending.
+### Immediate
 
-## Source Code
+- [x] Install the eight Run 4 augmentations.
+- [x] Begin Run 5 with 25 installed augmentations.
+- [x] Rebuild the hacking network immediately with `deploy.js`.
+- [x] Reacquire FTPcrack.exe.
+- [x] Reacquire relaySMTP.exe.
+- [x] Reacquire HTTPWorm.exe.
+- [x] Rejoin CyberSec.
+- [x] Rejoin NiteSec.
+- [x] Create `route.js`.
+- [x] Backdoor `run4theh111z`.
+- [x] Join BitRunners.
+- [x] Reach 20 / 98 Steam achievements.
+- [x] Purchase DarkscapeNavigator.exe.
+- [x] Unlock and enter the Dark Net.
+- [x] Build a working Dark Net reconnaissance script.
+- [x] Authenticate Dark Net servers through Netscript.
+- [x] Use `memoryReallocation()` successfully.
+- [x] Raise Charisma substantially through Dark Net activity.
+- [ ] Determine how to progress beyond Dark Net Depth 0.
+- [ ] Investigate how to retrieve Dark Net data and literature files.
+- [ ] Investigate reward caches.
+- [ ] Continue learning additional Dark Net vulnerability models.
+- [x] End the Run 5 Homicide/Karma progression after joining The Syndicate.
+- [x] Reacquire SQLInject.exe.
+- [x] Reacquire Formulas.exe.
 
-Pending.
+### Short Term
 
-## Community Guides
+- [x] Purchase TIX API Access.
+- [x] Purchase 4S Market Data TIX API Access.
+- [x] Create `stock-scan.js`.
+- [x] Create `stock-watch.js`.
+- [x] Add rolling forecast persistence analysis to `stock-watch.js`.
+- [x] Create `stock-trader.js` and upgrade it to autonomous trader v2.
+- [x] Liquidate all stock positions before reset.
+- [x] Clear BitRunners, Sector-12, Slum Snakes, and Netburners of remaining normal augmentations.
+- [x] Reach NeuroFlux Governor Level 10.
+- [x] Install the 21 queued augmentation upgrades and begin Run 6.
+- [x] Restore the complete five-port program toolkit.
+- [x] Rejoin NiteSec, The Black Hand, and BitRunners.
+- [x] Join Aevum.
+- [x] Expand the network to 69 / 70 rooted servers and 1,338 worker threads.
+- [x] Restore Formulas.exe.
+- [ ] Obtain Aevum's remaining normal augmentation.
+- [ ] Reopen autonomous stock trading after market history is rebuilt.
+- [x] Continue Leadership training to bring Charisma closer to the other character stats.
+- [x] Progress from forecast observation to autonomous stock trading with `stock-trader.js`.
+- [ ] Investigate/fix stale persistent realised P/L statistics in `stock-trader-stats.txt` during Run 6.
+- [x] Restore autonomous trading with `stock-trader.js`.
+- [x] Reach Hacking Level 2,000.
+- [x] Expand to 30 Hacknet Nodes.
+- [x] Maximize Home CPU cores at 8 / 8.
+- [x] Run 1,000 simultaneous scripts for the achievement, then remove the temporary scripts.
+- [x] Reach 27 / 98 Steam achievements.
+- [ ] Train Algorithms from Hacking Level 2,000 to 2,500.
+- [ ] Reassess `fl1ght.exe` / Daedalus progression at Hacking Level 2,500.
+- [ ] Watch for the `$1Q` `Here comes the money!` achievement while passive income continues.
 
-Pending.
+- [x] Clear all remaining normal BitRunners augmentations.
+- [x] End the Run 5 Homicide/crime progression.
+- [ ] Investigate Dark Net footholds and deeper traversal.
+- [ ] Investigate cache-opening mechanics.
+- [ ] Test Dark Net file retrieval from compromised hosts.
+- [ ] Revisit Stasis Links once sufficient RAM is available on a suitable Dark Net server.
+- [ ] Expand the hacking network after additional port openers are reacquired.
+- [ ] Rebuild purchased-server infrastructure when useful.
+- [ ] Continue balancing story progression with achievements and Feature Hunts.
 
-## Session 3 Discoveries
+### Long Term
 
-- Automation can be restored rapidly after an augmentation installation because script files remain on `home`.
-- Program creation can be paused and resumed without losing progress.
-
-## Session 4 Discoveries
-
-- Purchased augmentations do not need to be installed immediately.
-- Distributed automation can continue running while the player performs faction work.
-
-## Session 5 Discoveries
-
-- Faction donations become available after building sufficient favor.
-- A final NeuroFlux Governor purchase can use money and reputation that would otherwise be lost on reset.
-- The value of an augmentation cycle depends more on the combined multiplier package than the raw number of purchases.
-
-## Session 6 Discoveries
-
-- Faction memberships reset after augmentation installation, while faction favor persists.
-- Program files must be reacquired or recreated after installation.
-- A strong hacking augmentation batch can compress many hours of early progression into a few hours.
-
-## Session 7 Discoveries
-
-- deploy.js V3 can choose a target automatically when one is not supplied.
-- High retained faction favor makes rebuilding reputation substantially faster.
-- Run 3 automation scaled beyond the initial recovery network.
-
-## Session 9 Discoveries
-
-- Formulas.exe is the final Dark Web program and has its own Steam achievement.
-- Maintaining 30 scripts on Home awards `Thank you folders!`.
-- Home RAM upgrades can be used as an end-of-run money sink that permanently improves future scripting capacity.
-- A major faction augmentation can serve as the capstone for an augmentation cycle.
-- The most efficient reset so far combined story progression, infrastructure upgrades, faction work, and two additional achievements.
-- The automation stack remained reliable throughout a very long run without needing a fundamental redesign.
-
-## Session 8 Discoveries
-
-- A separate drain/recovery script pair is safer than modifying the general worker loop for a one-off achievement.
-- Four purchased servers plus rooted public hosts produced 1,615 worker threads.
-- All Dark Web programs except Formulas.exe were obtainable before Hacking Level 1000.
-- The Black Hand provides the next major hacking-faction augmentation pool.
-- Home RAM upgrades become increasingly valuable as automation and utility scripts grow.
-
----
-
-
-## Session 10 Discoveries
-
-- At approximately 100 combat stats, Homicide had about a 55% success rate.
-- Homicide reduced Karma quickly and immediately led to Slum Snakes.
-- Balanced combat training was a useful prerequisite for crime.
-- The WSE Account persists through augmentation installation.
-- Stock holdings do not persist through augmentation installation.
-- City travel can instantly unlock factions and unique locations.
-- Permanent hardware upgrades are available at more than one technology corporation.
-- The Iker Molina Casino is a distinct gameplay system worth a future Feature Hunt.
-- IPvGO is a separate strategy system with permanent rewards and faction-favor mechanics.
-- The Church of the Machine God and Shadowed Walkway are significant unique locations.
-- New Tokyo's arcade and noodle interaction indicate small side systems and mysteries exist outside core progression.
-
-## Session 11 Discoveries
-
-- `route.js` can eliminate most manual deep-network route hunting after resets.
-- The first Run 5 use found an 11-hop route from `home` to `run4theh111z`.
-- `run4theh111z` required four open ports and Hacking Level 516 in the documented state.
-- HTTPWorm.exe was the missing fourth port opener needed for the BitRunners path.
-- Rob Store is useful as an early safe crime when combat stats are near 1.
-- Mug becomes an effective all-round combat-training crime once its success rate rises.
-- Homicide success improved steadily as Strength and Defense increased.
-- The eight Run 4 augmentations made Run 5's hacking recovery substantially faster than the comparable Run 4 stage.
-- BitRunners became the next major hacking faction unlocked through natural story progression.
-
-## Session 12 Discoveries
-
-- DarkscapeNavigator.exe unlocks the Dark Net and `ns.dnet`.
-- The Dark Net is an unstable network whose topology changes while the player is interacting with it.
-- `darkweb` is the stable gateway into the Dark Net.
-- Several Dark Net API calls only work when executed from a Dark Net server.
-- `probe(false)` is effective for live reconnaissance.
-- Vulnerability models currently understood: ZeroLogon, PHP 5.4, CloudBlare(tm), DeskMemo_3.1, and OctantVoxel.
-- FreshInstall_1.0 and DeepGreen remain unresolved.
-- `memoryReallocation()` both liberates blocked RAM and awards Charisma XP.
-- Liberated RAM persists after migration/session loss.
-- Stasis Links are RAM-intensive and locally applied.
-- Compromised servers can contain caches, data, literature, and other resources.
-- Dark Net activity raised Charisma from 1 to roughly 71 in one session.
-- Dark Net exploitation and Homicide can progress at the same time.
-
-## Session 13 Discoveries
-
-- Joining The Syndicate was achievable after the prolonged Homicide/Karma push.
-- Karma at approximately -308k still did not expose Gang functionality in the current BitNode; that system is gated by later BitNode/Source-File progression.
-- Alpha Enterprises Infiltration exposed the timed keyboard-minigame format and provided the damage needed for the Hospital/`OUCH!` achievement.
-- Purchasing 4S Market Data awarded `4S` and exposed readable bullish/bearish forecast indicators.
-- A high-RAM Singularity script can satisfy the 32GB-per-thread achievement even when unavailable Singularity access prevents successful execution.
-- `list-augs.js` is a useful permanent utility for auditing installed augmentations.
-- `route.js` successfully located `powerhouse-fitness`; it required Hacking Level 970 and five open ports in the documented state.
-- Home CPU cores were upgraded from 1 to 2; the eight-core achievement is deferred until costs are less disruptive.
-- The first 4S-guided stock experiment used a long Blade Industries position; initial losses can reflect the bid/ask spread.
-- BitRunners Hacking Contracts are productive background work while exploring stocks and achievements.
-
-
-## Session 14 Discoveries
-
-- TIX and 4S TIX APIs expose enough information to build useful stock scanners and monitors.
-- `ns.format.number()` is the working Bitburner 3.x replacement for the removed `ns.formatNumber()`.
-- Extremely small share prices can misleadingly display as `$0.000` under ordinary formatting.
-- Strong 4S forecasts can reverse rapidly, as observed with FSIG and JGN.
-- `stock-watch.js` v2 uses 24 five-second samples, approximately two minutes of history, and a 75% persistence requirement.
-- In-memory stock history is lost on restart; file persistence remains a future option.
-- Leadership at Rothman University is an effective idle-time Charisma training path.
-- The observed FreshInstall_1.0 node accepted `46462`; the general rule remains unresolved.
-
-## Session 15 Discoveries
-
-- Autonomous 4S trading became a multi-trillion-dollar income engine.
-- `stock-trader.js v2` is now the production trader; `stock-watch.js v2` is retained for diagnostics.
-- Increasing capital allowed position size and realised profit to compound rapidly.
-- `stock-trader-stats.txt` needs validation because its persistent realised P/L appeared stale.
-- Network routes can change; `route.js` should be preferred over old handwritten paths.
-- Backdooring I.I.I.I again reconfirmed the jump3R breadcrumb as The Black Hand progression.
-- Shadows of Anarchy progression is tied to successful company infiltration.
-- End-of-run augmentation price multipliers can become more restrictive than reputation.
-
-## Session 16 Discoveries
-
-- The 42-augmentation stack can drive Hacking Level from 4 to 1,000+ within the opening hours of a reset.
-- Run 6 reached 69 / 70 rooted servers and 1,338 worker threads once the five-port toolkit was restored.
-- WSE, TIX, 4S UI, and 4S TIX access persist through augmentation installation; positions do not.
-- High post-reset income can make buying Formulas.exe preferable to spending hours creating it.
-- Large retained faction favor makes faction restoration immediately useful even though reputation resets.
-- Aevum has one normal augmentation remaining at the Session 16 checkpoint.
-
-## Session 17 Discoveries
-
-- Passive Algorithms training can run alongside distributed hacking and autonomous stock trading.
-- `stock-trader.js` can compound a trillion-scale bankroll into quadrillion-scale cash during a long idle grind.
-- Thirty Hacknet nodes and maximum Home CPU cores became inexpensive achievement targets at Run 6's capital scale.
-- A temporary 1,000-process workload can earn `Need more real life ram` without changing permanent production automation.
-- At the Session 17 checkpoint, progression requirements rather than money are the primary constraint.
-- Hacking Level **2,500** is the next deliberate checkpoint before reassessing `fl1ght.exe` / Daedalus progression.
-
-# Questions To Investigate
-
-- How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
-- How can compromised Dark Net servers be used as footholds?
-- How are reward caches opened and collected?
-- How are data and literature files retrieved from compromised Dark Net servers?
-- What does the Dark Net terminal resource do?
-- How does FreshInstall_1.0 generate its default password?
-- What is required to solve or bypass DeepGreen?
-- When does Stasis become practical, and which servers are worth stabilising?
-- Should `dnet-worker.js` automate known vulnerability models?
-- Should `dnet-worker.js` track persistent blocked-RAM progress across migrations?
-- How should `stock-trader-stats.txt` persistence be fixed or validated in Run 6?
-- How quickly can `stock-trader.js v2` be restored after the Run 6 reset?
-- Should the trader eventually support short positions?
-- When should Shadows of Anarchy infiltration be revisited?
-- When should the remaining 10 Syndicate augmentations be harvested?
-- Which Feature Hunt should follow the Run 6 rebuild?
+- [ ] Complete BitNode 1.
+- [ ] Unlock advanced game mechanics.
+- [ ] Progress toward all 98 achievements.
 
 ---
 
-# References
+## Historical Strategy Stages
 
-## Official Documentation
+#### Completed
+
+- Built the first distributed automation network.
+- Purchased the TOR Router.
+- Acquired the full port-opening program set.
+- Joined Sector-12, CyberSec, NiteSec, Aevum, and The Black Hand.
+- Completed two augmentation cycles.
+- Rebuilt and expanded the hacking network after each installation.
+- Began purchased-server infrastructure.
+- Built dedicated achievement scripts.
+
+#### Current Strategy
+
+Run 6 continues the Feature Hunt philosophy while the automated network and
+stock trader provide passive income. The latest verified checkpoint is Session
+17: Hacking Level 2,000, 27 / 98 achievements, 30 Hacknet nodes, and a
+quadrillion-scale bankroll. Earlier Run 5 Dark Net and crime checkpoints remain
+historical context, not the current activity state.
+
+The documented immediate gate is Hacking Level 2,500. Reassess
+`fl1ght.exe` / Daedalus only after reaching it; the alternative combat-stat
+route was recorded as impractical at the Session 17 checkpoint. Dark Net,
+infiltration, faction, and achievement work remain deliberate future Feature
+Hunts rather than active claims.
+
+#### Current Priorities
+
+1. Continue Algorithms training from Hacking Level 2,000 to 2,500.
+2. Leave the existing `worker.js` deployment and `stock-trader.js` active
+   while training; rerun `deploy.js` only for deployment or recovery.
+3. Watch for the $1Q `Here comes the money!` achievement.
+4. Obtain Aevum's remaining normal augmentation when the recorded
+   prerequisites are satisfied.
+5. Investigate the stale persistent realised P/L in `stock-trader-stats.txt`
+   without treating it as authoritative.
+6. Keep Dark Net depth, cache, file, and Stasis Link work deferred until a
+   verified next step is available.
+
+---
+
+### Mid Game
+
+_TBD_
+
+---
+
+### Late Game
+
+_TBD_
+
+---
+
+---
+
+# 9. References & Project Principles
+
+## Project Goal
+
+### Primary Objectives
+
+- Complete all 98 Steam achievements.
+- Follow a normal first-playthrough progression.
+- Learn game systems before heavily optimizing.
+- Build reusable automation over time.
+- Document every important strategy and discovery.
+
+---
+
+## Playthrough Philosophy
+
+1. Experience the game naturally on the first BitNode.
+2. Automate repetitive tasks only after understanding them.
+3. Verify mechanics against official documentation where possible.
+4. Keep this document as the canonical record of the playthrough.
+
+---
+
+## References
+
+### Official Documentation
 
 https://bitburner-fork-oddiz.readthedocs.io/
 
-## Source Code
+### Source Code
 
 https://github.com/bitburner-official/bitburner-src
 
-## Playthrough Series
+### Playthrough Series
 
 https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMYPhu
 
+**Repository navigation:** `README.md` (entry point) · `ARCHITECTURE.md` (automation design) · `Research Library.md` (external and in-game research) · this Playbook (state, decisions and chronology).
+
 ---
 
-_Last Updated: Session 17 — Run 6: The Machine Awakens — The Long Grind_
+_Last source checkpoint: Session 17 — Run 6: The Machine Awakens — The Long Grind. Reorganised for readability; no new game progress implied._
