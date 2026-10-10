@@ -32,33 +32,33 @@ is the current canonical appearance.
 
 ### Session 1 — Humble Beginnings
 
-![PR0MPTS in Session 1: Humble Beginnings](assets/portraits/session-01-humble-beginnings.png)
+![PR0MPTS in Session 1: Humble Beginnings](assets/portraits/01-session-01-humble-beginnings.png)
 
 PR0MPTS begins his journey with basic equipment and limited resources.
 
 ### Early Career — Black Hand Operative
 
-![PR0MPTS as an early Black Hand operative](assets/portraits/early-black-hand-operative.png)
+![PR0MPTS as an early Black Hand operative](assets/portraits/02-early-black-hand-operative.png)
 
 At Hacking Level 521, PR0MPTS is faction-reputation grinding and establishing
 early automation. The exact run number is unconfirmed.
 
 ### Run 4 — Veteran Operator
 
-![PR0MPTS in Run 4: Veteran Operator](assets/portraits/run-04-veteran-operator.png)
+![PR0MPTS in Run 4: Veteran Operator](assets/portraits/03-run-04-veteran-operator.png)
 
 An experienced hacker rebuilding his automation empire after previous runs.
 
 ### Run 5 — Criminal Financier
 
-![PR0MPTS in Run 5: Criminal Financier](assets/portraits/run-05-criminal-financier.png)
+![PR0MPTS in Run 5: Criminal Financier](assets/portraits/04-run-05-criminal-financier.png)
 
 The homicide crime spree, BitRunners affiliation, automated stock trading, and
 wealth exceeding $1.5 trillion define this stage.
 
 ### Run 6 — Quadrillionaire
 
-![PR0MPTS in Run 6: Quadrillionaire](assets/portraits/run-06-quadrillionaire.png)
+![PR0MPTS in Run 6: Quadrillionaire](assets/portraits/05-run-06-quadrillionaire.png)
 
 The current canonical appearance: wealth exceeding $100 quadrillion, extensive
 automation, and an extraordinary luxury high-rise environment.
