@@ -20,6 +20,46 @@ The goal of this project is to earn every achievement while building a practical
 - [CHARACTER-EVOLUTION.md](CHARACTER-EVOLUTION.md) – PR0MPTS' approved visual history and continuity rules.
 - `Scripts/` – Netscript automation and diagnostic tools.
 
+## Run 6 — Automation Infrastructure
+
+PR0MPTS now uses three complementary systems that can operate alongside manual training, faction work, and achievement hunting:
+
+1. **Distributed hacking network:** `deploy.js` discovers and roots public servers, selects a money target, and deploys `worker.js` to run adaptive weaken/grow/hack loops.
+2. **Autonomous stock trading:** `stock-trader.js` independently manages long-only trades using 4S market data. `stock-watch.js` and `stock-scan.js` remain diagnostic tools.
+3. **Purchased-server XP datacenter:** Dedicated purchased servers run `xp-worker.js` to gain hacking experience through repeated weakening, without replacing the normal money-network workers.
+
+### Verified datacenter milestone
+
+| Measure | Verified observation |
+|---|---|
+| Purchased servers | 25 / 25 |
+| RAM per server | 1,048,576 GB (approximately 1.05 PB) |
+| Combined server RAM | 26,214,400 GB (approximately 26.21 PB) |
+| Active XP worker processes | 25 |
+| Dedicated XP threads | 25,000 |
+| RAM used across purchased servers | Approximately 47.50 TB |
+| Infrastructure purchase cost | Approximately $1.442 trillion |
+| Hacking level at monitoring checkpoint | 2,073 |
+
+These are **observed Run 6 values**, not universal limits for every game version or BitNode. The XP workers are confirmed running, and faster hacking progression has been observed; precise XP-per-second performance and scaling efficiency remain to be measured.
+
+### Datacenter script reference
+
+| Script | Role |
+|---|---|
+| `datacenter-check.js` | Inspect purchased-server limits, costs, RAM, and utilisation. |
+| `datacenter-build.js` | Provision purchased servers at the available maximum RAM. |
+| `xp-worker.js` | Continuously run `weaken()` on a rooted target to earn hacking XP. |
+| `xp-deploy.js` | Distribute XP workers across the purchased-server fleet while checking existing processes. |
+| `xp-stats.js` | Report XP worker processes, thread totals, RAM usage, and hacking XP. |
+| `deploy.js` | Manage the conventional hacking network; purchased servers are excluded from its deployment fleet in the updated version. |
+
+The money network, stock trader, and XP datacenter should be managed independently. Deployment and scaling must preserve unrelated scripts, especially live trading processes. Avoid allocating all available RAM or increasing thread counts without checking XP performance and game responsiveness.
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for deployment, separation of responsibilities, and recovery procedures. See [Research Library.md](Research%20Library.md) for the underlying evidence, Bitburner 3.0 Cloud API findings, and open optimisation questions.
+
+**Run status:** This is an infrastructure milestone within Run 6, **not** an augmentation installation or run reset.
+
 ## Philosophy
 
 This repository is intended to grow organically throughout the playthrough. Information is added as it is learned and verified, making this both a personal project log and a practical reference for anyone interested in completing Bitburner.

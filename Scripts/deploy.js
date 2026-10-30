@@ -1,33 +1,32 @@
+
 /** @param {NS} ns */
 export async function main(ns) {
     const HOME = "home";
     const WORKER = "worker.js";
 
-    // Discover every server connected to home.
     const servers = scanNetwork(ns, HOME);
+    const purchased = new Set(ns.cloud.getServerNames());
 
     ns.tprint(`Discovered ${servers.length} servers.`);
+    ns.tprint(`Reserved XP servers: ${purchased.size}`);
 
-    // Attempt to open ports and gain root access everywhere possible.
     let rootedCount = 0;
 
+    // Root accessible network servers.
     for (const server of servers) {
-        if (server === HOME) continue;
+        if (server === HOME || purchased.has(server)) continue;
 
         if (!ns.hasRootAccess(server)) {
             const openedPorts = openPorts(ns, server);
-            const requiredPorts = ns.getServerNumPortsRequired(server);
+            const requiredPorts =
+                ns.getServerNumPortsRequired(server);
 
             if (openedPorts >= requiredPorts) {
                 try {
                     ns.nuke(server);
                 } catch {
-                    ns.tprint(`Failed to gain root access on ${server}.`);
+                    ns.tprint(`Failed to root ${server}.`);
                 }
-            } else {
-                ns.tprint(
-                    `Skipped ${server}: opened ${openedPorts}/${requiredPorts} required ports.`
-                );
             }
         }
 
@@ -36,12 +35,11 @@ export async function main(ns) {
         }
     }
 
-    // Use a manually supplied target, or automatically choose one.
     const requestedTarget = String(ns.args[0] ?? "");
     let target;
 
     if (requestedTarget !== "") {
-        if (!servers.includes(requestedTarget) && requestedTarget !== HOME) {
+        if (!servers.includes(requestedTarget)) {
             ns.tprint(`ERROR: Unknown target "${requestedTarget}".`);
             return;
         }
@@ -55,63 +53,59 @@ export async function main(ns) {
             ns.getServerRequiredHackingLevel(requestedTarget) >
             ns.getHackingLevel()
         ) {
-            ns.tprint(
-                `ERROR: Hacking level is too low for "${requestedTarget}".`
-            );
+            ns.tprint(`ERROR: Insufficient hacking level.`);
             return;
         }
 
         if (ns.getServerMaxMoney(requestedTarget) <= 0) {
-            ns.tprint(`ERROR: "${requestedTarget}" has no money.`);
+            ns.tprint(`ERROR: Target has no money.`);
             return;
         }
 
         target = requestedTarget;
-        ns.tprint(`Manual target selected: ${target}`);
     } else {
         target = selectTarget(ns, servers);
 
         if (!target) {
-            ns.tprint("ERROR: No suitable hacking target was found.");
+            ns.tprint("ERROR: No suitable hacking target.");
             return;
         }
-
-        ns.tprint(`Automatically selected target: ${target}`);
     }
 
-    // Copy and start worker.js on every rooted server with available RAM.
+    ns.tprint(`Hacking target: ${target}`);
+
     let deployedHosts = 0;
     let totalThreads = 0;
 
     for (const server of servers) {
         if (server === HOME) continue;
+        if (purchased.has(server)) continue;
         if (!ns.hasRootAccess(server)) continue;
 
-        // Stop only our worker, rather than killing unrelated scripts.
         ns.scriptKill(WORKER, server);
 
         const copied = await ns.scp(WORKER, server, HOME);
 
         if (!copied) {
-            ns.tprint(`Failed to copy ${WORKER} to ${server}.`);
+            ns.tprint(`Failed to copy worker to ${server}.`);
             continue;
         }
 
         const maxRam = ns.getServerMaxRam(server);
         const usedRam = ns.getServerUsedRam(server);
         const workerRam = ns.getScriptRam(WORKER, server);
+
+        if (workerRam <= 0) continue;
+
         const availableRam = maxRam - usedRam;
         const threads = Math.floor(availableRam / workerRam);
 
-        if (threads <= 0) {
-            ns.tprint(`Skipped ${server}: insufficient RAM.`);
-            continue;
-        }
+        if (threads <= 0) continue;
 
         const pid = ns.exec(WORKER, server, threads, target);
 
         if (pid === 0) {
-            ns.tprint(`Failed to start ${WORKER} on ${server}.`);
+            ns.tprint(`Failed to start worker on ${server}.`);
             continue;
         }
 
@@ -119,25 +113,19 @@ export async function main(ns) {
         totalThreads += threads;
 
         ns.tprint(
-            `Started ${WORKER} on ${server} with ${threads} threads targeting ${target}.`
+            `ACTIVE: ${server} | ${threads} threads | ${target}`
         );
     }
 
-    ns.tprint("----- Deployment complete -----");
-    ns.tprint(`Servers discovered: ${servers.length}`);
-    ns.tprint(`Servers with root access: ${rootedCount}`);
-    ns.tprint(`Worker hosts active: ${deployedHosts}`);
-    ns.tprint(`Total worker threads: ${totalThreads}`);
-    ns.tprint(`Current target: ${target}`);
+    ns.tprint("=== DEPLOYMENT COMPLETE ===");
+    ns.tprint(`Network servers discovered: ${servers.length}`);
+    ns.tprint(`Rooted network servers: ${rootedCount}`);
+    ns.tprint(`Money worker hosts: ${deployedHosts}`);
+    ns.tprint(`Money worker threads: ${totalThreads}`);
+    ns.tprint(`Reserved XP servers: ${purchased.size}`);
+    ns.tprint(`Money target: ${target}`);
 }
 
-/**
- * Recursively discovers the entire network.
- *
- * @param {NS} ns
- * @param {string} start
- * @returns {string[]}
- */
 function scanNetwork(ns, start) {
     const discovered = [];
     const visited = new Set([start]);
@@ -158,84 +146,52 @@ function scanNetwork(ns, start) {
     return discovered;
 }
 
-/**
- * Uses every port-opening program currently available on home.
- *
- * @param {NS} ns
- * @param {string} server
- * @returns {number}
- */
 function openPorts(ns, server) {
     const tools = [
-        {
-            file: "BruteSSH.exe",
-            run: () => ns.brutessh(server),
-        },
-        {
-            file: "FTPCrack.exe",
-            run: () => ns.ftpcrack(server),
-        },
-        {
-            file: "relaySMTP.exe",
-            run: () => ns.relaysmtp(server),
-        },
-        {
-            file: "HTTPWorm.exe",
-            run: () => ns.httpworm(server),
-        },
-        {
-            file: "SQLInject.exe",
-            run: () => ns.sqlinject(server),
-        },
+        ["BruteSSH.exe", () => ns.brutessh(server)],
+        ["FTPCrack.exe", () => ns.ftpcrack(server)],
+        ["relaySMTP.exe", () => ns.relaysmtp(server)],
+        ["HTTPWorm.exe", () => ns.httpworm(server)],
+        ["SQLInject.exe", () => ns.sqlinject(server)],
     ];
 
-    let openedPorts = 0;
+    let opened = 0;
 
-    for (const tool of tools) {
-        if (!ns.fileExists(tool.file, "home")) continue;
+    for (const [file, action] of tools) {
+        if (!ns.fileExists(file, "home")) continue;
 
-        tool.run();
-        openedPorts++;
+        try {
+            action();
+            opened++;
+        } catch {
+            // Ignore failed port-opening attempts.
+        }
     }
 
-    return openedPorts;
+    return opened;
 }
 
-/**
- * Chooses a rooted, hackable money server.
- *
- * The score rewards:
- * - more maximum money,
- * - a higher chance to hack,
- * - shorter hacking time.
- *
- * @param {NS} ns
- * @param {string[]} servers
- * @returns {string | null}
- */
 function selectTarget(ns, servers) {
     const hackingLevel = ns.getHackingLevel();
 
-    const candidates = servers.filter((server) => {
-        return (
-            server !== "home" &&
-            ns.hasRootAccess(server) &&
-            ns.getServerMaxMoney(server) > 0 &&
-            ns.getServerRequiredHackingLevel(server) <= hackingLevel
-        );
-    });
+    const candidates = servers.filter(server =>
+        server !== "home" &&
+        ns.hasRootAccess(server) &&
+        ns.getServerMaxMoney(server) > 0 &&
+        ns.getServerRequiredHackingLevel(server) <= hackingLevel
+    );
 
-    if (candidates.length === 0) {
-        return null;
-    }
+    if (candidates.length === 0) return null;
 
     candidates.sort((a, b) => {
         const scoreA =
-            (ns.getServerMaxMoney(a) * ns.hackAnalyzeChance(a)) /
+            ns.getServerMaxMoney(a) *
+            ns.hackAnalyzeChance(a) /
             ns.getHackTime(a);
 
         const scoreB =
-            (ns.getServerMaxMoney(b) * ns.hackAnalyzeChance(b)) /
+            ns.getServerMaxMoney(b) *
+            ns.hackAnalyzeChance(b) /
             ns.getHackTime(b);
 
         return scoreB - scoreA;
