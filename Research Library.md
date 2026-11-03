@@ -1227,3 +1227,29 @@ The automation architecture now includes a dedicated purchased-server XP fleet a
 -   Identified Slum Snakes as a new source of combat- and crime-focused
 
     augmentations.
+
+
+## Operation Darknet — Run 6 Verified Research Addendum (2026-11-04)
+
+**Evidence level:** Direct in-game tests and script outputs; not an independent audit of current upstream source. This section supplements the older in-game Darkweb guide and Run 5 discoveries without rewriting them.
+
+| Finding | Status | Evidence / boundary |
+|---|---|---|
+| `DarkscapeNavigator.exe` enables `ns.dnet` | Verified in playthrough | Reconfirm ownership after resets |
+| `ns.dnet.probe()` on `home` returns `darkweb` | Observed | Does not expose all gateway neighbours |
+| `ns.dnet.probe()` on `darkweb` exposes dynamic neighbours | Observed | Four neighbours on one pass, seven on a later pass; topology changes |
+| `ns.dnet.getServerDetails()` | Investigated in diagnostic scripts | Check actual returned fields and API signature before coding against them |
+| Gateway report via `ns.scp()` to `home` | Verified | Report includes timestamp, origin and neighbour list |
+| Controller v2.1 persists directed links and server history | Verified | Historical sightings are not current connectivity |
+| Gateway report considered stale after 90 seconds | Implemented policy | Controller freshness policy, not a game mechanic |
+| `ZeroLogon` empty-password authentication | Verified for one directly connected test target | Response `200`; not universal for other models |
+| `FreshInstall_1.0` password `46462` | Historical single-node observation | No general password-generation rule established |
+| Error `351` — Direct Connection Required | Observed | Connectivity/session constraints must be handled; avoid retry storms |
+| Authenticated sessions | Experimental | Sessions may be process-specific; do not assume a different PID inherits access |
+| Autonomous authentication / deep crawl | Not yet implemented | Next controlled engineering phase |
+
+### Research design and safety boundaries
+
+The current system consists of `darknet-scout.js` (diagnostic), `darknet-gateway.js` (30-second probe on `darkweb`), `darknet-controller.js` v2.1 (30-second reconciliation on `home`), plus experimental `darknet-auth.js` and `darknet-zerologon.js`. The controller writes `darknet-state-v2.txt` and `darknet-stats-v2.txt`; the gateway writes `darknet-gateway-report.txt` and copies it home. Source files should be checked into the repository before marking them as repository-verified.
+
+Next questions: which API methods establish and maintain a session in the **same script process**; how direct adjacency and migrations affect auth; which vulnerability models can be solved without guessing; whether reconnection and bounded retry work; and how to advance to Depth 1 without disturbing production systems. Never treat the controller's `authenticated` counter as proof of access until authentication is actually integrated.

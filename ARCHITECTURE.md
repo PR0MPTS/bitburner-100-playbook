@@ -6,7 +6,7 @@
 
 # Current System
 
-The project now uses **three complementary automation systems**: a distributed hacking network, a long-only stock trader, and a dedicated purchased-server hacking-XP datacenter. Each has a separate purpose and should be managed without disrupting the others.
+The project uses **three production automation systems**: a distributed hacking network, a long-only stock trader, and a dedicated purchased-server hacking-XP datacenter. A fourth, experimental Darknet reconnaissance subsystem is documented below. Each has a separate purpose and should be managed without disrupting the others.
 
 `deploy.js` is an on-demand recovery and orchestration command, not a permanently running service. It discovers and roots the public network, selects a money target, and starts `worker.js` on eligible public hosts. The revised deployment strategy excludes purchased servers so they can be reserved for dedicated workloads.
 
@@ -187,7 +187,8 @@ The Session 17 recovery of 69 / 70 rooted public servers and 1,338 worker thread
 | In progress | Reach Hacking 2,500, then reassess `fl1ght.exe` / Daedalus. | Latest supplied checkpoint: level 2,073; no verified completion yet. |
 | Research pending | Measure XP/sec and test controlled datacenter scaling. | Increased progression observed, but no fixed-interval benchmark yet. |
 | Deferred | Advanced HWGW batching. | No batch implementation currently documented. |
-| Deferred | Dark Net depth, cache, file and Stasis Link work. | Future objectives; no corresponding active repository scripts verified here. |
+| In progress | Darknet gateway/controller reconnaissance and topology persistence. | v2.1 test verified; authentication and deeper exploitation are not integrated. |
+| Deferred | Dark Net depth, cache, file and Stasis Link work. | Future objectives; no production traversal or extraction verified. |
 | Deferred | Shadows of Anarchy infiltration. | Session 15; deliberately postponed. |
 | Superseded | Use `stock-watch.js` for normal trading. | Replaced by `stock-trader.js` v2. |
 
@@ -197,4 +198,57 @@ The Session 17 recovery of 69 / 70 rooted public servers and 1,338 worker thread
 
 This document combines the supplied historical architecture description with subsequently reported Run 6 deployment results. The latter verify **game-side operation**, not necessarily that all new scripts have already been committed to the repository. Script paths and filenames should be reconciled against the actual repository before committing.
 
-It does not assert that absent historical scripts (`dnet-worker.js`, `dnet-stasis.js`, `weaken-only.js`, or `n00dles.js`) are present or operational. Live game state, market positions, process locations and runtime statistics require in-game verification. The XP datacenter is operational, but its measured XP rate and optimal scaling remain open research questions.
+The Darknet files described in the new section are documented from tested in-game behaviour; their presence in the repository must be checked after the planned VS Code commit. It does not assert that absent historical scripts (`dnet-worker.js`, `dnet-stasis.js`, `weaken-only.js`, or `n00dles.js`) are present or operational. Live game state, market positions, process locations and runtime statistics require in-game verification. The XP datacenter is operational, but its measured XP rate and optimal scaling remain open research questions.
+
+
+# Operation Darknet — Reconnaissance Subsystem (Run 6)
+
+> **Implementation checkpoint: controller v2.1.** Reconnaissance and historical topology tracking are operational; autonomous authentication, session renewal, deep traversal, cache retrieval and Stasis management are **not** implemented by this controller.
+
+## Separation of responsibilities
+
+```mermaid
+flowchart TD
+  GW["darknet-gateway.js on darkweb\n30-second local probe"] --> REPORT["darknet-gateway-report.txt"]
+  REPORT -->|SCP to home| CTRL["darknet-controller.js v2.1 on home\n30-second reconciliation"]
+  CTRL --> STATE["darknet-state-v2.txt\nserver/link history"]
+  CTRL --> STATS["darknet-stats-v2.txt\noperational snapshot"]
+  CTRL -->|local probe| HOME["home / darkweb visibility"]
+  SCOUT["darknet-scout.js\none-off diagnostics"] -.-> CTRL
+  AUTH["darknet-auth.js / darknet-zerologon.js\nexperimental authentication"] -.->|separate experiments| GW
+```
+
+- **Gateway:** must run on `darkweb`; calls `ns.dnet.probe()`, writes a timestamped neighbour report, and copies it to `home`. Supports `--once` or a persistent 30-second loop. Gateway observations are not proof of authenticated sessions.
+- **Controller:** runs on `home`, observes its own `ns.dnet.probe()`, ingests fresh gateway reports and retains first/last sightings, active flags, sightings counts and directed origin-to-target links. Its 90-second gateway freshness threshold prevents old reports from masquerading as current topology.
+- **Persistence:** `darknet-state-v2.txt` stores accumulated intelligence; `darknet-stats-v2.txt` stores monitoring counters. Preserve both before upgrades. A server can be historically known but no longer visible.
+- **Authentication experiments:** separate scripts investigated server details and model-specific authentication. A confirmed ZeroLogon test succeeded with an empty password and response `200`; this does **not** mean the controller authenticates targets or maintains sessions.
+
+## Latest recorded reconnaissance test
+
+| Field | Observed value |
+|---|---|
+| Controller | v2.1, running on `home` |
+| Gateway | `darkweb`, report status `ACTIVE` |
+| Scan interval | 30 seconds |
+| Gateway report expiry | 90 seconds |
+| Known / visible servers | 8 / 8 |
+| Known / active links | 8 / 8 |
+| Gateway neighbours | 7 |
+| Gateway report age | 21 seconds |
+| Authenticated (controller metric) | 0 |
+| Authentication failure ceiling | 5 consecutive failures (planned safeguard; not an active controller auth loop) |
+
+These numbers are a **single test snapshot**, not live state or a promise that topology will remain unchanged. The `authenticated: 0` field is a placeholder until authentication state is integrated.
+
+## Safe operating and recovery procedure
+
+1. Keep `deploy.js`/`worker.js`, `stock-trader.js` and the XP datacenter independent of Darknet scripts. Do not kill or redeploy unrelated processes.
+2. On `darkweb`, run `darknet-gateway.js` once per host. Use `run darknet-gateway.js --once` for a diagnostic pass or `run darknet-gateway.js` for the persistent worker. `exec` is not a supported in-game terminal command in the tested environment; connect to the target host and use `run`.
+3. On `home`, inspect `darknet-gateway-report.txt`, then `run darknet-controller.js --once` and inspect `darknet-stats-v2.txt`. Start a persistent controller only after confirming no duplicate controller is running.
+4. Before replacing a controller, stop **only its PID** and copy the state/stats files to backups. Keep the `-v2` file names intact for compatible upgrades.
+5. If gateway data is stale, confirm the gateway process and SCP transfer before diagnosing the controller. Do not treat historical links as currently reachable.
+6. After any augmentation reset, verify `DarkscapeNavigator.exe`, target-host access, script locations, RAM and running processes before restoring the subsystem.
+
+## Next engineering gate
+
+Develop a **single-target, bounded authentication worker** that first checks current direct connectivity and model metadata, then attempts only a supported method, logs response codes, respects a five-consecutive-failure ceiling, and recovers from migration or process-specific session loss. Verify API signatures in the installed game build before extending to autonomous crawling. Do not label this stage complete until repeated tests prove it.

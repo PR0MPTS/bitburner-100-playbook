@@ -22,11 +22,18 @@ The goal of this project is to earn every achievement while building a practical
 
 ## Run 6 — Automation Infrastructure
 
-PR0MPTS now uses three complementary systems that can operate alongside manual training, faction work, and achievement hunting:
+PR0MPTS uses three production systems and a separate experimental Darknet reconnaissance subsystem that can operate alongside manual training, faction work, and achievement hunting:
 
 1. **Distributed hacking network:** `deploy.js` discovers and roots public servers, selects a money target, and deploys `worker.js` to run adaptive weaken/grow/hack loops.
 2. **Autonomous stock trading:** `stock-trader.js` independently manages long-only trades using 4S market data. `stock-watch.js` and `stock-scan.js` remain diagnostic tools.
 3. **Purchased-server XP datacenter:** Dedicated purchased servers run `xp-worker.js` to gain hacking experience through repeated weakening, without replacing the normal money-network workers.
+4. **Operation Darknet (experimental):** `darknet-gateway.js` probes from `darkweb`; `darknet-controller.js` v2.1 on `home` reconciles reports and preserves dynamic network history. Authentication and deep traversal are not production features.
+
+### Operation Darknet — verified reconnaissance checkpoint
+
+The gateway scans every 30 seconds, copies `darknet-gateway-report.txt` to `home`, and the controller maintains `darknet-state-v2.txt` and `darknet-stats-v2.txt`. Its 90-second freshness threshold distinguishes recent gateway observations from stale reports. A recorded test saw **8 known servers, 8 active links and 7 gateway neighbours**. A separate ZeroLogon test authenticated with an empty password (`200`), but the controller's authentication count remains **0**: automated authentication and persistent sessions are future work.
+
+The Darknet toolkit includes `darknet-scout.js`, `darknet-gateway.js`, `darknet-controller.js`, `darknet-auth.js`, and `darknet-zerologon.js`. The latter two are experimental; confirm script files are committed before assuming repository availability. For architecture, safe recovery and evidence boundaries see [ARCHITECTURE.md](ARCHITECTURE.md) and [Research Library.md](Research%20Library.md).
 
 ### Verified datacenter milestone
 

@@ -2,8 +2,8 @@
 
 > Living record of the journey toward **98 / 98 Steam achievements**, with current plans first and historical details preserved below.
 
-**Checkpoint:** Session 17 · Run 6 — The Machine Awakens · BitNode-1 · 27 / 98 achievements  
-**Reading guide:** For the next play session, read only **1. Command Center**. The other sections are reference and historical records.
+**Last complete game-state checkpoint:** Session 17 · Run 6 — The Machine Awakens · BitNode-1 · 27 / 98 achievements. **Later engineering checkpoint:** Operation Darknet (2026-11-04); see addendum.  
+**Reading guide:** For the next play session, read **1. Command Center** and the Operation Darknet addendum. The other sections are reference and historical records.
 
 ## Contents
 
@@ -77,6 +77,7 @@
 - **Markets:** `stock-trader.js v2` is the production trader. `stock-watch.js` is retained for diagnostics, not normal production.
 - **Training:** Algorithms is the foreground activity until the 2,500 checkpoint.
 - **Known data quality issue:** persistent `stock-trader-stats.txt` realised P/L needs validation.
+- **Experimental Darknet:** gateway + controller v2.1 reconcile and preserve topology. They do not yet authenticate or crawl.
 
 ## Parked Until Revisited
 
@@ -491,6 +492,8 @@ This is now part of the permanent post-reset utility toolkit.
 
 ### Dark Net Scripts
 
+**Run 6 update:** `darknet-scout.js`, `darknet-gateway.js`, `darknet-controller.js` v2.1, `darknet-auth.js`, and `darknet-zerologon.js` are the newly tested reconnaissance/experimental authentication toolkit. The gateway runs on `darkweb`; the controller runs on `home`; topology and statistics persist to `darknet-state-v2.txt` and `darknet-stats-v2.txt`. See the Operation Darknet addendum and `ARCHITECTURE.md`. The historical scripts below belong to Run 5 and are not assumed present in the current repository.
+
 #### dnet-worker.js
 
 Created during Session 12 and copied to `darkweb` so Dark Net-local APIs can execute from the correct context.
@@ -781,6 +784,7 @@ Verified during this playthrough:
 
 ## Open Questions
 
+- How do we safely persist same-process authentication and recover after Darknet migration?
 - How do we progress from Dark Net Depth 0 to Depth 1 and beyond?
 - How can compromised Dark Net servers be used as footholds?
 - How are reward caches opened and collected?
@@ -2205,3 +2209,18 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 ---
 
 _Last source checkpoint: Session 17 — Run 6: The Machine Awakens — The Long Grind. Reorganised for readability; no new game progress implied._
+
+
+### Operation Darknet — Run 6 Engineering Addendum (2026-11-04)
+
+> **Scope:** A new engineering checkpoint after Session 17, **not** a rewrite of the Session 17 game-state snapshot. No augmentation reset, new achievement count or updated bankroll is inferred.
+
+**Implemented and tested:** `darknet-scout.js` diagnostics; `darknet-gateway.js` on `darkweb` with 30-second probing and SCP reports; `darknet-controller.js` v2.1 on `home` with 30-second scans, 90-second report freshness, persistent server/link history and separate stats. Experimental `darknet-auth.js` / `darknet-zerologon.js` established a successful directly connected ZeroLogon authentication with an empty password (`200`). The current controller **does not** perform authentication.
+
+**Recorded controller snapshot:** 8 known servers, 8 visible servers, 8 known links, 8 active links, 7 gateway neighbours, gateway ACTIVE (21-second-old report), `authenticated: 0`. These are one-time observations, not live telemetry.
+
+**Operational files:** `darknet-gateway-report.txt`, `darknet-state-v2.txt`, `darknet-stats-v2.txt`. Back up state and stats before controller changes. Avoid duplicate gateway/controller processes; keep the hacking, trading and XP datacenter workloads untouched.
+
+**Next steps:** validate API signatures and direct connectivity; build a single-target authentication worker with a five-consecutive-failure stop condition; test migration handling and same-process session persistence; only then consider deeper autonomous traversal. Depth progression, caches, files and Stasis Links remain unresolved.
+
+**Documentation:** architecture and recovery details in `ARCHITECTURE.md`; evidence and model-specific research in `Research Library.md`.
