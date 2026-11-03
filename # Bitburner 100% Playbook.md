@@ -2,7 +2,7 @@
 
 > Living record of the journey toward **98 / 98 Steam achievements**, with current plans first and historical details preserved below.
 
-**Last complete game-state checkpoint:** Session 17 · Run 6 — The Machine Awakens · BitNode-1 · 27 / 98 achievements. **Later engineering checkpoint:** Operation Darknet (2026-11-04); see addendum.  
+**Last complete game-state checkpoint:** Session 17 · Run 6 — The Machine Awakens · BitNode-1. **Latest verified achievement count:** 29 / 98 Steam (29 / 108 in-game), confirmed by achievement screenshots. **Later engineering checkpoint:** Operation Darknet (2026-11-04); see addendum.  
 **Reading guide:** For the next play session, read **1. Command Center** and the Operation Darknet addendum. The other sections are reference and historical records.
 
 ## Contents
@@ -61,7 +61,7 @@
 1. Continue Algorithms training from Hacking Level 2,000 to 2,500.
 2. Leave the existing `worker.js` deployment and `stock-trader.js` active
    while training; rerun `deploy.js` only for deployment or recovery.
-3. Watch for the $1Q `Here comes the money!` achievement.
+3. Continue monitoring achievement progress; `Wolf of wall street.` is confirmed earned, while `Here comes the money!` is not verified by the supplied screenshots.
 4. Obtain Aevum's remaining normal augmentation when the recorded
    prerequisites are satisfied.
 5. Investigate the stale persistent realised P/L in `stock-trader-stats.txt`
@@ -89,7 +89,7 @@
 
 ## Achievement Pulse
 
-**27 / 98 earned · 71 remaining.** Last four were `Well Liked`, `Big network`, `Download more cores?`, and `Need more real life ram`. Watch for `$1Q` / `Here comes the money!` as cash grows.
+**29 / 98 Steam achievements earned · 69 remaining.** Latest screenshot reconciliation added `That's the limit` (maximise a Hacknet node) and `Wolf of wall street.` (make $1q on the stock market). The in-game counter separately shows 29 / 108 acquired.
 
 ---
 
@@ -97,7 +97,7 @@
 
 ## Achievement Tracker
 
-### Completed (27 / 98)
+### Completed (29 / 98)
 
 | Achievement | Date |
 |------------|------|
@@ -128,12 +128,14 @@
 | ✅ Big network (Have 30 Hacknet nodes) | Session 17 |
 | ✅ Download more cores? (Maximize Home computer cores) | Session 17 |
 | ✅ Need more real life ram (Run 1,000 scripts simultaneously) | Session 17 |
+| ✅ That's the limit (Maximize a Hacknet node) | 2026-08-22 |
+| ✅ Wolf of wall street. (Make $1q on the stock market) | 2026-08-28 |
 
 ### Remaining
 
-**71 Steam achievements remaining**
+**69 Steam achievements remaining**
 
-> Session 17 added `Well Liked`, `Big network`, `Download more cores?`, and `Need more real life ram`, bringing the Steam total to **27 / 98**.
+> Session 17 added `Well Liked`, `Big network`, `Download more cores?`, and `Need more real life ram`, bringing the historical Session 17 total to **27 / 98**. Later screenshots confirm two further achievements — `That's the limit` and `Wolf of wall street.` — bringing the **current verified total to 29 / 98 Steam achievements** (29 / 108 in-game).
 
 ---
 
@@ -818,7 +820,7 @@ Verified during this playthrough:
 
 Run 6 continues the Feature Hunt philosophy while the automated network and
 stock trader provide passive income. The latest verified checkpoint is Session
-17: Hacking Level 2,000, 27 / 98 achievements, 30 Hacknet nodes, and a
+17: Hacking Level 2,000, 27 / 98 achievements at that checkpoint (29 / 98 now verified), 30 Hacknet nodes, and a
 quadrillion-scale bankroll. Earlier Run 5 Dark Net and crime checkpoints remain
 historical context, not the current activity state.
 
@@ -2088,10 +2090,11 @@ Once Hacking Level **2,500** is reached, immediately reassess `fl1ght.exe` / Dae
 - [x] Expand to 30 Hacknet Nodes.
 - [x] Maximize Home CPU cores at 8 / 8.
 - [x] Run 1,000 simultaneous scripts for the achievement, then remove the temporary scripts.
-- [x] Reach 27 / 98 Steam achievements.
+- [x] Reach 27 / 98 Steam achievements (historical Session 17 milestone).
+- [x] Reach 29 / 98 Steam achievements (later screenshot verification).
 - [ ] Train Algorithms from Hacking Level 2,000 to 2,500.
 - [ ] Reassess `fl1ght.exe` / Daedalus progression at Hacking Level 2,500.
-- [ ] Watch for the `$1Q` `Here comes the money!` achievement while passive income continues.
+- [ ] Verify the separate `Here comes the money!` achievement before marking it complete; the confirmed stock-market achievement is `Wolf of wall street.`.
 
 - [x] Clear all remaining normal BitRunners augmentations.
 - [x] End the Run 5 Homicide/crime progression.
@@ -2128,7 +2131,7 @@ Once Hacking Level **2,500** is reached, immediately reassess `fl1ght.exe` / Dae
 
 Run 6 continues the Feature Hunt philosophy while the automated network and
 stock trader provide passive income. The latest verified checkpoint is Session
-17: Hacking Level 2,000, 27 / 98 achievements, 30 Hacknet nodes, and a
+17: Hacking Level 2,000, 27 / 98 achievements at that checkpoint (29 / 98 now verified), 30 Hacknet nodes, and a
 quadrillion-scale bankroll. Earlier Run 5 Dark Net and crime checkpoints remain
 historical context, not the current activity state.
 
@@ -2143,7 +2146,7 @@ Hunts rather than active claims.
 1. Continue Algorithms training from Hacking Level 2,000 to 2,500.
 2. Leave the existing `worker.js` deployment and `stock-trader.js` active
    while training; rerun `deploy.js` only for deployment or recovery.
-3. Watch for the $1Q `Here comes the money!` achievement.
+3. Continue monitoring achievement progress; `Wolf of wall street.` is confirmed earned, while `Here comes the money!` is not verified by the supplied screenshots.
 4. Obtain Aevum's remaining normal augmentation when the recorded
    prerequisites are satisfied.
 5. Investigate the stale persistent realised P/L in `stock-trader-stats.txt`
@@ -2208,7 +2211,7 @@ https://www.youtube.com/watch?v=HgYovv-IKH4&list=PLq4hiTpnKWr6pBxq2gOoIORvbmDDMY
 
 ---
 
-_Last source checkpoint: Session 17 — Run 6: The Machine Awakens — The Long Grind. Reorganised for readability; no new game progress implied._
+_Last complete game-state checkpoint: Session 17 — Run 6: The Machine Awakens — The Long Grind. Achievement count subsequently reconciled to 29 / 98 Steam from screenshots; historical checkpoints remain unchanged._
 
 
 ### Operation Darknet — Run 6 Engineering Addendum (2026-11-04)
@@ -2224,3 +2227,15 @@ _Last source checkpoint: Session 17 — Run 6: The Machine Awakens — The Long 
 **Next steps:** validate API signatures and direct connectivity; build a single-target authentication worker with a five-consecutive-failure stop condition; test migration handling and same-process session persistence; only then consider deeper autonomous traversal. Depth progression, caches, files and Stasis Links remain unresolved.
 
 **Documentation:** architecture and recovery details in `ARCHITECTURE.md`; evidence and model-specific research in `Research Library.md`.
+
+
+### Achievement Reconciliation — Screenshot Verification (2026-11-04)
+
+> **Scope:** Achievement-only correction; does not change historical session snapshots or imply a new reset, updated bankroll, or hacking level.
+
+- **Steam achievement target:** **29 / 98 complete; 69 remaining**.
+- **In-game achievement counter:** **29 / 108 acquired** (the UI separately displays 29 / 98 for Steam).
+- **Newly documented:** `That's the limit` — Maximize a Hacknet node; acquired **2026-08-22**.
+- **Newly documented:** `Wolf of wall street.` — Make $1q on the stock market; acquired **2026-08-28**.
+- The historical Session 17 milestone of 27 / 98 remains correct **for that point in time**.
+- `Here comes the money!` is a separate achievement and is **not** confirmed by the supplied screenshots.
